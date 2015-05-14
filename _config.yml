@@ -33,11 +33,21 @@ authors:
     github: mathias-goebel
   frank:
     name: Frank Fischer
-    display_name: ff
-    email: umblaetterer@gmail.com
-    web: http://company.com
-    twitter: company
-    github: umblaetterer
+    display_name: Frank
+    gravatar: 59803778
+    email: frank.fischer@zentr.uni-goettingen.de
+    web: http://www.umblaetterer.de/
+    twitter: umblaetterer
+    github: lehkost
+  peer:
+    name: Peer Trilcke
+    display_name: Peer
+    email: trilcke@phil.uni-goettingen.de
+    web: http://www.peertrilcke.de/
+    twitter: peertrilcke
+  dario:
+    name: Dario Kampkaspar
+    email: kampkaspar@hab.de
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   UA-39365944-7
 #google_verify:      
