@@ -8,22 +8,14 @@
                             <span class="author-label">Author</span>
                             <h1>{{ author.display_name }}</h1>
                             <p>
-{% assign authorCount = page.authors | size %}
-{% if authorCount == 0 %}
-    No author
-{% elsif authorCount == 1 %}
-    {{ page.authors | first }}
-{% else %}
-    {% for author in page.authors %}
-        {% if forloop.first %}
-            {{ author }}
-        {% elsif forloop.last %}
-            and {{ author }}
-        {% else %}
-            , {{ author }}
-        {% endif %}
-    {% endfor %}
-{% endif %}
+{% assign author = site.authors[page.author] %}
+<div class="post">
+	<div class="meta">
+		<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+		<span class="author">{{ author.display_name }}</span>
+	</div>
+	{{ content }}
+</div>
                 </p>        
                             <p><a href="mailto:{{ author.email }}" class="author-website">{{ site.owner.email }}</a></p>
                         
