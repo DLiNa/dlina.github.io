@@ -3,7 +3,7 @@ layout: page
 permalink: /about/index.html
 title: Network Analysis of Dramatic Texts
 tags: []
-imagefeature: dramennetzwerke-3.jpg
+imagefeature: /images/photos/2015-05-08_10'49_working_session_at_gcdh.jpg
 chart: true
 ---
 
