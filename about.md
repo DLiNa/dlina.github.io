@@ -3,11 +3,9 @@ layout: page
 permalink: /about/index.html
 title: Network Analysis of Dramatic Texts
 tags: []
-imagefeature: /photos/2015-05-08_10'49_working_session_at_gcdh.jpg
+imagefeature: dramennetzwerke-3.jpg
 chart: true
 ---
-![cover-image](http://dlina.github.io/images/photos/2015-05-08_10'49_working_session_at_gcdh.jpg)
-
 
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
