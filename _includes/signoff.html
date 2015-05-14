@@ -7,8 +7,24 @@
                         
                             <span class="author-label">Author</span>
                             <h1>{{ author.display_name }}</h1>
-                        
-                        
+                            <p>
+{% assign authorCount = page.authors | size %}
+{% if authorCount == 0 %}
+    No author
+{% elsif authorCount == 1 %}
+    {{ page.authors | first }}
+{% else %}
+    {% for author in page.authors %}
+        {% if forloop.first %}
+            {{ author }}
+        {% elsif forloop.last %}
+            and {{ author }}
+        {% else %}
+            , {{ author }}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+                </p>        
                             <p><a href="mailto:{{ author.email }}" class="author-website">{{ site.owner.email }}</a></p>
                         
                         
