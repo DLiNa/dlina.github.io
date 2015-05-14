@@ -62,8 +62,8 @@ links:
     url: /
     external: false
     icon: home
-  - title: Featured Posts
-    url: /featured
+  - title: Recent Posts
+    url: /recent
   - title: Categories
     url: /categories
   - title: About
