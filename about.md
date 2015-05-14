@@ -3,9 +3,11 @@ layout: page
 permalink: /about/index.html
 title: Network Analysis of Dramatic Texts
 tags: []
-imagefeature: /images/photos/2015-05-08_10'49_working_session_at_gcdh.jpg
+imagefeature: /photos/2015-05-08_10'49_working_session_at_gcdh.jpg
 chart: true
 ---
+![cover-image](/images/photos/2015-05-08_10'49_working_session_at_gcdh.jpg)
+
 
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
