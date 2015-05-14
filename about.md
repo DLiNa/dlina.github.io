@@ -6,7 +6,7 @@ tags: []
 imagefeature: /photos/2015-05-08_10'49_working_session_at_gcdh.jpg
 chart: true
 ---
-![cover-image](/images/photos/2015-05-08_10'49_working_session_at_gcdh.jpg)
+![cover-image](http://dlina.github.io/images/photos/2015-05-08_10'49_working_session_at_gcdh.jpg)
 
 
 {% assign total_words = 0 %}
