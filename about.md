@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Hossain Mohd Faysal
-tags: [Hossain, Mohd, Faysal, hmfaysal]
-imagefeature: fourseasons.jpg
+title: Network Analysis of Dramatic Texts
+tags: []
+imagefeature: dramennetzwerke-3.jpg
 chart: true
 ---
 
@@ -21,3 +21,6 @@ chart: true
     {% assign featuredcount = featuredcount | plus: 1 %}
     {% endif %}
 {% endfor %}
+## This is about
+
+what?
