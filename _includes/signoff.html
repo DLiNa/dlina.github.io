@@ -1,21 +1,17 @@
             <div class="notepad-author-info">
                 <div class="row">
                     <section class="notepad-post-author small-12 columns">
-                        
-                            <img src="{{site.url}}/images/{{ site.owner.avatar }}" class="notepad-post-author-avatar" alt="{{ site.owner.name }}'s photo">
+                        {% assign author = site.authors[page.author] %}
+
+                            	<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40" class="notepad-post-author-avatar" alt="{{ site.owner.name }}'s photo">
                         {{ page.post_author }}
                         
                             <span class="author-label">Author</span>
                             <h1>{{ author.display_name }}</h1>
                             <p>
-{% assign author = site.authors[page.author] %}
-<div class="post">
-	<div class="meta">
-		<img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=40">
+
+	
 		<span class="author">{{ author.display_name }}</span>
-	</div>
-	{{ content }}
-</div>
                 </p>        
                             <p><a href="mailto:{{ author.email }}" class="author-website">{{ site.owner.email }}</a></p>
                         
