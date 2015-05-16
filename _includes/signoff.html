@@ -10,10 +10,6 @@
                             <h1>{{ author.name }}</h1>
                             <p>
 	<!-- span class="author">{{ author.display_name }}</span -->
-		             </p>
-		             <p>If you have further questions leave a comment or write {{ author.display_name }} an <a href="mailto:{{ author.email }}" class="author-website">Email</a>. You should not miss his outstanding <a href="{{ author.web }}">website</a>.</p>
-		             <p>
-		             	  <div class="social-icons">
 				        {% if author.twitter %}
 				        <a href="http://twitter.com/{{ site.owner.twitter }}">
 				            <span class="fa-stack fa-lg">
@@ -54,10 +50,8 @@
 				            </span>
 				        </a>
 				        {% endif %}
-				    </div>
-		             	
 		             </p>
-		                        
+		             <p>If you have further questions leave a comment or write {{ author.display_name }} an <a href="mailto:{{ author.email }}" class="author-website">Email</a>. You should not miss his outstanding <a href="{{ author.web }}">website</a>.</p>
         		</section>
                 </div>
             </div>
