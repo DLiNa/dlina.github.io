@@ -7,17 +7,13 @@
                         {{ page.post_author }}
                         
                             <span class="author-label">Author</span>
-                            <h1>{{ author.display_name }}</h1>
+                            <h1>{{ author.name }}</h1>
                             <p>
-
-	
-		<span class="author">{{ author.display_name }}</span>
-                </p>        
-                            <p><a href="mailto:{{ author.email }}" class="author-website">{{ site.owner.email }}</a></p>
-                        
-                        
-                            <p>{{ site.owner.description }}</p>
-                        
-                    </section>
+				<span class="author">{{ author.display_name }}</span>
+		             </p>
+		             <p>If you have further questions, leave a comment or wirte {{ author.display_name }} an <a href="mailto:{{ author.email }}" class="author-website">Email</a>. You should not miss his <a href="{{ author.web }}">website</a>.</p>
+		             <p>{{ site.owner.description }}</p>
+		                        
+        		</section>
                 </div>
             </div>
