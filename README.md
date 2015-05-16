@@ -1,5 +1,6 @@
 All credits for the theme go to @hmfaysal (see the description below)!
 @mathias-goebel added support for multiple auhtors.
+
 ---------------
 Notepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
 
