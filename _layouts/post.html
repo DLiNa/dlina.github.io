@@ -20,7 +20,7 @@ Description: Awesome dude, awesome life
 {% if site.dropcap %}<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>{% endif %}
 </head>
 <body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
-<!-- multiple author support: --> {% assign author = for author in page.author site.authors[page.author] %}
+<!-- multiple author support: --> {% assign author = site.authors[page.author] %}
 {% if page.imagefeature %}
         <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
             <header class="notepad-post-header">
@@ -60,24 +60,6 @@ Description: Awesome dude, awesome life
             <div class="notepad-post-title bg-check">
                 <h1>{{ page.title }}</h1>
                 <p>by <strong>
-
-{% assign authorCount = page.author | size %}
-{% if authorCount == 0 %}
-    No specified author
-{% elsif authorCount == 1 %}
-    {{ page.authors | first }}
-{% else %}
-    {% for author in page.author %}
-        {% if forloop.first %}
-            {{ author }}
-        {% elsif forloop.last %}
-            and {{ author }}
-        {% else %}
-            , {{ author }}
-        {% endif %}
-    {% endfor %}
-{% endif %}
-
                     {{ author.name }}
                     </strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
             </div>
