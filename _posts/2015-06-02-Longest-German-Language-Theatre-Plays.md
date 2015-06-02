@@ -13,7 +13,7 @@ chart:
 comments: true
 featured: true
 ---
-We had another meeting today and, as always, were working our way through the vast [TextGrid Repository}(http://www.textgridrep.de/). Since we're only interested in the dramatic texts contained in the corpus, we had to find a way to automatically extract these kinds of texts which isn't as easy as it sounds. Anyway, we finally finished this task and also wrote a small (hehe) 30.000-character piece on the subject which is to appear later. For the time being, the extracted dramas can be found as single XML files [here on our Github](https://github.com/DLiNa/project/tree/master/data/textgrid-repository-dramas).
+We had another meeting today and, as always, were working our way through the vast [TextGrid Repository](http://www.textgridrep.de/). Since we're only interested in the dramatic texts contained in the corpus, we had to find a way to automatically extract these kinds of texts which isn't as easy as it sounds. Anyway, we finally finished this task and also wrote a small (hehe) 30.000-character piece on the subject which is to appear later. For the time being, the extracted dramas can be found as single XML files [here on our Github](https://github.com/DLiNa/project/tree/master/data/textgrid-repository-dramas).
 
 When we were looking at the files we had the quick idea to make a list of the top 10 longest German-language theatre plays contained in the TextGrid Repository. And here they are, measured by their file size:
 
@@ -41,7 +41,7 @@ Around two thirds of each file is TEI markup (wild guess). So here is another ve
 9. Goethe, Johann Wolfgang: Faust. Der Tragödie zweiter Teil (46,180 words)
 10. Müller, Friedrich (Maler Müller): Golo und Genovefa (45,904 words)
 
-For the fans, this is our query ("textgrid-repository-dramas" is our collection):
+For the fans, this is our query for the second list, using eXist-db ("textgrid-repository-dramas" is the name of our collection):
 
     xquery version "3.0";
     declare namespace tei = "http://www.tei-c.org/ns/1.0";
