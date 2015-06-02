@@ -3,7 +3,7 @@ description:      "Digital Humanities and Literary Studies"
 logo:             logo.png
 disqus_shortname: dlina
 share:            true
-dropcap:			true
+dropcap:			       false
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
