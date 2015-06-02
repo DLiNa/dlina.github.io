@@ -13,10 +13,10 @@ chart:
 comments: true
 featured: true
 ---
-Met today to prepare our stuff for Sydney. Office panorama:
+Met today to work on our stuff for Sydney. Office panorama:
 
 <figure>
   <img src="{{ site.url }}/images/photos/2015-05-08_10'49_working_session_at_gcdh.jpg" alt="Office Panorama" style="width:56.25rem">
 </figure>
 
-Wanted to include a Sydney screenshot from International Karate (spirit of 1986!), but **<a href="https://en.wikipedia.org/wiki/File:WorldKarateChampionship_ingame.png">a link to Wikipedia</a>** is better.
+Wanted to include a Sydney screenshot from International Karate (spirit of 1986!), but **<a href="https://en.wikipedia.org/wiki/File:WorldKarateChampionship_ingame.png">a link to Wikipedia</a>** will do.
