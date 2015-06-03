@@ -1,6 +1,6 @@
 {% assign authors = page.author.size %}
 {% for author in page.author %}
-            <div class="notepad-author-info" {% if page.author.size != 1 %}{% if forloop.last == true %} style="margin-top: -7rem;" {% endif %}{% endif %}  >
+            <div class="notepad-author-info" {% if page.author.size != 1 %}{% if forloop.first == false %} style="margin-top: -7rem;" {% endif %}{% endif %}  >
                 <div class="row">
                     <section class="notepad-post-author small-12 columns">
                         {% assign author = site.authors[author] %}
