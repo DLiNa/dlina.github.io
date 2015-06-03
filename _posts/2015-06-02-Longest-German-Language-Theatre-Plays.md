@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Longest German-Language Theatre Plays"
-author: frank, mathias
+author: [frank, mathias]
 description: 
 headline: 
 modified: 2015-06-02
@@ -42,12 +42,12 @@ Around two thirds of each file is TEI markup (wild guess). So here is another ve
 10. Müller, Friedrich (Maler Müller): Golo und Genovefa (45,904 words)
 
 For the fans, this is our query for the second list, using eXist-db ("textgrid-repository-dramas" is the name of our collection):
-
-    xquery version "3.0";
-    declare namespace tei = "http://www.tei-c.org/ns/1.0";
-    for $file in xmldb:get-child-resources('/db/data/textgrid-repository-dramas')
-	    order by count(tokenize(string-join(doc('/db/data/textgrid-repository-dramas/' || $file)//tei:sp), '\W+')[. != '']) descending
-    return
-        (count(tokenize(string-join(doc('/db/data/textgrid-repository-dramas/' || $file)//tei:sp), '\W+')[. != '']), $file)
-
+{% highlight xquery %}
+xquery version "3.0";
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+for $file in xmldb:get-child-resources('/db/data/textgrid-repository-dramas')
+	order by count(tokenize(string-join(doc('/db/data/textgrid-repository-dramas/' || $file)//tei:sp), '\W+')[. != '']) descending
+return
+	(count(tokenize(string-join(doc('/db/data/textgrid-repository-dramas/' || $file)//tei:sp), '\W+')[. != '']), $file)
+{% endhighlight %}
 Ok, there's more where this came from, stay tuned! :-)

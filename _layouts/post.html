@@ -17,32 +17,7 @@ Description: Awesome dude, awesome life
 -->
 <head>
 {% include head.html %}
-
- <style>
-      .link {
-      stroke: #ccc;
-      }
-      .gnode text {
-      pointer-events: none;
-      font-size: 12pt;
-      font-family: "Ubuntu Light", monospace;
-      font-weight: lighter;
-      /*text-transform: lowercase;*/
-      stroke-width: initial;
-      }
-      .background {
-        fill: #eee;
-      }
-      line {
-        stroke: #fff;
-      }
-      text.active {
-        fill: red;
-      }
-  </style>
-
 {% if site.dropcap %}<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>{% endif %}
-<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
 </head>
 <body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
 <!-- multiple author support: --> {% assign author = site.authors[page.author] %}
@@ -98,7 +73,16 @@ Description: Awesome dude, awesome life
                         <div class="notepad-post-meta-simple">
                             <h1>{{ page.title }}</h1>
                             <p>by <strong>
-                                {{ author.name }}
+{% assign authors = page.author.size %}
+{% if authors > 1 %}
+{% for author in page.author %}
+ {{ site.authors[author].name }}
+{% unless forloop.last %} and {% endunless %}
+{% endfor %}
+{% else %}
+{{ author.name }}
+{% endif %}
+
                                 </strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
                         </div>
                     </div>
@@ -106,7 +90,6 @@ Description: Awesome dude, awesome life
             </header>
 {% endif %}
         {% if page.imagefeature %}<article class="notepad-post-content post">{% else %}<article class="notepad-post-content post tag-simple">{% endif %}
-            <div id="network"></div>
             <div>{{ content }}
             </div>
         </article>
