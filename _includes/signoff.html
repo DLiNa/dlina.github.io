@@ -1,14 +1,11 @@
 {% assign authors = page.author.size %}
 {% for author in page.author %}
-            <div class="notepad-author-info" {% if page.author.size != 1 %}{% if forloop.first == false %} style="margin-top: -7rem;" {% endif %}{% endif %}  >
+            <div class="notepad-author-info" {% if forloop.first != true %} style="margin-top: -7rem;" {% endif %}  >
                 <div class="row">
                     <section class="notepad-post-author small-12 columns">
                         {% assign author = site.authors[author] %}
 
-                            	<img src="http://www.gravatar.com/avatar/{{ site.authors[author].gravatar }}?s=140" class="notepad-post-author-avatar" alt="{{ site.owner.name }}'s photo">
-                        {{ page.post_author }}
-                        
-                            <span class="author-label">Author</span>
+                            	<img src="http://www.gravatar.com/avatar/{{ site.authors[author].gravatar }}?s=140" class="notepad-post-author-avatar" alt="{{ site.authors[author].name }}'s photo">  <span class="author-label">Author</span>
                             <h1>{{ site.authors[author].name }}</h1>
                             <p>
 	<!-- span class="author">{{ author.display_name }}</span -->
