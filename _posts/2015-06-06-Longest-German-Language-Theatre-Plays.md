@@ -41,9 +41,9 @@ At least two thirds of each file is TEI markup (wild guess). In some cases, the 
 9. Goethe, Johann Wolfgang: Faust. Der Tragödie zweiter Teil (46,180 words)
 10. Müller, Friedrich (Maler Müller): Golo und Genovefa (45,904 words)
 
-No doubt about it, [Arno Holz](https://en.wikipedia.org/wiki/Arno_Holz) rules them all. His monstrous naturalistic drama _Ignorabimus_ from 1913 is a fair 500-pager as shows [a quick glance into the catalog of the German National Library](http://d-nb.info/573829322).
+No doubt about it, [Arno Holz](https://en.wikipedia.org/wiki/Arno_Holz) rules them all. His monstrous naturalistic drama _Ignorabimus_ from 1913 is a fair 500-pager as shows [a quick glance into the catalogue of the German National Library](http://d-nb.info/573829322).
 
-And for the fans, this is our query for the second list, using eXist-db ("textgrid-repository-dramas" is the name of our collection):
+For the fans, this is our query for the second list, using eXist-db ("textgrid-repository-dramas" is the name of our collection):
 {% highlight xquery %}
 xquery version "3.0";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
