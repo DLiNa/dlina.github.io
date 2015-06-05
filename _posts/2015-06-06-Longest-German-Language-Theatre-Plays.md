@@ -4,7 +4,7 @@ title: "Longest German-Language Theatre Plays"
 author: [frank, mathias]
 description: 
 headline: 
-modified: 2015-06-02
+modified: 2015-06-06
 category: Updates
 tags: []
 imagefeature: 
@@ -17,18 +17,18 @@ We had another meeting today and, as always, were working our way through the va
 
 When we were looking at the files we had the quick idea to make a list of the top 10 longest German-language theatre plays contained in the TextGrid Repository. And here they are, measured by their file size:
 
-1. Holz, Arno: Ignorabimus (2,1 MB)
-2. Schiller, Friedrich: Wallenstein (1,99 MB)
-3. Fouqué, Friedrich de la Motte: Der Held des Nordens (1,88 MB)
-4. Brentano, Clemens: Die Gründung Prags (1,81 MB)
-5. Baggesen, Jens: Der vollendete Faust oder Romanien in Jauer (1,69 MB)
-6. Hebbel, Friedrich: Die Nibelungen (1,61 MB)
-7. Immermann, Karl: Alexis (1,49 MB)
-8. Rosner, Ferdinand: Oberammergauer Passionspiel (1,48 MB)
-9. Grabbe, Christian Dietrich: Herzog Theodor von Gothland (1,40 MB)
-10. Arnim, Ludwig Achim von: Halle und Jerusalem (1,35 MB)
+1. Holz, Arno: Ignorabimus (2.1 MB)
+2. Schiller, Friedrich: Wallenstein (1.99 MB)
+3. Fouqué, Friedrich de la Motte: Der Held des Nordens (1.88 MB)
+4. Brentano, Clemens: Die Gründung Prags (1.81 MB)
+5. Baggesen, Jens: Der vollendete Faust oder Romanien in Jauer (1.69 MB)
+6. Hebbel, Friedrich: Die Nibelungen (1.61 MB)
+7. Immermann, Karl: Alexis (1.49 MB)
+8. Rosner, Ferdinand: Oberammergauer Passionspiel (1.48 MB)
+9. Grabbe, Christian Dietrich: Herzog Theodor von Gothland (1.40 MB)
+10. Arnim, Ludwig Achim von: Halle und Jerusalem (1.35 MB)
 
-Around two thirds of each file is TEI markup (wild guess). So here is another version of our top 10, this time measured by the number of words inside `<sp>` (since we're talking about theatre plays here):
+At least two thirds of each file is TEI markup (wild guess). In some cases, the markup is really bloating the file size, so here is another version of our top 10, this time measured by the number of words inside [`<sp>`](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-sp.html) (since we're talking about theatre plays here):
 
 1. Holz, Arno: Ignorabimus (100,283 words)
 2. Arnim, Ludwig Achim von: Halle und Jerusalem (74,675 words)
@@ -41,7 +41,9 @@ Around two thirds of each file is TEI markup (wild guess). So here is another ve
 9. Goethe, Johann Wolfgang: Faust. Der Tragödie zweiter Teil (46,180 words)
 10. Müller, Friedrich (Maler Müller): Golo und Genovefa (45,904 words)
 
-For the fans, this is our query for the second list, using eXist-db ("textgrid-repository-dramas" is the name of our collection):
+No doubt about it, [Arno Holz](https://en.wikipedia.org/wiki/Arno_Holz) rules them all. His monstrous naturalistic drama _Ignorabimus_ from 1913 is a fair 500-pager as shows [a quick glance into the catalog of the German National Library](http://d-nb.info/573829322).
+
+And for the fans, this is our query for the second list, using eXist-db ("textgrid-repository-dramas" is the name of our collection):
 {% highlight xquery %}
 xquery version "3.0";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
