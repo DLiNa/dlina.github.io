@@ -53,12 +53,24 @@ d3.json("/data/{{ page.networkdata }}", function(error, graph) {
      .append('g')
      .classed('gnode', true);
     
+var drag = force.drag()
+    .on("dragstart", dragstart);
+
+
   var node = gnodes.append("circle")
       .attr("class", "node")
       .attr("r", function(d) { return Math.sqrt(d.weight) + 5 })
       .style("fill", function(d) { return color(d.group); })
-      .call(force.drag);
+	.on("dblclick", dblclick)
+      .call(drag);
 
+function dblclick(d) {
+  d3.select(this).classed("fixed", d.fixed = false);
+}
+
+function dragstart(d) {
+  d3.select(this).classed("fixed", d.fixed = true);
+}
   var labels = gnodes.append("text")
       .text(function(d) { return d.name; });
 
