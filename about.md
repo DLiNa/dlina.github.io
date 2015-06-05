@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 author: [dario, frank, mathias, peer]
 permalink: /about/index.html
 title: Network Analysis of Dramatic Texts
