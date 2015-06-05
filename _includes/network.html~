@@ -59,9 +59,6 @@ force
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });  });
-	force.stop();
-
-
 
   var link = svg.selectAll(".link")
       .data(graph.links)
@@ -90,6 +87,11 @@ force
         return 'translate(' + [d.x, d.y] + ')';
     });
   })
+
+	force.stop();
+
+
+
 
   loading.remove();
 }, 10);

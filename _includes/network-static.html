@@ -20,7 +20,7 @@
 </div>
 
 <div class="row">
-  <div class="small-3 small-centered columns"><div id="option">
+  <div class="small-1 small-centered columns"><div id="option">
    <i class="fa fa-refresh fa-4x" onclick="updateData()"></i>
 </div></div>
 </div>
@@ -52,7 +52,7 @@ var loading = svg.append("text")
     .text("Simulating. One moment please…");
 
 d3.json("/data/{{ page.networkdata }}", function(error, graph) {
-var force = d3.layout.force()
+var forcestat = d3.layout.force()
     .nodes(graph.nodes)
     .links(graph.links)
 .linkDistance(170)
@@ -70,9 +70,9 @@ setTimeout(function() {
   // Run the layout a fixed number of times.
   // The ideal number of times scales with graph complexity.
   // Of course, don't run too long—you'll hang the page!
-  force.start();
-  for (var i = n * n; i > 0; --i) force.tick();
-  force.stop();
+  forcestat.start();
+  for (var i = n * n; i > 0; --i) forcestat.tick();
+  forcestat.stop();
 
  var link = svg.selectAll(".link")
       .data(graph.links)
@@ -113,7 +113,7 @@ setTimeout(function() {
       .attr("r", function(d) { return Math.sqrt(d.weight) + 5 })
       .style("fill", function(d) { return color(d.group); });
 
- force.on("end", function() {
+ forcestat.on("end", function() {
     link.attr("x1", function(d) { return d.source.x; })
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })

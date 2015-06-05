@@ -22,44 +22,25 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
 <script>                
-var width = 960,
+var width = 760,
     height = 600;
 
-var color = d3.scale.category10();
+var color = d3.scale.category20();
 
-
-  
+var force = d3.layout.force()
+    .charge(-200)
+    .linkDistance(190)
+    .size([width, height]);
 
 var svg = d3.select("#network").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-var loading = svg.append("text")
-    .attr("x", width / 2)
-    .attr("y", height / 2)
-    .attr("dy", ".35em")
-    .style("text-anchor", "middle")
-    .text("One moment please…");
-
-
-
 d3.json("/data/{{ page.networkdata }}", function(error, graph) {
-var n = 100;
-var force = d3.layout.force()
-    .nodes(graph.nodes)
+  force
+      .nodes(graph.nodes)
       .links(graph.links)
-  	.charge(-20)
-    .linkDistance(400)
-    .size([width, height]);  
-setTimeout(function() {
-force      
       .start();
-	for (var i = n * n; i > 0; --i) force.tick(function { on("tick", function() {
-    link.attr("x1", function(d) { return d.source.x; })
-        .attr("y1", function(d) { return d.source.y; })
-        .attr("x2", function(d) { return d.target.x; })
-        .attr("y2", function(d) { return d.target.y; });  });
-
   var link = svg.selectAll(".link")
       .data(graph.links)
     .enter().append("line")
@@ -80,25 +61,19 @@ force
 
   var labels = gnodes.append("text")
       .text(function(d) { return d.name; });
+
+  console.log(labels);
     
- 
+  force.on("tick", function() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
 
     gnodes.attr("transform", function(d) {
         return 'translate(' + [d.x, d.y] + ')';
     });
   })
-
-	force.stop();
-
-
-
-
-  loading.remove();
-}, 10);
-
-
-
-
 });
-
+drawGraph(graph);
 </script>
