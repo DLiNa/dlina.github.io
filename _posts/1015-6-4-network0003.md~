@@ -14,4 +14,4 @@ comments: true
 featured: false
 networkdata: Alberti-Im_Suff-1890.json
 ---
-{% include network-static.html %}
+{% include network.html %}
