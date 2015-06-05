@@ -50,6 +50,9 @@
 				        </a>
 				        {% endif %}
 		             </p>
+		             {% if page.permalink == '/about/index.html' %}
+		             {{ site.authors[author].description }}
+		             {% endif %}
 		             <p>If you have further questions leave a comment or send an <a href="mailto:{{ site.authors[author].email }}" class="author-website">Email</a> to {{ site.authors[author].display_name }}. You should not miss his outstanding <a href="{{ site.authors[author].web }}">website</a>.</p>
         		</section>
                 </div>
