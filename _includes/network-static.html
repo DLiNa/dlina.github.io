@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="medium-9 columns"><div id="network"></div></div>
+  <div class="medium-9 columns"><div id="network-static"></div></div>
   <div class="medium-3 columns end"><div class="col-md-3">
                 <p>The colors indicate the gender of a speaker:<ul style="list-style:none;">
                     <li>
@@ -31,7 +31,7 @@
 
 // ** RELOAD
 function updateData() {
-d3.selectAll("#network svg").remove();
+d3.selectAll("#network-static svg").remove();
 nodes = [];
 links = [];
 var n = 200;
@@ -39,7 +39,7 @@ var width = 960,
     height = 600;
 
 
-var svg = d3.select("#network").append("svg")
+var svg = d3.select("#network-static").append("svg")
     .attr("id", "net")
     .attr("width", width)
     .attr("height", height);
