@@ -141,7 +141,7 @@ d3.json("/data/{{ page.networkdata }}", function(graph) {
 
   var timeout = setTimeout(function() {
     order("group");
-    d3.select("#order").property("selectedIndex", 2).node().focus();
+    d3.select("#order").property("selectedIndex", 2).node();
   }, 5000);
 });
 </script>
