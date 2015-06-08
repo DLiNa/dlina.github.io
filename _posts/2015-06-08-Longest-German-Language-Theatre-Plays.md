@@ -53,10 +53,4 @@ return (count(tokenize(string-join(doc('/db/data/textgrid-repository-dramas/' ||
 {% endhighlight %}
 Ok, there's more where this came from, stay tuned! :-)
 
-Quickly answering a question raised by Nils [on Twitter](https://twitter.com/umblaetterer/status/607945947348406273): "Where is Karl Kraus: Die letzten Tage der Menschheit?!" Well, unfortunately, the [ultimate German-language mega drama](http://de.wikipedia.org/wiki/Die_letzten_Tage_der_Menschheit) is not contained in the TextGrid Repository. But it would certainly crush all the other plays. We dug out the [Gutenberg-DE DVD](http://gutenberg.spiegel.de/) and counted the words like this:
-{% highlight shell %}
-w3m -dump -I 'iso-8859-1' -T text/html letzttag.xml | wc -w
-{% endhighlight %}
-
-Yielded 187,696 words. To put it short: Karl Kraus beats Arno Holz. Please mind that we did not limit the Kraus word count to just the spoken words like we did with the XML files (by just counting the words uttered inside `<sp>`). But even if we had to substract a couple of thousand words, the result remained the same.
-
+Quickly answering a question raised by Nils 
