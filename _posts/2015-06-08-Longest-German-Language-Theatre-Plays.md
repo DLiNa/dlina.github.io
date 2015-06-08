@@ -15,7 +15,7 @@ featured: true
 ---
 Ok, time for some Digital Humanities fun facts! We had another meeting today and, as always, were working our way through the vast [TextGrid Repository](http://www.textgridrep.de/). Since we're only interested in the dramatic texts contained in the corpus, we had to find a way to automatically extract these kinds of texts which isn't as easy as it sounds. Anyway, we finally managed to do so and also wrote a small (well&nbsp;...) 30.000-character piece on the subject which is to appear later. For the time being, the extracted dramas can be found as single XML files [here on our GitHub](https://github.com/DLiNa/project/tree/master/data/textgrid-repository-dramas).
 
-When we were looking at the files we had the quick idea to make a list of the **top 10 longest German-language theatre plays** contained in the TextGrid Repository. And here they are, measured by their file size:
+When we were looking at the files we had the quick idea to make a list of the **top 10 longest German-language theatre plays contained in the TextGrid Repository**. And here they are, measured by their file size:
 
 1. Holz, Arno: Ignorabimus (2.1 MB)
 2. Schiller, Friedrich: Wallenstein (1.99 MB)
