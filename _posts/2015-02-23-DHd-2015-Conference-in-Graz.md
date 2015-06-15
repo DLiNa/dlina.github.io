@@ -18,4 +18,4 @@ We're going to present our first set of results at the annual DHd conference, th
 + See the [conference website](http://dhd2015.uni-graz.at/) and [program](https://www.conftool.pro/dhd2015/index.php?page=browseSessions&form_date=2015-02-25&presentations=show).
 + Our presentation slot is Wednesday, 25 Feb 2015, 9:00–10:30.
 + The slides for our presentation are [here (PDF; 1.41 MB)](http://www.gcdh.de/dhd2015-fischer-kampkaspar-trilcke-netzwerkanalyse-slides.pdf).
-+ Conference hashtag (beware, tweets in abundance!): **<a href="https://twitter.com/hashtag/dhd2015?src=hash">#dhd2015</a>**
++ Conference hashtag (beware, tweets in abundance!): **<a href="https://twitter.com/hashtag/dhd2015?src=hash">#dhd2015</a>**.
