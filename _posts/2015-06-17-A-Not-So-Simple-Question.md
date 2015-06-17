@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A (Not So) Simple Question"
+title: "A (Not So) Simple Question and a Somewhat Diabolic Answer"
 author: [frank, mathias]
 description: 
 headline: 
@@ -15,7 +15,7 @@ featured: false
 ---
 # How Many Dramatic Pieces Are Contained in the TextGrid Repository?
 
-Simple question, seemingly. Before we try to answer it, a little heads-up: This blog post is **ridiculously long**. It can be regarded a proof-of-concept of what [Mareike König](https://twitter.com/mareike2405) recently said at the "Wissensspeicher" conference: "A blog post has no borders, it can be as long as you want." (In [this video, 12:4x mins. in](http://www.lisa.gerda-henkel-stiftung.de/blogs_als_wissensorte_der_forschung?nav_id=5594).) True that! So here we go:
+Simple question, seemingly. Before we try to answer it, a little heads-up: This blog post is **ridiculously long**. It can be regarded a proof-of-concept of what [Mareike KÃ¶nig](https://twitter.com/mareike2405) recently said at the "Wissensspeicher" conference: "A blog post has no borders, it can be as long as you want." (In [this video, 12:4x mins. in](http://www.lisa.gerda-henkel-stiftung.de/blogs_als_wissensorte_der_forschung?nav_id=5594).) True that! So here we go:
 
 Corpus building is a crucial task of many Digital Humanities projects and it is great to see a number of new corpora appear on a fairly regular basis. Many of these text collections feature markup following the [TEI Guidelines](http://www.tei-c.org/Guidelines/). Yet, the mere existence of a corpus and its use of standardised formats doesn't release you from working your way through its peculiarities. The purpose of this article is to demonstrate how to start, our example being the vast TextGrid Repository and its subset of German-language drama.
 
@@ -58,7 +58,7 @@ So once again, how many dramatic pieces are contained in the TextGrid Repository
 
 Let's start with reproducing our 690-result with a basic XQuery. This is to show you that we can easily reproduce by ourself the results of the search form.
 
-So we want to find all works that are marked as "drama" in the genre metadata. As indicated before, the TEI element `<textClass>` contains info on the genre. So let's count all occurrences in the whole TextGrid Repository by using **eXide**, "a cool, handy, fully integrated editor for working with XQuery, XML, and other resources stored in eXist" ([O'Reilly](https://books.google.de/books?id=0evSBQAAQBAJ&pg=PA29)). Close the Collection Browser and click on the "eXide – XQuery IDE" logo. You should see a fresh sheet for your own queries.
+So we want to find all works that are marked as "drama" in the genre metadata. As indicated before, the TEI element `<textClass>` contains info on the genre. So let's count all occurrences in the whole TextGrid Repository by using **eXide**, "a cool, handy, fully integrated editor for working with XQuery, XML, and other resources stored in eXist" ([O'Reilly](https://books.google.de/books?id=0evSBQAAQBAJ&pg=PA29)). Close the Collection Browser and click on the "eXide â€“ XQuery IDE" logo. You should see a fresh sheet for your own queries.
 
 First of all, we need to declare a namespace for technical reasons, just insert as line two:
 
@@ -98,13 +98,13 @@ Click on "Eval" and wait some seconds after which the output window returns a nu
 
 We added the part `[ancestor::tei:TEI]` which tells the engine that we look for the occurrence in TEI documents only, and we leave the teiCorpus uncounted. "TEI" here is the root element of a TEI document. **And look, we end up with 690.** So we just reproduced the result we got from the search form. The nice thing about reproducing this result is that we don't stop here. With XQuery we can do much more.
 
-For example, let's try substract the 690 from the 703 pieces found earlier. This is interesting as it points us to a bunch of subcorpora in the repository containing a number of dramas. By executing the following query ...
+For example, let's try substract the 690 from the 703 pieces found earlier. This is interesting as it points us to a bunch of subcorpora in the repository containing a number of dramas. By executing the following queryÂ ...
 
 {% highlight xml %}
 `collection('/db/data/tgrep/')//tei:textClass[*not*(ancestor::tei:TEI)]/tei:keywords/tei:term[text() = 'drama']/base-uri()`
 {% endhighlight %}
 
-... we get 13 evidences. More precisely, we get the resource address in the database (comparable to the file name):
+...Â we get 13 evidences. More precisely, we get the resource address in the database (comparable to the file name):
 
 * /db/data/tgrep/Literatur-Arnim%2C-Ludwig-Achim-von.xml
 * /db/data/tgrep/Literatur-Goethe%2C-Johann-Wolfgang-001.xml
@@ -131,14 +131,14 @@ Why does this happen? Because some dramas are split into several TEI subdocument
 Yields the following output:
 
 * /db/data/tgrep/Literatur-Arnim%2C-Ludwig-Achim-von.xml: Halle und Jerusalem > 4
-* /db/data/tgrep/Literatur-Goethe%2C-Johann-Wolfgang-001.xml: Faust. Eine Tragödie > 5
+* /db/data/tgrep/Literatur-Goethe%2C-Johann-Wolfgang-001.xml: Faust. Eine TragÃ¶die > 5
 * /db/data/tgrep/Literatur-Grabbe%2C-Christian-Dietrich.xml: Die Hohenstaufen > 2
 * /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Panspiele > 4
-* /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Die goldnen Straßen > 3
+* /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Die goldnen StraÃŸen > 3
 * /db/data/tgrep/Literatur-Hebbel%2C-Friedrich.xml: Die Nibelungen > 5
 * /db/data/tgrep/Literatur-Immermann%2C-Karl.xml: Alexis > 3
 * /db/data/tgrep/Literatur-Metastasio%2C-Pietro.xml: L'isola disabitata > 2
-* /db/data/tgrep/Literatur-Scheerbart%2C-Paul.xml: Revolutionäre Theaterbibliothek > 23
+* /db/data/tgrep/Literatur-Scheerbart%2C-Paul.xml: RevolutionÃ¤re Theaterbibliothek > 23
 * /db/data/tgrep/Literatur-Schiller%2C-Friedrich.xml: Wallenstein > 4
 * /db/data/tgrep/Literatur-Schnitzler%2C-Arthur.xml: Marionetten > 3
 * /db/data/tgrep/Literatur-Scribe%2C-Eugene.xml: La dame blanche > 2
@@ -147,46 +147,47 @@ Yields the following output:
 The number at the end of each line shows us how many dramas are contained in each subcorpus. So, Wagner's "Ring of the Nibelungs": check. Etc. etc. But there are still problems. E.g., Hebbel's ["Nibelungs"](https://de.wikipedia.org/wiki/Die_Nibelungen_(Hebbel)), in reality, consist of merely 3 parts. So let's refine our query to leave out all TEI documents that aren't marked as "drama":
 
 {% highlight xml %}
-collection('/db/data/tgrep/')//tei:textClass[not(ancestor::tei:TEI)]/tei:keywords/tei:term[text() = 'drama']/concat(base-uri(), ': ', (ancestor::tei:teiCorpus[1]//tei:fileDesc[1]/tei:titleStmt/tei:title/string())[1], ' >  ', count(ancestor::tei:teiCorpus[1]//tei:TEI[descendant::tei:term/text() = 'drama'])) 
+collection('/db/data/tgrep/')//tei:textClass[not(ancestor::tei:TEI)]/tei:keywords/tei:term[text() = 'drama']/concat(base-uri(), ': ', (ancestor::tei:teiCorpus[1]//tei:fileDesc[1]/tei:titleStmt/tei:title/string())[1], ' >  ', count(ancestor::tei:teiCorpus[1]//tei:TEI[descendant::tei:term/text() = 'drama']))
 {% endhighlight %}
 
 * /db/data/tgrep/Literatur-Arnim%2C-Ludwig-Achim-von.xml: Halle und Jerusalem > 2
-* /db/data/tgrep/Literatur-Goethe%2C-Johann-Wolfgang-001.xml: Faust. Eine Tragödie > 5
+* /db/data/tgrep/Literatur-Goethe%2C-Johann-Wolfgang-001.xml: Faust. Eine TragÃ¶die > 5
 * /db/data/tgrep/Literatur-Grabbe%2C-Christian-Dietrich.xml: Die Hohenstaufen > 2
 * /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Panspiele > 4
-* /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Die goldnen Straßen > 3
+* /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Die goldnen StraÃŸen > 3
 * /db/data/tgrep/Literatur-Hebbel%2C-Friedrich.xml: Die Nibelungen > 3
 * /db/data/tgrep/Literatur-Immermann%2C-Karl.xml: Alexis > 3
 * /db/data/tgrep/Literatur-Metastasio%2C-Pietro.xml: L'isola disabitata > 2
-* /db/data/tgrep/Literatur-Scheerbart%2C-Paul.xml: Revolutionäre Theaterbibliothek > 22
+* /db/data/tgrep/Literatur-Scheerbart%2C-Paul.xml: RevolutionÃ¤re Theaterbibliothek > 22
 * /db/data/tgrep/Literatur-Schiller%2C-Friedrich.xml: Wallenstein > 4
 * /db/data/tgrep/Literatur-Schnitzler%2C-Arthur.xml: Marionetten > 3
 * /db/data/tgrep/Literatur-Scribe%2C-Eugene.xml: La dame blanche > 2
 * /db/data/tgrep/Literatur-Wagner%2C-Richard.xml: Der Ring des Nibelungen > 4
+
 
 What do we have here? We received a list with all segmented dramas. Case in point, this one is not for the computer to solve, but, well, for the humanist's eye. Goethe's "Faust", in our repository, consists of [5 files](http://www.textgridrep.de/browse.html?id=textgrid:11d4b.0):
 
 * Zueignung
 * Vorspiel auf dem Theater
 * Prolog im Himmel
-* Faust. Der Tragödie erster Teil
-* Faust. Der Tragödie zweiter Teil
+* Faust. Der TragÃ¶die erster Teil
+* Faust. Der TragÃ¶die zweiter Teil
 
-We could argue that the whole "Faust" is *one* integral piece. We could argue that Wagner's "Ring of the Nibelung" is *one* piece. But we probably can't declare the same thing for Scheerbart's "Revolutionäre Theaterbibliothek" which consists of 22 pieces, and we probably shouldn't count them as one.
+We could argue that the whole "Faust" is *one* integral piece. We could argue that Wagner's "Ring of the Nibelung" is *one* piece. But we probably can't declare the same thing for Scheerbart's "RevolutionÃ¤re Theaterbibliothek" which consists of 22 pieces, and we probably shouldn't count them as one.
 
-Why this strange segmentation of some of the plays? This has to do with the origin of the TextGrid Repository, the zeno.org project. As we can see [at the zeno.org website](http://www.zeno.org/Literatur/M/Goethe,+Johann+Wolfgang/Dramen/Faust.+Eine+Tragödie), Goethe's Faust is split into 5 parts there when it really should be split into 2 parts only, "Faust, part 1", and "Faust, part 2".
+Why this strange segmentation of some of the plays? This has to do with the origin of the TextGrid Repository, the zeno.org project. As we can see [at the zeno.org website](http://www.zeno.org/Literatur/M/Goethe,+Johann+Wolfgang/Dramen/Faust.+Eine+TragÃ¶die), Goethe's Faust is split into 5 parts there when it really should be split into 2 parts only, "Faust, part 1", and "Faust, part 2".
 
 So let's use the human brain and some semesters of studying literature (hehe) and decide what to count as a separate text and what not:
 
 * /db/data/tgrep/Literatur-Arnim%2C-Ludwig-Achim-von.xml: Halle und Jerusalem > 2 (double drama, new amount of plays: 1)
-* /db/data/tgrep/Literatur-Goethe%2C-Johann-Wolfgang-001.xml: Faust. Eine Tragödie > 5 (two originary parts, new amount of plays: 2)
+* /db/data/tgrep/Literatur-Goethe%2C-Johann-Wolfgang-001.xml: Faust. Eine TragÃ¶die > 5 (two originary parts, new amount of plays: 2)
 * /db/data/tgrep/Literatur-Grabbe%2C-Christian-Dietrich.xml: Die Hohenstaufen > 2 (remains 2)
 * /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Panspiele > 4 (no overlaps in personnel, remains 4)
-* /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Die goldnen Straßen > 3 (no overlaps in personnel, remains 3)
+* /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Die goldnen StraÃŸen > 3 (no overlaps in personnel, remains 3)
 * /db/data/tgrep/Literatur-Hebbel%2C-Friedrich.xml: Die Nibelungen > 3 (Hebbel himself describes the 3 parts as "one integral tragedy", new amount of plays: 1)
 * /db/data/tgrep/Literatur-Immermann%2C-Karl.xml: Alexis > 3 (overlaps in personnel, new amount of plays: 1)
 * /db/data/tgrep/Literatur-Metastasio%2C-Pietro.xml: L'isola disabitata > 2 (one of the 2 parts is the Italian original, new amount of plays: 1)
-* /db/data/tgrep/Literatur-Scheerbart%2C-Paul.xml: Revolutionäre Theaterbibliothek > 22 (completely several dramas, remains 22)
+* /db/data/tgrep/Literatur-Scheerbart%2C-Paul.xml: RevolutionÃ¤re Theaterbibliothek > 22 (completely several dramas, remains 22)
 * /db/data/tgrep/Literatur-Schiller%2C-Friedrich.xml: Wallenstein > 4 (= new amount of plays: 1)
 * /db/data/tgrep/Literatur-Schnitzler%2C-Arthur.xml: Marionetten > 3 (no overlaps in personnel, new amount of plays: 3)
 * /db/data/tgrep/Literatur-Scribe%2C-Eugene.xml: La dame blanche > 2 (one of the 2 parts is the French original, new amount of plays: 1)
@@ -196,7 +197,7 @@ You will notice that some of our decisions are contingent. E.g., there *are* ove
 
 So we have to substract the results of this equation from our 690 found dramas:
 
-`690 – ((2-1)+(5-2)+(2-2)+(4-4)+(3-3)+(3-1)+(3-1)+(2-1)+(22-22)+(4-1)+(3-3)+(2-1)+(4-4)) = 690 – 13`
+`690-((2-1)+(5-2)+(2-2)+(4-4)+(3-3)+(3-1)+(3-1)+(2-1)+(22-22)+(4-1)+(3-3)+(2-1)+(4-4)) = 690â€“13`
 
 **And we're down to 677 dramas.** We're almost there! But there's another thing we came across while working on the corpus: doublets.
 
@@ -217,8 +218,8 @@ To determine the differences of the documents created by more than one author we
     <head type="h2" xml:id="tg4.3.4">
      <ref cRef="/Literatur/M/Berg, O. F./Drama/Berlin, wie es weint und lacht" xml:id="tg4.3.4.1">Berlin, wie es weint und lacht</ref>
     </head>
-    <head type="h4" xml:id="tg4.3.5">Volksstück mit Gesang</head>
-    <head type="h4" xml:id="tg4.3.6">in 3 Aufzügen und 11 Bildern</head>
+    <head type="h4" xml:id="tg4.3.5">VolksstÃ¼ck mit Gesang</head>
+    <head type="h4" xml:id="tg4.3.6">in 3 AufzÃ¼gen und 11 Bildern</head>
   </div>
  </body>
 </text>
@@ -240,24 +241,24 @@ The result is a list of 27 `tei:title` elements:
 * <title xmlns="http://www.tei-c.org/ns/1.0">Iphigenie in Aulis</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Medea</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Die Fledermaus</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Die jüngste Walpurgisnacht</title>
+* <title xmlns="http://www.tei-c.org/ns/1.0">Die jÃ¼ngste Walpurgisnacht</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Zueignung</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Vorspiel auf dem Theater</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Prolog im Himmel</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Der Widerspenstigen Zähmung</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Pension Schöller</title>
+* <title xmlns="http://www.tei-c.org/ns/1.0">Der Widerspenstigen ZÃ¤hmung</title>
+* <title xmlns="http://www.tei-c.org/ns/1.0">Pension SchÃ¶ller</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Traumulus</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Im weißen Rößl</title>
+* <title xmlns="http://www.tei-c.org/ns/1.0">Im weiÃŸen RÃ¶ÃŸl</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Berlin, wie es weint und lacht</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Die Pfandung</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Der Besuch um Mitternacht</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Ablaßkrämer</title>
+* <title xmlns="http://www.tei-c.org/ns/1.0">AblaÃŸkrÃ¤mer</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Doktor Faustus</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Das Mirakel</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Prolog</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Die Familie Selicke</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Genoveva</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">König Ödipus</title>
+* <title xmlns="http://www.tei-c.org/ns/1.0">KÃ¶nig Ã–dipus</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Antigone</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Gespenstersonate</title>
 * <title xmlns="http://www.tei-c.org/ns/1.0">Fidelio</title>
@@ -275,7 +276,7 @@ count(for $item in collection('/db/data/tgrep')//tei:TEI
 
 Ok, let's try to translate this query into a more readable form:
 
-First off, we use a *for loop* like explained before. This seperates the single TEI documents (`//tei:TEI`), that usually start with a TEI node from our whole data set (`collection('/db/data/tgrep')`). We now operate on single documents until the loop finishes. Then we specify a condition for the documents we like to take into focus (where). We ...
+First off, we use a *for loop* like explained before. This seperates the single TEI documents (`//tei:TEI`), that usually start with a TEI node from our whole data set (`collection('/db/data/tgrep')`). We now operate on single documents until the loop finishes. Then we specify a condition for the documents we like to take into focus (where). WeÂ ...
 
 * select all documents where the genre information is "drama",
 * exclude all documents that contain a tei:div where the attribute subtype has a "work:no" value,
@@ -287,16 +288,16 @@ Finally, we prepare an output for every document that fits into the schema/match
 
 So, our repository contains 11 doublets. The output tells us that there are eleven items (presumably eleven items that refer to others and doublets for this reason):
 
-* Arno Holz und Oskar Jerschke: Traumulus. Achtes bis zehntes Tausend, Dresden: Carl Reißner, 1909.Author in TG Rep: Jerschke, Oskar [link](http://textgridrep.de/browse.html?id=textgrid:qmsf.0)
-* Carl Laufs: Pension Schöller. Nach einer Idee von W. Jacoby, elfte Auflage, Berlin: Eduard Bloch Theaterverlag, [o.J.].Author in TG Rep: Jacoby, Wilhelm [link](http://textgridrep.de/browse.html?id=textgrid:qm9f.0)
-* Hermann Goetz: Der Widerspenstigen Zähmung. Komische Oper in vier Akten, nach Shakespeares gleichnamigen Lustspiel frei bearbeitet von Joseph Viktor Widmann, Musik von Hermann Goetz, Zürich, Wien, München: Apollo-Verlag, [ca. 1925].Author in TG Rep: Goetz, Hermann Gustav [link](http://textgridrep.de/browse.html?id=textgrid:nkbw.0)
-* Johann Friedrich Reichardt: Die Geisterinsel. Ein Singspiel in drey Akten, in: Friedrich Wilhelm Gotter: Literarischer Nachlass, Gotha: J. Perthes, 1802, S. 419–564.Author in TG Rep: Einsiedel, Friedrich Hildebrand von [link](http://textgridrep.de/browse.html?id=textgrid:mv72.0)
-* Johann Strauß: Die Fledermaus. Operette in drei Aufzügen, Text nach H. Meilhac und L. Halévy von C. Haffner und Richard Genée, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1976.Author in TG Rep: Genée, Richard [link](http://textgridrep.de/browse.html?id=textgrid:n7s2.0)
-* Ludwig van Beethoven: Fidelio. Oper in zwei Aufzügen, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1970.Author in TG Rep: Breuning, Stephan von [link](http://textgridrep.de/browse.html?id=textgrid:krfk.0)
-* Ludwig van Beethoven: Fidelio. Oper in zwei Aufzügen, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1970.Author in TG Rep: Treitschke, Georg Friedrich [link](http://textgridrep.de/browse.html?id=textgrid:wfsf.0)
-* Naturalismus_– Dramen. Lyrik. Prosa. Herausgegeben und mit einem Nachwort von Ursula Münchow, Band 1: 1885–1891, Berlin und Weimar: Aufbau, 1970.Author in TG Rep: Schlaf, Johannes [link](http://textgridrep.de/browse.html?id=textgrid:v18n.0)
+* Arno Holz und Oskar Jerschke: Traumulus. Achtes bis zehntes Tausend, Dresden: Carl ReiÃŸner, 1909.Author in TG Rep: Jerschke, Oskar [link](http://textgridrep.de/browse.html?id=textgrid:qmsf.0)
+* Carl Laufs: Pension SchÃ¶ller. Nach einer Idee von W. Jacoby, elfte Auflage, Berlin: Eduard Bloch Theaterverlag, [o.J.].Author in TG Rep: Jacoby, Wilhelm [link](http://textgridrep.de/browse.html?id=textgrid:qm9f.0)
+* Hermann Goetz: Der Widerspenstigen ZÃ¤hmung. Komische Oper in vier Akten, nach Shakespeares gleichnamigen Lustspiel frei bearbeitet von Joseph Viktor Widmann, Musik von Hermann Goetz, ZÃ¼rich, Wien, MÃ¼nchen: Apollo-Verlag, [ca. 1925].Author in TG Rep: Goetz, Hermann Gustav [link](http://textgridrep.de/browse.html?id=textgrid:nkbw.0)
+* Johann Friedrich Reichardt: Die Geisterinsel. Ein Singspiel in drey Akten, in: Friedrich Wilhelm Gotter: Literarischer Nachlass, Gotha: J. Perthes, 1802, S. 419â€“564.Author in TG Rep: Einsiedel, Friedrich Hildebrand von [link](http://textgridrep.de/browse.html?id=textgrid:mv72.0)
+* Johann StrauÃŸ: Die Fledermaus. Operette in drei AufzÃ¼gen, Text nach H. Meilhac und L. HalÃ©vy von C. Haffner und Richard GenÃ©e, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1976.Author in TG Rep: GenÃ©e, Richard [link](http://textgridrep.de/browse.html?id=textgrid:n7s2.0)
+* Ludwig van Beethoven: Fidelio. Oper in zwei AufzÃ¼gen, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1970.Author in TG Rep: Breuning, Stephan von [link](http://textgridrep.de/browse.html?id=textgrid:krfk.0)
+* Ludwig van Beethoven: Fidelio. Oper in zwei AufzÃ¼gen, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1970.Author in TG Rep: Treitschke, Georg Friedrich [link](http://textgridrep.de/browse.html?id=textgrid:wfsf.0)
+* Naturalismus_â€“ Dramen. Lyrik. Prosa. Herausgegeben und mit einem Nachwort von Ursula MÃ¼nchow, Band 1: 1885â€“1891, Berlin und Weimar: Aufbau, 1970.Author in TG Rep: Schlaf, Johannes [link](http://textgridrep.de/browse.html?id=textgrid:v18n.0)
 * O.F. Berg und D[avid] Kalisch: Berlin, wie es weint und lacht. Leipzig: Verlag von Phillipp Reclam jun., [o.J.] [Universal-Bibliothek Nr. 4689].Author in TG Rep: Kalisch, David [link](http://textgridrep.de/browse.html?id=textgrid:qn2n.0)
-* Oskar Blumenthal und Gustav Kadelburg: Im weißen Rössl. 16. Auflage, Berlin: Eduard Bloch Verlag, [o.J.].Author in TG Rep: Kadelburg, Gustav [link](http://textgridrep.de/browse.html?id=textgrid:qmt8.0)
+* Oskar Blumenthal und Gustav Kadelburg: Im weiÃŸen RÃ¶ssl. 16. Auflage, Berlin: Eduard Bloch Verlag, [o.J.].Author in TG Rep: Kadelburg, Gustav [link](http://textgridrep.de/browse.html?id=textgrid:qmt8.0)
 * Robert Schumann: Genoveva. Oper in vier Akten nach Tieck und Hebbel, Berlin: Eduard Bloch, [1960].Author in TG Rep: Schumann, Robert Alexander [link](http://textgridrep.de/browse.html?id=textgrid:vkgs.0)
 
 The majority of these texts are opera libretti written by two and one work written by three authors ("Fidelio", that is).
@@ -333,7 +334,7 @@ Please mind that this list still contains 679 texts. We still have to substract 
 * Immermann: "Alexis",
 * Schiller: "Wallenstein".
 
-Plus, we had to delete the two original (non-German) pieces (a French and an Italian one) to get down to 666 pieces. Now our list only contains German-language texts of the genre 'drama'. We uploaded the 666 XML files to our Github (**here**)[https://github.com/DLiNa/project/tree/master/data/textgrid-repository-dramas]. A list of all the plays can be found [**here** (in a .txt file)](https://github.com/DLiNa/project/blob/master/data/TextGrid-Repository---List-of-all-dramatic-texts.txt).
+Plus, we had to delete the two original (non-German) pieces (a French and an Italian one) to get down to 666 pieces. Now our list only contains German-language texts of the genre 'drama'. We uploaded the 666 XML files to our Github [**here**](https://github.com/DLiNa/project/tree/master/data/textgrid-repository-dramas). A list of all the plays can be found [**here** (in a .txt file)](https://github.com/DLiNa/project/blob/master/data/TextGrid-Repository---List-of-all-dramatic-texts.txt).
 
 ## Conclusion
 
