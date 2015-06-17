@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A (Not So) Simple Question and a Somewhat Diabolic Answer"
+title: "A (Not So) Simple Question"
 author: [frank, mathias]
 description: 
 headline: 
