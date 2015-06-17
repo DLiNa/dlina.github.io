@@ -26,13 +26,13 @@ d3.json("/data/{{ page.networkdata }}", function(error, graph) {
       .nodes(graph.nodes)
       .links(graph.links)
       .start();
-  var link = svg.selectAll(".link")
+  var link = svg.selectAll("#netsticky .link")
       .data(graph.links)
     .enter().append("line")
       .attr("class", "link")
       .style("stroke-width", function(d) { return Math.sqrt(d.value); });
 
-  var gnodes = svg.selectAll('g.gnode')
+  var gnodes = svg.selectAll('#netsticky g.gnode')
      .data(graph.nodes)
      .enter()
      .append('g')
