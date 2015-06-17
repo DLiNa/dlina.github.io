@@ -1,22 +1,7 @@
 <div class="row">
-  <div class="medium-9 columns"><div id="network"></div></div>
-  <div class="medium-3 columns end"><div class="col-md-3">
-                <p>The colors indicate the gender of a speaker:<ul style="list-style:none;">
-                    <li>
-                            <svg width="10" height="10">
-                                <circle class="node" cx="5" cy="5" r="5" style="fill: rgb(255, 127, 14);"></circle>
-                            </svg> female</li>
-                    <li>
-                            <svg width="10" height="10">
-                                <circle class="node" cx="5" cy="5" r="5" style="fill: rgb(174, 199, 232);"></circle>
-                            </svg> male</li>
-                    <li>
-                            <svg width="10" height="10">
-                                <circle class="node" cx="5" cy="5" r="5" style="fill: rgb(31, 119, 180);"></circle>
-                            </svg> undefined</li>
-                </ul>
-                </p>
-            </div></div>
+  <div class="medium-12 columns">
+  	<div id="netsticky"></div>
+  </div>
 </div>
 
 
@@ -32,7 +17,7 @@ var force = d3.layout.force()
     .linkDistance(190)
     .size([width, height]);
 
-var svg = d3.select("#network").append("svg")
+var svg = d3.select("#netsticky").append("svg")
     .attr("width", width)
     .attr("height", height);
 
