@@ -1,0 +1,3 @@
+/db/apps/lina/getjson.xqlexerr:ERROR XPTY0004: The actual cardinality for parameter $name/child::lina:alias
+replace(lower-case(untyped-value-check[xs:string, attribute::xml:id]), "\.", "") does not match the cardinality declared in the function's signature: zero or one. Expected cardinality: $name/child::lina:alias
+replace(lower-case(untyped-value-check[xs:string, attribute::xml:id]), "\.", ""), got zero or one. [at line 17, column 78, source: /db/apps/lina/getjson.xql]
