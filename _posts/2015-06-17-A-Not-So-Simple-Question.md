@@ -62,29 +62,29 @@ So we want to find all works that are marked as "drama" in the genre metadata. A
 
 First of all, we need to declare a namespace for technical reasons, just insert as line two:
 
-{% highlight xml %}
-`declare namespace tei = "http://www.tei-c.org/ns/1.0";`
+{% highlight xquery %}
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
 {% endhighlight %}
 
 To address our imported collection we write in the next line:
 
-{% highlight xml %}
-`collection('/db/data/tgrep/')`
+{% highlight xquery %}
+collection('/db/data/tgrep/')
 {% endhighlight %}
 
 If we now want to count the occurences, we can use a count function. Just wrap a `count()` around the specified collection. Then we have to determine what to count, so let's have a look on the genre information as described above: `//tei:textClass/tei:keywords/tei:term[text() = 'drama'])`
 
 Eventually, our query looks like this:
 
-{% highlight xml %}
-`count(collection('/db/data/tgrep/')//tei:textClass/tei:keywords/tei:term[text() = 'drama'])`
+{% highlight xquery %}
+count(collection('/db/data/tgrep/')//tei:textClass/tei:keywords/tei:term[text() = 'drama'])
 {% endhighlight %}
 
 To evaluate it, just click on the "Eval" button and see what happens (after some seconds, anyway).
 
 Most of the stuff in this query is a so-called XPath. Basically, XPath is a language for browsing through and operate on your XML documents. XPath, XSLT and XQuery share the same function set. We can get the same results by using a loop, which helps us generating more readable and sometimes more efficient queries. This is becoming more important in a further step.
 
-{% highlight xml %}
+{% highlight xquery %}
 count(
     for $occurrence in collection('/db/data/tgrep/')//tei:textClass/tei:keywords/tei:term[text() = 'drama']
     return $occurrence)
@@ -92,16 +92,16 @@ count(
 
 Click on "Eval" and wait some seconds after which the output window returns a number, but what is this: 703? **Are there, all of a sudden, 703 dramas in our corpus?** Rhetorical question, of course not. So what happened? Obviously, there are some appearances of "drama" outside of TEI documents. So let's specify our query and look just for occurrences of "drama" as a genre in TEI documents:
 
-{% highlight xml %}
-`count(collection('/db/data/tgrep/')//tei:textClass[ancestor::tei:TEI]/tei:keywords/tei:term[text() = 'drama'])`
+{% highlight xquery %}
+count(collection('/db/data/tgrep/')//tei:textClass[ancestor::tei:TEI]/tei:keywords/tei:term[text() = 'drama'])
 {% endhighlight %}
 
 We added the part `[ancestor::tei:TEI]` which tells the engine that we look for the occurrence in TEI documents only, and we leave the teiCorpus uncounted. "TEI" here is the root element of a TEI document. **And look, we end up with 690.** So we just reproduced the result we got from the search form. The nice thing about reproducing this result is that we don't stop here. With XQuery we can do much more.
 
 For example, let's try substract the 690 from the 703 pieces found earlier. This is interesting as it points us to a bunch of subcorpora in the repository containing a number of dramas. By executing the following query ...
 
-{% highlight xml %}
-`collection('/db/data/tgrep/')//tei:textClass[*not*(ancestor::tei:TEI)]/tei:keywords/tei:term[text() = 'drama']/base-uri()`
+{% highlight xquery %}
+collection('/db/data/tgrep/')//tei:textClass[*not*(ancestor::tei:TEI)]/tei:keywords/tei:term[text() = 'drama']/base-uri()
 {% endhighlight %}
 
 ... we get 13 evidences. More precisely, we get the resource address in the database (comparable to the file name):
@@ -124,8 +124,8 @@ So what about these 13 evidences? They describe a `teiCorpus`, but they are not 
 
 Why does this happen? Because some dramas are split into several TEI subdocuments. How do we find out which? Here's our query:
 
-{% highlight xml %}
-`collection('/db/data/tgrep/')//tei:textClass[not(ancestor::tei:TEI)]/tei:keywords/tei:term[text() = 'drama']/concat(base-uri(), ': ', (ancestor::tei:teiCorpus[1]//tei:fileDesc[1]/tei:titleStmt/tei:title/string())[1], ' >  ', count(ancestor::tei:teiCorpus[1]//tei:TEI))`
+{% highlight xquery %}
+collection('/db/data/tgrep/')//tei:textClass[not(ancestor::tei:TEI)]/tei:keywords/tei:term[text() = 'drama']/concat(base-uri(), ': ', (ancestor::tei:teiCorpus[1]//tei:fileDesc[1]/tei:titleStmt/tei:title/string())[1], ' >  ', count(ancestor::tei:teiCorpus[1]//tei:TEI))
 {% endhighlight %}
 
 Yields the following output:
@@ -146,7 +146,7 @@ Yields the following output:
 
 The number at the end of each line shows us how many dramas are contained in each subcorpus. So, Wagner's "Ring of the Nibelungs": check. Etc. etc. But there are still problems. E.g., Hebbel's ["Nibelungs"](https://de.wikipedia.org/wiki/Die_Nibelungen_(Hebbel)), in reality, consist of merely 3 parts. So let's refine our query to leave out all TEI documents that aren't marked as "drama":
 
-{% highlight xml %}
+{% highlight xquery %}
 collection('/db/data/tgrep/')//tei:textClass[not(ancestor::tei:TEI)]/tei:keywords/tei:term[text() = 'drama']/concat(base-uri(), ': ', (ancestor::tei:teiCorpus[1]//tei:fileDesc[1]/tei:titleStmt/tei:title/string())[1], ' >  ', count(ancestor::tei:teiCorpus[1]//tei:TEI[descendant::tei:term/text() = 'drama']))
 {% endhighlight %}
 
@@ -227,7 +227,7 @@ To determine the differences of the documents created by more than one author we
 
 The referenced TEI document contains a `<div>` structure where in the most cases at least a single `div` element has an attribute like `subtype="work:no"` (sounds confusing, but that way it is made sure that single scenes are not marked as separate "works"). So we can execute a query that gives us all the documents lacking the named attribute:
 
-{% highlight xml %}
+{% highlight xquery %}
 for $item in collection('/db/data/tgrep')//tei:TEI
     where $item/tei:teiHeader//tei:keywords/tei:term/string() = 'drama' and not($item//tei:text//tei:div/@subtype="work:no")
     return ($item//tei:title)[1]
@@ -265,7 +265,7 @@ The result is a list of 27 `tei:title` elements:
 
 The goal of our query was to find out documents, that do not contain the main text. But the very first in the results shows us that we have to refine our query, because we find a different structure in some cases, where no `<div>` element with a specified `subtype="work:no"` was used. To correct our results, we exclude all documents that contain a `<tei:l>` or a `<tei:p>` (because, obviously, then they do contain running text).
 
-{% highlight xml %}
+{% highlight xquery %}
 count(for $item in collection('/db/data/tgrep')//tei:TEI
     where $item/tei:teiHeader//tei:keywords/tei:term/string() = 'drama'
        and not($item//tei:text//tei:div/@subtype="work:no")
@@ -306,7 +306,7 @@ But let's head back to our question and on to the final answer. How many dramas 
 
 A list with all the 666 dramas can be obtained via our GitHub account. Or you can generate it yourself using the following XQuery, where we also added an option in order to prepare this list for a website. You can store this query (Shift+Ctrl+s) for example in the collection `/db/apps/` with the name `tgrep.xql` and call it via [this link](http://localhost:8080/exist/rest/db/apps/tgrep.xql).
 
-{% highlight xml %}
+{% highlight xquery %}
 xquery version "3.0";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare option exist:serialize "method=html5 media-type=text/html";
