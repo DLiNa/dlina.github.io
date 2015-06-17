@@ -4,7 +4,7 @@ title: "Working With Inconsistent Metadata"
 author: [frank, mathias]
 description: 
 headline: 
-modified: 2015-06-18
+modified: 2015-06-19
 category: Updates
 tags: []
 imagefeature: 
@@ -13,7 +13,7 @@ chart:
 comments: true
 featured: false
 ---
-We can't stop celebrating the fact that you can find so many literary corpora on the web today. Just a couple of days ago, Martin Müller released the [Shakespeare His Contemporares (SHC) collection](https://scalablereading.northwestern.edu/2015/06/07/shakespeare-his-contemporaries-shc-released/), a corpus of early English modern drama, encoded in TEI Simple. We will definitely look into this at a later point, but today we will again be bothering you with the depths of the TextGrid Repository.
+Like we wrote yesterday, we can't stop celebrating the fact that you can find so many literary corpora on the web today. Just a couple of days ago, Martin Müller released the [Shakespeare His Contemporares (SHC) collection](https://scalablereading.northwestern.edu/2015/06/07/shakespeare-his-contemporaries-shc-released/), a corpus of early English modern drama, encoded in [TEI Simple}(https://github.com/TEIC/TEI-Simple). We will definitely look into this corpus at a later point, but today we will again be bothering you with the depths of the TextGrid Repository. No worries, today's blog entry won't be as excessive as the one we published yesterday. ;)
 
 If you're trying to work with corpora you didn't build yourself, you will always have the problem of missing metadata. They may be inconsistent or incomplete (or missing), and maybe the corpus builders just didn't have the same metadata needs as yourself.
 
@@ -42,9 +42,50 @@ As we stressed before, we chose this approach just to narrow down the dates of o
 But let's cut to the chase. This is the XQuery we used to work out the year specifications from the metadata provided:
 
 {% highlight xquery %}
+xquery version "3.0";
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+let $collection := '/db/data/textgrid-repository-dramas/'
+return
 
-!!!... your code ...!!!
+((for $filename in xmldb:get-child-resources($collection)
+let $doc := doc($collection || $filename)
+let $noteStmt := for $item in tokenize($doc//tei:notesStmt/tei:note, '\W')[matches(., '\d{3,4}')] return number($item)
+let $noteStmt := number(min($noteStmt))[1]
+let $noteStmt := if ($doc//tei:creation/tei:date/@when or $doc//tei:creation/tei:date/string-length() = 4)
+                    then min((number(min($doc//tei:creation/tei:date/@when)), if ($doc//tei:creation/tei:date/string-length() = 4) then number($doc//tei:creation/tei:date/string()) else ()) )
+                    else $noteStmt
+let $noteStmt := if ($noteStmt gt min($doc//tei:profileDesc/tei:creation/tei:date/number(@notAfter)))
+                    then $doc//tei:profileDesc/tei:creation/tei:date/@notAfter
+                    else $noteStmt
+(: ok, if we still have no date, we look for the pubStmt and compare with creation@notAfter :)
+let $noteStmt :=
+        if (string($noteStmt) = 'NaN') 
+            then 
+                let $pub := number($doc//tei:biblFull/tei:publicationStmt/tei:date/@when)
+                let $creation := number($doc//tei:profileDesc/tei:creation/tei:date/@notAfter)
+                return 
+                min(($pub, $creation))
+            else 
+            $noteStmt
+let $noteStmt :=
+        if (string($noteStmt) = 'NaN') then number($doc//tei:profileDesc/tei:creation/tei:date/@notAfter) else $noteStmt
+let $noteStmt := if (string-length($noteStmt) = 3) then 'BC0' || $noteStmt else $noteStmt
 
+let $target := $noteStmt || '_' || replace(string(($doc//tei:author)[1]), '\s+', '_') || '_-_' || replace(($doc//tei:fileDesc[1]/tei:titleStmt/tei:title/string())[1], '\s+', '_')
+let $mv  :=
+"mv '" || replace(xmldb:decode($filename), "[']",  "'\\$0'") || "' '" || replace($target, "[']",  "'\\$0'") || ".xml'
+"
+
+(:replace($mv, "[!|\(|\)|,|'|:|;|-]", '\\$0'):)
+return
+    $mv)
+    ,   "
+mv 'Aischylos_-_Der_gefesselte_Proemetheus_(-0525--0456).xml' 'BC0470_Aischylos_-_Der_gefesselte_Proemetheus.xml'
+mv 'Aischylos_-_Die_Orestie_(-0525--0456).xml' 'BC0456_Aischylos_-_Die_Orestie.xml'
+mv 'Euripides_-_Iphigenie_in_Aulis_(-0480--0406).xml' 'BC0406_Euripides_-_Iphigenie_in_Aulis.xml'
+mv 'Euripides_-_Medea_(-0480--0406).xml' 'BC0431_Euripides_-_Medea.xml'
+mv 'Plautus,_Titus_Maccius_-_Amphitryon_(-0250--0184).xml' 'BC0207_Plautus,_Titus_Maccius_-_Amphitryon.xml'
+" )
 {% endhighlight %}
 
 Let's conclude this rather dry blog post (hehe) with a little announcement: Building on what we established today, we've got some visual candy for you in the next post!
