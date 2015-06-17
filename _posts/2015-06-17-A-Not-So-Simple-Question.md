@@ -15,11 +15,11 @@ featured: false
 ---
 # How Many Dramatic Pieces Are Contained in the TextGrid Repository?
 
-Simple question, seemingly. Before we try to answer it, a little heads-up: This blog post is **ridiculously long**. It can be regarded a proof-of-concept of what [Mareike König](https://twitter.com/mareike2405) recently said at the ["Wissensspeicher" conference}(http://cms.uni-konstanz.de/wissenschaftsforum/veranstaltungen/veranstaltungsarchiv/veranstaltungen-2015/die-zukunft-der-wissensspeicher/) in Düsseldorf in the beginning of March: "A blog post has no borders, it can be as long as you want." (In [this video, 12:4x mins. in](http://www.lisa.gerda-henkel-stiftung.de/blogs_als_wissensorte_der_forschung?nav_id=5594).) True that! So here we go:
+Simple question, seemingly. Before we try to answer it, a little heads-up: This blog post is **ridiculously long**. It can be regarded a proof-of-concept of what [Mareike König](https://twitter.com/mareike2405) recently said at the ["Wissensspeicher" conference](http://cms.uni-konstanz.de/wissenschaftsforum/veranstaltungen/veranstaltungsarchiv/veranstaltungen-2015/die-zukunft-der-wissensspeicher/) in Düsseldorf in the beginning of March: "A blog post has no borders, it can be as long as you want." ([In **this** video, 12:4x mins. in](http://www.lisa.gerda-henkel-stiftung.de/blogs_als_wissensorte_der_forschung?nav_id=5594).) True that! So here we go:
 
-Corpus building is a crucial task of many Digital Humanities projects and it is great to see a number of new corpora appear on a fairly regular basis. Many of these text collections feature markup following the [TEI Guidelines](http://www.tei-c.org/Guidelines/). Yet, the mere existence of a corpus and its use of standardised formats doesn't release you from working your way through its peculiarities. The purpose of this article is to demonstrate how to start, our example being the vast TextGrid Repository and its subset of German-language drama.
+Corpus building is a crucial task of many Digital Humanities projects and it is great to see a number of new corpora appear on a fairly regular basis. Many of these text collections feature markup following the [TEI Guidelines](http://www.tei-c.org/Guidelines/). Yet, the mere existence of a corpus and its use of standardised formats doesn't relieve you from working your way through its peculiarities. The purpose of this article is to demonstrate how to start, our example being the vast TextGrid Repository and its subset of German-language drama.
 
-The TextGrid Repository is the largest TEI-tagged corpus of German literature released freely under a CC-by 3.0 licence. It contains thousands of literary texts from around 1500 to the 1930ies: novels, theatre pieces, poems, etc. The corpus is accessible through [a web interface here](http://www.textgridrep.de/), but it can also be downloaded in its entirety so you can toy around with it in your own environment.
+The TextGrid Repository is the largest TEI-tagged corpus of German literature released freely under a CC-BY 3.0 licence. It contains thousands of literary texts from around 1500 to the 1930ies: novels, theatre pieces, poems, etc. The corpus is accessible through [a web interface here](http://www.textgridrep.de/), but it can also be downloaded in its entirety so you can toy around with it in your own environment.
 
 ## Using The Web Interface
 
@@ -338,6 +338,6 @@ Plus, we had to delete the two original (non-German) pieces (a French and an Ita
 
 ## Conclusion
 
-Whenever you obtain a corpus on the web, one that you didn't build yourself, you have to deeply look into it to know your way around it. It is by far not obvious to find less texts than TEI documents in a corpus, especially when a prior selection based on metadata should constrain the collection.
+Whenever you obtain a corpus on the web, one that you didn't build yourself, you have to deeply look into it to know your way around it. Trying to answer simple questions as we did for this blog post, can help a great deal to lay the groundwork.
 
 You made it. This paragraph concludes this 30.000-character blog post. Tomorrow we will deliver a shorter piece revolving around inconsistent metadata and what you can do about it. Howgh!
