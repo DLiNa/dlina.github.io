@@ -4,7 +4,7 @@ title: "A (Not So) Simple Question and a Somewhat Diabolic Answer"
 author: [frank, mathias]
 description: 
 headline: 
-modified: 2015-06-17
+modified: 2015-06-18
 category: Updates
 tags: []
 imagefeature: 
@@ -21,26 +21,26 @@ Corpus building is a crucial task of many Digital Humanities projects and it is 
 
 The TextGrid Repository is the largest TEI-tagged corpus of German literature released freely under a CC-BY 3.0 licence. It contains thousands of literary texts from around 1500 to the 1930ies: novels, theatre pieces, poems, etc. The corpus is accessible through [a web interface here](http://www.textgridrep.de/), but it can also be downloaded in its entirety so you can toy around with it in your own environment.
 
-## Using The Web Interface
+## Using the Web Interface
 
-The answer to the question posed in the title of this post seems to be a piece of cake. But it really isn't, for several reasons. By trying to find the correct answer we turn the corpus upside down, which will help us to gain insights on what to expect from the corpus when we start to build our theories around it.
+The answer to the question posed in the title of this post seems to be a piece of cake. But it really isn't, for several reasons. By trying to find the correct answer we turn the corpus upside down which will help us to gain insights on what to expect from the corpus when we start to build our theories around it.
 
 Now, the first approach to answer our seemingly simple question leads us to [the TextGrid Rep search form](http://www.textgridrep.de/). If we look for [`genre:"drama"`](http://www.textgridrep.de/results.html?query=genre%3A"drama"&target=both), the TextGrid Rep search engine returns **1462 results**. These are far too many since a search in the repository also considers the work objects, according to TextGrid's metadata schema ([see the corresponding cheat sheet here](https://dev2.dariah.eu/wiki/download/attachments/12189756/Metadata-Cheatsheet.pdf?api=v2)).
 
-If we limit our search to just XML documents, we get a much better approximation: [`genre:"drama" format:"text/xml"`](http://www.textgridrep.de/results.html?query=genre%3A"drama"+format%3A"text%2Fxml"&target=both). **And we're down to 690!** This is a promising answer and the good news is that we're halfway there. Easy as pie, so far. But wait. We wouldn't have written this article if it was that easy, right? The second half of our trip will take a lot (like, a lot) longer. But we will learn a plethora of things about our corpus.
+If we limit our search to just XML documents we get a much better approximation: [`genre:"drama" format:"text/xml"`](http://www.textgridrep.de/results.html?query=genre%3A"drama"+format%3A"text%2Fxml"&target=both). **And we're down to 690!** This is a promising answer and the good news is that we're halfway there. Easy as pie, so far. But wait. We wouldn't have written this article if it was that easy, right? The second half of our trip will take a lot (like, a lot) longer. But we will learn a plethora of things about our corpus and its constraints.
 
-When we worked our way through the corpus we found that there are certain anomalies:
+When we started getting acquainted with our corpus we found certain anomalies:
 
-* Some dramas are split into parts, each of which comes in its own xml document and has an own TEI header with the genre information we took advantage of before. These parts are counted as own drama when just looking for genre info in TEI headers and, for this reason, distort our results.
+* Some dramas are split into parts, each of which comes in its own XML document and has an own TEI header with the genre information we took advantage of before. These parts are counted as own drama when just looking for genre info in TEI headers and, for this reason, distort our results.
 * The second big problem are doublets. There are several dramatic pieces that appear two or even three times. This happens due to co-authorship. E.g., O. F. Berg und David Kalisch both authored the dramatic text "Berlin, wie es weint und lacht". The full text appears only once in the corpus, but there's a reference to the text for every co-author and it features another genre value which falsely increases the number of dramatic pieces we are counting.
 
 To get rid of those things, we need to dive deep and therefore we need tools that are a bit more flexible, in this case, an XML database where we can build our own queries. So let's download the whole corpus and load it into a local eXist-db instance.
 
-## eXist-db, An Open-Source Native XML Database
+## eXist-db, an Open-Source Native XML Database
 
 If you haven't done so already, please go ahead and [download eXist-db](http://exist-db.org/exist/apps/homepage/index.html). After installing and starting it, you can access it via your browser [on port 8080 of localhost](http://localhost:8080). Just let it run for the time being.
 
-## Loading The Data Into Our Own XML Database
+## Loading the Data into Our Own XML Database
 
 The corpus can be downloaded in one integral zip file [from the TextGrid website](http://www.textgrid.de/Digitale-Bibliothek). There are two versions of the corpus. The differences are explained on the website but aren't that noteworthy, let's just go ahead and download [the second version (390 MB, zipped)](http://www.textgrid.de/fileadmin/digitale-bibliothek/literatur-nur-texte-2.zip). Unzip the file. All XML files are contained in the "12-publication" folder. There is one XML file for every author, 695 altogether (there are several Goethe files, but nevermind). Apart from these exceptions, all the works of the same author are all contained in one file.
 
