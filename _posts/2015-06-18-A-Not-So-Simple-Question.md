@@ -11,54 +11,54 @@ imagefeature:
 mathjax: 
 chart: 
 comments: true
-featured: false
+featured: true
 ---
 # How Many Dramatic Pieces Are Contained in the TextGrid Repository?
 
-Simple question, seemingly. Before we try to answer it, a little heads-up: This blog post is **ridiculously long**. It can be regarded a proof-of-concept of what [Mareike König](https://twitter.com/mareike2405) recently said at the ["Wissensspeicher" conference](http://cms.uni-konstanz.de/wissenschaftsforum/veranstaltungen/veranstaltungsarchiv/veranstaltungen-2015/die-zukunft-der-wissensspeicher/) in Düsseldorf in the beginning of March: "A blog post has no borders, it can be as long as you want." ([In **this** video, 12:4x mins. in](http://www.lisa.gerda-henkel-stiftung.de/blogs_als_wissensorte_der_forschung?nav_id=5594).) True that! So here we go:
+*Simple question, seemingly. Before we try to answer it, a little heads-up: This blog post is **ridiculously long**. It can be regarded a proof-of-concept of what [Mareike König](https://twitter.com/mareike2405) recently said at the ["Wissensspeicher" conference](http://cms.uni-konstanz.de/wissenschaftsforum/veranstaltungen/veranstaltungsarchiv/veranstaltungen-2015/die-zukunft-der-wissensspeicher/) in Düsseldorf in the beginning of March: "Blogs have no space constraints." ([In **this video**, 17:45 mins. in.](http://www.lisa.gerda-henkel-stiftung.de/blogs_als_wissensorte_der_forschung?nav_id=5594)) True that! So here we go:*
 
-Corpus building is a crucial task of many Digital Humanities projects and it is great to see a number of new corpora appear on a fairly regular basis. Many of these text collections feature markup following the [TEI Guidelines](http://www.tei-c.org/Guidelines/). Yet, the mere existence of a corpus and its use of standardised formats doesn't relieve you from working your way through its peculiarities. The purpose of this article is to demonstrate how to start, our example being the vast TextGrid Repository and its subset of German-language drama.
+Corpus building is a crucial task of many Digital Humanities projects and it is great to see a number of new corpora appear on a fairly regular basis. Many of these text collections feature markup following the [TEI Guidelines](http://www.tei-c.org/Guidelines/). However, the mere existence of a corpus and its application of standardised formats doesn't relieve you from working your way through its peculiarities. The purpose of this article is to demonstrate how you can start this process, our example being the vast TextGrid Repository and its subset of German-language drama.
 
-The TextGrid Repository is the largest TEI-tagged corpus of German literature released freely under a CC-BY 3.0 licence. It contains thousands of literary texts from around 1500 to the 1930ies: novels, theatre pieces, poems, etc. The corpus is accessible through [a web interface here](http://www.textgridrep.de/), but it can also be downloaded in its entirety so you can toy around with it in your own environment.
+The TextGrid Repository is the largest TEI-tagged corpus of German literature and released freely under a CC-BY 3.0 licence. It contains thousands of literary texts from around 1500 to the 1930s: novels, theatre pieces, poems, etc. The corpus is accessible through [a web interface here](http://www.textgridrep.de/), but it can also be downloaded in its entirety so you can toy around with it in your own environment.
 
 ## Using the Web Interface
 
 The answer to the question posed in the title of this post seems to be a piece of cake. But it really isn't, for several reasons. By trying to find the correct answer we turn the corpus upside down which will help us to gain insights on what to expect from the corpus when we start to build our theories around it.
 
-Now, the first approach to answer our seemingly simple question leads us to [the TextGrid Rep search form](http://www.textgridrep.de/). If we look for [`genre:"drama"`](http://www.textgridrep.de/results.html?query=genre%3A"drama"&target=both), the TextGrid Rep search engine returns **1462 results**. These are far too many since a search in the repository also considers the work objects, according to TextGrid's metadata schema ([see the corresponding cheat sheet here](https://dev2.dariah.eu/wiki/download/attachments/12189756/Metadata-Cheatsheet.pdf?api=v2)).
+Now, the first approach to answer our not-so-simple question leads us to [the TextGrid Rep search form](http://www.textgridrep.de/). If we make use of existing metadate and enter [`genre:"drama"`](http://www.textgridrep.de/results.html?query=genre%3A"drama"&target=both) as search term, the TextGrid Rep search engine returns **1462 results**. These are far too many due to the fact that a search in the repository also considers 'work objects' according to TextGrid's metadata schema ([see the corresponding cheat sheet here](https://dev2.dariah.eu/wiki/download/attachments/12189756/Metadata-Cheatsheet.pdf?api=v2)).
 
-If we limit our search to just XML documents we get a much better approximation: [`genre:"drama" format:"text/xml"`](http://www.textgridrep.de/results.html?query=genre%3A"drama"+format%3A"text%2Fxml"&target=both). **And we're down to 690!** This is a promising answer and the good news is that we're halfway there. Easy as pie, so far. But wait. We wouldn't have written this article if it was that easy, right? The second half of our trip will take a lot (like, a lot) longer. But we will learn a plethora of things about our corpus and its constraints.
+If we limit our search to just XML documents we get a much better approximation, so let's specify our search term: [`genre:"drama" format:"text/xml"`](http://www.textgridrep.de/results.html?query=genre%3A"drama"+format%3A"text%2Fxml"&target=both). **And we're down to 690!** This is a promising answer and the good news is that we're halfway there. Easy as pie, so far. But wait. We wouldn't have written this article if it was that easy, right? The second half of our trip will take a lot (like, a lot) longer. But we will learn a plethora of things about our corpus and its constraints.
 
 When we started getting acquainted with our corpus we found certain anomalies:
 
-* Some dramas are split into parts, each of which comes in its own XML document and has an own TEI header with the genre information we took advantage of before. These parts are counted as own drama when just looking for genre info in TEI headers and, for this reason, distort our results.
-* The second big problem are doublets. There are several dramatic pieces that appear two or even three times. This happens due to co-authorship. E.g., O. F. Berg und David Kalisch both authored the dramatic text "Berlin, wie es weint und lacht". The full text appears only once in the corpus, but there's a reference to the text for every co-author and it features another genre value which falsely increases the number of dramatic pieces we are counting.
+* Some dramas are split into parts, each of which comes in its own XML document frame and has an own TEI header with the genre information we took advantage of before. These parts are counted as own drama when just looking for genre info in TEI headers and, for this reason, distort our results.
+* The second big problem are doublets. There are several dramatic pieces that appear twice or even three times. This happens due to co-authorship. E.g., O. F. Berg und David Kalisch both authored the dramatic text "Berlin, wie es weint und lacht" (1858). The full text appears only once in the corpus, but there's a reference to the text for every co-author and it features another genre value which falsely increases the number of dramatic pieces we are counting.
 
-To get rid of those things, we need to dive deep and therefore we need tools that are a bit more flexible, in this case, an XML database where we can build our own queries. So let's download the whole corpus and load it into a local eXist-db instance.
+To get rid of those things, we need to dive deep and therefore we need tools that are a bit more flexible, in this case, an XML database that we can use to build our own queries. So let's download the whole corpus and load it into a local eXist-db instance.
 
 ## eXist-db, an Open-Source Native XML Database
 
 If you haven't done so already, please go ahead and [download eXist-db](http://exist-db.org/exist/apps/homepage/index.html). After installing and starting it, you can access it via your browser [on port 8080 of localhost](http://localhost:8080). Just let it run for the time being.
 
-## Loading the Data into Our Own XML Database
+## Loading Data into Our Own XML Database
 
-The corpus can be downloaded in one integral zip file [from the TextGrid website](http://www.textgrid.de/Digitale-Bibliothek). There are two versions of the corpus. The differences are explained on the website but aren't that noteworthy, let's just go ahead and download [the second version (390 MB, zipped)](http://www.textgrid.de/fileadmin/digitale-bibliothek/literatur-nur-texte-2.zip). Unzip the file. All XML files are contained in the "12-publication" folder. There is one XML file for every author, 695 altogether (there are several Goethe files, but nevermind). Apart from these exceptions, all the works of the same author are all contained in one file.
+The corpus can be downloaded as one integral ZIP file [from the TextGrid website](http://www.textgrid.de/Digitale-Bibliothek). There are two versions of the corpus. The differences are explained on the website but aren't that noteworthy, let's just go ahead and download [the second version (390 MB, zipped)](http://www.textgrid.de/fileadmin/digitale-bibliothek/literatur-nur-texte-2.zip). Unzip the file. All XML files are contained in the "12-publication" folder. There is one XML file for every author, 695 altogether (there are several Goethe files, but nevermind). Apart from these exceptions, all the works of the same author are all contained in one file.
 
 Let's load all the XML files into our XML database:
 
-On the eXist-db [dashboard](http://localhost:8080), click on "Collections" and enter login and password (if you haven't specified any login data, enter enter "admin" as login and leave the password field empty). Once there, click on the icon "New collection" (third from right) and then create a new folder for our collection. Let's call it "data", where from now on we will put all our data (hence the name, for good practice!). Let's create a subfolder called "tgrep" for our repository and then click on "Upload resources" (the icon on the far right). Look for the folder we unzipped earlier, change into the "12-publication" folder, mark all XML files (CTRL + A is your friend) so all of them will be loaded into our collection. This will take some time, around 5 minutes, exactly the time you need to squeeze two or three oranges and set you up with a glass of fresh juice.
+On the eXist-db [dashboard](http://localhost:8080), click on "Collections" and enter login and password (if you haven't specified any login data, enter "admin" as login and leave the password field empty). Now click on the icon "New collection" (third from right) and create a new folder for our collection. Let's call it "data" where from now on we will put all our data (hence the name, for good practice!). Let's create a subfolder called "tgrep" for our repository and then click on "Upload resources" (the icon on the far right). Look for the folder we unzipped earlier, change into the "12-publication" folder, mark all XML files (CTRL + A is your friend) so all of them will be loaded into our collection. This will take some time, around 5 minutes, exactly the time you need to squeeze two or three oranges and set you up with a glass of fresh juice.
 
-If you wonder what's contained in the XML files, just double click on one. It'll open a new browser tab and show you the plain XML with some syntax highlighting to easily differentiate between TEI elements, plain text, URLs, etc. The document starts with the `<teiCorpus>` element, meaning that the file contains several works. According to the TextGrid metadata schema based on FRBR there may be several `<teiCorpus>` nested within the root element. So there are several hierarchies that in this case are not uniform, but let's leave that for now.
+If you wonder what's contained in the XML files, just double-click on one. A new browser tab will open and give away the plain XML with some syntax highlighting to easily differentiate between TEI elements, plain text, URLs, etc. The document starts with the `<teiCorpus>` element, meaning that the file contains several works. According to the TextGrid metadata schema based on [FRBR](https://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) there may be several `<teiCorpus>` nested within the root element. So there are several hierarchies which in this case are not uniform, but let's leave that for now.
 
 The genre of a text is specified within the TEI element [textClass](http://www.tei-c.org/release/doc/tei-p5-doc/de/html/ref-textClass.html), the schema ([an .xsd file](https://projects.gwdg.de/projects/digitale-bibliothek/repository/revisions/master/entry/schemas/tei_digibib.xsd#L6924)) specifies that the genre info in this corpus is contained within `<tei:term>`.
 
 So once again, how many dramatic pieces are contained in the TextGrid Repository???
 
-## Building An XQuery
+## Building an XQuery
 
-Let's start with reproducing our 690-result with a basic XQuery. This is to show you that we can easily reproduce by ourself the results of the search form.
+Let's start with reproducing our 690-result with a basic XQuery. This is to show you that we can easily reproduce the results of the search form.
 
-So we want to find all works that are marked as "drama" in the genre metadata. As indicated before, the TEI element `<textClass>` contains info on the genre. So let's count all occurrences in the whole TextGrid Repository by using **eXide**, "a cool, handy, fully integrated editor for working with XQuery, XML, and other resources stored in eXist" ([O'Reilly](https://books.google.de/books?id=0evSBQAAQBAJ&pg=PA29)). Close the Collection Browser and click on the "eXide – XQuery IDE" logo. You should see a fresh sheet for your own queries.
+So we want to find all works that are marked as "drama" in the genre-specific metadata. As indicated before, the TEI element `<textClass>` contains info on the genre. So let's count all occurrences in the whole TextGrid Repository by using **eXide**, "a cool, handy, fully integrated editor for working with XQuery, XML, and other resources stored in eXist" ([O'Reilly](https://books.google.de/books?id=0evSBQAAQBAJ&pg=PA29)). Close the Collection Browser and click on the "eXide – XQuery IDE" logo. You should see a fresh sheet for your own queries.
 
 First of all, we need to declare a namespace for technical reasons, just insert as line two:
 
@@ -82,7 +82,7 @@ count(collection('/db/data/tgrep/')//tei:textClass/tei:keywords/tei:term[text() 
 
 To evaluate it, just click on the "Eval" button and see what happens (after some seconds, anyway).
 
-Most of the stuff in this query is a so-called XPath. Basically, XPath is a language for browsing through and operate on your XML documents. XPath, XSLT and XQuery share the same function set. We can get the same results by using a loop, which helps us generating more readable and sometimes more efficient queries. This is becoming more important in a further step.
+Most of the stuff in this query is a so-called [XPath](https://en.wikipedia.org/wiki/XPath). Basically, XPath is a language for browsing through and operate on your XML documents. XPath, XSLT and XQuery share the same function set. We can get the same results by using a loop, which helps us generating more readable and sometimes more efficient queries. This is becoming more important in a further step:
 
 {% highlight xquery %}
 count(
@@ -96,15 +96,15 @@ Click on "Eval" and wait some seconds after which the output window returns a nu
 count(collection('/db/data/tgrep/')//tei:textClass[ancestor::tei:TEI]/tei:keywords/tei:term[text() = 'drama'])
 {% endhighlight %}
 
-We added the part `[ancestor::tei:TEI]` which tells the engine that we look for the occurrence in TEI documents only, and we leave the teiCorpus uncounted. "TEI" here is the root element of a TEI document. **And look, we end up with 690.** So we just reproduced the result we got from the search form. The nice thing about reproducing this result is that we don't stop here. With XQuery we can do much more.
+We added the part `[ancestor::tei:TEI]` which tells the engine that we look for the occurrence in TEI documents only, and we leave the `teiCorpus` uncounted. "TEI" here is the root element of a TEI document. **And look, we end up at 690, good!** We just reproduced the result we got from the search form. The nice thing about reproducing this result is that we don't stop here. With XQuery we can do much more.
 
-For example, let's try substract the 690 from the 703 pieces found earlier. This is interesting as it points us to a bunch of subcorpora in the repository containing a number of dramas. By executing the following query ...
+For example, let's try to substract the 690 from the 703 pieces found earlier. This is interesting as it points us to a bunch of subcorpora in the repository containing a number of dramas. By executing the following query ...
 
 {% highlight xquery %}
 collection('/db/data/tgrep/')//tei:textClass[*not*(ancestor::tei:TEI)]/tei:keywords/tei:term[text() = 'drama']/base-uri()
 {% endhighlight %}
 
-... we get 13 evidences. More precisely, we get the resource address in the database (comparable to the file name):
+... we get 13 evidences. More precisely, we get the resource addresses within the database (comparable to the file name):
 
 * /db/data/tgrep/Literatur-Arnim%2C-Ludwig-Achim-von.xml
 * /db/data/tgrep/Literatur-Goethe%2C-Johann-Wolfgang-001.xml
@@ -144,7 +144,7 @@ Yields the following output:
 * /db/data/tgrep/Literatur-Scribe%2C-Eugene.xml: La dame blanche > 2
 * /db/data/tgrep/Literatur-Wagner%2C-Richard.xml: Der Ring des Nibelungen > 4
 
-The number at the end of each line shows us how many dramas are contained in each subcorpus. So, Wagner's "Ring of the Nibelungs": check. Etc. etc. But there are still problems. E.g., Hebbel's ["Nibelungs"](https://de.wikipedia.org/wiki/Die_Nibelungen_(Hebbel)), in reality, consist of merely 3 parts. So let's refine our query to leave out all TEI documents that aren't marked as "drama":
+The number at the end of each line shows us how many separate texts are contained in each subcorpus. So, Wagner's "Ring of the Nibelungs": check. Etc. etc. But there are still problems. E.g., Hebbel's ["Nibelungs"](https://de.wikipedia.org/wiki/Die_Nibelungen_(Hebbel)), in reality, consist of merely 3 parts, not 5. So let's refine our query to leave out all TEI documents that aren't marked as "drama":
 
 {% highlight xquery %}
 collection('/db/data/tgrep/')//tei:textClass[not(ancestor::tei:TEI)]/tei:keywords/tei:term[text() = 'drama']/concat(base-uri(), ': ', (ancestor::tei:teiCorpus[1]//tei:fileDesc[1]/tei:titleStmt/tei:title/string())[1], ' >  ', count(ancestor::tei:teiCorpus[1]//tei:TEI[descendant::tei:term/text() = 'drama']))
@@ -164,8 +164,7 @@ collection('/db/data/tgrep/')//tei:textClass[not(ancestor::tei:TEI)]/tei:keyword
 * /db/data/tgrep/Literatur-Scribe%2C-Eugene.xml: La dame blanche > 2
 * /db/data/tgrep/Literatur-Wagner%2C-Richard.xml: Der Ring des Nibelungen > 4
 
-
-What do we have here? We received a list with all segmented dramas. Case in point, this one is not for the computer to solve, but, well, for the humanist's eye. Goethe's "Faust", in our repository, consists of [5 files](http://www.textgridrep.de/browse.html?id=textgrid:11d4b.0):
+What do we have here? We received a list with all segmented dramas. How do we check if these numbers are reliable? Well, this one is not for the computer to decide, but for the humanist's eye. Goethe's "Faust", in our repository, still consists of these [5 files](http://www.textgridrep.de/browse.html?id=textgrid:11d4b.0):
 
 * Zueignung
 * Vorspiel auf dem Theater
@@ -179,21 +178,34 @@ Why this strange segmentation of some of the plays? This has to do with the orig
 
 So let's use the human brain and some semesters of studying literature (hehe) and decide what to count as a separate text and what not:
 
-* /db/data/tgrep/Literatur-Arnim%2C-Ludwig-Achim-von.xml: Halle und Jerusalem > 2 (double drama, new amount of plays: 1)
-* /db/data/tgrep/Literatur-Goethe%2C-Johann-Wolfgang-001.xml: Faust. Eine Tragödie > 5 (two originary parts, new amount of plays: 2)
-* /db/data/tgrep/Literatur-Grabbe%2C-Christian-Dietrich.xml: Die Hohenstaufen > 2 (remains 2)
-* /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Panspiele > 4 (no overlaps in personnel, remains 4)
-* /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Die goldnen Straßen > 3 (no overlaps in personnel, remains 3)
-* /db/data/tgrep/Literatur-Hebbel%2C-Friedrich.xml: Die Nibelungen > 3 (Hebbel himself describes the 3 parts as "one integral tragedy", new amount of plays: 1)
-* /db/data/tgrep/Literatur-Immermann%2C-Karl.xml: Alexis > 3 (overlaps in personnel, new amount of plays: 1)
-* /db/data/tgrep/Literatur-Metastasio%2C-Pietro.xml: L'isola disabitata > 2 (one of the 2 parts is the Italian original, new amount of plays: 1)
-* /db/data/tgrep/Literatur-Scheerbart%2C-Paul.xml: Revolutionäre Theaterbibliothek > 22 (completely several dramas, remains 22)
-* /db/data/tgrep/Literatur-Schiller%2C-Friedrich.xml: Wallenstein > 4 (= new amount of plays: 1)
-* /db/data/tgrep/Literatur-Schnitzler%2C-Arthur.xml: Marionetten > 3 (no overlaps in personnel, new amount of plays: 3)
-* /db/data/tgrep/Literatur-Scribe%2C-Eugene.xml: La dame blanche > 2 (one of the 2 parts is the French original, new amount of plays: 1)
-* /db/data/tgrep/Literatur-Wagner%2C-Richard.xml: Der Ring des Nibelungen > 4 (remains 4)
+* /db/data/tgrep/Literatur-Arnim%2C-Ludwig-Achim-von.xml: Halle und Jerusalem > 2
+    * double drama, new amount of plays: 1
+* /db/data/tgrep/Literatur-Goethe%2C-Johann-Wolfgang-001.xml: Faust. Eine Tragödie > 5
+    * two originary parts, new amount of plays: 2
+* /db/data/tgrep/Literatur-Grabbe%2C-Christian-Dietrich.xml: Die Hohenstaufen > 2
+    * remains 2
+* /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Panspiele > 4
+    * no overlaps in personnel, remains 4
+* /db/data/tgrep/Literatur-Hauptmann%2C-Carl.xml: Die goldnen Straßen > 3
+    * no overlaps in personnel, remains 3
+* /db/data/tgrep/Literatur-Hebbel%2C-Friedrich.xml: Die Nibelungen > 3
+    * Hebbel himself describes the 3 parts as "one integral tragedy", new amount of plays: 1
+* /db/data/tgrep/Literatur-Immermann%2C-Karl.xml: Alexis > 3
+    * overlaps in personnel, new amount of plays: 1
+* /db/data/tgrep/Literatur-Metastasio%2C-Pietro.xml: L'isola disabitata > 2
+    * one of the 2 parts is the Italian original, new amount of plays: 1
+* /db/data/tgrep/Literatur-Scheerbart%2C-Paul.xml: Revolutionäre Theaterbibliothek > 22
+    * completely several dramas, remains 22
+* /db/data/tgrep/Literatur-Schiller%2C-Friedrich.xml: Wallenstein > 4
+    * new amount of plays: 1
+* /db/data/tgrep/Literatur-Schnitzler%2C-Arthur.xml: Marionetten > 3
+    * no overlaps in personnel, new amount of plays: 3
+* /db/data/tgrep/Literatur-Scribe%2C-Eugene.xml: La dame blanche > 2
+    * one of the 2 parts is the French original, new amount of plays: 1
+* /db/data/tgrep/Literatur-Wagner%2C-Richard.xml: Der Ring des Nibelungen > 4
+    * remains 4
 
-You will notice that some of our decisions are contingent. E.g., there *are* overlaps in personnel in the two parts of Goethe's "Faust". And the two parts of "Faust" *have been* put on stage together. Yet we would still argue that they are two different pieces. Others may think otherwise.
+You will notice that some of our decisions are contingent. E.g., there *are* overlaps in personnel in the two parts of Goethe's "Faust". And the two parts of "Faust" *have been* put on stage together (cf. Peter Stein's [Faust-Projekt](https://de.wikipedia.org/wiki/Faust-Projekt)). Yet we would still argue that they are two different pieces. Others may think otherwise.
 
 So we have to substract the results of this equation from our 690 found dramas:
 
@@ -205,9 +217,9 @@ So we have to substract the results of this equation from our 690 found dramas:
 
 Due to the specific mapping in the repository every work is assigned to all of its authors which falsely doubles the number of dramas in cases of co-authorship. The full text can be found in only one of those documents and the others just contain the title and a reference (`tei:ref`) to the full text. If a piece has two authors, it has got two TEI headers. So when looking for occurrences of the string "genre" in the TEI element `textClass`, we're counting the drama twice. But altogether, that one's easy-peasy, we just have to substract the redundant item.
 
-But how do we find out how many theatre pieces are counted twice when using our previous query? This is the last step in order to answer our question!
+But how do we find out how many theatre pieces are counted twice when using our previous query? This is the last step in order to answer our central question!
 
-To determine the differences of the documents created by more than one author we have to look at the TEI code. The `<text>` node we find in Kalisch's document is not empty which makes it a bit more complicated:
+To determine the differences of the documents created by more than one author we have to look at the TEI code. The `<text>` node we find [in Kalisch's document](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:qn2m.0/data) is not empty which makes it a bit more complicated:
 
 {% highlight xml %}
 <text>
@@ -225,7 +237,7 @@ To determine the differences of the documents created by more than one author we
 </text>
 {% endhighlight %}
 
-The referenced TEI document contains a `<div>` structure where in the most cases at least a single `div` element has an attribute like `subtype="work:no"` (sounds confusing, but that way it is made sure that single scenes are not marked as separate "works"). So we can execute a query that gives us all the documents lacking the named attribute:
+The referenced TEI document contains a `<div>` structure where in most cases at least one `div` element has an attribute like `subtype="work:no"` (sounds confusing, but that way it is made sure that single scenes are not marked as separate "works"). So we can execute a query that gives us all the documents lacking the named attribute:
 
 {% highlight xquery %}
 for $item in collection('/db/data/tgrep')//tei:TEI
@@ -263,7 +275,7 @@ The result is a list of 27 `tei:title` elements:
 * `<title xmlns="http://www.tei-c.org/ns/1.0">Gespenstersonate</title>`
 * `<title xmlns="http://www.tei-c.org/ns/1.0">Fidelio</title>`
 
-The goal of our query was to find out documents, that do not contain the main text. But the very first in the results shows us that we have to refine our query, because we find a different structure in some cases, where no `<div>` element with a specified `subtype="work:no"` was used. To correct our results, we exclude all documents that contain a `<tei:l>` or a `<tei:p>` (because, obviously, then they do contain running text).
+The goal of our query was to find documents that don't feature the actual text of a drama. But the very first results shows us that we have to refine our query because we find a different structure in some cases, where no `<div>` element with a specified `subtype="work:no"` was used. To correct our results, we exclude all documents that contain a `<tei:l>` or a `<tei:p>` (because, obviously, then they *do* contain running text):
 
 {% highlight xquery %}
 count(for $item in collection('/db/data/tgrep')//tei:TEI
@@ -274,19 +286,18 @@ count(for $item in collection('/db/data/tgrep')//tei:TEI
     return $item)
 {% endhighlight %}
 
-Ok, let's try to translate this query into a more readable form:
+Ok, let's try to translate this query into a humanly readable form:
 
-First off, we use a *for loop* like explained before. This seperates the single TEI documents (`//tei:TEI`), that usually start with a TEI node from our whole data set (`collection('/db/data/tgrep')`). We now operate on single documents until the loop finishes. Then we specify a condition for the documents we like to take into focus (where). We ...
+First off, we use a `for` loop like explained before. This seperates the single TEI documents (`//tei:TEI`) which usually start with a TEI node from our whole data set (`collection('/db/data/tgrep')`). We now operate on single documents until the loop finishes. Then we specify a condition for the documents we like to take into focus (the `where` part). We ...
 
-* select all documents where the genre information is "drama",
-* exclude all documents that contain a tei:div where the attribute subtype has a "work:no" value,
-* also exclude every document that contains at least a single tei:l and last not least,
-* finally exclude all documents with at least a single paragraph.
+* select all documents where the genre specification is "drama",
+* exclude all documents that contain a `tei:div` where the attribute subtype has a "work:no" value,
+* also exclude every document that contains at least a single `tei:l` and, finally,
+* exclude all documents with at least a single paragraph.
 
-For the exclusion, we are aware of the ancestor elements of the node, so we exclude documents only, if we find the `tei:div`, `tei:l` and `tei:p` inside `tei:text`.
-Finally, we prepare an output for every document that fits into the schema/matches our pattern: First the title information from the `teiHeader` (`tei:sourceDesc/tei:biblFull/tei:titleStmt/tei:title`) and the author information as well. To get more than one result, one can seperate different outputs with a comma, but the brackets around the term are mandatory. If you forget these engine will leave the loop and ask why no `$item` variable was set for the second expression. So we have to combine both queries inside the brackets.
+Regarding the exclusion part, we are aware of the ancestor elements of the node, so we exclude documents only if we find the `tei:div`, `tei:l` and `tei:p` inside `tei:text`. Then we prepare an output for every document that fits into the schema/matches our pattern: First the title information from the `teiHeader` (`tei:sourceDesc/tei:biblFull/tei:titleStmt/tei:title`) and the author information as well. To get more than one result, one can seperate different outputs with a comma, but the brackets around the term are mandatory. If you forget them the engine will leave the loop and ask why no `$item` variable was set for the second expression. So we have to combine both queries inside the brackets.
 
-So, our repository contains 11 doublets. The output tells us that there are eleven items (presumably eleven items that refer to others and doublets for this reason):
+Now, our repository contains 11 doublets. The output tells us that there are 11 items (presumably 11 items that refer to others and doublets for this reason):
 
 * Arno Holz und Oskar Jerschke: Traumulus. Achtes bis zehntes Tausend, Dresden: Carl Reißner, 1909.Author in TG Rep: Jerschke, Oskar ([link](http://textgridrep.de/browse.html?id=textgrid:qmsf.0))
 * Carl Laufs: Pension Schöller. Nach einer Idee von W. Jacoby, elfte Auflage, Berlin: Eduard Bloch Theaterverlag, [o.J.].Author in TG Rep: Jacoby, Wilhelm ([link](http://textgridrep.de/browse.html?id=textgrid:qm9f.0))
@@ -300,11 +311,11 @@ So, our repository contains 11 doublets. The output tells us that there are elev
 * Oskar Blumenthal und Gustav Kadelburg: Im weißen Rössl. 16. Auflage, Berlin: Eduard Bloch Verlag, [o.J.].Author in TG Rep: Kadelburg, Gustav ([link](http://textgridrep.de/browse.html?id=textgrid:qmt8.0))
 * Robert Schumann: Genoveva. Oper in vier Akten nach Tieck und Hebbel, Berlin: Eduard Bloch, [1960].Author in TG Rep: Schumann, Robert Alexander ([link](http://textgridrep.de/browse.html?id=textgrid:vkgs.0))
 
-The majority of these texts are opera libretti written by two and one work written by three authors ("Fidelio", that is).
+The majority of these texts are opera libretti written by two authors and one work written by three collaborators (Beethoven's "Fidelio", to be precise).
 
-But let's head back to our question and on to the final answer. How many dramas are contained in the TextGrid Rep? For that to answer, we just have to substract these 11 doublets and we end up at: **666 dramas!** A bit diabolic, but, in the end, just a number. (Speaking of which, do you know the story of Route 666 and how it was renamed to Route 491? [It's a fun story, check Wikipedia.](https://en.wikipedia.org/wiki/U.S._Route_491#U.S._Route_666))
+But let's jump to our initial question and to the final answer. How many dramas are contained in the TextGrid Rep? For that to answer, we just have to substract these 11 doublets and we end up at: **666 dramas!** A bit diabolic, but, in the end, just a number. (Speaking of which, have you hears the story of Route 666 and how it was renamed to Route 491? [It's a fun story, check Wikipedia.](https://en.wikipedia.org/wiki/U.S._Route_491#U.S._Route_666))
 
-A list with all the 666 dramas can be obtained via our GitHub account. Or you can generate it yourself using the following XQuery, where we also added an option in order to prepare this list for a website. You can store this query (Shift+Ctrl+s) for example in the collection `/db/apps/` with the name `tgrep.xql` and call it via [this link](http://localhost:8080/exist/rest/db/apps/tgrep.xql).
+A list with all the 666 dramas can be obtained via our GitHub account. Or, you can generate it yourself using the following XQuery where we also added an option in order to prepare this list for a website. You can store this query (Shift+Ctrl+s), for example, within the `/db/apps/` collection using the filename `tgrep.xql` and call it via [this link](http://localhost:8080/exist/rest/db/apps/tgrep.xql).
 
 {% highlight xquery %}
 xquery version "3.0";
@@ -334,10 +345,10 @@ Please mind that this list still contains 679 texts. We still have to substract 
 * Immermann: "Alexis",
 * Schiller: "Wallenstein".
 
-Plus, we had to delete the two original (non-German) pieces (a French and an Italian one) to get down to 666 pieces. Now our list only contains German-language texts of the genre 'drama'. We uploaded the 666 XML files to our Github [**here**](https://github.com/DLiNa/project/tree/master/data/textgrid-repository-dramas). A list of all the plays can be found [**here** (in a .txt file)](https://github.com/DLiNa/project/blob/master/data/TextGrid-Repository---List-of-all-dramatic-texts.txt).
+Plus, we had to delete the two original (non-German) pieces (a French and an Italian one) to get down to our 666 pieces. Now our list only contains German-language texts of the genre 'drama'. We uploaded the 666 XML files to our Github [**here**](https://github.com/DLiNa/project/tree/master/data/textgrid-repository-dramas). A list of all the plays can be found [**here** (in a .txt file)](https://github.com/DLiNa/project/blob/master/data/TextGrid-Repository---List-of-all-dramatic-texts.txt).
 
 ## Conclusion
 
-Whenever you obtain a corpus on the web, one that you didn't build yourself, you have to deeply look into it to know your way around it. Trying to answer simple questions as we did for this blog post, can help a great deal to lay the groundwork.
+Whenever you obtain a corpus on the web, one that you didn't build yourself, you have to deeply look into it to know your way around it. Trying to answer simple questions as we did in this blog post can help a great deal to lay the groundwork.
 
-You made it. This paragraph concludes this 30.000-character blog post. Tomorrow we will deliver a shorter piece revolving around inconsistent metadata and what you can do about it. Howgh!
+So now you made it. This paragraph concludes this 30.000-character blog post. Tomorrow we will deliver a shorter piece revolving around inconsistent metadata and what you can do about it. Howgh!
