@@ -15,7 +15,7 @@ featured: false
 ---
 # How Many Dramatic Pieces Are Contained in the TextGrid Repository?
 
-Simple question, seemingly. Before we try to answer it, a little heads-up: This blog post is **ridiculously long**. It can be regarded a proof-of-concept of what [Mareike König](https://twitter.com/mareike2405) recently said at the "Wissensspeicher" conference: "A blog post has no borders, it can be as long as you want." (In [this video, 12:4x mins. in](http://www.lisa.gerda-henkel-stiftung.de/blogs_als_wissensorte_der_forschung?nav_id=5594).) True that! So here we go:
+Simple question, seemingly. Before we try to answer it, a little heads-up: This blog post is **ridiculously long**. It can be regarded a proof-of-concept of what [Mareike König](https://twitter.com/mareike2405) recently said at the ["Wissensspeicher" conference}(http://cms.uni-konstanz.de/wissenschaftsforum/veranstaltungen/veranstaltungsarchiv/veranstaltungen-2015/die-zukunft-der-wissensspeicher/) in Düsseldorf in the beginning of March: "A blog post has no borders, it can be as long as you want." (In [this video, 12:4x mins. in](http://www.lisa.gerda-henkel-stiftung.de/blogs_als_wissensorte_der_forschung?nav_id=5594).) True that! So here we go:
 
 Corpus building is a crucial task of many Digital Humanities projects and it is great to see a number of new corpora appear on a fairly regular basis. Many of these text collections feature markup following the [TEI Guidelines](http://www.tei-c.org/Guidelines/). Yet, the mere existence of a corpus and its use of standardised formats doesn't release you from working your way through its peculiarities. The purpose of this article is to demonstrate how to start, our example being the vast TextGrid Repository and its subset of German-language drama.
 
@@ -25,7 +25,7 @@ The TextGrid Repository is the largest TEI-tagged corpus of German literature re
 
 The answer to the question posed in the title of this post seems to be a piece of cake. But it really isn't, for several reasons. By trying to find the correct answer we turn the corpus upside down, which will help us to gain insights on what to expect from the corpus when we start to build our theories around it.
 
-Now, the first approach to answer our seemingly simple question leads us to [the TextGrid Rep search form](http://www.textgridrep.de/). If we look for [`genre:"drama"`](http://www.textgridrep.de/results.html?query=genre%3A"drama"&target=both), the TextGrid Rep search engine returns 1462 results. These are far too many since a search in the repository also considers the work objects, according to TextGrid's metadata schema ([see the corresponding cheat sheet here](https://dev2.dariah.eu/wiki/download/attachments/12189756/Metadata-Cheatsheet.pdf?api=v2)).
+Now, the first approach to answer our seemingly simple question leads us to [the TextGrid Rep search form](http://www.textgridrep.de/). If we look for [`genre:"drama"`](http://www.textgridrep.de/results.html?query=genre%3A"drama"&target=both), the TextGrid Rep search engine returns **1462 results**. These are far too many since a search in the repository also considers the work objects, according to TextGrid's metadata schema ([see the corresponding cheat sheet here](https://dev2.dariah.eu/wiki/download/attachments/12189756/Metadata-Cheatsheet.pdf?api=v2)).
 
 If we limit our search to just XML documents, we get a much better approximation: [`genre:"drama" format:"text/xml"`](http://www.textgridrep.de/results.html?query=genre%3A"drama"+format%3A"text%2Fxml"&target=both). **And we're down to 690!** This is a promising answer and the good news is that we're halfway there. Easy as pie, so far. But wait. We wouldn't have written this article if it was that easy, right? The second half of our trip will take a lot (like, a lot) longer. But we will learn a plethora of things about our corpus.
 
@@ -197,7 +197,7 @@ You will notice that some of our decisions are contingent. E.g., there *are* ove
 
 So we have to substract the results of this equation from our 690 found dramas:
 
-`690-((2-1)+(5-2)+(2-2)+(4-4)+(3-3)+(3-1)+(3-1)+(2-1)+(22-22)+(4-1)+(3-3)+(2-1)+(4-4)) = 690–13`
+`690-((2-1)+(5-2)+(2-2)+(4-4)+(3-3)+(3-1)+(3-1)+(2-1)+(22-22)+(4-1)+(3-3)+(2-1)+(4-4)) = 690-13`
 
 **And we're down to 677 dramas.** We're almost there! But there's another thing we came across while working on the corpus: doublets.
 
@@ -235,33 +235,33 @@ for $item in collection('/db/data/tgrep')//tei:TEI
 
 The result is a list of 27 `tei:title` elements:
 
-* <title xmlns="http://www.tei-c.org/ns/1.0">Der gefesselte Proemetheus</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Fidelio</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Die Geisterinsel</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Iphigenie in Aulis</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Medea</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Die Fledermaus</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Die jüngste Walpurgisnacht</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Zueignung</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Vorspiel auf dem Theater</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Prolog im Himmel</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Der Widerspenstigen Zähmung</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Pension Schöller</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Traumulus</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Im weißen Rößl</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Berlin, wie es weint und lacht</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Die Pfandung</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Der Besuch um Mitternacht</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Ablaßkrämer</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Doktor Faustus</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Das Mirakel</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Prolog</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Die Familie Selicke</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Genoveva</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">König Ödipus</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Antigone</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Gespenstersonate</title>
-* <title xmlns="http://www.tei-c.org/ns/1.0">Fidelio</title>
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Der gefesselte Proemetheus</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Fidelio</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Die Geisterinsel</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Iphigenie in Aulis</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Medea</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Die Fledermaus</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Die jüngste Walpurgisnacht</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Zueignung</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Vorspiel auf dem Theater</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Prolog im Himmel</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Der Widerspenstigen Zähmung</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Pension Schöller</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Traumulus</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Im weißen Rößl</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Berlin, wie es weint und lacht</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Die Pfandung</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Der Besuch um Mitternacht</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Ablaßkrämer</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Doktor Faustus</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Das Mirakel</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Prolog</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Die Familie Selicke</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Genoveva</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">König Ödipus</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Antigone</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Gespenstersonate</title>`
+* `<title xmlns="http://www.tei-c.org/ns/1.0">Fidelio</title>`
 
 The goal of our query was to find out documents, that do not contain the main text. But the very first in the results shows us that we have to refine our query, because we find a different structure in some cases, where no `<div>` element with a specified `subtype="work:no"` was used. To correct our results, we exclude all documents that contain a `<tei:l>` or a `<tei:p>` (because, obviously, then they do contain running text).
 
@@ -288,21 +288,21 @@ Finally, we prepare an output for every document that fits into the schema/match
 
 So, our repository contains 11 doublets. The output tells us that there are eleven items (presumably eleven items that refer to others and doublets for this reason):
 
-* Arno Holz und Oskar Jerschke: Traumulus. Achtes bis zehntes Tausend, Dresden: Carl Reißner, 1909.Author in TG Rep: Jerschke, Oskar [link](http://textgridrep.de/browse.html?id=textgrid:qmsf.0)
-* Carl Laufs: Pension Schöller. Nach einer Idee von W. Jacoby, elfte Auflage, Berlin: Eduard Bloch Theaterverlag, [o.J.].Author in TG Rep: Jacoby, Wilhelm [link](http://textgridrep.de/browse.html?id=textgrid:qm9f.0)
-* Hermann Goetz: Der Widerspenstigen Zähmung. Komische Oper in vier Akten, nach Shakespeares gleichnamigen Lustspiel frei bearbeitet von Joseph Viktor Widmann, Musik von Hermann Goetz, Zürich, Wien, München: Apollo-Verlag, [ca. 1925].Author in TG Rep: Goetz, Hermann Gustav [link](http://textgridrep.de/browse.html?id=textgrid:nkbw.0)
-* Johann Friedrich Reichardt: Die Geisterinsel. Ein Singspiel in drey Akten, in: Friedrich Wilhelm Gotter: Literarischer Nachlass, Gotha: J. Perthes, 1802, S. 419–564.Author in TG Rep: Einsiedel, Friedrich Hildebrand von [link](http://textgridrep.de/browse.html?id=textgrid:mv72.0)
-* Johann Strauß: Die Fledermaus. Operette in drei Aufzügen, Text nach H. Meilhac und L. Halévy von C. Haffner und Richard Genée, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1976.Author in TG Rep: Genée, Richard [link](http://textgridrep.de/browse.html?id=textgrid:n7s2.0)
-* Ludwig van Beethoven: Fidelio. Oper in zwei Aufzügen, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1970.Author in TG Rep: Breuning, Stephan von [link](http://textgridrep.de/browse.html?id=textgrid:krfk.0)
-* Ludwig van Beethoven: Fidelio. Oper in zwei Aufzügen, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1970.Author in TG Rep: Treitschke, Georg Friedrich [link](http://textgridrep.de/browse.html?id=textgrid:wfsf.0)
-* Naturalismus_– Dramen. Lyrik. Prosa. Herausgegeben und mit einem Nachwort von Ursula Münchow, Band 1: 1885–1891, Berlin und Weimar: Aufbau, 1970.Author in TG Rep: Schlaf, Johannes [link](http://textgridrep.de/browse.html?id=textgrid:v18n.0)
-* O.F. Berg und D[avid] Kalisch: Berlin, wie es weint und lacht. Leipzig: Verlag von Phillipp Reclam jun., [o.J.] [Universal-Bibliothek Nr. 4689].Author in TG Rep: Kalisch, David [link](http://textgridrep.de/browse.html?id=textgrid:qn2n.0)
-* Oskar Blumenthal und Gustav Kadelburg: Im weißen Rössl. 16. Auflage, Berlin: Eduard Bloch Verlag, [o.J.].Author in TG Rep: Kadelburg, Gustav [link](http://textgridrep.de/browse.html?id=textgrid:qmt8.0)
-* Robert Schumann: Genoveva. Oper in vier Akten nach Tieck und Hebbel, Berlin: Eduard Bloch, [1960].Author in TG Rep: Schumann, Robert Alexander [link](http://textgridrep.de/browse.html?id=textgrid:vkgs.0)
+* Arno Holz und Oskar Jerschke: Traumulus. Achtes bis zehntes Tausend, Dresden: Carl Reißner, 1909.Author in TG Rep: Jerschke, Oskar ([link](http://textgridrep.de/browse.html?id=textgrid:qmsf.0))
+* Carl Laufs: Pension Schöller. Nach einer Idee von W. Jacoby, elfte Auflage, Berlin: Eduard Bloch Theaterverlag, [o.J.].Author in TG Rep: Jacoby, Wilhelm ([link](http://textgridrep.de/browse.html?id=textgrid:qm9f.0))
+* Hermann Goetz: Der Widerspenstigen Zähmung. Komische Oper in vier Akten, nach Shakespeares gleichnamigen Lustspiel frei bearbeitet von Joseph Viktor Widmann, Musik von Hermann Goetz, Zürich, Wien, München: Apollo-Verlag, [ca. 1925].Author in TG Rep: Goetz, Hermann Gustav ([link](http://textgridrep.de/browse.html?id=textgrid:nkbw.0))
+* Johann Friedrich Reichardt: Die Geisterinsel. Ein Singspiel in drey Akten, in: Friedrich Wilhelm Gotter: Literarischer Nachlass, Gotha: J. Perthes, 1802, S. 419–564.Author in TG Rep: Einsiedel, Friedrich Hildebrand von ([link](http://textgridrep.de/browse.html?id=textgrid:mv72.0))
+* Johann Strauß: Die Fledermaus. Operette in drei Aufzügen, Text nach H. Meilhac und L. Halévy von C. Haffner und Richard Genée, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1976.Author in TG Rep: Genée, Richard ([link](http://textgridrep.de/browse.html?id=textgrid:n7s2.0))
+* Ludwig van Beethoven: Fidelio. Oper in zwei Aufzügen, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1970.Author in TG Rep: Breuning, Stephan von ([link](http://textgridrep.de/browse.html?id=textgrid:krfk.0))
+* Ludwig van Beethoven: Fidelio. Oper in zwei Aufzügen, hg. v. Wilhelm Zentner, Stuttgart: Reclam, 1970.Author in TG Rep: Treitschke, Georg Friedrich ([link](http://textgridrep.de/browse.html?id=textgrid:wfsf.0))
+* Naturalismus_– Dramen. Lyrik. Prosa. Herausgegeben und mit einem Nachwort von Ursula Münchow, Band 1: 1885–1891, Berlin und Weimar: Aufbau, 1970.Author in TG Rep: Schlaf, Johannes ([link](http://textgridrep.de/browse.html?id=textgrid:v18n.0))
+* O.F. Berg und D[avid] Kalisch: Berlin, wie es weint und lacht. Leipzig: Verlag von Phillipp Reclam jun., [o.J.] [Universal-Bibliothek Nr. 4689].Author in TG Rep: Kalisch, David ([link](http://textgridrep.de/browse.html?id=textgrid:qn2n.0))
+* Oskar Blumenthal und Gustav Kadelburg: Im weißen Rössl. 16. Auflage, Berlin: Eduard Bloch Verlag, [o.J.].Author in TG Rep: Kadelburg, Gustav ([link](http://textgridrep.de/browse.html?id=textgrid:qmt8.0))
+* Robert Schumann: Genoveva. Oper in vier Akten nach Tieck und Hebbel, Berlin: Eduard Bloch, [1960].Author in TG Rep: Schumann, Robert Alexander ([link](http://textgridrep.de/browse.html?id=textgrid:vkgs.0))
 
 The majority of these texts are opera libretti written by two and one work written by three authors ("Fidelio", that is).
 
-But let's head back to our question and on to the final answer. How many dramas are contained in the TextGrid Rep? For that to answer, we just have to substract these 11 doublets and we end up at: **666 dramas!** A bit diabolic, but, in the end, just a number. (Speaking of which, do you know the story of Route 666 and how it was renamed to Route 491? [It's a fun story, see Wikipedia.](https://en.wikipedia.org/wiki/U.S._Route_491#U.S._Route_666))
+But let's head back to our question and on to the final answer. How many dramas are contained in the TextGrid Rep? For that to answer, we just have to substract these 11 doublets and we end up at: **666 dramas!** A bit diabolic, but, in the end, just a number. (Speaking of which, do you know the story of Route 666 and how it was renamed to Route 491? [It's a fun story, check Wikipedia.](https://en.wikipedia.org/wiki/U.S._Route_491#U.S._Route_666))
 
 A list with all the 666 dramas can be obtained via our GitHub account. Or you can generate it yourself using the following XQuery, where we also added an option in order to prepare this list for a website. You can store this query (Shift+Ctrl+s) for example in the collection `/db/apps/` with the name `tgrep.xql` and call it via [this link](http://localhost:8080/exist/rest/db/apps/tgrep.xql).
 
