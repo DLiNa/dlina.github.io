@@ -1,3 +1,8 @@
+/* invisible network stuff */
+a[href="#networks"], a[href="#matrix"], h2#networks, h2#matrix  {
+  display: none;
+}
+
 /* tools */
 .cf:before,
 .cf:after {
