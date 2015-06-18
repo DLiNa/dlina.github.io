@@ -87,8 +87,8 @@ kramdown:
     coderay_css: class
 
 prose:
-  rooturl: '_posts'
-  siteurl: 'http://dlina.github.io'
+  rooturl: '/_posts'
+  siteurl: 'https://dlina.github.io'
   relativeLinks: 'http://dlina.github.io/links.jsonp'
   media: 'images'
   metadata:
