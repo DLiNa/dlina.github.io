@@ -5,13 +5,13 @@ author: [frank, mathias]
 description: 
 headline: 
 modified: 2015-06-19
-category:
+category: Updates
 tags: []
 imagefeature: 
 mathjax: 
 chart: 
 comments: true
-featured: false
+featured: true
 ---
 Like we <u>underlined</u> before, we can't stop celebrating the fact that you can find so many literary corpora on the web today. Just a fortnight ago, Martin Müller released the [Shakespeare His Contemporares (SHC) collection](https://scalablereading.northwestern.edu/2015/06/07/shakespeare-his-contemporaries-shc-released/), a corpus of early English modern drama, encoded in [TEI Simple](https://github.com/TEIC/TEI-Simple). We will definitely look into this corpus at a later point, but today we will again be bothering you with the depths of the [TextGrid Repository](https://textgridrep.de/). No worries, today's blog entry won't be as excessive as the one we published [yesterday](/A-Not-So-Simple-Question/). ;)
 
