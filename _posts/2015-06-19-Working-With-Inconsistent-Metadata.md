@@ -88,6 +88,10 @@ mv 'Plautus,_Titus_Maccius_-_Amphitryon_(-0250--0184).xml' 'BC0207_Plautus,_Titu
 " )
 {% endhighlight %}
 
-Let's conclude this rather dry blog post with some eye candy. We will introduce our **dramavis** script at a later point, but here is what it does. It creates network graphs out of our theatre pieces. Then we used ImageMagick to glue together a superposter of all the 666 dramas contained in the TextGrid Repository. Attention: The graphs are all untouched and mostly erroneous due to inconsistent markup. We will discuss the creation of clean network data out of problematic markup in a later post, too. But for now, here's a small version of our superposter in JPG format, the actual PNG version weighs almost 100 MB and will be uploaded later:
+Let's conclude this rather dry blog post with some eye candy. We will introduce our **dramavis** script at a later point, but here is what it does. It creates network graphs out of our theatre pieces. Then we used ImageMagick to glue together a superposter of all the 666 dramas contained in the TextGrid Repository. Attention: The graphs are all untouched and mostly erroneous due to inconsistent markup. We will discuss the creation of clean network data out of problematic markup in a later post, too. But for now, here's a small version of our superposter in JPG format, the actual PNG version weighs almost 100 MB and will be provided later:
 
-TEST
+<figure>
+  <img src="{{ site.url }}/images/tgrep-untouched-dirty-data-superposter-900px.jpg" alt="TextGrid Repository Superposter" style="width:56.25rem">
+</figure>
+
+This is how [Núñez de Balboa](https://en.wikipedia.org/wiki/Vasco_Núñez_de_Balboa) must have felt when he first saw the Pacific Ocean. ;) This superposter of more than 600 plays is an important part of our distant-reading strategy. In this initial state, we used the graphs to find and correct markup errors. It is far easier to look at a graph than read thousands of lines of TEI markup. We will provide a cleaned version of this poster at the end of our run to build a corpus with reliable network data.
