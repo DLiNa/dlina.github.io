@@ -91,5 +91,5 @@ mv 'Plautus,_Titus_Maccius_-_Amphitryon_(-0250--0184).xml' 'BC0207_Plautus,_Titu
 Let's conclude this rather dry blog post with some eye candy. We will introduce our **dramavis** script at a later point, but here is what it does. It creates network graphs out of our theatre pieces. Then we used ImageMagick to glue together a superposter of all the 666 dramas contained in the TextGrid Repository. Attention: The graphs are all untouched and mostly erroneous due to inconsistent markup. We will discuss the creation of clean network data out of problematic markup in a later post, too. But for now, here's a small version of our superposter in JPG format, the actual PNG version weighs almost 100 MB and will be uploaded later:
 
 <figure>
-  <img src="{{ site.url }}/images/tgrep-untouched-dirty-data-superposter-900px.jpg" alt="TextGrid Repository Superposter" style="width:56.25rem">
+  <img src="{{ site.url }}/images/tgrep-untouched-dirty-data-superposter-900px.jpg" alt="TextGrid Repository Superposter (network data ist untreated and thus very buggy)" style="width:56.25rem">
 </figure>
