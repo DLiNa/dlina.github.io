@@ -237,7 +237,7 @@ To determine the differences of the documents created by more than one author we
 </text>
 {% endhighlight %}
 
-The referenced TEI document contains a `<div>` structure where in most cases at least one `div` element has an attribute like `subtype="work:no"` (sounds confusing, but that way it is made sure that single scenes are not marked as separate "works"). So we can execute a query that gives us all the documents lacking the named attribute:
+The `cRef` attribute tells us that the actual text is to be found in the XML file dedicated to the *other* co-author, in this case, O. F. Berg. Now, to be able to distinguish between actual documents containing the dramatic text and documents that only contain a reference, we have to find a distinctive feature. Let's try this one: The [referenced TEI document](http://textgridrep.org/textgrid:kjgj.0) contains `<div>` elements featuring `subtype="work:no"` attributes (this is to make sure that single scenes are not marked as separate "works"). The [Kalisch document](https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:qn2m.0/data) doesn't have this feature, so that's a good way to differentiate between the two. Mind you, you can always find other XML propoerties that suit you better, for example, look for `<sp>` elements (Berg has it, Kalisch does not). But anyway, let's execute a query that gives us all the documents lacking the mentioned `subtype="work:no"` attribute:
 
 {% highlight xquery %}
 for $item in collection('/db/data/tgrep')//tei:TEI
@@ -275,7 +275,7 @@ The result is a list of 27 `tei:title` elements:
 * `<title xmlns="http://www.tei-c.org/ns/1.0">Gespenstersonate</title>`
 * `<title xmlns="http://www.tei-c.org/ns/1.0">Fidelio</title>`
 
-The goal of our query was to find documents that don't feature the actual text of a drama. But the very first results shows us that we have to refine our query because we find a different structure in some cases, where no `<div>` element with a specified `subtype="work:no"` was used. To correct our results, we exclude all documents that contain a `<tei:l>` or a `<tei:p>` (because, obviously, then they *do* contain running text):
+The goal of our query was to find documents that don't feature the actual text of a drama. But the very first result (["Der gefesselte Proemetheus"](http://textgridrep.org/textgrid:jkhx.0)) shows us that we have to refine our query because this play does contain text but does not feature any `<div>` element with a specified `subtype="work:no"` attribute. To correct our results, let's exclude all documents that contain a [`<tei:l>`](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-l.html) or a [`<tei:p>`](http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-p.html) element (because, obviously, then they *do* contain running text):
 
 {% highlight xquery %}
 count(for $item in collection('/db/data/tgrep')//tei:TEI
@@ -283,21 +283,19 @@ count(for $item in collection('/db/data/tgrep')//tei:TEI
        and not($item//tei:text//tei:div/@subtype="work:no")
        and not($item//tei:text//tei:l)
        and not($item//tei:text//tei:p)
-    return $item)
+    return $item//tei:sourceDesc/tei:biblFull/tei:titleStmt/tei:title)
 {% endhighlight %}
 
 Ok, let's try to translate this query into a humanly readable form:
 
-First off, we use a `for` loop like explained before. This seperates the single TEI documents (`//tei:TEI`) which usually start with a TEI node from our whole data set (`collection('/db/data/tgrep')`). We now operate on single documents until the loop finishes. Then we specify a condition for the documents we like to take into focus (the `where` part). We ...
+First off, we use a `for` loop like explained before. This seperates the single TEI documents starting with a TEI node (`//tei:TEI`) from our whole data set (`collection('/db/data/tgrep')`). We now operate on single documents until the loop finishes. Then we specify a condition for the documents we like to take into focus (the `where` part). We ...
 
 * select all documents where the genre specification is "drama",
 * exclude all documents that contain a `tei:div` where the attribute subtype has a "work:no" value,
 * also exclude every document that contains at least a single `tei:l` and, finally,
-* exclude all documents with at least a single paragraph.
+* exclude all documents with at least a single paragraph (`tei:p`).
 
-Regarding the exclusion part, we are aware of the ancestor elements of the node, so we exclude documents only if we find the `tei:div`, `tei:l` and `tei:p` inside `tei:text`. Then we prepare an output for every document that fits into the schema/matches our pattern: First the title information from the `teiHeader` (`tei:sourceDesc/tei:biblFull/tei:titleStmt/tei:title`) and the author information as well. To get more than one result, one can seperate different outputs with a comma, but the brackets around the term are mandatory. If you forget them the engine will leave the loop and ask why no `$item` variable was set for the second expression. So we have to combine both queries inside the brackets.
-
-Now, our repository contains 11 doublets. The output tells us that there are 11 items (presumably 11 items that refer to others and doublets for this reason):
+Regarding the exclusion part, we are aware of the ancestor elements of the node, so we exclude documents only if we find the `tei:div`, `tei:l` and `tei:p` inside `tei:text`. Our loop returns the number of documents that match our pattern. If we omit the `count` function we receive the actual title information from the `teiHeader` (`tei:sourceDesc/tei:biblFull/tei:titleStmt/tei:title`) and the author information as well. So our query returns 11 items which are:
 
 * Arno Holz und Oskar Jerschke: Traumulus. Achtes bis zehntes Tausend, Dresden: Carl Reißner, 1909.Author in TG Rep: Jerschke, Oskar ([link](http://textgridrep.de/browse.html?id=textgrid:qmsf.0))
 * Carl Laufs: Pension Schöller. Nach einer Idee von W. Jacoby, elfte Auflage, Berlin: Eduard Bloch Theaterverlag, [o.J.].Author in TG Rep: Jacoby, Wilhelm ([link](http://textgridrep.de/browse.html?id=textgrid:qm9f.0))
@@ -311,9 +309,9 @@ Now, our repository contains 11 doublets. The output tells us that there are 11 
 * Oskar Blumenthal und Gustav Kadelburg: Im weißen Rössl. 16. Auflage, Berlin: Eduard Bloch Verlag, [o.J.].Author in TG Rep: Kadelburg, Gustav ([link](http://textgridrep.de/browse.html?id=textgrid:qmt8.0))
 * Robert Schumann: Genoveva. Oper in vier Akten nach Tieck und Hebbel, Berlin: Eduard Bloch, [1960].Author in TG Rep: Schumann, Robert Alexander ([link](http://textgridrep.de/browse.html?id=textgrid:vkgs.0))
 
-The majority of these texts are opera libretti written by two authors and one work written by three collaborators (Beethoven's "Fidelio", to be precise).
+The majority of these texts are libretti for operas written by two authors and one work written by three collaborators (Beethoven's "Fidelio", to be precise).
 
-But let's jump to our initial question and to the final answer. How many dramas are contained in the TextGrid Rep? For that to answer, we just have to substract these 11 doublets and we end up at: **666 dramas!** A bit diabolic, but, in the end, just a number. (Speaking of which, have you hears the story of Route 666 and how it was renamed to Route 491? [It's a fun story, check Wikipedia.](https://en.wikipedia.org/wiki/U.S._Route_491#U.S._Route_666))
+But let's jump to our initial question and to the final answer. How many dramas are contained in the TextGrid Rep? For that to answer, we just have to substract these 11 doublets and we end up at: **666 dramas!** A bit diabolic, but, in the end, just a number. (Speaking of which, have you heard the story of Route 666 and how it was renamed to Route 491? [It's a fun story, you can read it on Wikipedia.](https://en.wikipedia.org/wiki/U.S._Route_491#U.S._Route_666))
 
 A list with all the 666 dramas can be obtained via our GitHub account. Or, you can generate it yourself using the following XQuery where we also added an option in order to prepare this list for a website. You can store this query (Shift+Ctrl+s), for example, within the `/db/apps/` collection using the filename `tgrep.xql` and call it via [this link](http://localhost:8080/exist/rest/db/apps/tgrep.xql).
 
