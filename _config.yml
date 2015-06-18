@@ -28,7 +28,7 @@ authors:
     display_name: Frank
     gravatar: 0e4f5ff81e5b1b1976c939b57207bb2d
     email: frank.fischer@zentr.uni-goettingen.de
-    web: http://www.umblaetterer.de/
+    web: http://www.umblaetterer.de
     twitter: umblaetterer
     github: lehkost
   peer:
@@ -36,13 +36,14 @@ authors:
     display_name: Peer
     gravatar: 3995a022afbaf45c8afdd0514d099e63
     email: trilcke@phil.uni-goettingen.de
-    web: http://www.peertrilcke.de/
+    web: http://www.peertrilcke.de
     twitter: peertrilcke
   dario:
     name: Dario Kampkaspar
     display_name: Dario
     email: kampkaspar@hab.de
     gravatar: fe3eb9abca16dcf4c80040b2011c3ce8
+    github: dariok
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   UA-39365944-7
 #google_verify:      
