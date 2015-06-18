@@ -6,8 +6,7 @@ headline: A project somewhere between corpus exploration and studies in the file
 tags: [network analysis, digital humanities, drama, textgrid]
 ---
 {% if site.paginate %}
-	{% for post in paginator.posts %}
-	{% if post.featured == true %}
+	{% for post in paginator.posts | where: "featured" , "true" %}
     <article class="notepad-index-post post row">
         <div class="small-12 medium-3 large-2 columns datetime">
             <span class="notepad-post-meta">
@@ -62,7 +61,7 @@ tags: [network analysis, digital humanities, drama, textgrid]
     	{% endif %}
 	</nav>
 {% else %}
-	{% for post in site.posts %}
+	{% for post in site.posts | where: "layout" , "post" %}
     <article class="notepad-index-post post row">
         <div class="small-12 medium-3 large-2 columns datetime">
             <span class="notepad-post-meta">
@@ -91,12 +90,7 @@ tags: [network analysis, digital humanities, drama, textgrid]
                 	<a href="{{ site.url }}{{ post.url }}">
                         READ MORE
                     </a>
-                </div>
-                <!-- div class="notepad-index-post-tags">
-                {% for tag in post.categories %}<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" title="Other posts from the {{ tag | capitalize }} category">{{ tag | capitalize }}</a>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
-                    
-                </div -->
-            
+                </div>            
         </div>
     </article>
 	{% endfor %}  
