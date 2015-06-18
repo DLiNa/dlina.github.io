@@ -1,7 +1,6 @@
 <footer class="notepad-site-footer">
-    <div class="copyright">
-         <section>All content is licensed under a Creative Commons Attribution 4.0 International License. <a href="{{ site.url }}/about">{{ site.owner.name }}</a> &bull; {{ site.time | date: '%Y' }} 
-<svg
+<div calss="row">
+	 <div class="medium-3 columns"><svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://web.resource.org/cc/"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -154,9 +153,15 @@
 </g>
   </g>
 </svg>
+</div>
+<div class="medium-6 columns"></div>
+    <div class="copyright">
+         <section>All content is licensed under a Creative Commons Attribution 4.0 International License. <a href="{{ site.url }}/about">{{ site.owner.name }}</a> &bull; {{ site.time | date: '%Y' }} 
 </section>
          <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
     </div>
+    </div>
+    <div class="medium-6 columns">
     <div class="social-icons">
         
         {% if site.owner.twitter %}
@@ -202,4 +207,6 @@
     </div>
     
     <div class="cf"></div>
+</div>
+</div>
 </footer>
