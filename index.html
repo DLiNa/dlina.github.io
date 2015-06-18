@@ -66,7 +66,8 @@ tags: [network analysis, digital humanities, drama, textgrid]
     	{% endif %}
 	</nav>
 {% else %}
-	{% for post in site.posts | where: "layout" , "post" %}
+	{% for post in site.posts %}
+	{% if post.featured == true %}
     <article class="notepad-index-post post row">
         <div class="small-12 medium-3 large-2 columns datetime">
             <span class="notepad-post-meta">
@@ -98,5 +99,6 @@ tags: [network analysis, digital humanities, drama, textgrid]
                 </div>            
         </div>
     </article>
+    {% endif %}
 	{% endfor %}  
 {% endif %}
