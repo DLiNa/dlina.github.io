@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network Analysis of Dramatic Texts: New Data"
+title: "Network Analysis of Dramatic Texts"
 author: peer
 description: 
 headline: 
