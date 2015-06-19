@@ -33,7 +33,7 @@ While we were editing our data using our very own *zwischenformat* (roughly tran
 
 All in all, our **DLINA Corpus 15.07 (Codename: Sydney)** comprises **465 dramatic texts**, in the shape of 465 XML *zwischenformat* files.
 
-## Bibliography
+### Bibliography
 
 * Christian Rochow, *Das Drama hohen Stils. Aufklärung und Tragödie in Deutschland (1730–1790)*, Heidelberg 1994 ([DNB](http://d-nb.info/940506319))
 * Eckehard Catholy, *Das deutsche Lustspiel. Von der Aufklärung bis zur Romantik*, Stuttgart 1982 ([DNB](http://d-nb.info/820164496))
