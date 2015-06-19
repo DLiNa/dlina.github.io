@@ -1,0 +1,498 @@
+---
+layout: post
+title: "Editing Rules"
+author: [dario, peer]
+description: 
+headline: 
+modified: 2015-07-19
+category:
+tags: []
+imagefeature: 
+mathjax: 
+chart: 
+comments: true
+featured: false
+---
+
+
+## Rules for editing »the zwischenformat« (LiNA data files)
+* Rule 1
+* Rule 2
+* Rule 3 
+* Rule 4 
+* Rule 5 
+* Rule 6 
+* Rule 7 
+
+
+## Some editing examples
+
+## Rule 1 - example 
+{ highlight xml }
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://raw.githubusercontent.com/DLiNa/project/master/rules/lina.rnc"?>
+<?xml-model href="http://raw.githubusercontent.com/DLiNa/project/master/rules/lina.sch"?>
+{ endhighlight }
+
+## Rule 2 - example 
+### Before editing
+{ highlight xml }
+  <head>
+    <title>Dramen</title>
+    <title>Gottsched, Johann Christoph</title>
+    <title>Der sterbende Cato</title>
+    <author>Gottsched, Johann Christoph</author>
+    <date when="1730"/>
+    <source> </source>
+  </head>
+{ endhighlight }
+
+### After editing
+{ highlight xml }
+	<header>
+    <title>Der sterbende Cato</title>
+    <subtitle>Ein Trauerspiel</subtitle>  
+    <genretitle>Trauerspiel</genretitle>
+    <author>Gottsched, Johann Christoph</author>
+    <date type="print" when="1732">1732</date>
+    <date type="premiere" when="1731">1731</date>
+    <date type="written" when="1730">1730</date>
+    <source>https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:nks0.0/data</source>
+  </header>
+{ endhighlight }
+
+## Rule 3 - example 1 
+### Before editing
+{ highlight xml }
+</personae>
+  <character>
+      <name>ODOARDO GALOTTI</name>
+      <alias xml:id="odoardo_galotti">
+        <name>ODOARDO GALOTTI</name>
+      </alias>
+  </character>
+  <character>
+      <name>ODOARDO </name>
+      <alias xml:id="odoardo">
+        <name>ODOARDO</name>
+      </alias>
+  </character>
+</personae>
+{ endhighlight }
+
+### After editing 
+{ highlight xml }
+<personae>
+  <character>
+      <name>ODOARDO GALOTTI</name>
+      <alias xml:id="odoardo_galotti">
+        <name>ODOARDO GALOTTI</name>
+      </alias>
+      <alias xml:id="odoardo">
+        <name>ODOARDO</name>
+      </alias>
+  </character>
+</personae>
+{ endhighlight }
+
+## Rule 3 - example 2
+### Before editing
+{ highlight xml }
+<personae>
+  <character>
+      <name>MARIANE</name>
+      <alias xml:id="mariane">
+        <name>MARIANE</name>
+      </alias>
+    </character>
+    <character>
+      <name> MARIANENS STIMME </name>
+      <alias xml:id="marianens_stimme">
+        <name>MARIANENS STIMME</name>
+      </alias>
+  </character>
+</personae>
+{ endhighlight }
+
+### After editing 
+{ highlight xml }
+</personae>
+  <character>
+      <name>MARIANE</name>
+      <alias xml:id="mariane">
+        <name>MARIANE</name>
+      </alias>
+      <alias xml:id="marianens_stimme">
+        <name>MARIANENS STIMME</name>
+      </alias>
+  </character>
+</personae>
+{ endhighlight }
+
+## Rule 4 - example 
+### Before editing
+{ highlight xml }
+<text>
+  <sp who="#madame_welldorf_und_luise">
+    <amount n="1" unit="speech_acts"/>
+    <amount n="5" unit="words"/>
+    <amount n="1" unit="lines"/>
+    <amount n="21" unit="chars"/>
+  </sp>
+</text>
+{ endhighlight }
+
+### After editing 
+{ highlight xml }
+<text>
+  <sp who="#madame_welldorf #luise">
+    <amount n="1" unit="speech_acts"/>
+    <amount n="5" unit="words"/>
+    <amount n="1" unit="lines"/>
+    <amount n="21" unit="chars"/>
+  </sp>
+</text>
+{ endhighlight }
+
+## Rule 5 - example 
+### Before editing
+{ highlight xml }
+<personae>
+  <character>
+    <name>ERSTE MAGD</name>
+    <alias xml:id="erste_magd">
+      <name>ERSTE MAGD</name>
+    </alias>
+  </character>
+  <character>
+    <name>ZWEITE MAGD</name>
+    <alias xml:id="zweite_magd">
+      <name>ZWEITE MAGD</name>
+    </alias>
+  </character>
+  <character>
+    <name>DIE BEIDEN MÄGDE</name>
+    <alias xml:id="die_beiden_mägde">
+      <name>DIE BEIDEN MÄGDE</name>
+    </alias>
+  </character>
+</personae>
+<text>
+  <sp who="#die_beiden_mägde">
+    <amount n="1" unit="speech_acts"/>
+    <amount n="7" unit="words"/>
+    <amount n="1" unit="lines"/>
+    <amount n="32" unit="chars"/>
+  </sp>			
+</text>
+{ endhighlight }
+
+### After editing 
+{ highlight xml }
+<personae>
+  <character>
+    <name>ERSTE MAGD</name>
+    <alias xml:id="erste_magd">
+      <name>ERSTE MAGD</name>
+    </alias>
+  </character>
+  <character>
+    <name>ZWEITE MAGD</name>
+    <alias xml:id="zweite_magd">
+      <name>ZWEITE MAGD</name>
+    </alias>
+  </character>
+</personae>
+<text>
+  <sp who="#erste_magd #zweite_magd">
+    <amount n="1" unit="speech_acts"/>
+      <amount n="7" unit="words"/>
+      <amount n="1" unit="lines"/>
+      <amount n="32" unit="chars"/>
+  </sp>
+</text>
+{ endhighlight }
+
+## Rule 5 - example 2
+### Before editing
+{ highlight xml }
+<personae>
+  <character>
+    <name>MADAME WELLDORF</name>
+    <alias xml:id="madame_welldorf">
+      <name>MADAME WELLDORF</name>
+    </alias>
+  </character>
+  <character>
+    <name>LUISE</name>
+    <alias xml:id="luise">
+      <name>LUISE</name>
+    </alias>
+  </character>
+  <character>
+    <name>BEIDE</name>
+    <alias xml:id="beide">
+      <name>BEIDE</name>
+    </alias>
+  </character>
+</personae>
+<text>
+  <sp who="#beide">
+    <amount n="1" unit="speech_acts"/>
+    <amount n="5" unit="words"/>
+    <amount n="1" unit="lines"/>
+    <amount n="21" unit="chars"/>
+  </sp>
+</text>
+{ endhighlight }
+
+### After editing 
+{ highlight xml }
+<personae>
+  <character>
+    <name>MADAME WELLDORF</name>
+    <alias xml:id="madame_welldorf">
+      <name>MADAME WELLDORF</name>
+    </alias>
+  </character>
+  <character>
+    <name>LUISE</name>
+    <alias xml:id="luise">
+      <name>LUISE</name>
+    </alias>
+  </character>
+</personae>
+<text>
+  <sp who="#madame_welldorf #luise">
+    <amount n="1" unit="speech_acts"/>
+    <amount n="5" unit="words"/>
+    <amount n="1" unit="lines"/>
+    <amount n="21" unit="chars"/>
+  </sp>
+</text>
+{ endhighlight }
+
+
+## Rule 5 - example 3
+### Before editing
+{ highlight xml }
+<div>
+    <head>1. Akt</head>
+  <div>
+    <head>Erster Akt</head>
+    <sp who="#mana">
+      <amount n="12" unit="speech_acts"/>
+      <amount n="177" unit="words"/>
+      <amount n="10" unit="lines"/>
+      <amount n="966" unit="chars"/>
+    </sp>
+    <sp who="#sora">
+      <amount n="18" unit="speech_acts"/>
+      <amount n="193" unit="words"/>
+      <amount n="15" unit="lines"/>
+      <amount n="972" unit="chars"/>
+    </sp>
+    <sp who="#feria">
+      <amount n="14" unit="speech_acts"/>
+      <amount n="168" unit="words"/>
+      <amount n="11" unit="lines"/>
+      <amount n="958" unit="chars"/>
+    </sp>
+    <sp who="#lato">
+      <amount n="13" unit="speech_acts"/>
+      <amount n="88" unit="words"/>
+      <amount n="13" unit="lines"/>
+      <amount n="439" unit="chars"/>
+    </sp>
+    <sp who="#alle">
+      <amount n="3" unit="speech_acts"/>
+      <amount n="9" unit="words"/>
+      <amount n="3" unit="lines"/>
+      <amount n="41" unit="chars"/>
+    </sp>
+    <sp who="#andrason">
+      <amount n="39" unit="speech_acts"/>
+      <amount n="1428" unit="words"/>
+      <amount n="23" unit="lines"/>
+      <amount n="7989" unit="chars"/>
+    </sp>
+    <sp who="#mela">
+      <amount n="6" unit="speech_acts"/>
+      <amount n="38" unit="words"/>
+      <amount n="6" unit="lines"/>
+      <amount n="228" unit="chars"/>
+    </sp>
+  </div>
+</div>
+{ endhighlight }
+
+Inspecting speech act and stage direction
+> *Andrason kommt.*
+> FERIA.
+> Sei uns willkommen! herzlich willkommen!
+> ALLE.
+> Willkommen!
+> ANDRASON.
+> Ich umarme dich, meine Schwester! Ich grüße euch, meine Kinder! 
+> Eure Freude macht mich glücklich, eure Liebe tröstet mich.
+
+
+### After editing 
+{ highlight xml }
+<div>
+    <head>1. Akt</head>
+  <div>
+    <head>Erster Akt</head>
+    <sp who="#mana">
+      <amount n="12" unit="speech_acts"/>
+      <amount n="177" unit="words"/>
+      <amount n="10" unit="lines"/>
+      <amount n="966" unit="chars"/>
+    </sp>
+    <sp who="#sora">
+      <amount n="18" unit="speech_acts"/>
+      <amount n="193" unit="words"/>
+      <amount n="15" unit="lines"/>
+      <amount n="972" unit="chars"/>
+    </sp>
+    <sp who="#feria">
+      <amount n="14" unit="speech_acts"/>
+      <amount n="168" unit="words"/>
+      <amount n="11" unit="lines"/>
+      <amount n="958" unit="chars"/>
+    </sp>
+    <sp who="#lato">
+      <amount n="13" unit="speech_acts"/>
+      <amount n="88" unit="words"/>
+      <amount n="13" unit="lines"/>
+      <amount n="439" unit="chars"/>
+    </sp>
+    <sp who="#mana #sora #feria #lato #mela">
+      <amount n="3" unit="speech_acts"/>
+      <amount n="9" unit="words"/>
+      <amount n="3" unit="lines"/>
+      <amount n="41" unit="chars"/>
+    </sp>
+    <sp who="#andrason">
+      <amount n="39" unit="speech_acts"/>
+      <amount n="1428" unit="words"/>
+      <amount n="23" unit="lines"/>
+      <amount n="7989" unit="chars"/>
+    </sp>
+    <sp who="#mela">
+      <amount n="6" unit="speech_acts"/>
+      <amount n="38" unit="words"/>
+      <amount n="6" unit="lines"/>
+      <amount n="228" unit="chars"/>
+    </sp>
+  </div>
+</div>
+{ endhighlight }
+
+## Rule 6 - example
+### Before editing
+{ highlight xml }
+<personae>
+  <character>
+    <name>EIN KAMMERDIENER</name>
+    <alias xml:id="ein_kammerdiener">
+      <name>EIN KAMMERDIENER</name>
+    </alias>
+  </character>
+  <character>
+    <name>KAMMERDIENER</name>
+    <alias xml:id="kammerdiener">
+      <name>KAMMERDIENER</name>
+    </alias>
+  </character>
+</personae>
+{ endhighlight }
+
+Inspecting speech acts and stage directions
+>**1. Akt**
+>**Fünfte Szene**
+>[…]
+> PRÄSIDENT.
+> Zwar du bist mir gewiß. Ich halte dich an deiner eigenen Schurkerei, wie den Schröter am Faden!
+> EIN KAMMERDIENER
+> tritt herein.
+> Hofmarschall von Kalb –
+> PRÄSIDENT.
+> Kommt, wie gerufen. – Er soll mir angenehm sein.
+> *Kammerdiener geht.*
+
+>**2. Akt**
+>**Zweite Szene**
+>*Ein alter Kammerdiener des Fürsten, der ein Schmuckkästchen trägt.*
+> […]
+> KAMMERDIENER.
+> Seine Durchlaucht der Herzog empfehlen sich Mylady zu Gnaden, und 
+> schicken Ihnen diese Brillanten zur Hochzeit. Sie kommen soeben erst aus Venedig.
+
+### After editing 
+{ highlight xml }
+<personae>
+  <character>
+    <name>EIN KAMMERDIENER (PRÄSIDENT)</name>
+    <alias xml:id="ein_kammerdiener_präsident">
+      <name>EIN KAMMERDIENER</name>
+    </alias>
+  </character>
+  <character>
+    <name>EIN KAMMERDIENER (FÜRST)</name>
+    <alias xml:id="kammerdiener_fürst">
+      <name>EIN KAMMERDIENER (FÜRST)</name>
+    </alias>
+  </character>
+</personae>
+{ endhighlight }
+
+## Rule 7 - example
+### Before editing
+{ highlight xml }
+<personae>
+  <character>
+    <name>DAS VOLK</name>
+    <alias xml:id="das_volk">
+      <name>DAS VOLK</name>
+    </alias>
+  </character>
+  <character>
+    <name>DAS GANZE VOLK</name>
+    <alias xml:id="das_ganze_volk">
+      <name>DAS GANZE VOLK</name>
+    </alias>
+  </character>
+  <character>
+    <name>EINIGE VOM VOLK</name>
+    <alias xml:id="einige_vom_volk">
+      <name>EINIGE VOM VOLK</name>
+    </alias>
+  </character>    
+  <character>
+    <name>STIMMEN AUS DEM VOLK</name>
+    <alias xml:id="stimmen_aus_dem_volk">
+      <name>STIMMEN AUS DEM VOLK</name>
+    </alias>
+  </character>
+</personae>
+{ endhighlight }
+
+### After editing 
+{ highlight xml }
+<character>
+  <name>DAS VOLK name>
+  <alias xml:id="das_volk">
+    <name>DAS VOLK</name>
+  </alias>
+  <alias xml:id="das_ganze_volk">
+    <name>DAS GANZE VOLK</name>
+  </alias>
+  <alias xml:id="stimmen_aus_dem_volk">
+    <name>STIMMEN AUS DEM VOLK</name>
+  </alias>
+  <alias xml:id="einige_vom_volk">
+    <name>EINIGE VOM VOLK</name>
+  </alias>
+</character>
+{ endhighlight }
