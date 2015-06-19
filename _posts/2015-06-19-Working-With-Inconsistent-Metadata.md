@@ -88,12 +88,10 @@ mv 'Plautus,_Titus_Maccius_-_Amphitryon_(-0250--0184).xml' 'BC0207_Plautus,_Titu
 " )
 {% endhighlight %}
 
-Let's conclude this rather dry blog post with some eye candy. We will introduce our [**"dramavis"**](https://github.com/lehkost/dramavis) script at a later point, but here is what it does. Among other things, it creates network graphs out of theatre pieces. The resulting PNGs can be glued together using ImageMagick and this is what we did to create a superposter of all the 666 dramas contained in the TextGrid Repository. Attention: In this initial version of the poster, the graphs are mostly erroneous due to inconsistent markup. We mainly used these graphs to find and correct markup errors since it's a lot easier to look at a graph than read thousands of lines of TEI markup. The cleaning of dirty network data based on problematic markup is something we will address later. But for now, here's a small version of our superposter in JPG format, the actual PNG version weighs almost 100 MB and will be uploaded somewhere else:
+Let's conclude this rather dry blog post with some eye candy. We will introduce our [**"dramavis"**](https://github.com/lehkost/dramavis) script at a later point, but here is what it does. Among other things, it creates network graphs out of theatre pieces. The resulting PNGs can be glued together using ImageMagick and this is what we did to create a superposter of all the 666 dramas contained in the TextGrid Repository. Attention: In this initial version of the poster, the graphs are mostly erroneous due to inconsistent markup. We mainly used these graphs to find and correct markup errors since it's a lot easier to look at a graph than read thousands of lines of TEI markup. The cleaning of dirty network data based on problematic markup is something we will address later. But for now, here's a small version of our superposter in JPG format, [the actual PNG version weighs 74 MB and was uploaded to Fighshare](http://dx.doi.org/10.6084/m9.figshare.1454476) where you can download it in all its dubious beauty:
 
 <figure>
   <img src="{{ site.url }}/images/tgrep-untouched-dirty-data-superposter-900px.jpg" alt="TextGrid Repository Superposter" style="width:56.25rem">
 </figure>
 
 Well, this must be how [Núñez de Balboa](https://en.wikipedia.org/wiki/Vasco_Núñez_de_Balboa) felt when he first saw the Pacific Ocean. ;) But apart from looking nice, this little superposter of 666 theatre plays can definitely be part of a distant-reading strategy once it is based on reliable network data, and this is definitely where we're headed.
-
- 
