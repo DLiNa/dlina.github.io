@@ -1,0 +1,40 @@
+---
+layout: post
+title: "The Greatest Chatterbox in German Literatur"
+author: [dario, peer]
+description: 
+headline: 
+modified: 2015-07-19
+category:
+tags: []
+imagefeature: 
+mathjax: 
+chart: 
+comments: true
+featured: false
+---
+
+
+
+|     | Character      | Title                                | Author                      | Chars  | Words | Speech acts | Additional data             |
+|-----|----------------|--------------------------------------|-----------------------------|--------|-------|-------------|-----------------------------|
+| 1   | GEORG          | Ignorabimus                          | Holz, Arno                  | 133443 | 20859 | 952         | [http://dlina.github.io/390/](http://dlina.github.io/390/) |
+| 2   | DUFROY         | Ignorabimus                          | Holz, Arno                  | 107534 | 16588 | 885         | [http://dlina.github.io/390/](http://dlina.github.io/390/) |
+| 3   | FAUST          | Faust. Der Tragödie erster Teil      | Goethe, Johann Wolfgang     | 97546  | 9037  | 225         | [http://dlina.github.io/243/](http://dlina.github.io/243/) |
+| 4   | MEPHISTOPHELES | Faust. Der Tragödie erster Teil      | Goethe, Johann Wolfgang     | 92536  | 8408  | 257         | [http://dlina.github.io/243/](http://dlina.github.io/243/) |
+| 5   | GOTHLAND       | Herzog Theodor von Gothland          | Grabbe, Christian Dietrich  | 86529  | 16325 | 508         | [http://dlina.github.io/158/](http://dlina.github.io/158/) |
+| 6   | HOLLRIEDER     | Sonnenfinsternis                     | Holz, Arno                  | 85600  | 13544 | 663         | [http://dlina.github.io/174/](http://dlina.github.io/174/) |
+| 7   | ONKEL LUDWIG   | Ignorabimus                          | Holz, Arno                  | 79066  | 12322 | 864         | [http://dlina.github.io/390/](http://dlina.github.io/390/) |
+| 8   | LIBUSSA        | Die Gründung Prags                   | Brentano, Clemens           | 70723  | 13139 | 308         | [http://dlina.github.io/384/](http://dlina.github.io/384/) |
+| 9   | FRANZ          | Franz von Sickingen                  | Lassalle, Ferdinand         | 67829  | 12445 | 219         | [http://dlina.github.io/287/](http://dlina.github.io/287/) |
+| 10  | CARDENIO       | Halle                                | Arnim, Ludwig Achim von     | 67167  | 12299 | 237         | [http://dlina.github.io/301/](http://dlina.github.io/301/) |
+| 11  | MARIANNE       | Ignorabimus                          | Holz, Arno                  | 66707  | 10383 | 766         | [http://dlina.github.io/390/](http://dlina.github.io/390/) |
+| 12  | ANATOL         | Anatol                               | Schnitzler, Arthur          | 61885  | 11526 | 723         | [http://dlina.github.io/89/](http://dlina.github.io/89/)  |
+| 13  | FIESCO         | Die Verschwörung des Fiesco zu Genua | Schiller, Friedrich         | 61633  | 10412 | 326         | [http://dlina.github.io/451/](http://dlina.github.io/451/) |
+| 14  | MEPHISTOPHELES | Faust. Der Tragödie zweiter Teil     | Goethe, Johann Wolfgang von | 61231  | 10845 | 240         | [http://dlina.github.io/201/](http://dlina.github.io/201/) |
+| 15  | CROMWELL       | Ein Faust der That                   | Bleibtreu, Karl             | 61034  | 10581 | 257         | [http://dlina.github.io/322/](http://dlina.github.io/322/) |
+| 16  | LA BELLA CENCI | Sonnenfinsternis                     | Holz, Arno                  | 60956  | 10000 | 453         | [http://dlina.github.io/174/](http://dlina.github.io/174/) |
+| 17  | DOKTOR FAUST   | Doktor Faust                         | Soden, Julius von           | 60696  | 10640 | 543         | [http://dlina.github.io/450/](http://dlina.github.io/450/) |
+| 18  | TASSO          | Torquato Tasso                       | Goethe, Johann Wolfgang von | 60095  | 11338 | 123         | [http://dlina.github.io/82/](http://dlina.github.io/82/)  |
+| 19  | FRANZ VON MOOR | Die Räuber                           | Schiller, Friedrich         | 57676  | 10303 | 172         | [http://dlina.github.io/8/](http://dlina.github.io/8/)   |
+| 20  | CARLOS         | Don Carlos, Infant von Spanien       | Schiller, Friedrich         | 55514  | 10444 | 333         | [http://dlina.github.io/217/](http://dlina.github.io/217/) |
