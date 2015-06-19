@@ -61,9 +61,9 @@ The `<segment>`s represent the predefined structures of a drama, acts and scenes
 The representation of drama structure (segmentations, speakers) is at the core of our *zwischenformat*. But it does even more. It captures metadata and it creates complete cast lists for each drama by making use of the `who` attributes.
 
 Our *zwischenformat* consists of three main parts:
-* `<header>`(the metadata)
-* `<personae>`(a cast list created by help of all `who` attributes)
-* `<text>`(drama segmentation and speakers)
+* `<header>` the metadata)
+* `<personae>` (a cast list created by help of all `who` attributes)
+* `<text>` (drama segmentation and speakers)
 
 For example, a complete yet very short and simple one-act drama would be represented like this by our *zwischenformat*:
 
@@ -135,12 +135,12 @@ For example, a complete yet very short and simple one-act drama would be represe
 {% endhighlight %}
 
 The *zwischenformat* is validated against:
-* http://raw.githubusercontent.com/dlina/project/master/rules/lina.rnc
-* http://raw.githubusercontent.com/dlina/project/master/rules/lina.sch
+* [http://raw.githubusercontent.com/dlina/project/master/rules/lina.rnc](http://raw.githubusercontent.com/dlina/project/master/rules/lina.rnc)
+* [http://raw.githubusercontent.com/dlina/project/master/rules/lina.sch}(http://raw.githubusercontent.com/dlina/project/master/rules/lina.sch)
 
 The raw *zwischenformat* versions of our Sydney corpus can be found here (i.e., the 465 files extracted from the TextGrid Repository before we started editing them):
-* https://github.com/dlina/project/tree/master/data/zwischenformat/raw_lina_data
+* [https://github.com/dlina/project/tree/master/data/zwischenformat/raw_lina_data](https://github.com/dlina/project/tree/master/data/zwischenformat/raw_lina_data)
 
 The edited *zwischenformat* files can be found here (this is the deluxe version of our corpus, so to speak, the basis for all further analyses and visualisations; our editing rules will be published at a later point):
-* https://github.com/dlina/project/tree/master/data/zwischenformat
+* [https://github.com/dlina/project/tree/master/data/zwischenformat](https://github.com/dlina/project/tree/master/data/zwischenformat)
 
