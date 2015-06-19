@@ -24,10 +24,9 @@ chart: true
 {% endfor %}
 ## About the Project
 
-In 2013, Peer Trilcke proposed a digitally-driven Literary Network Analysis (DLiNA). Since then, Frank Fischer, Mathias Göbel, and Dario Kampkaspar have joined the working group. In the meantime, we processed hundreds of dramatic texts ranging from Greek tragedies to 20th-century plays. We're especially looking into large German, French, and English corpora. First results have been presented at several conferences, and there's more to come. 
+In 2013, Peer Trilcke proposed a digitally-driven Literary Network Analysis (dlina). Since then, Frank Fischer, Mathias Göbel, and Dario Kampkaspar have joined the working group. In the meantime, we processed hundreds of dramatic texts ranging from Greek tragedies to 20th-century plays. We're especially looking into large German, French, and English corpora. First results have been presented at several conferences, and there's more to come. 
 
-We will publish all our results, code, collections, teaching material here on our Github. Plus, we will keep you posted [on our blog](/recent/).
+We will publish all our results, code, corpora, teaching material here on our GitHub. Plus, we will keep you posted [on our blog](/recent/).
 
 Our next presentation will take place at the DH2015 conference in Sydney, on Thursday, July 2, 2015. [See the full program here (PDF)](http://www.dh2015.org/program/DH2015_Program.pdf).
-
 
