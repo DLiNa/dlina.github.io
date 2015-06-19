@@ -95,3 +95,5 @@ Let's conclude this rather dry blog post with some eye candy. We will introduce 
 </figure>
 
 Well, this must be how [Núñez de Balboa](https://en.wikipedia.org/wiki/Vasco_Núñez_de_Balboa) felt when he first saw the Pacific Ocean. ;) But apart from looking nice, this little superposter of 666 theatre plays can definitely be part of a distant-reading strategy once it is based on reliable network data, and this is definitely where we're headed.
+
+ 
