@@ -15,7 +15,7 @@ featured: false
 ---
 Our research interest focuses primarily on *structural aspects* of dramatic texts. The structural data is extracted from [the 465 dramatic texts that constitute our Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) and then screened and edited before it can be evaluated statistically with regard to literary history.
 
-The structural abstraction is provided by a PHP script that processes the TEI files, collects all the data needed for our purpose and puts it in our own *zwischenformat* (roughly translates as 'intermediate format', the DLINA data format we developed for this project and announced [in our previous post](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/)). The script and what it produces, our *zwischenformat*, represent a structure-oriented form of data mining, so to speak.
+The structural abstraction is provided by a PHP script that processes the TEI files, collects all the data needed for our purpose and puts it in our own *zwischenformat* (roughly translates as 'intermediary format', the DLINA data format we developed for this project and announced [in our previous post](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/)). The script and what it produces, our *zwischenformat*, represent a structure-oriented form of data mining, so to speak.
 
 Let's assume that the basic structure of a drama looks as follows (without paratexts):
 
