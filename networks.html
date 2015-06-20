@@ -1,11 +1,9 @@
 ---
 layout: page
-title: Available Networks
+title: Available Linas
 description:
 ---
 <ul>
-{% assign list_post = site.posts | where:"post.list", "true"  %}
-{% assign sorted_posts = list_posts | sort:"post.title" %}
 {% for post in site.posts %}
 {% if post.list == true %}
     <li>
