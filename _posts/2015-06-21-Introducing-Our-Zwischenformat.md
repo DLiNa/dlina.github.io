@@ -15,7 +15,7 @@ featured: false
 ---
 Our research interest focuses primarily on *structural aspects* of dramatic texts. The structural data is extracted from [the 465 dramatic texts that constitute our Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) and then screened and edited before it can be evaluated statistically, with regard to literary history.
 
-The structural abstraction will be provided by a PHP script that processes all the TEI files contained in the TextGrid Repository and elevates all the data needed for our purpose and puts it in our own *zwischenformat* (roughly translates as 'intermediate format', the DLINA data format we developed for this project and announced [in our previous post](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/)). The script and its purpose, our *zwischenformat*, represent a structure-oriented form of data mining, so to speak.
+The structural abstraction is provided by a PHP script that processes the TEI files, elevates all the data needed for our purpose and puts it in our own *zwischenformat* (roughly translates as 'intermediate format', the DLINA data format we developed for this project and announced [in our previous post](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/)). The script and its purpose, our *zwischenformat*, represent a structure-oriented form of data mining, so to speak.
 
 Let's assume that the basic structure of a drama looks as follows (without paratexts):
 
@@ -36,7 +36,9 @@ Let's assume that the basic structure of a drama looks as follows (without parat
 ...
 {% endhighlight %}
 
-The `<segment>`s represent the predefined structures of a drama, acts and scenes. Our script will extract the structure of segments and speakers from the full-text TEI files and write it into our *zwischenformat*. The actual content of the speeches will be disregarded and is represented by the number of speech acts, words, lines, chars instead, each of which are summarised per occuring character identified via its `who` attribute. Now we're able to see at a glance how many words each character is contributing to a play, and we're able to do that for the whole Sydney corpus. *Stay tuned for a post on the greatest chatterboxes in German literature!* Anyhow, the result looks something like this:
+The `<segment>`s represent the predefined structures of a drama: acts and scenes. Our script will extract the structure of segments and speakers from the full-text TEI files and write it into our *zwischenformat*. The actual content of the speeches is disregarded and represented by the number of speech acts, words, lines, chars instead, each of which are summarised per occuring character identified via its `who` attribute. Now we're able to see at a glance how many words each character is contributing to a play, and we're able to do that for the whole Sydney corpus. Stay tuned for a post on the greatest chatterboxes in German literature, hehe!
+
+Anyhow, the result looks something like this:
 
 {% highlight xml %}
 <text>
@@ -68,7 +70,7 @@ Our *zwischenformat* consists of three main parts (each of which is required):
 
 Plus, there is also an optional part:
 
-* `<documentation>` (for documenting editional decisions that or non-trivial)
+* `<documentation>` (for documenting non-trivial editing decisions)
 
 {% highlight xml %}
 <documentation>
@@ -163,10 +165,12 @@ The edited *zwischenformat* files can be found here (this is the deluxe version 
 
 * [https://github.com/dlina/project/tree/master/data/zwischenformat](https://github.com/dlina/project/tree/master/data/zwischenformat)
 
+And now:
+
 {% highlight xml %}
 <div>
- <sp="#alle">
-  <p>Lang lebe das Zwischenformat!</p>
+ <sp="#everybody_and_their_aunt">
+  <p>Long live the zwischenformat!</p>
  </sp>
 </div>
 {% endhighlight %}
