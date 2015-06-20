@@ -14,6 +14,20 @@ comments: true
 featured: false
 ---
 
+## Introduction
+After the structural data have been extracted to the LiNA zwischenformat, manual intervention is often necessary to improve the data quality and correct errors in the source data. Especially the TextGrid data proved to be quite problematic due to OCR errors and false tagging.
+
+Some of the »external« problems - that is, problems not inherent to the text per se but introduced through automated or manual conversion to a computer readable text and creating the markup - we encountered are:
+* No or insufficient structural data encoded;
+* OCR errors in a speaker's name;
+* stage directions were interpreted as part of the speaker's name
+
+Additionally, there are a few »internal« phenomena - i.e. characteristics typical for a play - that have to be taken into account:
+* Different ways of referring to a person - e.g. the full name might be given on the first appearance and only the given name afterwards;
+* collectives or groups of speakers, e.g. »Alle« (all), »Einige« (some), »Andere« (others);
+* indeterminate speakers, e.g. »Ein Diener« (a servant), »Erster Ritter« (first knight) which might be given the same name but are actually different characters as determined by the setting.
+
+In order to get around these problems, we had to manually edit the LiNA data files. We established a fixed set of rules (see below) to cover the most common problems and added comments to the data files if the changes involved non-trivial interpretation.
 
 ## Rules for editing »the zwischenformat« (LiNA data files)
 * Rule 1
@@ -23,9 +37,6 @@ featured: false
 * Rule 5 
 * Rule 6 
 * Rule 7 
-
-
-## Some editing examples
 
 ## Rule 1 - example 
 { highlight xml }
@@ -496,3 +507,9 @@ Inspecting speech acts and stage directions
   </alias>
 </character>
 { endhighlight }
+
+## Conclusion and caveat
+Using these rules, we were able to work around many of the problems but one always has to bear in mind that that improving the data is still limited by some constraints of the source texts:
+* We had to assume that the structure as given in the source files was generally correct; in a few cases we manually added the missing information to the sources as the results were grossly wrong as was the case with Goethe's »Götz von Berlichingen« where no scenes were tagged.
+* Characters that are not tagged as a speaker will not be recognized. If two speakers speak collectively and are tagged `<sp>Kolja und Mitja</sp>` in the source, the script will correctly recognize both speakers. However, there are instances of incorrect tagging where only one speaker is tagged (and the other might »disappear« into a stage direction). In these cases, the second speaker will not be recognized and thus not present in the zwischenformat data. Usually, it is impossible to recognize these errors on the first glance.
+* Stage directions might be tagged as parts of a speech, and vice versa. This will result in erroneous amounts in the zwischenformat's lina:sp. The worst case is a missing speaker if all that character's utterances were tagged as stage directions.
