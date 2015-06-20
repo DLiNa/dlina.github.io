@@ -68,7 +68,7 @@ var svg = d3.select("#barchart").append("svg")
       .attr("y", function(d) { return y(d.words); })
       .attr("height", function(d) { return height - y(d.words); });
 
-  var sortTimeout = d3.select("input#sort-switch").property("checked", true).each(change);
+  var sortTimeout = d3.select("input#sort-switch").property("checked", flase).each(change);
 
   function change() {
     clearTimeout(sortTimeout);
