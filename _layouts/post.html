@@ -76,10 +76,7 @@ Description: Awesome dude, awesome life
 {% assign authors = page.author.size %}
 {% if authors > 1 %}
 {% for author in page.author %}
- {{ site.authors[author].name }}
-{% unless foorloop.last %} , 
-    {% if forloop.rindex > 2 %}, {% else %} and {% endif %}
-{% endunless %}
+ {{ site.authors[author].name }}{% unless forloop.rindex0 < 2 %}, {% endunless %}{% if forloop.rindex0 == 1 %} and {% endif %}
 {% endfor %}
 {% else %}
 {{ author.name }}
