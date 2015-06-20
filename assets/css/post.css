@@ -361,7 +361,7 @@ html, body, .notepad-post-container, .notepad-post-header {
       font-size: 1rem;
       color: gray;
       font-style: italic; }
-    .notepad-author-info .notepad-post-author .author-website {
+    .notepad-author-info .notepad-post-author {
       font-size: 1rem; }
     .notepad-author-info .notepad-post-author h1 {
       margin: 0;
