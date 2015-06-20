@@ -4,7 +4,9 @@ title: Available Networks
 description:
 ---
 <ul>
-  {% for post in site.posts %}
+{% assign list_post = site.posts | where:"post.list", "true"  %}
+{% assign sorted_posts = list_posts | sort:"post.title" %}
+{% for post in site.posts %}
 {% if post.list == true %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
