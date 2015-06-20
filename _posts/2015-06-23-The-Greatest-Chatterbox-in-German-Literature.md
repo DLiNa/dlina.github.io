@@ -56,177 +56,177 @@ Simply put: In Arno Holz's play, characters speak much more often, but their utt
 In any case, this difference can be explained with the whole different eras that spawned the two plays, the temporal distance amounts to more than a century. Perhaps we're witnessing the difference of two historical styles here: Isn't this difference all about pre-modern vs. modern drama?
 We will discuss this further, of course, since this is the kind of quantitative evidence we are looking for when researching structural styles of dramatic texts.
 
-Well, let's leave the stage to the poets for now. We'll have some text by our winner at first, Arno Holz, followed by some infamous Goethe lines:
+Well, let's leave the stage to the poets for now. At first, we'll have some text by our winner, Arno Holz, followed by some notorious Goethe lines:
 
 ### 1124 characters from *Ignorabimus* (1914)
 
-> GEORG
-> *in diesem Augenblick durch die Tür links; schlanke, nervöse Erscheinung; in ihrer ganzen Haltung den ehemaligen Offizier noch verratend; das dunkle Haar an den Schläfen bereits stark ergraut; Schnurrbart noch dunkel, die Augen hellgrau und durchdringend.*
-> Guten Morgen!
-> MARIANNE
-> *herzklopfend aufgestanden; ihn groß anstarrend; sie hat unwillkürlich versucht, die Blumen etwas zu verbergen.*
-> ...
-> GEORG
-> *unruhig, dabei eine Zigarette rauchend, auf und ab; seine Sprechweise ist hastig knapp.*
-> Du brauchst die Dinger nicht zu verstecken! ... Laßt euch nicht stören!
-> ONKEL LUDWIG
-> *die Blumen ergreifend und sie vor sich hinlegend; ruhig.*
-> Gib sie mir, Kind. Ich werde sie mir oben auf meine stille Stube stellen.
-> MARIANNE
-> *die sich erst jetzt etwas gefaßt hat; stockend; zu Georg.*
-> Hat dir der Diener ... deinen Tee schon gebracht?
-> GEORG
-> *durch dessen Ton fast permanent etwas wie Unruhe, federnde Unzufriedenheit oder Gereiztheit klingt.*
-> Danke. Ich rauche! ... Hatte nur so aus Gewohnheit geschellt. Reflexbewegung! Kann ihn wieder wegtragen. Pferdegetrappel.
-> ONKEL LUDWIG
-> *ablenkend; nach dem Garten hin.*
-> Eine Hitze draußen ...
-> GEORG
-> *kurz; sachlich.*
+> GEORG<br />
+> *in diesem Augenblick durch die Tür links; schlanke, nervöse Erscheinung; in ihrer ganzen Haltung den ehemaligen Offizier noch verratend; das dunkle Haar an den Schläfen bereits stark ergraut; Schnurrbart noch dunkel, die Augen hellgrau und durchdringend.*<br />
+> Guten Morgen!<br />
+> MARIANNE<br />
+> *herzklopfend aufgestanden; ihn groß anstarrend; sie hat unwillkürlich versucht, die Blumen etwas zu verbergen.*<br />
+> ...<br />
+> GEORG<br />
+> *unruhig, dabei eine Zigarette rauchend, auf und ab; seine Sprechweise ist hastig knapp.*<br />
+> Du brauchst die Dinger nicht zu verstecken! ... Laßt euch nicht stören!<br />
+> ONKEL LUDWIG<br />
+> *die Blumen ergreifend und sie vor sich hinlegend; ruhig.*<br />
+> Gib sie mir, Kind. Ich werde sie mir oben auf meine stille Stube stellen.<br />
+> MARIANNE<br />
+> *die sich erst jetzt etwas gefaßt hat; stockend; zu Georg.*<br />
+> Hat dir der Diener ... deinen Tee schon gebracht?<br />
+> GEORG<br />
+> *durch dessen Ton fast permanent etwas wie Unruhe, federnde Unzufriedenheit oder Gereiztheit klingt.*<br />
+> Danke. Ich rauche! ... Hatte nur so aus Gewohnheit geschellt. Reflexbewegung! Kann ihn wieder wegtragen. Pferdegetrappel.<br />
+> ONKEL LUDWIG<br />
+> *ablenkend; nach dem Garten hin.*<br />
+> Eine Hitze draußen ...<br />
+> GEORG<br />
+> *kurz; sachlich.*<br />
 > Ja.
 
 ### 4565 characters from *Faust. Der Tragödie erster Teil* (1808)
 
-> FAUST.
-> Habe nun, ach! Philosophie,
-> Juristerei und Medizin,
-> Und leider auch Theologie
-> Durchaus studiert, mit heißem Bemühn.
-> Da steh' ich nun, ich armer Tor,
-> Und bin so klug als wie zuvor!
-> Heiße Magister, heiße Doktor gar,
-> Und ziehe schon an die zehen Jahr'
-> Herauf, herab und quer und krumm
-> Meine Schüler an der Nase herum –
-> Und sehe, daß wir nichts wissen können!
-> Das will mir schier das Herz verbrennen.
-> Zwar bin ich gescheiter als alle die Laffen,
-> Doktoren, Magister, Schreiber und Pfaffen;
-> Mich plagen keine Skrupel noch Zweifel,
-> Fürchte mich weder vor Hölle noch Teufel –
-> Dafür ist mir auch alle Freud' entrissen,
-> Bilde mir nicht ein, was Rechts zu wissen,
-> Bilde mir nicht ein, ich könnte was lehren,
-> Die Menschen zu bessern und zu bekehren.
-> Auch hab' ich weder Gut noch Geld,
-> Noch Ehr' und Herrlichkeit der Welt;
-> Es möchte kein Hund so länger leben!
-> Drum hab' ich mich der Magie ergeben,
-> Ob mir durch Geistes Kraft und Mund
-> Nicht manch Geheimnis würde kund;
-> Daß ich nicht mehr mit sauerm Schweiß
-> Zu sagen brauche, was ich nicht weiß;
-> Daß ich erkenne, was die Welt
-> Im Innersten zusammenhält,
-> Schau' alle Wirkenskraft und Samen,
+> FAUST.<br />
+> Habe nun, ach! Philosophie,<br />
+> Juristerei und Medizin,<br />
+> Und leider auch Theologie<br />
+> Durchaus studiert, mit heißem Bemühn.<br />
+> Da steh' ich nun, ich armer Tor,<br />
+> Und bin so klug als wie zuvor!<br />
+> Heiße Magister, heiße Doktor gar,<br />
+> Und ziehe schon an die zehen Jahr'<br />
+> Herauf, herab und quer und krumm<br />
+> Meine Schüler an der Nase herum –<br />
+> Und sehe, daß wir nichts wissen können!<br />
+> Das will mir schier das Herz verbrennen.<br />
+> Zwar bin ich gescheiter als alle die Laffen,<br />
+> Doktoren, Magister, Schreiber und Pfaffen;<br />
+> Mich plagen keine Skrupel noch Zweifel,<br />
+> Fürchte mich weder vor Hölle noch Teufel –<br />
+> Dafür ist mir auch alle Freud' entrissen,<br />
+> Bilde mir nicht ein, was Rechts zu wissen,<br />
+> Bilde mir nicht ein, ich könnte was lehren,<br />
+> Die Menschen zu bessern und zu bekehren.<br />
+> Auch hab' ich weder Gut noch Geld,<br />
+> Noch Ehr' und Herrlichkeit der Welt;<br />
+> Es möchte kein Hund so länger leben!<br />
+> Drum hab' ich mich der Magie ergeben,<br />
+> Ob mir durch Geistes Kraft und Mund<br />
+> Nicht manch Geheimnis würde kund;<br />
+> Daß ich nicht mehr mit sauerm Schweiß<br />
+> Zu sagen brauche, was ich nicht weiß;<br />
+> Daß ich erkenne, was die Welt<br />
+> Im Innersten zusammenhält,<br />
+> Schau' alle Wirkenskraft und Samen,<br />
 > Und tu' nicht mehr in Worten kramen.
 
-> O sähst du, voller Mondenschein,
-> Zum letztenmal auf meine Pein,
-> Den ich so manche Mitternacht
-> An diesem Pult herangewacht:
-> Dann über Büchern und Papier,
-> Trübsel'ger Freund, erschienst du mir!
-> Ach! könnt' ich doch auf Bergeshöhn
-> In deinem lieben Lichte gehn,
-> Um Bergeshöhle mit Geistern schweben,
-> Auf Wiesen in deinem Dämmer weben,
-> Von allem Wissensqualm entladen,
+> O sähst du, voller Mondenschein,<br />
+> Zum letztenmal auf meine Pein,<br />
+> Den ich so manche Mitternacht<br />
+> An diesem Pult herangewacht:<br />
+> Dann über Büchern und Papier,<br />
+> Trübsel'ger Freund, erschienst du mir!<br />
+> Ach! könnt' ich doch auf Bergeshöhn<br />
+> In deinem lieben Lichte gehn,<br />
+> Um Bergeshöhle mit Geistern schweben,<br />
+> Auf Wiesen in deinem Dämmer weben,<br />
+> Von allem Wissensqualm entladen,<br />
 > In deinem Tau gesund mich baden!
 
-> Weh! steck' ich in dem Kerker noch?
-> Verfluchtes dumpfes Mauerloch,
-> Wo selbst das liebe Himmelslicht
-> Trüb durch gemalte Scheiben bricht!
-> Beschränkt von diesem Bücherhauf,
-> Den Würme nagen, Staub bedeckt,
-> Den, bis ans hohe Gewölb' hinauf,
-> Ein angeraucht Papier umsteckt;
-> Mit Gläsern, Büchsen rings umstellt,
-> Mit Instrumenten vollgepfropft,
-> Urväter-Hausrat drein gestopft –
+> Weh! steck' ich in dem Kerker noch?<br />
+> Verfluchtes dumpfes Mauerloch,<br />
+> Wo selbst das liebe Himmelslicht<br />
+> Trüb durch gemalte Scheiben bricht!<br />
+> Beschränkt von diesem Bücherhauf,<br />
+> Den Würme nagen, Staub bedeckt,<br />
+> Den, bis ans hohe Gewölb' hinauf,<br />
+> Ein angeraucht Papier umsteckt;<br />
+> Mit Gläsern, Büchsen rings umstellt,<br />
+> Mit Instrumenten vollgepfropft,<br />
+> Urväter-Hausrat drein gestopft –<br />
 > Das ist deine Welt! das heißt eine Welt!
 
-> Und fragst du noch, warum dein Herz
-> Sich bang in deinem Busen klemmt?
-> Warum ein unerklärter Schmerz
-> Dir alle Lebensregung hemmt?
-> Statt der lebendigen Natur,
-> Da Gott die Menschen schuf hinein,
-> Umgibt in Rauch und Moder nur
+> Und fragst du noch, warum dein Herz<br />
+> Sich bang in deinem Busen klemmt?<br />
+> Warum ein unerklärter Schmerz<br />
+> Dir alle Lebensregung hemmt?<br />
+> Statt der lebendigen Natur,<br />
+> Da Gott die Menschen schuf hinein,<br />
+> Umgibt in Rauch und Moder nur<br />
 > Dich Tiergeripp' und Totenbein.
 
-> Flieh! auf! hinaus ins weite Land!
-> Und dies geheimnisvolle Buch,
-> Von Nostradamus' eigner Hand,
-> Ist dir es nicht Geleit genug?
-> Erkennest dann der Sterne Lauf,
-> Und wenn Natur dich unterweist,
-> Dann geht die Seelenkraft dir auf,
-> Wie spricht ein Geist zum andern Geist.
-> Umsonst, daß trocknes Sinnen hier
-> Die heil'gen Zeichen dir erklärt:
-> Ihr schwebt, ihr Geister, neben mir;
+> Flieh! auf! hinaus ins weite Land!<br />
+> Und dies geheimnisvolle Buch,<br />
+> Von Nostradamus' eigner Hand,<br />
+> Ist dir es nicht Geleit genug?<br />
+> Erkennest dann der Sterne Lauf,<br />
+> Und wenn Natur dich unterweist,<br />
+> Dann geht die Seelenkraft dir auf,<br />
+> Wie spricht ein Geist zum andern Geist.<br />
+> Umsonst, daß trocknes Sinnen hier<br />
+> Die heil'gen Zeichen dir erklärt:<br />
+> Ihr schwebt, ihr Geister, neben mir;<br />
 > Antwortet mir, wenn ihr mich hört!
 
 > *Er schlägt das Buch auf und erblickt das Zeichen des Makrokosmus.*
 
-> Ha! welche Wonne fließt in diesem Blick
-> Auf einmal mir durch alle meine Sinnen!
-> Ich fühle junges, heil'ges Lebensglück
-> Neuglühend mir durch Nerv' und Adern rinnen.
-> War es ein Gott, der diese Zeichen schrieb,
-> Die mir das innre Toben stillen,
-> Das arme Herz mit Freude füllen
-> Und mit geheimnisvollem Trieb
-> Die Kräfte der Natur rings um mich her enthüllen?
-> Bin ich ein Gott? Mir wird so licht!
-> Ich schau' in diesen reinen Zügen
-> Die wirkende Natur vor meiner Seele liegen.
-> Jetzt erst erkenn' ich, was der Weise spricht:
-> ›Die Geisterwelt ist nicht verschlossen;
-> Dein Sinn ist zu, dein Herz ist tot!
-> Auf, bade, Schüler, unverdrossen
+> Ha! welche Wonne fließt in diesem Blick<br />
+> Auf einmal mir durch alle meine Sinnen!<br />
+> Ich fühle junges, heil'ges Lebensglück<br />
+> Neuglühend mir durch Nerv' und Adern rinnen.<br />
+> War es ein Gott, der diese Zeichen schrieb,<br />
+> Die mir das innre Toben stillen,<br />
+> Das arme Herz mit Freude füllen<br />
+> Und mit geheimnisvollem Trieb<br />
+> Die Kräfte der Natur rings um mich her enthüllen?<br />
+> Bin ich ein Gott? Mir wird so licht!<br />
+> Ich schau' in diesen reinen Zügen<br />
+> Die wirkende Natur vor meiner Seele liegen.<br />
+> Jetzt erst erkenn' ich, was der Weise spricht:<br />
+> ›Die Geisterwelt ist nicht verschlossen;<br />
+> Dein Sinn ist zu, dein Herz ist tot!<br />
+> Auf, bade, Schüler, unverdrossen<br />
 > Die ird'sche Brust im Morgenrot!‹
 
 > *Er beschaut das Zeichen.*
 
-> Wie alles sich zum Ganzen webt,
-> Eins in dem andern wirkt und lebt!
-> Wie Himmelskräfte auf und nieder steigen
-> Und sich die goldnen Eimer reichen!
-> Mit segenduftenden Schwingen
-> Vom Himmel durch die Erde dringen,
+> Wie alles sich zum Ganzen webt,<br />
+> Eins in dem andern wirkt und lebt!<br />
+> Wie Himmelskräfte auf und nieder steigen<br />
+> Und sich die goldnen Eimer reichen!<br />
+> Mit segenduftenden Schwingen<br />
+> Vom Himmel durch die Erde dringen,<br />
 > Harmonisch all das All durchklingen!
 
-> Welch Schauspiel! Aber ach! ein Schauspiel nur!
-> Wo fass' ich dich, unendliche Natur?
-> Euch Brüste, wo? Ihr Quellen alles Lebens,
-> An denen Himmel und Erde hängt,
-> Dahin die welke Brust sich drängt –
+> Welch Schauspiel! Aber ach! ein Schauspiel nur!<br />
+> Wo fass' ich dich, unendliche Natur?<br />
+> Euch Brüste, wo? Ihr Quellen alles Lebens,<br />
+> An denen Himmel und Erde hängt,<br />
+> Dahin die welke Brust sich drängt –<br />
 > Ihr quellt, ihr tränkt, und schmacht' ich so vergebens?
 
 > *Er schlägt unwillig das Buch um und erblickt das Zeichen des Erdgeistes.*
 
-> Wie anders wirkt dies Zeichen auf mich ein!
-> Du, Geist der Erde, bist mir näher;
-> Schon fühl' ich meine Kräfte höher,
-> Schon glüh' ich wie von neuem Wein,
-> Ich fühle Mut, mich in die Welt zu wagen,
-> Der Erde Weh, der Erde Glück zu tragen,
-> Mit Stürmen mich herumzuschlagen
-> Und in des Schiffbruchs Knirschen nicht zu zagen.
-> Es wölkt sich über mir –
-> Der Mond verbirgt sein Licht –
-> Die Lampe schwindet!
-> Es dampft – Es zucken rote Strahlen
-> Mir um das Haupt – Es weht
-> Ein Schauer vom Gewölb' herab
-> Und faßt mich an!
-> Ich fühl's, du schwebst um mich, erflehter Geist.
-> Enthülle dich!
-> Ha! wie's in meinem Herzen reißt!
-> Zu neuen Gefühlen
-> All' meine Sinnen sich erwühlen!
-> Ich fühle ganz mein Herz dir hingegeben!
+> Wie anders wirkt dies Zeichen auf mich ein!<br />
+> Du, Geist der Erde, bist mir näher;<br />
+> Schon fühl' ich meine Kräfte höher,<br />
+> Schon glüh' ich wie von neuem Wein,<br />
+> Ich fühle Mut, mich in die Welt zu wagen,<br />
+> Der Erde Weh, der Erde Glück zu tragen,<br />
+> Mit Stürmen mich herumzuschlagen<br />
+> Und in des Schiffbruchs Knirschen nicht zu zagen.<br />
+> Es wölkt sich über mir –<br />
+> Der Mond verbirgt sein Licht –<br />
+> Die Lampe schwindet!<br />
+> Es dampft – Es zucken rote Strahlen<br />
+> Mir um das Haupt – Es weht<br />
+> Ein Schauer vom Gewölb' herab<br />
+> Und faßt mich an!<br />
+> Ich fühl's, du schwebst um mich, erflehter Geist.<br />
+> Enthülle dich!<br />
+> Ha! wie's in meinem Herzen reißt!<br />
+> Zu neuen Gefühlen<br />
+> All' meine Sinnen sich erwühlen!<br />
+> Ich fühle ganz mein Herz dir hingegeben!<br />
 > Du mußt! du mußt! und kostet' es mein Leben!
