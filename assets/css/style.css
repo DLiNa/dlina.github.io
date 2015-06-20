@@ -1,9 +1,33 @@
+/* D3js stuff */
+.link {
+	stroke: #ccc;
+}
+.gnode text {
+	pointer-events: none;
+	font-size: 12pt;
+	font-family: "Ubuntu Light", monospace;
+	font-weight: lighter;
+	/*text-transform: lowercase;*/
+	stroke-width: initial;
+}
+.background {
+	fill: #eee;
+}
+line {
+	stroke: #fff;
+}
+text.active {
+	fill: rgb(229, 24, 67); }
+	#matrix text {
+	font-size: 1.1vmin;
+}
+
 /* bar charts */
 #barchart .bar {
   fill: steelblue;
 }
 #barchart .bar:hover {
-  fill: brown;
+  fill: rgb(229, 24, 67);
 }
 #barchart .axis {
   font: 10px sans-serif;
