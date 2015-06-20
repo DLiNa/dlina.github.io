@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "The Biggest Chatterbox in German Literature"
-author: [peer, dario, frank]
+author: [dario, frank, mathias, peer]
 description: 
 headline: 
-modified: 2015-06-22
+modified: 2015-06-23
 category: Updates
 tags: []
 imagefeature: 
