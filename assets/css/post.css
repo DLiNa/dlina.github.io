@@ -1,3 +1,14 @@
+h2, h3, h4 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+code[data-lang] {
+  font-size: medium;
+}
+.highlight {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 /* tools */
 .cf:before,
 .cf:after {
