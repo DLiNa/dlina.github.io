@@ -8,7 +8,7 @@
 d3.tsv("/data/{{ page.amounttsv }}", type, function(error, data) {
 
 var margin = {top: 20, right: 20, bottom: 200, left: 40},
-    width = 35 * data.map(function(d) { return d.wer; }).length - margin.left - margin.right,
+    width = 35 * data.map(function(d) { return d.name; }).length - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
@@ -32,7 +32,7 @@ var svg = d3.select("#barchart").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  x.domain(data.map(function(d) { return d.wer; }));
+  x.domain(data.map(function(d) { return d.name; }));
   y.domain([0, d3.max(data, function(d) { return d.words; })]);
 
   svg.append("g")
@@ -59,7 +59,7 @@ var svg = d3.select("#barchart").append("svg")
       .data(data)
     .enter().append("rect")
       .attr("class", "bar")
-      .attr("x", function(d) { return x(d.wer); })
+      .attr("x", function(d) { return x(d.name); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.words); })
       .attr("height", function(d) { return height - y(d.words); });
