@@ -17,7 +17,7 @@ The DLINA *zwischenformat* we [recently introduced](/Introducing-Our-Zwischenfor
 
 The complete list of all 9,913 characters contained in our corpus can be found [here](https://github.com/dlina/project/blob/master/data/zwischenformat/output/amount-list.csv) (i.e., the average cast list of a play has 21 characters).
 
-But today we're not interested in the list as a whole (we'll get back to that later), but the top 20. Meet the 20 biggester chatterboxes of German literature (omitting the ones who are not in our corpus, of course):
+But today we're not interested in the list as a whole (we'll get back to that later), but the top 20. So may we acquaint you with the biggest chatterboxes of German literature (omitting the ones who are not in our corpus, of course):
 
 |     | Character      | Title                                | Author                      | Chars  | Words | Speech acts | Additional data             |
 |-----|----------------|--------------------------------------|-----------------------------|--------|-------|-------------|-----------------------------|
@@ -44,7 +44,7 @@ But today we're not interested in the list as a whole (we'll get back to that la
 
 The appearance of Arno Holz and his play *Ignorabimus* seems natural, given that it's the longest play in our corpus (cf. [the corresponding blog entry](/Longest-German-Language-Theatre-Plays/)).
 
-But let's have a closer look at the first four lines regardiong only two dramas, Arno Holz's *Ignorabimus* and Goethe's *Faust, part I*. Their values document quite some structural differences between the two texts, or rather, they indicate a completely different way of speaking:
+But let's have a closer look at the first four lines regarding only two dramas, Arno Holz's *Ignorabimus* and Goethe's *Faust, part I*. Their values document quite some structural differences between the two texts, or rather, they indicate a completely different way of speaking:
 
 | 1   | GEORG          | Ignorabimus                          | Holz, Arno                  | 133443 | 20859 | 952         | [http://dlina.github.io/390/](http://dlina.github.io/390/) |
 | 2   | DUFROY         | Ignorabimus                          | Holz, Arno                  | 107534 | 16588 | 885         | [http://dlina.github.io/390/](http://dlina.github.io/390/) |
@@ -53,7 +53,7 @@ But let's have a closer look at the first four lines regardiong only two dramas,
 
 Simply put: In Arno Holz's play, characters speak much more often, but their utterances are quite short and so are the words they use. In Goethe's play, the characters speak less often, but their speeches are much longer, as are the words they use.
 
-In any case, this difference can be explained with the whole different eras that spawned the two plays, the temporal distance amounts to more than a century. Perhaps we're witnessing the difference of two two historical styles here: Isn't this difference all about pre-modern vs. modern drama?
+In any case, this difference can be explained with the whole different eras that spawned the two plays, the temporal distance amounts to more than a century. Perhaps we're witnessing the difference of two historical styles here: Isn't this difference all about pre-modern vs. modern drama?
 We will discuss this further, of course, since this is the kind of quantitative evidence we are looking for when researching structural styles of dramatic texts.
 
 Well, let's leave the stage to the poets for now. We'll have some text by our winner at first, Arno Holz, followed by some infamous Goethe lines:
