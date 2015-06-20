@@ -1,3 +1,4 @@
+/* adjustments */
 h2, h3, h4 {
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -9,6 +10,12 @@ code[data-lang] {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+/* tables in posts now centered*/
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* tools */
 .cf:before,
 .cf:after {
