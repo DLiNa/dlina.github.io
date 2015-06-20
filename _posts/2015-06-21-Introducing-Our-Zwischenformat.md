@@ -15,7 +15,7 @@ featured: false
 ---
 Our research interest focuses primarily on *structural aspects* of dramatic texts. The structural data is extracted from [the 465 dramatic texts that constitute our Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) and then screened and edited before it can be evaluated statistically, with regard to literary history.
 
-The structural abstraction will be provided by a PHP script that processes all the TEI files contained in the TextGrid Repository and elevates all the data needed for our purpose and puts it in our own *zwischendatenformat* (the 'intermediate format' we announced in our previous post). The script and its purpose, our *zwischendatenformat*, represent a structure-oriented form of data mining, so to speak.
+The structural abstraction will be provided by a PHP script that processes all the TEI files contained in the TextGrid Repository and elevates all the data needed for our purpose and puts it in our own *zwischenformat* (roughly translates as 'intermediate format', the DLINA data format we developed for this project and announced [in our previous post](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/)). The script and its purpose, our *zwischenformat*, represent a structure-oriented form of data mining, so to speak.
 
 Let's assume that the basic structure of a drama looks as follows (without paratexts):
 
@@ -36,7 +36,7 @@ Let's assume that the basic structure of a drama looks as follows (without parat
 ...
 {% endhighlight %}
 
-The `<segment>`s represent the predefined structures of a drama, acts and scenes. Our script will extract the structure of segments and speakers from the full-text TEI files and write it into our *zwischendatenformat*. The actual content of the speeches will be disregarded and is represented by the number of speech acts, words, lines, chars instead, each of which are summarised per occuring character identified via its `who` attribute. The result looks something like this:
+The `<segment>`s represent the predefined structures of a drama, acts and scenes. Our script will extract the structure of segments and speakers from the full-text TEI files and write it into our *zwischenformat*. The actual content of the speeches will be disregarded and is represented by the number of speech acts, words, lines, chars instead, each of which are summarised per occuring character identified via its `who` attribute. Now we're able to see at a glance how many words each character is contributing to a play, and we're able to do that for the whole Sydney corpus. *Stay tuned for a post on the greatest chatterboxes in German literature!* Anyhow, the result looks something like this:
 
 {% highlight xml %}
 <text>
@@ -60,13 +60,28 @@ The `<segment>`s represent the predefined structures of a drama, acts and scenes
 
 The representation of drama structure (segmentations, speakers) is at the core of our *zwischenformat*. But it does even more. It captures metadata and it creates complete cast lists for each drama by making use of the `who` attributes.
 
-Our *zwischenformat* consists of three main parts:
+Our *zwischenformat* consists of three main parts (each of which is required):
 
 * `<header>` (the metadata)
 * `<personae>` (a cast list created by help of all `who` attributes)
 * `<text>` (drama segmentation and speakers)
 
-For example, a complete yet very short and simple one-act drama would be represented like this by our *zwischenformat*:
+Plus, there is also an optional part:
+
+* `<documentation>` (for documenting editional decisions that or non-trivial)
+
+{% highlight xml %}
+<documentation>
+ <change n="1" type="expandCollective" who="peertrilcke">
+   <path>/play/text[1]/div[4]/div[2]/div[1]</path>
+   <orig>#die_abziehenden</orig>
+   <corr>#fritz_kleinmichel #berta #kämpe #frau_piepenbrink #bellmaus #bolz #piepenbrink</corr>
+   <comment>Siehe Text: "Fritz Kleinmichel mit seiner Braut, Kämpe mit Kleinmichel, Frau Piepenbrink mit Bellmaus, zuletzt Bolz mit Piepenbrink"; "Braut" i.e. Berta</comment>
+  </change>
+</documentation>
+{% endhighlight %}
+
+A complete yet very short and simple one-act drama would be represented like this by our *zwischenformat*:
 
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -148,3 +163,10 @@ The edited *zwischenformat* files can be found here (this is the deluxe version 
 
 * [https://github.com/dlina/project/tree/master/data/zwischenformat](https://github.com/dlina/project/tree/master/data/zwischenformat)
 
+{% highlight xml %}
+<div>
+ <sp="#alle">
+  <p>Lang lebe das Zwischenformat!</p>
+ </sp>
+</div>
+{% endhighlight %}
