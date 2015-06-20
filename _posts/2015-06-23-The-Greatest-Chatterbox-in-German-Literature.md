@@ -13,11 +13,11 @@ chart:
 comments: true
 featured: false
 ---
-The DLINA *zwischenformat* we [recently introduced](/Introducing-Our-Zwischenformat/) also stores amounts of speech acts, words, lines, chars. We still have to cope with some erroneous and inaccurate markup contained in the TextGrid Repository TEI files, but now we can specify how many speech acts are executed by each character, how many words are uttered by each of them, and the amount of letters used by everybody. These values were elevated from all dramas of our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/), i.e., 465 dramas written or published inbetween 1731 and 1929.
+The DLINA *zwischenformat* we [recently introduced](/Introducing-Our-Zwischenformat/) also stores amounts of speech acts, words, lines, chars. Truth be told, we will always have to cope with some erroneous and inaccurate markup contained in the TextGrid Repository TEI files here and there, but now we can roughly specify how many speech acts are executed by each character, how many words are uttered by each of them, and the amount of letters used by everybody. These values were elevated from all dramas of our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/), i.e., 465 dramas written or published inbetween 1731 and 1929.
 
-The complete list of all 9,913 characters contained in our corpus can be found [here](https://github.com/dlina/project/blob/master/data/zwischenformat/output/amount-list.csv) (i.e., the average cast list of a play has 21 characters).
+A complete list of all 9,913 characters contained in our corpus can be found [here](https://github.com/dlina/project/blob/master/data/zwischenformat/output/amount-list.csv) (i.e., the average cast list of a play has 21 characters).
 
-But today we're not interested in the list as a whole (we'll get back to that later), but the top 20. So may we acquaint you with the biggest chatterboxes of German literature (omitting the ones who are not in our corpus, of course):
+But today we're not interested in the list as a whole (we'll get back to that later), but the **top 20**. So may we acquaint you with the biggest chatterboxes of German literature (omitting the ones who are not in our corpus, of course):
 
 |     | Character      | Title                                | Author                      | Chars  | Words | Speech acts | Additional data             |
 |-----|----------------|--------------------------------------|-----------------------------|--------|-------|-------------|-----------------------------|
@@ -44,8 +44,10 @@ But today we're not interested in the list as a whole (we'll get back to that la
 
 The appearance of Arno Holz and his play *Ignorabimus* seems natural, given that it's the longest play in our corpus (cf. [the corresponding blog entry](/Longest-German-Language-Theatre-Plays/)).
 
-But let's have a closer look at the first four lines regarding only two dramas, Arno Holz's *Ignorabimus* and Goethe's *Faust, part I*. Their values document quite some structural differences between the two texts, or rather, they indicate a completely different way of speaking:
+But let's have a closer look at the first four lines regarding only two dramas, aforementioned *Ignorabimus* and Goethe's *Faust, part I*. Their values document quite some structural differences between the two texts, or rather, they indicate a completely different way of speaking:
 
+|     | Character      | Title                                | Author                      | Chars  | Words | Speech acts | Additional data             |
+|-----|----------------|--------------------------------------|-----------------------------|--------|-------|-------------|-----------------------------|
 | 1   | GEORG          | Ignorabimus                          | Holz, Arno                  | 133443 | 20859 | 952         | [http://dlina.github.io/390/](http://dlina.github.io/390/) |
 | 2   | DUFROY         | Ignorabimus                          | Holz, Arno                  | 107534 | 16588 | 885         | [http://dlina.github.io/390/](http://dlina.github.io/390/) |
 | 3   | FAUST          | Faust. Der Tragödie erster Teil      | Goethe, Johann Wolfgang     | 97546  | 9037  | 225         | [http://dlina.github.io/243/](http://dlina.github.io/243/) |
@@ -56,7 +58,7 @@ Simply put: In Arno Holz's play, characters speak much more often, but their utt
 In any case, this difference can be explained with the whole different eras that spawned the two plays, the temporal distance amounts to more than a century. Perhaps we're witnessing the difference of two historical styles here: Isn't this difference all about pre-modern vs. modern drama?
 We will discuss this further, of course, since this is the kind of quantitative evidence we are looking for when researching structural styles of dramatic texts.
 
-Well, let's leave the stage to the poets for now. At first, we'll have some text by our winner, Arno Holz, followed by some notorious Goethe lines:
+But let's leave the stage to the poets for now. At first, we'll have some text by our winner, Arno Holz, followed by some notorious Goethe lines:
 
 ### 1124 characters from *Ignorabimus* (1914)
 
