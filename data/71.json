@@ -1,0 +1,16 @@
+{
+"nodes":[
+{"name":"ELFRIEDE","group":5,"group1":1, "weight":100},
+{"name":"CASTI PIANI","group":5,"group1":1, "weight":100},
+{"name":"HERR KÖNIG","group":5,"group1":1, "weight":100},
+{"name":"LISISKA","group":5,"group1":1, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":1},
+{"source":0,"target":2,"value":1},
+{"source":0,"target":3,"value":1},
+{"source":1,"target":2,"value":1},
+{"source":1,"target":3,"value":1},
+{"source":2,"target":3,"value":1}
+]
+}

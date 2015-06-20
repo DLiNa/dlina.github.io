@@ -1,0 +1,27 @@
+{
+"nodes":[
+{"name":"CLAUDIO","group":5,"group1":1, "weight":100},
+{"name":"DIENER","group":5,"group1":1, "weight":100},
+{"name":"DER TOD","group":5,"group1":1, "weight":100},
+{"name":"DIE MUTTER","group":5,"group1":1, "weight":100},
+{"name":"DAS JUNGE MÄDCHEN","group":5,"group1":1, "weight":100},
+{"name":"DER MANN","group":5,"group1":1, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":1},
+{"source":0,"target":2,"value":1},
+{"source":0,"target":3,"value":1},
+{"source":0,"target":4,"value":1},
+{"source":0,"target":5,"value":1},
+{"source":1,"target":2,"value":1},
+{"source":1,"target":3,"value":1},
+{"source":1,"target":4,"value":1},
+{"source":1,"target":5,"value":1},
+{"source":2,"target":3,"value":1},
+{"source":2,"target":4,"value":1},
+{"source":2,"target":5,"value":1},
+{"source":3,"target":4,"value":1},
+{"source":3,"target":5,"value":1},
+{"source":4,"target":5,"value":1}
+]
+}

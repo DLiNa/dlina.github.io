@@ -1,0 +1,35 @@
+{
+"nodes":[
+{"name":"IPHIGENIE","group":5,"group1":1, "weight":100},
+{"name":"ARKAS","group":5,"group1":2, "weight":100},
+{"name":"THOAS","group":5,"group1":3, "weight":100},
+{"name":"OREST","group":5,"group1":5, "weight":100},
+{"name":"PYLADES","group":5,"group1":5, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":4},
+{"source":0,"target":2,"value":16},
+{"source":0,"target":4,"value":9},
+{"source":0,"target":3,"value":16},
+{"source":0,"target":3,"value":16},
+{"source":0,"target":4,"value":9},
+{"source":0,"target":1,"value":4},
+{"source":0,"target":4,"value":9},
+{"source":0,"target":2,"value":16},
+{"source":0,"target":3,"value":16},
+{"source":0,"target":2,"value":16},
+{"source":0,"target":2,"value":16},
+{"source":0,"target":3,"value":16},
+{"source":1,"target":2,"value":4},
+{"source":1,"target":4,"value":1},
+{"source":1,"target":2,"value":4},
+{"source":1,"target":3,"value":1},
+{"source":2,"target":3,"value":9},
+{"source":2,"target":4,"value":1},
+{"source":2,"target":3,"value":9},
+{"source":2,"target":3,"value":9},
+{"source":3,"target":4,"value":9},
+{"source":3,"target":4,"value":9},
+{"source":3,"target":4,"value":9}
+]
+}

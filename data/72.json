@@ -1,0 +1,13 @@
+{
+"nodes":[
+{"name":"FRIZ","group":5,"group1":1, "weight":100},
+{"name":"ROSALINDE","group":5,"group1":2, "weight":100},
+{"name":"DOKTOR FAUST","group":5,"group1":3, "weight":100},
+{"name":"UNSICHTBARER CHOR","group":5,"group1":7, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":4},
+{"source":0,"target":1,"value":4},
+{"source":1,"target":3,"value":1}
+]
+}

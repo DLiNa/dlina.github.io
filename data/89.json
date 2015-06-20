@@ -1,0 +1,41 @@
+{
+"nodes":[
+{"name":"MAX","group":5,"group1":1, "weight":100},
+{"name":"ANATOL","group":5,"group1":1, "weight":100},
+{"name":"CORA","group":5,"group1":1, "weight":100},
+{"name":"GABRIELE","group":5,"group1":2, "weight":100},
+{"name":"BIANCA","group":5,"group1":3, "weight":100},
+{"name":"EMILIE","group":5,"group1":4, "weight":100},
+{"name":"ANNIE","group":5,"group1":5, "weight":100},
+{"name":"KELLNER","group":5,"group1":5, "weight":100},
+{"name":"ELSE","group":5,"group1":6, "weight":100},
+{"name":"FRANZ","group":5,"group1":7, "weight":100},
+{"name":"ILONA","group":5,"group1":7, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":25},
+{"source":0,"target":2,"value":1},
+{"source":0,"target":1,"value":25},
+{"source":0,"target":4,"value":1},
+{"source":0,"target":1,"value":25},
+{"source":0,"target":6,"value":1},
+{"source":0,"target":7,"value":1},
+{"source":0,"target":1,"value":25},
+{"source":0,"target":8,"value":1},
+{"source":0,"target":1,"value":25},
+{"source":0,"target":9,"value":1},
+{"source":0,"target":10,"value":1},
+{"source":0,"target":1,"value":25},
+{"source":1,"target":2,"value":1},
+{"source":1,"target":3,"value":1},
+{"source":1,"target":4,"value":1},
+{"source":1,"target":5,"value":1},
+{"source":1,"target":6,"value":1},
+{"source":1,"target":7,"value":1},
+{"source":1,"target":8,"value":1},
+{"source":1,"target":9,"value":1},
+{"source":1,"target":10,"value":1},
+{"source":6,"target":7,"value":1},
+{"source":9,"target":10,"value":1}
+]
+}

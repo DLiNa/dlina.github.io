@@ -1,0 +1,21 @@
+{
+"nodes":[
+{"name":"MOSSINO","group":5,"group1":1, "weight":100},
+{"name":"MARIKANNO","group":5,"group1":1, "weight":100},
+{"name":"PASSECK","group":5,"group1":1, "weight":100},
+{"name":"KEFINSKA","group":5,"group1":1, "weight":100},
+{"name":"LISSAMÁTSCH","group":5,"group1":1, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":1},
+{"source":0,"target":2,"value":1},
+{"source":0,"target":3,"value":1},
+{"source":0,"target":4,"value":1},
+{"source":1,"target":2,"value":1},
+{"source":1,"target":3,"value":1},
+{"source":1,"target":4,"value":1},
+{"source":2,"target":3,"value":1},
+{"source":2,"target":4,"value":1},
+{"source":3,"target":4,"value":1}
+]
+}

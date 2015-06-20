@@ -1,0 +1,20 @@
+{
+"nodes":[
+{"name":"BURIDAN","group":5,"group1":1, "weight":100},
+{"name":"KADIDJA","group":5,"group1":1, "weight":100},
+{"name":"DIE ZOFE","group":5,"group1":1, "weight":100},
+{"name":"DR CAJETAN PRANTL","group":5,"group1":2, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":9},
+{"source":0,"target":2,"value":4},
+{"source":0,"target":2,"value":4},
+{"source":0,"target":3,"value":1},
+{"source":0,"target":1,"value":9},
+{"source":0,"target":1,"value":9},
+{"source":1,"target":2,"value":4},
+{"source":1,"target":2,"value":4},
+{"source":1,"target":3,"value":1},
+{"source":2,"target":3,"value":1}
+]
+}
