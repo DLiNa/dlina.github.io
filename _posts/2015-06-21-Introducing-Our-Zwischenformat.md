@@ -11,7 +11,7 @@ imagefeature:
 mathjax: 
 chart: 
 comments: true
-featured: false
+featured: true
 ---
 Our research interest focuses primarily on *structural aspects* of dramatic texts. The structural data is extracted from [the 465 dramatic texts that constitute our Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) and then screened and edited before it can be evaluated statistically with regard to literary history.
 
