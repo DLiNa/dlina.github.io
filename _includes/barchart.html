@@ -77,7 +77,7 @@ var svg = d3.select("#barchart").append("svg")
     var x0 = x.domain(data.sort(this.checked
         ? function(a, b) { return b.words - a.words; }
         : function(a, b) { return d3.ascending(a.name, b.name); })
-        .map(function(d) { return d.letter; }))
+        .map(function(d) { return d.name; }))
         .copy();
 
     svg.selectAll(".bar")
