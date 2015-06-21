@@ -1,11 +1,32 @@
-<div class="row">
+<div class="row collapse wide">
   <div class="medium-12 columns">
+
+Link Distance [10, 400] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#linkDistance">info</a>): <input id="linkDistance" type="range" min="10" max="400" value="200"><br/>
+Gravity [0, 1] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#gravity" >info</a>): <input id="grav" type="range" min="0" max="1000" value="100"><br/>
+Charge [-10000; 10000] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#charge" >info</a>): <input id="grav" type="range" min="-10000" max="10000" value="-1000">
   	<div id="netsticky"></div>
   </div>
 </div>
-<script>                
-var width = 760,
-    height = 600;
+<script>
+d3.select("input#linkDistance").on("change", function() {
+	d3.selectAll("#netsticky svg").remove();
+	draw(this.value, document.getElementById("grav").value, document.getElementById("charge").value );
+});
+d3.select("input#grav").on("change", function() {
+	d3.selectAll("#netsticky svg").remove();
+	draw(document.getElementById("linkDistance").value, this.value , document.getElementById("charge").value );
+});
+d3.select("input#charge").on("change", function() {
+	d3.selectAll("#netsticky svg").remove();
+	draw(document.getElementById("linkDistance").value, document.getElementById("grav").value, this.value );
+});
+
+function draw(linkDst, grav, charge){
+d3.json("/data/{{ page.networkdata }}", function(error, graph) {
+// lets see if we can guess a good size
+var sum = graph.nodes.length 
+var width = 400 + sum * 12,
+    height = 400 + sum * 5;
 
 var color = d3.scale.category20();
 
@@ -18,11 +39,12 @@ var svg = d3.select("#netsticky").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-d3.json("/data/{{ page.networkdata }}", function(error, graph) {
-  force
-      .nodes(graph.nodes)
-      .links(graph.links)
-      .start();
+var force = d3.layout.force()
+    .charge( charge )
+    .linkDistance(linkDst)
+    .gravity( grav / 1000 )
+    .size([width, height]);
+
   var link = svg.selectAll("#netsticky .link")
       .data(graph.links)
     .enter().append("line")
@@ -68,5 +90,8 @@ function dragstart(d) {
         return 'translate(' + [d.x, d.y] + ')';
     });
   })
+// end force
 });
+// end draw
+};
 </script>
