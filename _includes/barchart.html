@@ -1,11 +1,11 @@
 <div class="row">
 	<div class="small-12 small-centered columns">
+	  <div id="barchart">
 		<div class="switch">
 		sort values by frequency|alphabet
 		  <input id="sort-switch" type="checkbox" tabindex="0"/>
 		  <label for="sort-switch"></label>
-		</div> 
-	  <div id="barchart"></div>
+		</div> </div>
 	</div>
 </div>
 
@@ -69,15 +69,15 @@ var svg = d3.select("#barchart").append("svg")
       .attr("y", function(d) { return y(d.words); })
       .attr("height", function(d) { return height - y(d.words); });
 
-  var sortTimeout = d3.select("input#sort-switch").property("checked", flase).each(change);
+// sort function
 
+d3.select("input").on("change", change);
   function change() {
-    clearTimeout(sortTimeout);
 
     // Copy-on-write since tweens are evaluated after a delay.
     var x0 = x.domain(data.sort(this.checked
         ? function(a, b) { return b.words - a.words; }
-        : function(a, b) { return d3.ascending(a.name, b.name); })
+        : function(a, b) { return d3.descending(a.name, b.name); })
         .map(function(d) { return d.name; }))
         .copy();
 
@@ -93,9 +93,15 @@ var svg = d3.select("#barchart").append("svg")
 
     transition.select(".x.axis")
         .call(xAxis)
-      .selectAll("g")
+
+      	.selectAll("g")	.selectAll("text")  
+            .style("text-anchor", "end")
+            .attr("dx", "-.8em")
+            .attr("dy", ".15em")
+            .attr("transform", "rotate(-65)" )
         .delay(delay);
   }
+
 
 
 });
