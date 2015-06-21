@@ -23,6 +23,11 @@ text.active {
 }
 
 /* bar charts */
+div#barchart {
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
+}
 #barchart .bar {
   fill: steelblue;
 }
