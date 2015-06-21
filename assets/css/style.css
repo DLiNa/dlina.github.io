@@ -51,7 +51,9 @@ a[href="#networks"], a[href="#matrix"], h2#networks, h2#matrix  {
   display: none;
 }
 /* more on networks */
-ul#netinputs {list-style:none;}
+ul#netinputs, ul#netinputs > li > ul {
+	list-style:none;
+}
 
 /* entry page specials*/
 #layout-network-content ul {

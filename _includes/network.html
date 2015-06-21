@@ -6,14 +6,14 @@
 <li> <input id="linkDistance" type="range" min="10" max="400" value="200"></li>
 </ul>
 </li>
-<li>Gravity [0, 1] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#gravity" >info</a>): 
+<li>Gravity [0.000, 1.000] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#gravity" >info</a>): 
 <ul>
 <li><input id="grav" type="range" min="0" max="1000" value="100"></li>
 </ul>
 </li>
-<li>Charge [-10000; 10000] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#charge" >info</a>):
+<li>Charge [-1000; 1000] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#charge" >info</a>):
 <ul>
-<li> <input id="charge" type="range" min="-10000" max="10000" value="-1000"></li>
+<li> <input id="charge" type="range" min="-1000" max="1000" value="-50"></li>
 </ul>
 </li>
 </ul>
@@ -21,6 +21,7 @@
   </div>
 </div>
 <script>
+// get the input values and render the network immediatly
 d3.select("input#linkDistance").on("change", function() {
 	d3.selectAll("#netsticky svg").remove();
 	draw(this.value, document.getElementById("grav").value , document.getElementById("charge").value );
@@ -34,19 +35,16 @@ d3.select("input#charge").on("change", function() {
 	draw( document.getElementById("linkDistance").value , document.getElementById("grav").value , this.value );
 });
 
+// may the force be with you
 function draw(linkDst, grav, charge){
 d3.json("/data/{{ page.networkdata }}", function(error, graph) {
+
 // lets see if we can guess a good size
 var sum = graph.nodes.length 
-var width = 400 + sum * 12,
-    height = 400 + sum * 5;
+var width = 400 + sum * 15,
+    height = 400 + sum * 10;
 
 var color = d3.scale.category20();
-
-var force = d3.layout.force()
-    .charge(-200)
-    .linkDistance(190)
-    .size([width, height]);
 
 var svg = d3.select("#netsticky").append("svg")
     .attr("width", width)
@@ -90,8 +88,6 @@ function dragstart(d) {
 }
   var labels = gnodes.append("text")
       .text(function(d) { return d.name; });
-
-  console.log(labels);
     
   force.on("tick", function() {
     link.attr("x1", function(d) { return d.source.x; })
