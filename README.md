@@ -1,30 +1,12 @@
-All credits for the theme go to @hmfaysal (see the description below)!
+# DLINA -  Website Repo
+based on the outstanding service by github pages and Jekyll! 
+
+If you are interested in the dlina content, have a look at the rendered [website](https://dlina.github.io).
+
+
+Since the pages grows up and contains more than 2,300 static pages the rendering time increased. On Linux use quick-deb.sh that prepares a reduced version by omiting most of the lina related sites and starts Jekyll on localhost. `./quick-deb.sh remote` starts with a new clone, standard method `./quick-deb.sh` includes local changes.
+
+
+--------------
+All credits for the theme go to @hmfaysal (see the [description](https://github.com/hmfaysal/Notepad))!
 @mathias-goebel added support for multiple auhtors.
-
----------------
-Notepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
-
-Main Features:
-* Zurb Foundation 5 – css framework
-* Scss files with settings file
-* Fullscreen post covers with header wich will be bright or dark according to background image
-* Fast and light
-* Font Awesome
-* Disqus comments integration
-
-You can set post image covers by using only Kramdown narkdown, just place something like this: `![cover-image](http://path-to-your-image.jpg)`
-
-Credits:
-
-* Zurb Foundation 5 [http://foundation.zurb.com/](http://foundation.zurb.com/)
-* Font Awesome [http://fontawesome.io](http://fontawesome.io)
-* Google fonts [http://www.google.com/fonts](http://www.google.com/fonts)
-* Background check [http://kennethcachia.com/background-check](http://kennethcachia.com/background-check)
-* Codrops article: [http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/](http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/)
-* There are also tools like jQuery, Modernizr, Normalize.
-
-If you'd like to give me credit somewhere on your blog or tweet a shout out to [@hmfaysal](https://twitter.com/hmfaysal), that would be pretty sweet.
-
-
-Warm Regards and Stay Creative,  
-Hossain Mohd. Faysal
