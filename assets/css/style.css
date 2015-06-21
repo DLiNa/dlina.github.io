@@ -54,7 +54,9 @@ a[href="#networks"], a[href="#matrix"], h2#networks, h2#matrix  {
 ul#netinputs, ul#netinputs > li > ul {
 	list-style:none;
 }
-
+#netinputs input {
+	width: 256px;
+}
 /* entry page specials*/
 #layout-network-content ul {
 	margin-left:21%
