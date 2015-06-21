@@ -3,22 +3,22 @@
 
 Link Distance [10, 400] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#linkDistance">info</a>): <input id="linkDistance" type="range" min="10" max="400" value="200"><br/>
 Gravity [0, 1] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#gravity" >info</a>): <input id="grav" type="range" min="0" max="1000" value="100"><br/>
-Charge [-10000; 10000] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#charge" >info</a>): <input id="grav" type="range" min="-10000" max="10000" value="-1000">
+Charge [-10000; 10000] (<a href="https://github.com/mbostock/d3/wiki/Force-Layout#charge" >info</a>): <input id="charge" type="range" min="-10000" max="10000" value="-1000">
   	<div id="netsticky"></div>
   </div>
 </div>
 <script>
 d3.select("input#linkDistance").on("change", function() {
 	d3.selectAll("#netsticky svg").remove();
-	draw(this.value, document.getElementById("grav").value, document.getElementById("charge").value );
+	draw(this.value, document.getElementById("grav").value , document.getElementById("charge").value );
 });
 d3.select("input#grav").on("change", function() {
 	d3.selectAll("#netsticky svg").remove();
-	draw(document.getElementById("linkDistance").value, this.value , document.getElementById("charge").value );
+	draw( document.getElementById("linkDistance").value, this.value , document.getElementById("charge").value );
 });
 d3.select("input#charge").on("change", function() {
 	d3.selectAll("#netsticky svg").remove();
-	draw(document.getElementById("linkDistance").value, document.getElementById("grav").value, this.value );
+	draw( document.getElementById("linkDistance").value , document.getElementById("grav").value , this.value );
 });
 
 function draw(linkDst, grav, charge){

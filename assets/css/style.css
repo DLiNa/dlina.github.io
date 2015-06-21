@@ -50,6 +50,12 @@ div#barchart {
 a[href="#networks"], a[href="#matrix"], h2#networks, h2#matrix  {
   display: none;
 }
+/* more on networks */
+input#grav, input#charge, input#linkDistance {
+  display: inline-block;
+  position: absolute;
+  margin-left: 76px;
+}
 
 /* entry page specials*/
 #layout-network-content ul {
