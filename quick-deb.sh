@@ -6,7 +6,7 @@
 cd /tmp
 git clone https://github.com/dlina/dlina.github.io.git
 cd dlina.github.io
-for $i in `seq 0 7`; 
+for i in `seq 0 7`; 
 	do 
 		rm -f networks/_posts/*$i.md 
 	done
