@@ -21,17 +21,39 @@
   </div>
 </div>
 <script>
-var width = 760,
-    height = 600;
+// get the input values and render the network immediatly
+d3.select("input#linkDistance").on("change", function() {
+	d3.selectAll("#netsticky svg").remove();
+	draw(this.value, document.getElementById("grav").value , document.getElementById("charge").value );
+});
+d3.select("input#grav").on("change", function() {
+	d3.selectAll("#netsticky svg").remove();
+	draw( document.getElementById("linkDistance").value, this.value , document.getElementById("charge").value );
+});
+d3.select("input#charge").on("change", function() {
+	d3.selectAll("#netsticky svg").remove();
+	draw( document.getElementById("linkDistance").value , document.getElementById("grav").value , this.value );
+});
+
+function draw(linkDst, grav, charg){
+d3.json("/data/{{ page.networkdata }}", function(error, graph) {
+
+// lets see if we can guess a good size
+var sum = graph.nodes.length 
+var width = 400 + sum * 15,
+    height = 400 + sum * 10;
+
 var color = d3.scale.category20();
 var force = d3.layout.force()
-    .charge(-200)
-    .linkDistance(190)
+    .charge( charg )
+    .linkDistance( linkDst )
+.gravity( grav / 1000 )
     .size([width, height]);
 var svg = d3.select("#netsticky").append("svg")
     .attr("width", width)
     .attr("height", height);
-d3.json("/data/{{ page.networkdata }}", function(error, graph) {
+
+
   force
       .nodes(graph.nodes)
       .links(graph.links)
@@ -63,7 +85,6 @@ function dragstart(d) {
 }
   var labels = gnodes.append("text")
       .text(function(d) { return d.name; });
-  console.log(labels);
     
   force.on("tick", function() {
     link.attr("x1", function(d) { return d.source.x; })
@@ -75,4 +96,6 @@ function dragstart(d) {
     });
   })
 });
+// end draw
+};
 </script>
