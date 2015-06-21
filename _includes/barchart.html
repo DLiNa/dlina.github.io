@@ -1,21 +1,30 @@
-<div class="row">
-	<div class="small-12 small-centered columns">
-	  <div id="barchart">
+<div style="width:100%">
+	<div id="barchart">
 		<div class="switch">
-		sort values by frequency|alphabet
-		  <input id="sort-switch" type="checkbox" tabindex="0"/>
-		  <label for="sort-switch"></label>
-		</div> </div>
+			sort values by frequency|alphabet
+		 	<input id="sort-switch" type="checkbox" tabindex="0"/>
+		  	<label for="sort-switch"></label>
+		</div>
 	</div>
 </div>
 
 <script>
 d3.tsv("/data/{{ page.amounttsv }}", type, function(error, data) {
-
-var margin = {top: 20, right: 20, bottom: 200, left: 40},
-    width = 35 * data.map(function(d) { return d.name; }).length - margin.left - margin.right,
-    height = 800 - margin.top - margin.bottom;
-
+// calculate the size according to number of values
+var margin = {top: 20, right: 20, bottom: 200, left: 40};
+var sum = data.map(function(d) { return d.name; }).length;
+var base = 35;
+if (sum < 25) {
+	var width =  base * sum - margin.left - margin.right;
+}
+else if (sum < 50 ){
+	var width = 	( base * 0.5 ) * sum - margin.left - margin.right;
+}
+else {
+	var width = ( base * 0.1 ) * sum - margin.left - margin.right;
+}
+  
+var height = 800 - margin.top - margin.bottom;
 var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .1);
 
