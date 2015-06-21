@@ -14,15 +14,9 @@ d3.tsv("/data/{{ page.amounttsv }}", type, function(error, data) {
 var margin = {top: 20, right: 20, bottom: 200, left: 40};
 var sum = data.map(function(d) { return d.name; }).length;
 var base = 35;
-if (sum < 25) {
-	var width =  base * sum - margin.left - margin.right;
-}
-else if (sum < 50 ){
-	var width = 	( base * 0.5 ) * sum - margin.left - margin.right;
-}
-else {
-	var width = ( base * 0.3 ) * sum - margin.left - margin.right;
-}
+if (sum < 25) { var width =  base * sum - margin.left - margin.right; }
+else if (sum < 50 ){ var width = ( base * 0.5 ) * sum - margin.left - margin.right; }
+else { var width = ( base * 0.4 ) * sum - margin.left - margin.right; }
   
 var height = 800 - margin.top - margin.bottom;
 var x = d3.scale.ordinal()
@@ -86,7 +80,7 @@ d3.select("input").on("change", change);
     // Copy-on-write since tweens are evaluated after a delay.
     var x0 = x.domain(data.sort(this.checked
         ? function(a, b) { return b.words - a.words; }
-        : function(a, b) { return d3.descending(a.name, b.name); })
+        : function(a, b) { return d3.ascending(a.name, b.name); })
         .map(function(d) { return d.name; }))
         .copy();
 
@@ -110,14 +104,10 @@ d3.select("input").on("change", change);
             .attr("transform", "rotate(-65)" )
         .delay(delay);
   }
-
-
-
 });
 
 function type(d) {
   d.words = +d.words;
   return d;
 }
-
 </script>
