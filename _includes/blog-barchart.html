@@ -10,7 +10,7 @@
 <script>
 d3.tsv("/data/{{ include.tsv }}", type, function(error, data) {
 
-var margin = {top: 20, right: 20, bottom: 200, left: 40},
+var margin = {top: 20, right: 20, bottom: 200, left: 60},
     width = 35 * data.map(function(d) { return d.label; }).length - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
 
