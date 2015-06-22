@@ -14,4 +14,4 @@ comments: true
 list: false
 featured: false
 ---
-{{ include blog-barchart.html id="1" tsv="blogpost-genre-fig01.tsv" }}
+{% include blog-barchart.html id="1" tsv="blogpost-genre-fig01.tsv" %}
