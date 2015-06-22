@@ -40,11 +40,11 @@ In order to get around these problems, we had to manually edit the LiNA data fil
 * Rule 8 - Collectives as part of a collective
 
 ## Rule 1: Add the schema files as a Processing Instruction - example 
-{ highlight xml }
+{% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://raw.githubusercontent.com/DLiNa/project/master/rules/lina.rnc"?>
 <?xml-model href="http://raw.githubusercontent.com/DLiNa/project/master/rules/lina.sch"?>
-{ endhighlight }
+{% endhighlight %}
 
 ## Rule 2: Edit the meta data header - example 
 The TextGrid sources come with a false and / or incomplete tagging of meta data in its (usually two) tei:teiHeader. These information have to be brought into a consistent state and important information has to be added. This usually means:
@@ -54,7 +54,7 @@ The TextGrid sources come with a false and / or incomplete tagging of meta data 
 * adding the URI of the data source(s) - in case we had to add strucutral information, a second `<source>` tag is added.
 
 ### Before editing
-{ highlight xml }
+{% highlight xml %}
   <head>
     <title>Dramen</title>
     <title>Gottsched, Johann Christoph</title>
@@ -63,10 +63,10 @@ The TextGrid sources come with a false and / or incomplete tagging of meta data 
     <date when="1730"/>
     <source> </source>
   </head>
-{ endhighlight }
+{% endhighlight %}
 
 ### After editing
-{ highlight xml }
+{% highlight xml %}
 <header>
     <title>Der sterbende Cato</title>
     <subtitle>Ein Trauerspiel</subtitle>  
@@ -77,14 +77,14 @@ The TextGrid sources come with a false and / or incomplete tagging of meta data 
     <date type="written" when="1730">1730</date>
     <source>https://textgridlab.org/1.0/tgcrud-public/rest/textgrid:nks0.0/data</source>
   </header>
-{ endhighlight }
+{% endhighlight %}
 
 ## Rule 3: Identification of characters - example 1
 The easiest case is two similar and easily understandable names for one character. Often, a character is introduced by a full name, possibly including a title or an article, and later referred to only by the given name or the title alone. Another possibility is a simple typo in a character's name.
 Here, we move the `<alias>` of one, usually the less frequent, `<character>` (or the one containing a typo) to the »right« one.
 
 ### Before editing
-{ highlight xml }
+{% highlight xml %}
 </personae>
   <character>
       <name>ODOARDO GALOTTI</name>
@@ -99,10 +99,10 @@ Here, we move the `<alias>` of one, usually the less frequent, `<character>` (or
       </alias>
   </character>
 </personae>
-{ endhighlight }
+{% endhighlight %}
 
 ### After editing 
-{ highlight xml }
+{% highlight xml %}
 <personae>
   <character>
       <name>ODOARDO GALOTTI</name>
@@ -114,13 +114,13 @@ Here, we move the `<alias>` of one, usually the less frequent, `<character>` (or
       </alias>
   </character>
 </personae>
-{ endhighlight }
+{% endhighlight %}
 
 ## Rule 3: Identification of characters - example 2
 A second, yet less obvious, possibility is that a character is not visible on stage but their voice can be heard. In these cases, we add an `<alias>` to the lina:character and add an `@ytpe="voiceOf"`.
 The idea behind the attribute is to be later able to differentiate between a character actually on stage and one merely heard.
 ### Before editing
-{ highlight xml }
+{% highlight xml %}
 <personae>
   <character>
       <name>MARIANE</name>
@@ -135,10 +135,10 @@ The idea behind the attribute is to be later able to differentiate between a cha
       </alias>
   </character>
 </personae>
-{ endhighlight }
+{% endhighlight %}
 
 ### After editing 
-{ highlight xml }
+{% highlight xml %}
 </personae>
   <character>
       <name>MARIANE</name>
@@ -150,13 +150,13 @@ The idea behind the attribute is to be later able to differentiate between a cha
       </alias>
   </character>
 </personae>
-{ endhighlight }
+{% endhighlight %}
 
 ## Rule 4: Multiple speakers (explicit) - example
 A common »internal« phenomenon of plays is two or more characters speaking at the same time. In the easy cases they are explicitly name, separated by comma or a conjunction like »und«/»and«. In these cases, in the `//lina:text//lina:sp` we partition `@who` to its constituents, removing any comma or conjunction. Additionally, the `lina:character` in `lina:personae` is deleted.
 
 ### Before editing
-{ highlight xml }
+{% highlight xml %}
 <text>
   <sp who="#madame_welldorf_und_luise">
     <amount n="1" unit="speech_acts"/>
@@ -165,10 +165,10 @@ A common »internal« phenomenon of plays is two or more characters speaking at 
     <amount n="21" unit="chars"/>
   </sp>
 </text>
-{ endhighlight }
+{% endhighlight %}
 
 ### After editing 
-{ highlight xml }
+{% highlight xml %}
 <text>
   <sp who="#madame_welldorf #luise">
     <amount n="1" unit="speech_acts"/>
@@ -177,14 +177,14 @@ A common »internal« phenomenon of plays is two or more characters speaking at 
     <amount n="21" unit="chars"/>
   </sp>
 </text>
-{ endhighlight }
+{% endhighlight %}
 
 ## Rule 5: Multiple speakers (implicit) - example 
 In the »implicit« case, no names are given for the speakers, but are referred to by their role or some attribute they have in common.
 Here, the surplus `<character>` is deleted and the `@who` expanded to contain a pointer to all the individual characters.
 
 ### Before editing
-{ highlight xml }
+{% highlight xml %}
 <personae>
   <character>
     <name>ERSTE MAGD</name>
@@ -213,10 +213,10 @@ Here, the surplus `<character>` is deleted and the `@who` expanded to contain a 
     <amount n="32" unit="chars"/>
   </sp>			
 </text>
-{ endhighlight }
+{% endhighlight %}
 
 ### After editing 
-{ highlight xml }
+{% highlight xml %}
 <personae>
   <character>
     <name>ERSTE MAGD</name>
@@ -239,13 +239,13 @@ Here, the surplus `<character>` is deleted and the `@who` expanded to contain a 
       <amount n="32" unit="chars"/>
   </sp>
 </text>
-{ endhighlight }
+{% endhighlight %}
 
 ## Rule 6: Multiple speakers (collective) - example 1
 When no explicit names are given but an easily discernable collective, the `<character>` for the collective name is deleted and the `@who` edited to contain the names of all characters speaking.
 
 ### Before editing
-{ highlight xml }
+{% highlight xml %}
 <personae>
   <character>
     <name>MADAME WELLDORF</name>
@@ -274,10 +274,10 @@ When no explicit names are given but an easily discernable collective, the `<cha
     <amount n="21" unit="chars"/>
   </sp>
 </text>
-{ endhighlight }
+{% endhighlight %}
 
 ### After editing 
-{ highlight xml }
+{% highlight xml %}
 <personae>
   <character>
     <name>MADAME WELLDORF</name>
@@ -300,14 +300,14 @@ When no explicit names are given but an easily discernable collective, the `<cha
     <amount n="21" unit="chars"/>
   </sp>
 </text>
-{ endhighlight }
+{% endhighlight %}
 
 ## Rule 6: Multiple speakers (collective) - example 2
 Often, multiple speakers are not given explicitly but rather a collective reference is given, e.g. »Einige« (»some«), »Alle« (»all«), »the Borg«, etc.
 In these cases it often is necessary to revert to close reading to discern who is actually meant. Usually, we add a `<change>` to the `<documentation>` section if the expansion to explicit names is not obvious, requires lengthy close reading or a lot of interpretation.
 
 ### Before editing
-{ highlight xml }
+{% highlight xml %}
 <div>
     <head>1. Akt</head>
   <div>
@@ -356,7 +356,7 @@ In these cases it often is necessary to revert to close reading to discern who i
     </sp>
   </div>
 </div>
-{ endhighlight }
+{% endhighlight %}
 
 Inspecting speech act and stage direction
 > *Andrason kommt.*
@@ -369,7 +369,7 @@ Inspecting speech act and stage direction
 > Eure Freude macht mich glücklich, eure Liebe tröstet mich.
 
 ### After editing 
-{ highlight xml }
+{% highlight xml %}
 <div>
     <head>1. Akt</head>
   <div>
@@ -418,14 +418,14 @@ Inspecting speech act and stage direction
     </sp>
   </div>
 </div>
-{ endhighlight }
+{% endhighlight %}
 
 ## Rule 7: Same name for different characters - example
 Sometimes, two different characters are referred to by the same name, e.g. a servant to the president and a servant to the prince are both name »servant«.
 Here, it is necessary to add a `<character>` for the second individuum, give both an easily recognizable name and ID and edit the `@who` attributes to reflect which of these it refers to.
 
 ### Before editing
-{ highlight xml }
+{% highlight xml %}
 <personae>
   <character>
     <name>EIN KAMMERDIENER</name>
@@ -440,7 +440,7 @@ Here, it is necessary to add a `<character>` for the second individuum, give bot
     </alias>
   </character>
 </personae>
-{ endhighlight }
+{% endhighlight %}
 
 Inspecting speech acts and stage directions
 >**1. Akt**
@@ -464,7 +464,7 @@ Inspecting speech acts and stage directions
 > schicken Ihnen diese Brillanten zur Hochzeit. Sie kommen soeben erst aus Venedig.
 
 ### After editing 
-{ highlight xml }
+{% highlight xml %}
 <personae>
   <character>
     <name>EIN KAMMERDIENER (PRÄSIDENT)</name>
@@ -479,14 +479,14 @@ Inspecting speech acts and stage directions
     </alias>
   </character>
 </personae>
-{ endhighlight }
+{% endhighlight %}
 
 ## Rule 8: Collectives as part of a collective - example
 Especially in dramas where large crowds play a major role, there are often subdivisions of the crowds speaking while there is no explicit reference to which people this part of the larger collective consists of (no Six of Twekve here). Usually, this includes none of the major characters and the utterances, while important for the atmosphere of the setting, are quite short.
 Here, we decided to not partition the collective, but rather to build it up: »Some of the crowd«, »Others of the crowd« etc. are considered an `<alias>` of the larger collectives `<character>`.
 
 ### Before editing
-{ highlight xml }
+{% highlight xml %}
 <personae>
   <character>
     <name>DAS VOLK</name>
@@ -513,10 +513,10 @@ Here, we decided to not partition the collective, but rather to build it up: »S
     </alias>
   </character>
 </personae>
-{ endhighlight }
+{% endhighlight %}
 
 ### After editing 
-{ highlight xml }
+{% highlight xml %}
 <character>
   <name>DAS VOLK name>
   <alias xml:id="das_volk">
@@ -532,7 +532,7 @@ Here, we decided to not partition the collective, but rather to build it up: »S
     <name>EINIGE VOM VOLK</name>
   </alias>
 </character>
-{ endhighlight }
+{% endhighlight %}
 
 ## Conclusion and caveat
 Using these rules, we were able to work around many of the problems. The resulting data are much more consistent than what we started out with.
