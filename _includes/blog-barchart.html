@@ -9,7 +9,7 @@
 </div>
 
 <script>
-d3.tsv("{{ include.tsv }}", type, function(error, data) {
+d3.tsv("/data/{{ include.tsv }}", type, function(error, data) {
 
 var margin = {top: 20, right: 20, bottom: 200, left: 40},
     width = 35 * data.map(function(d) { return d.label; }).length - margin.left - margin.right,
