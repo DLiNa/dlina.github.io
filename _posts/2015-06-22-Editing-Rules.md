@@ -547,7 +547,7 @@ Here, we decided to not partition the collective, but rather to build it up: "So
 
 {% highlight xml %}
 <character>
-  <name>DAS VOLK name>
+  <name>DAS VOLK<name>
   <alias xml:id="das_volk">
     <name>DAS VOLK</name>
   </alias>
