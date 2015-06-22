@@ -14,26 +14,26 @@ comments: true
 featured: true
 ---
 ## Introduction
-After the structural data have been extracted to the LiNA zwischenformat, manual intervention is often necessary to improve the data quality and correct errors in the source data. Especially the TextGrid data proved to be quite problematic due to OCR errors and false tagging.
+After the structural data have been extracted and put into the [DLINA zwischenformat](/Introducing-Our-Zwischenformat/), manual intervention is often necessary to improve the data quality and correct errors in the source data. Especially the TextGrid data proved to be quite problematic due to OCR errors and false tagging.
 
-Some of the "external" problems – that is, problems not inherent to the text per se but introduced through automated or manual conversion to a computer readable text and creating the markup – we encountered are:
+Some of the "external" problems we encountered are (that is, problems not inherent to the text per se but introduced through automated or manual conversion to a computer-readable format and creating the markup):
 
-* No or insufficient structural data encoded;
-* OCR errors in a speaker's name;
-* stage directions were interpreted as part of the speaker's name
+* no or insufficient structural data encoded,
+* OCR errors in a `<speaker>` names (strings),
+* stage directions interpreted as part of a speaker's name.
 
-Additionally, there are a few »internal« phenomena – i.e. characteristics typical for a play – that have to be taken into account:
+Additionally, there are a few "internal" phenomena – i.e. characteristics typical for a play – that have to be taken into account:
 
-* Different ways of referring to a person – e.g. the full name might be given on the first appearance and only the given name afterwards;
-* collectives or groups of speakers, e.g. »Alle« (all), »Einige« (some), »Andere« (others);
-* indeterminate speakers, e.g. »Ein Diener« (a servant), »Erster Ritter« (first knight) which might be given the same name but are actually different characters as determined by the setting.
+* different ways of referring to a person – e.g., the full name might be given on the first appearance and only the first name on further appearances,
+* collectives or groups of speakers, e.g., "Alle" (all), "Einige" (some), "Andere" (others),
+* indeterminate speakers, e.g., "Ein Diener" (a servant), "Erster Ritter" (first knight) which might refer to different characters throughout a play.
 
-In order to get around these problems, we had to manually edit the LiNA data files. We established a fixed set of rules (see below) to cover the most common problems and added comments to the data files if the changes involved non-trivial interpretation.
+In order to get around these problems, we had to manually edit the DLINA data files. We established a fixed set of rules (see below) to cover the most common problems and added comments to the data files if the changes involved non-trivial interpretation.
 
-## Rules for editing »the zwischenformat« (LiNA data files)
+## Rules for editing our *zwischenformat* (DLINA data files)
 
 * Rule 1 – Add the schema files as a PI
-* Rule 2 – Edit the meta data header
+* Rule 2 – Edit the metadata header
 * Rule 3 – Identification of characters
 * Rule 4 – Multiple speakers (explicit)
 * Rule 5 – Multiple speakers (implicit)
@@ -49,13 +49,13 @@ In order to get around these problems, we had to manually edit the LiNA data fil
 <?xml-model href="http://raw.githubusercontent.com/DLiNa/project/master/rules/lina.sch"?>
 {% endhighlight %}
 
-## Rule 2: Edit the meta data header – example
-The TextGrid sources come with a false and / or incomplete tagging of meta data in its (usually two) tei:teiHeader. These information have to be brought into a consistent state and important information has to be added. This usually means:
+## Rule 2: Edit the metadata header – example
+The TextGrid sources come with false and/or incomplete tagging of metadata in its (usually two) `<tei:teiHeader>`. This information has to be brought into a consistent state and crucial information has to be added. This usually means:
 
 * removing surplus `<title>` tags,
-* adding, if applicable `<subtitle>` and `<genretitle>` (the former usually including a self-attributed genre like »Ein Trauerspiel in 5 Akten« and the latter containing the genre in a normalized way, here »Trauerspiel«; to make things comparable, we're considering adding attribute lists for the major genres),
+* if applicable, adding `<subtitle>` and `<genretitle>` (the former usually including a self-attributed genre like "Ein Trauerspiel in 5 Akten" and the latter containing the genre in a normalised way, in this case: "Trauerspiel"; to make things comparable, we're considering adding attribute lists for the major genres),
 * adding known dates (when the play was written, first printed and premiered),
-* adding the URI of the data source(s) – in case we had to add strucutral information, a second `<source>` tag is added.
+* adding the URI of the data source(s) – in case we had to add structural information, a second `<source>` tag is added.
 
 ### Before editing
 
@@ -85,9 +85,9 @@ The TextGrid sources come with a false and / or incomplete tagging of meta data 
   </header>
 {% endhighlight %}
 
-## Rule 3: Identification of characters – example 1
+## Rule 3: Identification of characters – example 1
 The easiest case is two similar and easily understandable names for one character. Often, a character is introduced by a full name, possibly including a title or an article, and later referred to only by the given name or the title alone. Another possibility is a simple typo in a character's name.
-Here, we move the `<alias>` of one, usually the less frequent, `<character>` (or the one containing a typo) to the »right« one.
+Here, we move the `<alias>` of one `<character>` (usually the less frequent, or the one containing a typo) to the "right" one.
 
 ### Before editing
 
@@ -124,8 +124,8 @@ Here, we move the `<alias>` of one, usually the less frequent, `<character>` (or
 </personae>
 {% endhighlight %}
 
-## Rule 3: Identification of characters – example 2
-A second, yet less obvious, possibility is that a character is not visible on stage but their voice can be heard. In these cases, we add an `<alias>` to the lina:character and add an `@ytpe="voiceOf"`.
+## Rule 3: Identification of characters – example 2
+A second, less obvious possibility is that a character is not visible on stage but its voice can be heard. In these cases, we add an `<alias>` to the lina:character and add an `@type="voiceOf"`.
 The idea behind the attribute is to be later able to differentiate between a character actually on stage and one merely heard.
 
 ### Before editing
@@ -165,7 +165,7 @@ The idea behind the attribute is to be later able to differentiate between a cha
 
 ## Rule 4: Multiple speakers (explicit) – example
 
-A common »internal« phenomenon of plays is two or more characters speaking at the same time. In the easy cases they are explicitly name, separated by comma or a conjunction like »und«/»and«. In these cases, in the `//lina:text//lina:sp` we partition `@who` to its constituents, removing any comma or conjunction. Additionally, the `lina:character` in `lina:personae` is deleted.
+A common "internal" phenomenon of plays is two or more characters speaking at the same time. In the easy cases they are explicitly named, separated by comma or a conjunction like "und"/"and". In these cases, in the `//lina:text//lina:sp` we partition `@who` to its constituents, removing any comma or conjunction. Additionally, the `lina:character` in `lina:personae` is deleted.
 
 ### Before editing
 
@@ -195,7 +195,7 @@ A common »internal« phenomenon of plays is two or more characters speaking at 
 
 ## Rule 5: Multiple speakers (implicit) – example
 
-In the »implicit« case, no names are given for the speakers, but are referred to by their role or some attribute they have in common.
+In the "implicit" case, no names are given for the speakers, but are referred to by their role or some attribute they have in common.
 Here, the surplus `<character>` is deleted and the `@who` expanded to contain a pointer to all the individual characters.
 
 ### Before editing
@@ -258,7 +258,7 @@ Here, the surplus `<character>` is deleted and the `@who` expanded to contain a 
 </text>
 {% endhighlight %}
 
-## Rule 6: Multiple speakers (collective) – example 1
+## Rule 6: Multiple speakers (collective) – example 1
 
 When no explicit names are given but an easily discernable collective, the `<character>` for the collective name is deleted and the `@who` edited to contain the names of all characters speaking.
 
@@ -322,8 +322,8 @@ When no explicit names are given but an easily discernable collective, the `<cha
 </text>
 {% endhighlight %}
 
-## Rule 6: Multiple speakers (collective) – example 2
-Often, multiple speakers are not given explicitly but rather a collective reference is given, e.g. »Einige« (»some«), »Alle« (»all«), »the Borg«, etc.
+## Rule 6: Multiple speakers (collective) – example 2
+Often, multiple speakers are not given explicitly but rather a collective reference is given, e.g., "Einige" ("some"), "Alle" ("all"), "the Borg", etc.
 In these cases it often is necessary to revert to close reading to discern who is actually meant. Usually, we add a `<change>` to the `<documentation>` section if the expansion to explicit names is not obvious, requires lengthy close reading or a lot of interpretation.
 
 ### Before editing
@@ -381,14 +381,14 @@ In these cases it often is necessary to revert to close reading to discern who i
 
 Inspecting speech act and stage direction
 
-> *Andrason kommt.*
-> FERIA.
-> Sei uns willkommen! herzlich willkommen!
-> ALLE.
-> Willkommen!
-> ANDRASON.
+> *Andrason kommt.*<br />
+> FERIA.<br />
+> Sei uns willkommen! herzlich willkommen!<br />
+> ALLE.<br />
+> Willkommen!<br />
+> ANDRASON.<br />
 > Ich umarme dich, meine Schwester! Ich grüße euch, meine Kinder!
-> Eure Freude macht mich glücklich, eure Liebe tröstet mich.
+> Eure Freude macht mich glücklich, eure Liebe tröstet mich.<br />
 
 ### After editing
 
@@ -444,8 +444,8 @@ Inspecting speech act and stage direction
 {% endhighlight %}
 
 ## Rule 7: Same name for different characters – example
-Sometimes, two different characters are referred to by the same name, e.g. a servant to the president and a servant to the prince are both name »servant«.
-Here, it is necessary to add a `<character>` for the second individuum, give both an easily recognizable name and ID and edit the `@who` attributes to reflect which of these it refers to.
+Sometimes, two different characters are referred to by the same name, e.g., a servant to the president and a servant to the prince are both named "servant".
+Here, it is necessary to add a `<character>` for the second individuum, give both an easily recognisable name and ID and edit the `@who` attributes to reflect which of these it refers to.
 
 ### Before editing
 
@@ -468,23 +468,23 @@ Here, it is necessary to add a `<character>` for the second individuum, give bot
 
 Inspecting speech acts and stage directions
 
-> **1. Akt**
-> **Fünfte Szene**
-> [...]
-> PRÄSIDENT.
-> Zwar du bist mir gewiß. Ich halte dich an deiner eigenen Schurkerei, wie den Schröter am Faden!
-> EIN KAMMERDIENER
-> tritt herein.
-> Hofmarschall von Kalb –
-> PRÄSIDENT.
-> Kommt, wie gerufen. – Er soll mir angenehm sein.
+> **1. Akt**<br />
+> **Fünfte Szene**<br />
+> [...]<br />
+> PRÄSIDENT.<br />
+> Zwar du bist mir gewiß. Ich halte dich an deiner eigenen Schurkerei, wie den Schröter am Faden!<br />
+> EIN KAMMERDIENER<br />
+> *tritt herein.*<br />
+> Hofmarschall von Kalb –<br />
+> PRÄSIDENT.<br />
+> Kommt, wie gerufen. – Er soll mir angenehm sein.<br />
 > *Kammerdiener geht.*
 
->**2. Akt**
->**Zweite Szene**
->*Ein alter Kammerdiener des Fürsten, der ein Schmuckkästchen trägt.*
-> [...]
-> KAMMERDIENER.
+> **2. Akt**<br />
+> **Zweite Szene**<br />
+> *Ein alter Kammerdiener des Fürsten, der ein Schmuckkästchen trägt.*<br />
+> [...]<br />
+> KAMMERDIENER.<br />
 > Seine Durchlaucht der Herzog empfehlen sich Mylady zu Gnaden, und
 > schicken Ihnen diese Brillanten zur Hochzeit. Sie kommen soeben erst aus Venedig.
 
@@ -509,8 +509,8 @@ Inspecting speech acts and stage directions
 
 ## Rule 8: Collectives as part of a collective – example
 
-Especially in dramas where large crowds play a major role, there are often subdivisions of the crowds speaking while there is no explicit reference to which people this part of the larger collective consists of (no Six of Twekve here). Usually, this includes none of the major characters and the utterances, while important for the atmosphere of the setting, are quite short.
-Here, we decided to not partition the collective, but rather to build it up: »Some of the crowd«, »Others of the crowd« etc. are considered an `<alias>` of the larger collectives `<character>`.
+Especially in dramas with several large crowds, subdivisions of these crowds take action and speak out while there is no explicit reference to who is actually part of this subdivision (no Six-of-Twelve here). Usually, these groups include none of the major characters and the utterances – while important for the atmosphere of the setting – are quite short.
+Here, we decided to not partition the collective, but rather to build it up: "Some of the crowd", "Others of the crowd" etc. are considered an `<alias>` of the larger collectives `<character>`.
 
 ### Before editing
 
@@ -565,9 +565,9 @@ Here, we decided to not partition the collective, but rather to build it up: »S
 
 ## Conclusion and caveat
 
-Using these rules, we were able to work around many of the problems. The resulting data are much more consistent than what we started out with.
-But one always has to bear in mind that that improving the data is still limited by some constraints of the source texts:
+Using these rules, we were able to work around most of the problems. The resulting data are much more consistent than what we started out with.
+But one always has to bear in mind that improving the data is still limited by some constraints of the source texts:
 
-* We had to assume that the structure as given in the source files was generally correct; in a few cases we manually added the missing information to the sources as the results were grossly wrong as was the case with Goethe's »Götz von Berlichingen« where no scenes were tagged.
-* Characters that are not tagged as a speaker will not be recognized. If two speakers speak collectively and are tagged `<sp>Kolja und Mitja</sp>` in the source, the script will correctly recognize both speakers. However, there are instances of incorrect tagging where only one speaker is tagged (and the other might »disappear« into a stage direction). In these cases, the second speaker will not be recognized and thus not present in the zwischenformat data. Usually, it is impossible to recognize these errors on the first glance.
-* Stage directions might be tagged as parts of a speech, and vice versa. This will result in erroneous amounts in the zwischenformat's lina:sp. The worst case is a missing speaker if all that character's utterances were tagged as stage directions.
+* We had to assume that the structure as given in the source files was generally correct; in a few cases, we manually added the missing information to the sources as the results were grossly wrong as was the case with Goethe's "Götz von Berlichingen" where no scenes were tagged.
+* Characters that are not tagged as a `<speaker>` will not be recognised. If two speakers speak collectively and are tagged `<sp>Kolja und Mitja</sp>` in the source, the script will correctly recognise both speakers. However, there are instances of incorrect tagging where only one speaker is tagged (and the other might "disappear" into a stage direction). In these cases, the second speaker will not be recognised and thus not be present in the *zwischenformat* data. Usually, it is impossible to recognise these errors at first glance.
+* Stage directions might be tagged as parts of a speech, and vice versa. This will result in erroneous amounts in the *zwischenformat's* `<lina:sp>`. Our worst case is a missing speaker, for example if all utterances of a character were falsely tagged as stage directions.
