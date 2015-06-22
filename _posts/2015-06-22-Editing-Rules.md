@@ -11,7 +11,7 @@ imagefeature:
 mathjax: 
 chart: 
 comments: true
-featured: false
+featured: true
 ---
 
 ## Introduction
@@ -47,7 +47,7 @@ In order to get around these problems, we had to manually edit the LiNA data fil
 { endhighlight }
 
 ## Rule 2: Edit the meta data header - example 
-The TextGrid sources come with a false and / or incomplete tagging of meta data in its (usually zwo) tei:teiHeader. These information have to be brought into a consistent state and important information has to be added. This usually means:
+The TextGrid sources come with a false and / or incomplete tagging of meta data in its (usually two) tei:teiHeader. These information have to be brought into a consistent state and important information has to be added. This usually means:
 * removing surplus `<title>` tags, 
 * adding, if applicable `<subtitle>` and `<genretitle>` (the former usually including a self-attributed genre like »Ein Trauerspiel in 5 Akten« and the latter containing the genre in a normalized way, here »Trauerspiel«; to make things comparable, we're considering adding attribute lists for the major genres),
 * adding known dates (when the play was written, first printed and premiered),
@@ -535,7 +535,7 @@ Here, we decided to not partition the collective, but rather to build it up: »S
 { endhighlight }
 
 ## Conclusion and caveat
-Using these rules, we were able to work around many of the problems. The resulting data are much more consistent than ehat we started out with.
+Using these rules, we were able to work around many of the problems. The resulting data are much more consistent than what we started out with.
 But one always has to bear in mind that that improving the data is still limited by some constraints of the source texts:
 * We had to assume that the structure as given in the source files was generally correct; in a few cases we manually added the missing information to the sources as the results were grossly wrong as was the case with Goethe's »Götz von Berlichingen« where no scenes were tagged.
 * Characters that are not tagged as a speaker will not be recognized. If two speakers speak collectively and are tagged `<sp>Kolja und Mitja</sp>` in the source, the script will correctly recognize both speakers. However, there are instances of incorrect tagging where only one speaker is tagged (and the other might »disappear« into a stage direction). In these cases, the second speaker will not be recognized and thus not present in the zwischenformat data. Usually, it is impossible to recognize these errors on the first glance.
