@@ -67,7 +67,7 @@ The TextGrid sources come with a false and / or incomplete tagging of meta data 
 
 ### After editing
 { highlight xml }
-	<header>
+<header>
     <title>Der sterbende Cato</title>
     <subtitle>Ein Trauerspiel</subtitle>  
     <genretitle>Trauerspiel</genretitle>
