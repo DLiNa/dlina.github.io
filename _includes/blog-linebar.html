@@ -69,7 +69,7 @@ var line = d3.svg.line()
         return y(d.value);
     })
     .interpolate("cardinal")
-    .tension(0.6);
+    .tension({{ include.tension }});
 
     svg.append("path")
     .data(data)
