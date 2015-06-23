@@ -46,21 +46,27 @@ div#barchart {
   display: none;
 }
 
-/* bar charts in blog*/
-.blog-chart {
+/* charts in blog*/
+.blog-chart, .blog-chart-barline {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-.blog-chart path.domain {
+.blog-chart path.domain, .blog-chart-barline path.domain{
   fill: none;
   stroke: black;
 }
-.blog-chart rect.bar {
+.blog-chart rect.bar, .blog-chart-barline rect.bar{
   fill: steelblue;
 }
-blog-chart rect.bar:hover {
+blog-chart rect.bar:hover, .blog-chart-barline rect.bar:hover {
   fill: #e51843;
+}
+/* bar line combo in blog */
+.blog-chart-barline path.line {
+fill: none
+stroke: #e51843;
+stroke-width: 3px;
 }
 
 /* invisible network stuff */

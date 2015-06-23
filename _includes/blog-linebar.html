@@ -1,4 +1,4 @@
-<div class ="blog-chart" id="barchart{{ include.id }}"></div>
+<div class ="blog-chart-barline" id="barchart{{ include.id }}"></div>
 
 <script>
 d3.tsv("/data/{{ include.tsv }}", type, function(error, data) {
@@ -60,21 +60,21 @@ var svg = d3.select("#barchart{{ include.id }}").append("svg")
       .attr("y", function(d) { return y(d.value); })
       .attr("height", function(d) { return height - y(d.value); });
 
+// here we go for a line
 var line = d3.svg.line()
     .x(function(d) {
-        return x(d.label);
+        return x(d.label) + x.rangeBand() / 2;
     })
     .y(function(d) {
-        return y0(d.value);
+        return y(d.value);
     })
     .interpolate("cardinal")
-    .tension(0.9);
-    svg.append("path") // Add the line path.
+    .tension(0.6);
+
+    svg.append("path")
     .data(data)
         .attr("class", "line")
         .attr("d", line(data));
-
- 
 
 });
 
