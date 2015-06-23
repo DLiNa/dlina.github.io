@@ -20,7 +20,7 @@ We already gave an example of how to ask our data [in our last posting](/The-Big
 * **Number of characters**, i.e., the number of actors contained in each drama network; you can also call this the 'size' of each drama network.
 * **Maximum degree**, i.e., the highest degree of an actor of a drama network; degree here refers to the sum of scenic co-presences of a character in a drama (that is, how many of the other characters does a character 'meet'/'speak to' throughout the whole play).
 * **Average degree**, i.e., the average of all character degrees of a dramatic text.
-* **Density**, i.e., the ratio of the number of *actual* co-presences to the number of *possible* co-presences among all the characters of a play; the density value is always somewhere between 0 and 1: if it is 1, then every character speaks to every other character at least once.
+* **Density**, i.e., the ratio of the number of *actual* co-presences to the number of *potential* co-presences among all the characters of a play; the density value is always somewhere between 0 and 1: if it is 1, then every character speaks to every other character at least once.
 * **Average path length**, which is ([quote Wikipedia:](https://en.wikipedia.org/wiki/Network_science#Average_path_length)) "calculated by finding the shortest path between all pairs of nodes, adding them up, and then dividing by the total number of pairs. This shows us, on average, the number of steps it takes to get from one member of the network to another."
 
 As stated before, these are very basic measures. But let's go ahead and have a look at what these measures tell us about our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) that includes 465 German-language plays from about 1730 to 1930.
@@ -63,9 +63,32 @@ Let's put the data into a diagram:
 
 The standard-deviation values look like this:
 
-## Fig. 02: Number of characters (Median) [csv: blogpost-litgeschichte-fig02.csv]
+### Fig. 02: Number of characters (SD)
 
 {% include blog-barchart.html id="2" tsv="lit-history-figs/lit-history-fig02.tsv" %}
+
+
+As you can see, there is something going on in our corpus. For example, in the second half of the 18th century, we witness a period of gradual increase in the number of characters that can be brought in connection with the renunciation of classical drama poetics and the beginning reception of Shakespeare. We also recognise a peak in the 1830s, not least due to the success of the historical drama in this period. In the late 19th century, we can observe a significant reduction in the number of characters, probably an effect owed to the naturalistic drama and its recourse to the classical poetics and their idea of the [three unities](https://en.wikipedia.org/wiki/Classical_unities).
+
+At the same time, it is significant how the standard deviation goes up towards the end of the 18th century. This indicates an increased number of different structural styles of drama composition. What we can observe here is a differentiation of dramatic production, in structural terms, away from the uniformity of the 1730s and 1750s. This, however, changes again in the mid-19th century.
+
+We don't want to further discuss these statistical values ​​at this point, especially because we don't want to espouse any monocausal explanations.
+
+Instead, let's throw a glance at some more charts dedicated the other values, i.e., Max Degree, Average Degree, Density and Average Path Length.
+
+### Fig. 03: Max Degree (Median)
+
+{% include blog-barchart.html id="3" tsv="lit-history-figs/lit-history-fig03.tsv" %}
+
+### Fig. 04: Average Degree (Average)
+
+{% include blog-barchart.html id="4" tsv="lit-history-figs/lit-history-fig04.tsv" %}
+
+
+### Test
+
+{% include blog-barchart.html id="5" tsv="blogpost-genre-fig01.tsv" %}
+
 
 
 
