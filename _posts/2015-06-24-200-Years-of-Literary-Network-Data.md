@@ -59,7 +59,7 @@ Let's put the data into a diagram:
 
 ### Fig. 01: Number of characters (Median)
 
-{% include blog-barchart.html id="1" tsv="lit-history-figs/lit-history-fig01.tsv" %}
+{% include blog-barchart.html id="1" tsv="lit-history-fig01.tsv" %}
 
 The standard-deviation values look like this:
 
