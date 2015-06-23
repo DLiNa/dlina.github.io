@@ -1,11 +1,4 @@
-	<div class ="blog-chart" id="barchart{{ include.id }}">
-		<!-- div class="switch">
-			sort values by frequency|alphabet
-		 	<input id="sort-switch" type="checkbox" tabindex="0"/>
-		  	<label for="sort-switch"></label>
-		Hier wird nicht sortiert!
-		</div -->
-	</div>
+<div class ="blog-chart" id="barchart{{ include.id }}"></div>
 
 <script>
 d3.tsv("/data/{{ include.tsv }}", type, function(error, data) {
