@@ -84,10 +84,27 @@ Instead, let's throw a glance at some more charts dedicated the other values, i.
 
 {% include blog-barchart.html id="4" tsv="lit-history-figs/lit-history-fig04.tsv" %}
 
+### Fig. 05: Density (Average)
+
+{% include blog-barchart.html id="5" tsv="lit-history-figs/lit-history-fig05.tsv" %}
+
+### Fig. 06: Average Path Length (Average)
+
+{% include blog-barchart.html id="6" tsv="lit-history-figs/lit-history-fig06.tsv" %}
+
+As stated above, we will evaluate and discuss these results later.
+
+
+
+
+
+
+
+
 
 ### Test
 
-{% include blog-barchart.html id="5" tsv="blogpost-genre-fig01.tsv" %}
+{% include blog-barchart.html id="15" tsv="blogpost-genre-fig01.tsv" %}
 
 
 
