@@ -59,6 +59,8 @@ Let's put the data into a diagram:
 
 ### Fig. 01: Number of characters (Median)
 
+{% include blog-barchart.html id="1" tsv="lit-history-fig01.tsv" %}
+
 {% include blog-barchart.html id="1" tsv="lit-history-figs/lit-history-fig01.tsv" %}
 
 The standard-deviation values look like this:
@@ -98,9 +100,38 @@ Before closing this post, we want to suggest one more way to analyse our data. W
 
 This question must be approached with great caution. Established divisions into literary epochs do not just rely on a set of very specific structural elements (like our approach), no, they are, of course, much richer. We are absolutely not able to evaluate whether the known divisons into literary epochs are 'correct' or anything. That sort of thing is not possible with that kind of structural data. But anyhow, we can always check how our data relates to the established division into literary.
 
-For that purpose, we picked two different divisions into epochs. The first was developed in the context of German Structuralism (cf., inter alia, Titzmann 1991a, Titzmann 1991b, Titzmann 2002, Titzmann 2012a, Titzmann 2012b, Wünsch 1991, Wünsch 1998, Wünsch 2007). The other classification was pulled from the timespans of the separate volumes of "Hansers Sozialgeschichte der deutschen Literatur vom 16. Jahrhundert bis in die Gegenwart" (Gomringer 1980-2009).
+For that purpose, we picked two different divisions into epochs. The first was developed in the context of German Structuralism (cf., inter alia, Titzmann 1991a, Titzmann 1991b, Titzmann 2002, Titzmann 2012a, Titzmann 2012b, Wünsch 1991, Wünsch 1998, Wünsch 2007). The other classification was pulled from the timespans of the separate volumes of "Hansers Sozialgeschichte der deutschen Literatur vom 16. Jahrhundert bis in die Gegenwart" (Grimminger 1980-2009).
 
-...
+In the context of German structuralism following epoch classification are discussed (all time spans are give or take, of course):
+
+* 1720–1745: Literatursystem 'Frühaufklärung'
+* 1745–1770: Literatursystem 'Empfindsamkeit'
+* 1770–1830: Literatursystem 'Goethezeit'
+* 1830–1850: Literatursystem 'Biedermeier'
+* 1850–1890: Literatursystem 'Realismus'
+* 1890–1930: Literatursystem 'Frühe Moderne'
+
+The separate volumes of "Hansers Sozialgeschichte der deutschen Literatur" are divided like this:
+
+* 1680–1789 (Vol. 3)
+* 1789–1815 (Vol. 4)
+* 1815–1848 (Vol. 5)
+* 1848–1890 (Vol. 6)
+* 1890–1918 (Vol. 7)
+* 1918–1933 (Vol. 8)
+
+So let's see how our network values relate to these periodisations (this time around, we're limiting this venture to the number of characters and network density). 
+
+First of all, the values for the Structuralist periodisation.
+
+### Fig. 07: Number of Characters (Median), time spans according to Structuralist approach
+
+{% include blog-barchart.html id="7" tsv="lit-history-figs/lit-history-fig07.tsv" %}
+
+### Fig. 08: Number of Characters (Standard Deviation), time spans according to Structuralist approach
+
+{% include blog-barchart.html id="8" tsv="lit-history-figs/lit-history-fig08.tsv" %}
+
 
 
 
