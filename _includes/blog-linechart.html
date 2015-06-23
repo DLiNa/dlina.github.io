@@ -36,8 +36,15 @@ var svg = d3.select("#barchart{{ include.id }}").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   x.domain(data.map(function(d) { return d.label; }));
-  y.domain([d3.min(data, function(d) { return d.value; }) - d3.max(data, function(d) { return d.value; }) / 3, d3.max(data, function(d) { return d.value; })]);
+  
+var minval = d3.min(data, function(d) { return d.value; });
+var maxval = d3.max(data, function(d) { return d.value; })
 
+if ( maxval < 1.1 ){ y.domain([0, 1]); }
+else if ( minval - (maxval / 3 ) < 0) { y.domain([0, maxval]); }
+else { y.domain([minval, maxval]); }
+  
+  
   svg.append("g")
       	.attr("class", "x axis")
       	.attr("transform", "translate(0," + height + ")")
