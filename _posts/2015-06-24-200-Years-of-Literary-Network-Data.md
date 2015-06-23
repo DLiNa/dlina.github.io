@@ -5,7 +5,7 @@ author: [peer, mathias, frank, dario]
 description: 
 headline: 
 modified: 2015-07-24
-category:
+category: 
 tags: []
 imagefeature: 
 mathjax: 
@@ -59,7 +59,7 @@ Let's put the data into a diagram:
 
 ### Fig. 01: Number of characters (Median)
 
-{% include blog-barchart.html id="1" tsv="lit-history-fig01.tsv" %}
+{% include blog-barchart.html id="1" tsv="lit-history-figs/lit-history-fig01.tsv" %}
 
 The standard-deviation values look like this:
 
@@ -94,7 +94,13 @@ Instead, let's throw a glance at some more charts dedicated the other values, i.
 
 As stated above, we will evaluate and discuss these results later.
 
+Before closing this post, we want to suggest one more way to analyse our data. We already mentioned that the classification by decades is rather arbitrary. However, there's another option to pursue this idea. Why don't we sort our corpus by already established periodisations of German literature and take it from there? Does our data reproduce established divisions into literary epochs?
 
+This question must be approached with great caution. Established divisions into literary epochs do not just rely on a set of very specific structural elements (like our approach), no, they are, of course, much richer. We are absolutely not able to evaluate whether the known divisons into literary epochs are 'correct' or anything. That sort of thing is not possible with that kind of structural data. But anyhow, we can always check how our data relates to the established division into literary.
+
+For that purpose, we picked two different divisions into epochs. The first was developed in the context of German Structuralism (cf., inter alia, Titzmann 1991a, Titzmann 1991b, Titzmann 2002, Titzmann 2012a, Titzmann 2012b, Wünsch 1991, Wünsch 1998, Wünsch 2007). The other classification was pulled from the timespans of the separate volumes of "Hansers Sozialgeschichte der deutschen Literatur vom 16. Jahrhundert bis in die Gegenwart" (Gomringer 1980-2009).
+
+...
 
 
 
@@ -103,6 +109,8 @@ As stated above, we will evaluate and discuss these results later.
 
 
 ### Test
+
+This is just to test if the TSV/CSV engine works (to be deleted when finished):
 
 {% include blog-barchart.html id="15" tsv="blogpost-genre-fig01.tsv" %}
 
