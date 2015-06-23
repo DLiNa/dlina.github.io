@@ -46,6 +46,23 @@ div#barchart {
   display: none;
 }
 
+/* bar charts in blog*/
+.blog-chart {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.blog-chart path.domain {
+  fill: none;
+  stroke: black;
+}
+.blog-chart rect.bar {
+  fill: steelblue;
+}
+blog-chart rect.bar:hover {
+  fill: #e51843;
+}
+
 /* invisible network stuff */
 a[href="#networks"], a[href="#matrix"], h2#networks, h2#matrix  {
   display: none;
