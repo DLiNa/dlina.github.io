@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "200 Years of Literary Network Data"
-author: [peer, mathias, frank, dario]
+author: [peer, frank, mathias, dario]
 description: 
 headline: 
-modified: 2015-07-24
+modified: 2015-06-24
 category: 
 tags: []
 imagefeature: 
@@ -54,12 +54,9 @@ First example, a table referring to the "Number of characters" of a play, reveal
 | 1910   | 33 | 22,85   | 18     | 17,46              |
 | 1920   | 16 | 29,25   | 24,5   | 15,7               |
 
-
-Let's put the data into a diagram:
+Let's put the data into some diagrams:
 
 ### Fig. 01: Number of characters (Median)
-
-{% include blog-barchart.html id="1" tsv="lit-history-fig01.tsv" %}
 
 {% include blog-barchart.html id="1" tsv="lit-history-figs/lit-history-fig01.tsv" %}
 
@@ -68,7 +65,6 @@ The standard-deviation values look like this:
 ### Fig. 02: Number of characters (SD)
 
 {% include blog-barchart.html id="2" tsv="lit-history-figs/lit-history-fig02.tsv" %}
-
 
 As you can see, there is something going on in our corpus. For example, in the second half of the 18th century, we witness a period of gradual increase in the number of characters that can be brought in connection with the renunciation of classical drama poetics and the beginning reception of Shakespeare. We also recognise a peak in the 1830s, not least due to the success of the historical drama in this period. In the late 19th century, we can observe a significant reduction in the number of characters, probably an effect owed to the naturalistic drama and its recourse to the classical poetics and their idea of the [three unities](https://en.wikipedia.org/wiki/Classical_unities).
 
@@ -120,9 +116,9 @@ The separate volumes of "Hansers Sozialgeschichte der deutschen Literatur" are d
 * 1890–1918 (Vol. 7)
 * 1918–1933 (Vol. 8)
 
-So let's see how our network values relate to these periodisations (this time around, we're limiting this venture to the number of characters and network density). 
+So let's see how our network values relate to these periodisations (this time around, we're limiting this venture to the number of characters and network density).
 
-First of all, the values for the Structuralist periodisation.
+The first four charts are dedicated to the Structuralist periodisation:
 
 ### Fig. 07: Number of Characters (Median), time spans according to Structuralist approach
 
@@ -132,20 +128,51 @@ First of all, the values for the Structuralist periodisation.
 
 {% include blog-barchart.html id="8" tsv="lit-history-figs/lit-history-fig08.tsv" %}
 
+### Fig. 09: Density (Average), time spans according to Structuralist approach
 
+{% include blog-barchart.html id="9" tsv="lit-history-figs/lit-history-fig09.tsv" %}
 
+### Fig. 10: Density (Standard Deviation), time spans according to Structuralist approach
 
+{% include blog-barchart.html id="10" tsv="lit-history-figs/lit-history-fig10.tsv" %}
 
+Let's now map our values onto the time spans suggested by the volumes of "Hansers Sozialgeschichte":
 
+### Fig. 11: Number of Characters (Median), time spans according to "Hansers Sozialgeschichte"
 
+{% include blog-barchart.html id="11" tsv="lit-history-figs/lit-history-fig11.tsv" %}
 
-### Test
+### Fig. 12: Number of Characters (Standard Deviation), time spans according to "Hansers Sozialgeschichte"
+
+{% include blog-barchart.html id="12" tsv="lit-history-figs/lit-history-fig12.tsv" %}
+
+### Fig. 13: Density (Average), time spans according to "Hansers Sozialgeschichte"
+
+{% include blog-barchart.html id="13" tsv="lit-history-figs/lit-history-fig13.tsv" %}
+
+### Fig. 14: Density (Average), time spans according to "Hansers Sozialgeschichte"
+
+{% include blog-barchart.html id="14" tsv="lit-history-figs/lit-history-fig14.tsv" %}
+
+## Disclaimer
+
+All results we're presenting here are initial explorations of our corpus of 465 dramatic pieces and the network data we pulled out of the texts. Their significance is limited. But we do have network data that can be toyed around with, and that is what we are going to do in the course of the next time. We will have to readjust and we will have te recalculate things. On that note, always bear in mind to never trust any statistics you didn't forge yourself.
+
+### Bibliography
+
+* Rolf Grimminger et al., *Hansers Sozialgeschichte der deutschen Literatur vom 16. Jahrhundert bis in die Gegenwart*, München 1980–2009.
+* Michael Titzmann (ed.), *Modelle des literarischen Strukturwandels*, Tübingen 1991.
+* Michael Titzmann, *Skizze einer integrativen Literaturgeschichte und ihres Ortes in einer Systematik der Literaturwissenschaft*, in: Michael Titzmann (ed.), *Modelle des literarischen Strukturwandels*, Tübingen 1991, 395–438.
+* Michael Titzmann, *Epoche und Literatursystem. Ein terminologisch-methodologischer Vorschlag*, in: *Epochen. Mitteilungen des Deutschen Germanistenverbandes* 49.3 (2002), 294–307.
+* Michael Titzmann: *Probleme des Epochenbegriffs in der Literaturgeschichtsschreibung*, in: Michael Titzmann, *Anthropologie der Goethezeit. Studien zur Literatur und Wissensgeschichte*, Berlin/Boston 2012, 31–67.
+* Michael Titzmann, *"Empfindung" und "Leidenschaft". Strukturen, Kontexte, Transformationen der Affektivität/Emotionalität in der deutschen Literatur in der 2. Hälfte des 18. Jahrhunderts*, in: Michael Titzmann: *Anthropologie der Goethezeit. Studien zur Literatur und Wissensgeschichte*, Berlin/Boston 2012, 333–371.
+* Marianne Wünsch, *Vom späten "Realismus" zur "Frühen Moderne". Versuch eines Modells des literarischen Strukturwandels*, in: Michael Titzmann (ed.): *Modelle des literarischen Strukturwandels*, Tübingen 1991, 187–203.
+* Marianne Wünsch, *Die Fantastische Literatur der Frühen Moderne (1890–1930). Definition. Denkgeschichtlicher Kontext. Strukturen*, München 1998.
+* Marianne Wünsch, *Realismus (1850–1890). Zugänge zu einer literarischen Epoche*, Kiel 2007.
+
+### Test, Test
 
 This is just to test if the TSV/CSV engine works (to be deleted when finished):
 
 {% include blog-barchart.html id="15" tsv="blogpost-genre-fig01.tsv" %}
 
-
-
-
-...
