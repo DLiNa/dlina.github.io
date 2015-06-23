@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "200 Years of Literary Network Data"
-author: [peer, frank, dario]
+author: [peer, mathias, frank, dario]
 description: 
 headline: 
 modified: 2015-07-24
@@ -29,7 +29,8 @@ For our Sydney talk, we grouped the dramas by decades. This decision is continge
 
 First example, a table referring to the "Number of characters" of a play, revealing the average, median and standard-deviation values:
 
-## Table: Number of characters 
+### Table: Number of characters
+
 | Decade | N  | Average | Median | Standard Deviation |
 |--------|----|---------|--------|--------------------|
 | 1730   | 5  | 11,6    | 11     | 3,51               |
@@ -54,9 +55,10 @@ First example, a table referring to the "Number of characters" of a play, reveal
 | 1920   | 16 | 29,25   | 24,5   | 15,7               |
 
 
-Let's put the data into a diagram: 
+Let's put the data into a diagram:
 
-## Fig. 01: Number of characters (Median)
+### Fig. 01: Number of characters (Median)
+
 {% include blog-barchart.html id="1" tsv="lit-history-figs/lit-history-fig01.tsv" %}
 
 The standard-deviation values look like this:
