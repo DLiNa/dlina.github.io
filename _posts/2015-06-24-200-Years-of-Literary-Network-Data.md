@@ -128,7 +128,7 @@ The first four charts are dedicated to the Structuralist periodisation:
 
 ### Fig. 08: Number of Characters (Standard Deviation), time spans according to Structuralist approach
 
-{% include blog-linehart.html id="8" tsv="lit-history-figs/lit-history-fig08.tsv" tension="1" %}
+{% include blog-linechart.html id="8" tsv="lit-history-figs/lit-history-fig08.tsv" tension="1" %}
 
 ### Fig. 09: Density (Average), time spans according to Structuralist approach
 
