@@ -13,19 +13,21 @@ chart:
 comments: true
 featured: false
 ---
-After putting together [our corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) and [extracting the structural data](/Introducing-Our-Zwischenformat/) that are of interest to us it's time to run some statistics. Unfortunately (or fortunately perhaps), statistics can say a lot of things and sometimes has the inclination to speak in riddles. We will certainly need a few months to make sense of all the values we collected. But we're prepared to give at least some insights already. All of this is still very much a work in progress, and the statistical analyses quite rudimentary, but more complex calculations are to follow. Some things, though, we can already see in our data, or at least we can put them in front of you and open them for discussion.
+After putting together [our corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) and [extracting the structural data](/Introducing-Our-Zwischenformat/) that are of interest to us it's time to run some statistics. But as it is with statistical data, they can evoke manifold interpretations and sometimes have the inclination to speak in riddles. We will certainly need a few more months to make sense of all the values we collected.
 
-We already gave an example of how to ask our data [in our last posting](/The-Biggest-Chatterbox-in-German-Literature/). However, such rankings are only one thing; our main purpose is to compute our data by applying by means of Social Network Analysis (SNA). Again, we will start with very rudimentary data and concentrate on the following five measures:
+Nevertheless, we're prepared to offer at least some insights already. All of which is still very much a work in progress. Our statistical analyses are quite rudimentary for the time being, but more complex calculations will follow. Some things, though, we can already recognise in our data, or at least we can put them in front of you and open them up for discussion.
 
-* **Number of characters**, i.e., the number of actors contained in each drama network; you can also call this the 'size' of each drama network.
+We already gave an example of how to ask our data [in our last posting](/The-Biggest-Chatterbox-in-German-Literature/). However, such rankings are only one thing; our main purpose is to compute our data by means of Social Network Analysis (SNA). Again, we will start with very rudimentary data and concentrate on the following five measures:
+
+* **Number of characters**, i.e., the number of actors appearing in each drama network, equates to the 'size' of any given network.
 * **Maximum degree**, i.e., the highest degree of an actor of a drama network; degree here refers to the sum of scenic co-presences of a character in a drama (that is, how many of the other characters does a character 'meet'/'speak to' throughout the whole play).
 * **Average degree**, i.e., the average of all character degrees of a dramatic text.
-* **Density**, i.e., the ratio of the number of *actual* co-presences to the number of *potential* co-presences among all the characters of a play; the density value is always somewhere between 0 and 1: if it is 1, then every character speaks to every other character at least once.
+* **Density**, i.e., the ratio of the number of *actual* co-presences to the number of *potential* co-presences among all the characters of a play; the density value is always somewhere between 0 and 1: if it is 1, every character speaks to every other character at least once.
 * **Average path length**, which is ([quote Wikipedia:](https://en.wikipedia.org/wiki/Network_science#Average_path_length)) "calculated by finding the shortest path between all pairs of nodes, adding them up, and then dividing by the total number of pairs. This shows us, on average, the number of steps it takes to get from one member of the network to another."
 
 As stated before, these are very basic measures. But let's go ahead and have a look at what these measures tell us about our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) that includes 465 German-language plays from about 1730 to 1930.
 
-For our Sydney talk, we grouped the dramas by decades. This decision is contingent, of course, and we will also experiment with other periodisations. But for a first look into the data, this approach will fulfill its purpose.
+In order to observe literary evolution throughout time, we grouped our dramatic texts by decades. This decision is contingent, of course, and we will also experiment with other periodisations (see below). But for a first look into the data, this approach will fulfill its purpose.
 
 First example, a table referring to the "Number of characters" of a play, revealing the average, median and standard-deviation values:
 
