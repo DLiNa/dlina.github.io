@@ -11,7 +11,7 @@ imagefeature:
 mathjax: 
 chart: 
 comments: true
-featured: false
+featured: true
 ---
 The DLINA *zwischenformat* we [recently introduced](/Introducing-Our-Zwischenformat/) also stores amounts of speech acts, words, lines, chars. Truth be told, we will always have to cope with some erroneous and inaccurate markup contained in the TextGrid Repository TEI files here and there, but now we can roughly specify how many speech acts are executed by each character, how many words are uttered by each of them, and the amount of letters used by everybody. These values were elevated from all dramas of our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/), i.e., 465 dramas written or published inbetween 1731 and 1929.
 
