@@ -64,7 +64,7 @@ blog-chart rect.bar:hover, .blog-chart-barline rect.bar:hover {
 }
 /* bar line combo in blog */
 .blog-chart-barline path.line {
-fill: none
+fill: none;
 stroke: #e51843;
 stroke-width: 3px;
 }
