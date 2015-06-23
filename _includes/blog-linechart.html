@@ -45,11 +45,8 @@ else if ( minval - (maxval / 3 ) < 0) { y.domain([0, maxval]); }
 else { y.domain([minval, maxval]); }
 
 // label the domain with density if there is no value greater than 1
-
 if (maxval < 1.001){ var ylabel = "Density"}
-else {var dlabel = "Frequency" }
-
-  
+else {var ylabel = "Frequency" }
   
   svg.append("g")
       	.attr("class", "x axis")
