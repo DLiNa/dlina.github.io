@@ -60,13 +60,13 @@ Let's put the data into some diagrams:
 
 ### Fig. 01: Number of characters (Median)
 
-{% include blog-linechart.html id="1" tsv="lit-history-figs/lit-history-fig01.tsv" tension="0.8" %}
+{% include blog-linechart.html id="1" tsv="lit-history-figs/lit-history-fig01.tsv" tension="0.9" %}
 
 The standard-deviation values look like this:
 
 ### Fig. 02: Number of characters (SD)
 
-{% include blog-linechart.html id="2" tsv="lit-history-figs/lit-history-fig02.tsv" tension="0.8" %}
+{% include blog-linechart.html id="2" tsv="lit-history-figs/lit-history-fig02.tsv" tension="0.9" %}
 
 As you can see, there is something going on in our corpus. For example, in the second half of the 18th century, we witness a period of gradual increase in the number of characters that can be brought in connection with the renunciation of classical drama poetics and the beginning reception of Shakespeare. We also recognise a peak in the 1830s, not least due to the success of the historical drama in this period. In the late 19th century, we can observe a significant reduction in the number of characters, probably an effect owed to the naturalistic drama and its recourse to the classical poetics and their idea of the [three unities](https://en.wikipedia.org/wiki/Classical_unities).
 
@@ -86,11 +86,11 @@ Instead, let's throw a glance at some more charts dedicated the other values, i.
 
 ### Fig. 05: Density (Average)
 
-{% include blog-linechart.html id="5" tsv="lit-history-figs/lit-history-fig05.tsv" tension="1" %}
+{% include blog-linechart.html id="5" tsv="lit-history-figs/lit-history-fig05.tsv" tension="0.9" %}
 
 ### Fig. 06: Average Path Length (Average)
 
-{% include blog-linechart.html id="6" tsv="lit-history-figs/lit-history-fig06.tsv" tension="1" %}
+{% include blog-linechart.html id="6" tsv="lit-history-figs/lit-history-fig06.tsv" tension="0.9" %}
 
 As stated above, we will evaluate and discuss these results later.
 
@@ -124,37 +124,37 @@ The first four charts are dedicated to the Structuralist periodisation:
 
 ### Fig. 07: Number of Characters (Median), time spans according to Structuralist approach
 
-{% include blog-linechart.html id="7" tsv="lit-history-figs/lit-history-fig07.tsv" tension="1" %}
+{% include blog-linechart.html id="7" tsv="lit-history-figs/lit-history-fig07.tsv" tension="0.9" %}
 
 ### Fig. 08: Number of Characters (Standard Deviation), time spans according to Structuralist approach
 
-{% include blog-linechart.html id="8" tsv="lit-history-figs/lit-history-fig08.tsv" tension="1" %}
+{% include blog-linechart.html id="8" tsv="lit-history-figs/lit-history-fig08.tsv" tension="0.9" %}
 
 ### Fig. 09: Density (Average), time spans according to Structuralist approach
 
-{% include blog-linechart.html id="9" tsv="lit-history-figs/lit-history-fig09.tsv" tension="1" %}
+{% include blog-linechart.html id="9" tsv="lit-history-figs/lit-history-fig09.tsv" tension="0.9" %}
 
 ### Fig. 10: Density (Standard Deviation), time spans according to Structuralist approach
 
-{% include blog-linechart.html id="10" tsv="lit-history-figs/lit-history-fig10.tsv" tension="1" %}
+{% include blog-linechart.html id="10" tsv="lit-history-figs/lit-history-fig10.tsv" tension="0.9" %}
 
 Let's now map our values onto the time spans suggested by the volumes of "Hansers Sozialgeschichte":
 
 ### Fig. 11: Number of Characters (Median), time spans according to "Hansers Sozialgeschichte"
 
-{% include blog-linechart.html id="11" tsv="lit-history-figs/lit-history-fig11.tsv" tension="1" %}
+{% include blog-linechart.html id="11" tsv="lit-history-figs/lit-history-fig11.tsv" tension="0.9" %}
 
 ### Fig. 12: Number of Characters (Standard Deviation), time spans according to "Hansers Sozialgeschichte"
 
-{% include blog-linechart.html id="12" tsv="lit-history-figs/lit-history-fig12.tsv" tension="1" %}
+{% include blog-linechart.html id="12" tsv="lit-history-figs/lit-history-fig12.tsv" tension="0.9" %}
 
 ### Fig. 13: Density (Average), time spans according to "Hansers Sozialgeschichte"
 
-{% include blog-linechart.html id="13" tsv="lit-history-figs/lit-history-fig13.tsv" tension="1" %}
+{% include blog-linechart.html id="13" tsv="lit-history-figs/lit-history-fig13.tsv" tension="0.9" %}
 
 ### Fig. 14: Density (Average), time spans according to "Hansers Sozialgeschichte"
 
-{% include blog-linechart.html id="14" tsv="lit-history-figs/lit-history-fig14.tsv" tension="1" %}
+{% include blog-linechart.html id="14" tsv="lit-history-figs/lit-history-fig14.tsv" tension="0.9" %}
 
 ## Disclaimer
 
