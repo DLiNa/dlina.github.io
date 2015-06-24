@@ -7,7 +7,7 @@ var margin = {top: 20, right: 20, bottom: 200, left: 60};
 
 var sum = data.map(function(d) { return d.name; }).length;
 var base = 10;
-if (sum < 7) { var width =  base * 15 * sum - margin.left - margin.right; }
+if (sum < 7) { var width =  base * 10 * sum - margin.left - margin.right; }
 else if (sum < 25) { var width =  base * 3.5 * sum - margin.left - margin.right; }
 else if (sum < 50 ){ var width = ( base * 1.7 ) * sum - margin.left - margin.right; }
 else { var width = ( base * 1 ) * sum - margin.left - margin.right; }
