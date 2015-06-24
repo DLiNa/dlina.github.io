@@ -102,8 +102,8 @@ For that purpose, we picked two different divisions into epochs. The first was d
 
 In the context of German structuralism following epoch classification are discussed (all time spans are give or take, of course):
 
-* 1720–1745: Literatursystem 'Frühaufklärung'
-* 1745–1770: Literatursystem 'Empfindsamkeit'
+* 1720–1750: Literatursystem 'Frühaufklärung'
+* 1750–1770: Literatursystem 'Empfindsamkeit'
 * 1770–1830: Literatursystem 'Goethezeit'
 * 1830–1850: Literatursystem 'Biedermeier'
 * 1850–1890: Literatursystem 'Realismus'
@@ -120,7 +120,7 @@ The separate volumes of "Hansers Sozialgeschichte der deutschen Literatur" are d
 
 So let's see how our network values relate to these periodisations (this time around, we're limiting this venture to the number of characters and network density).
 
-The first four charts are dedicated to the Structuralist periodisation:
+The first four charts are dedicated to the Structuralist periodisation (since our Sydney corpus contains texts only from 1730 to 1930, the X-axis begins at 1730):
 
 ### Fig. 07: Number of Characters (Median), time spans according to Structuralist approach
 
@@ -138,7 +138,7 @@ The first four charts are dedicated to the Structuralist periodisation:
 
 {% include blog-linechart.html id="10" tsv="lit-history-figs/lit-history-fig10.tsv" tension="0.9" %}
 
-Let's now map our values onto the time spans suggested by the volumes of "Hansers Sozialgeschichte":
+Let's now map our values onto the time spans suggested by the volumes of "Hansers Sozialgeschichte" (and again: our Sydney corpus contains texts only from 1730 to 1930, the X-axis begins at 1730 and ends at 1930):
 
 ### Fig. 11: Number of Characters (Median), time spans according to "Hansers Sozialgeschichte"
 
