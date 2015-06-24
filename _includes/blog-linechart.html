@@ -41,8 +41,8 @@ var minval = d3.min(data, function(d) { return d.value; });
 var maxval = d3.max(data, function(d) { return d.value; })
 
 if ( maxval < 1.001 ){ y.domain([0, 1]); }
-else if ( minval - (maxval / 3 ) < 0) { y.domain([0, maxval]); }
-else { y.domain([minval, maxval]); }
+else if ( minval - (maxval / 3 ) > minval) { y.domain([0, maxval]); }
+else { y.domain([minval - ((maxval - minval) / 4), maxval]); }
 
 // label the domain with density if there is no value greater than 1
 if (maxval < 1.001){ var ylabel = "Density"}
