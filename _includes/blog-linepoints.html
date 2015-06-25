@@ -83,11 +83,18 @@ var line = d3.svg.line()
     .interpolate("cardinal")
     .tension("{{ include.tension }}");
 
-    svg.append("g.path")
-    .data(data)
-        .attr("class", "line")
-        .attr("d", line(data));
-
+    svg.append("g")
+	.append("path")
+	    	.data(data)
+		.attr("class", "line")
+		.attr("d", line(data))
+	.append("text")
+	.append('circle')
+		.data(function (d) { return d; })
+		.enter().append('circle')
+		.attr('cx', function (d) { return xScale(d.x); })
+		.attr('cy', function (d) { return yScale(d.y); })
+		.attr('r', 3); 
 });
 
 function type(d) {
