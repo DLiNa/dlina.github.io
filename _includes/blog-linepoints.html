@@ -87,13 +87,25 @@ var line = d3.svg.line()
 	.append("path")
 	    	.data(data)
 		.attr("class", "line")
-		.attr("d", line(data))
-	.append('circle')
-		.data(data)
-		.enter().append('circle')
-		.attr('cx', function (d) { return xScale(d.x); })
-		.attr('cy', function (d) { return yScale(d.y); })
-		.attr('r', 3); 
+		.attr("d", line(data));
+
+svg.append("g").append('circle')
+	.data(data)
+	.enter().append('circle')
+	.attr('cx', function (d) { return x(d.label); })
+	.attr('cy', function (d) { return y(d.value); })
+	.attr('r', 3);
+
+svg.selectAll(".dot")
+      .data(data)
+    .enter().append("circle")
+      .attr("class", "dot")
+      .attr("r", 3.5)
+      .attr("cx", function(d) { return x(d.label) + x.rangeBand() / 2 ;})
+      .attr("cy", function(d) { return y( d.value );})
+      .style("fill", "steelblue");
+
+ 
 });
 
 function type(d) {

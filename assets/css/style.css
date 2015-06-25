@@ -68,7 +68,8 @@ fill: none;
 stroke: #6495ed;
 stroke-width: 3px;
 }
-
+/* linecharts y axis */
+svg > g > g.y.axis > text {font-size:0.7em;}
 /* invisible network stuff */
 a[href="#networks"], a[href="#matrix"], h2#networks, h2#matrix  {
   display: none;
