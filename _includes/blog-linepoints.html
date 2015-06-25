@@ -13,7 +13,7 @@ else if (sum < 50 ){ var width = ( base * 1.7 ) * sum - margin.left - margin.rig
 else { var width = ( base * 1 ) * sum - margin.left - margin.right; }
 
 if ( "{{ include.height }}" == "" ){var includeHeight = 100 ;}
-else { var includeHeight = {{ include.height }} ;}
+else { var includeHeight = parseInt("{{ include.height }}") ;}
 
 var height = (800 * includeHeight / 100) - margin.top - margin.bottom;
 
