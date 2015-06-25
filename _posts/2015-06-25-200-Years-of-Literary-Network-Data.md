@@ -70,7 +70,7 @@ The standard-deviation values look like this:
 
 As you can see, there is something going on in our corpus. For example, in the second half of the 18th century, we witness a period of gradual increase in the number of characters that can be brought in connection with the renunciation of classical drama poetics and the beginning reception of Shakespeare. We also recognise a peak in the 1830s, not least due to the success of the historical drama in this period. In the late 19th century, we can observe a significant reduction in the number of characters, probably an effect owed to the naturalistic drama and its recourse to the classical poetics and their idea of the [three unities](https://en.wikipedia.org/wiki/Classical_unities).
 
-At the same time, it is significant how the standard deviation goes up towards the end of the 18th century. This indicates an increased number of different structural styles of drama composition. What we can observe here is a differentiation of dramatic production, in structural terms, away from the uniformity of the 1730s and 1750s. This, however, changes again in the mid-19th century.
+At the same time, it is significant how the standard deviation goes up towards the end of the 18th century. This indicates an increased number of different structural styles of drama composition. What we can observe here is a differentiation of dramatic production, in structural terms, away from the uniformity of the years from 1730 to 1750. This, however, changes again in the mid-19th century.
 
 We don't want to further discuss these statistical values ​​at this point, especially because we don't want to espouse any monocausal explanations.
 
@@ -96,14 +96,14 @@ As stated above, we will evaluate and discuss these results later.
 
 Before closing this post, we want to suggest one more way to analyse our data. We already mentioned that the classification by decades is rather arbitrary. However, there's another option to pursue this idea. Why don't we sort our corpus by already established periodisations of German literature and take it from there? Does our data reproduce established divisions into literary epochs?
 
-This question must be approached with great caution. Established divisions into literary epochs do not just rely on a set of very specific structural elements (like our approach), no, they are, of course, much richer. We are absolutely not able to evaluate whether the known divisons into literary epochs are 'correct' or anything. That sort of thing is not possible with that kind of structural data. But anyhow, we can always check how our data relates to the established division into literary.
+This question must be approached with great caution. Established divisions into literary epochs do not just rely on a set of very specific structural elements (like our approach), no, they are, of course, much richer. We are absolutely not able to evaluate whether the known divisons into literary epochs are 'correct' or anything. That sort of thing is not possible with that kind of structural data. But anyhow, we can always check how our data relates to the established division into literary periods.
 
-For that purpose, we picked two different divisions into epochs. The first was developed in the context of German Structuralism (cf., inter alia, Titzmann 1991a, Titzmann 1991b, Titzmann 2002, Titzmann 2012a, Titzmann 2012b, Wünsch 1991, Wünsch 1998, Wünsch 2007). The other classification was pulled from the timespans of the separate volumes of "Hansers Sozialgeschichte der deutschen Literatur vom 16. Jahrhundert bis in die Gegenwart" (Grimminger 1980-2009).
+For that purpose, we picked two different divisions into epochs. The first was developed in the context of German Structuralism (cf., inter alia, Titzmann 1991a, Titzmann 1991b, Titzmann 2002, Titzmann 2012a, Titzmann 2012b, Wünsch 1991, Wünsch 1998, Wünsch 2007). The other classification was pulled from the timespans of the separate volumes of "Hansers Sozialgeschichte der deutschen Literatur vom 16. Jahrhundert bis in die Gegenwart" (Grimminger 1980–2009).
 
-In the context of German structuralism following epoch classification are discussed (all time spans are give or take, of course):
+In the context of German structuralism, the following epoch classification are discussed (all time spans are give or take, of course):
 
-* 1720–1750: Literatursystem 'Frühaufklärung'
-* 1750–1770: Literatursystem 'Empfindsamkeit'
+* 1720–1750: Literatursystem 'Frühaufklärung' ('Early Enlightenment')
+* 1750–1770: Literatursystem 'Empfindsamkeit' ('Sentimentalism')
 * 1770–1830: Literatursystem 'Goethezeit'
 * 1830–1850: Literatursystem 'Biedermeier'
 * 1850–1890: Literatursystem 'Realismus'
@@ -158,7 +158,7 @@ Let's now map our values onto the time spans suggested by the volumes of "Hanser
 
 ## Disclaimer
 
-All results we're presenting here are initial explorations of our corpus of 465 dramatic pieces and the network data we pulled out of the texts. Their significance is limited. But we do have network data that can be toyed around with, and that is what we are going to do in the course of the next time. We will have to readjust and we will have te recalculate things. On that note, always bear in mind to never trust any statistics you didn't forge yourself.
+All results we're presenting here are initial explorations of our corpus of 465 dramatic pieces and the network data we pulled out of the texts. Their significance is limited. But we do have network data that can be toyed around with, and that is what we are going to do in the near future. We will have to readjust and we will have te recalculate things. On that note, always bear in mind to never trust any statistics you didn't forge yourself. Right?
 
 ### Bibliography
 
@@ -171,10 +171,4 @@ All results we're presenting here are initial explorations of our corpus of 465 
 * Marianne Wünsch, *Vom späten "Realismus" zur "Frühen Moderne". Versuch eines Modells des literarischen Strukturwandels*, in: Michael Titzmann (ed.): *Modelle des literarischen Strukturwandels*, Tübingen 1991, 187–203.
 * Marianne Wünsch, *Die Fantastische Literatur der Frühen Moderne (1890–1930). Definition. Denkgeschichtlicher Kontext. Strukturen*, München 1998.
 * Marianne Wünsch, *Realismus (1850–1890). Zugänge zu einer literarischen Epoche*, Kiel 2007.
-
-### Test, Test
-
-This is just to test if the TSV/CSV engine works (to be deleted when finished):
-
-{% include blog-linepoints.html id="15" tsv="blogpost-genre-fig01.tsv" tension="1" yLabel="something strange" %}
 
