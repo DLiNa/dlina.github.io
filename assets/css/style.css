@@ -70,6 +70,11 @@ stroke-width: 3px;
 }
 /* linecharts y axis */
 svg > g > g.y.axis > text {font-size:0.7em;}
+
+/* label on line*/
+text.dotlabel {
+  font-size: 0.85em;
+}
 /* invisible network stuff */
 a[href="#networks"], a[href="#matrix"], h2#networks, h2#matrix  {
   display: none;
