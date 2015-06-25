@@ -142,7 +142,7 @@ Let's now map our values onto the time spans suggested by the volumes of "Hanser
 
 ### Fig. 11: Number of Characters (Median), time spans according to "Hansers Sozialgeschichte"
 
-{% include blog-linechart.html id="11" tsv="lit-history-figs/lit-history-fig11.tsv" tension="0.9" %}
+{% include blog-linechart.html id="11" tsv="lit-history-figs/lit-history-fig11.tsv" tension="0.9" yLabel="Number of Characters (Median)" %}
 
 ### Fig. 12: Number of Characters (Standard Deviation), time spans according to "Hansers Sozialgeschichte"
 

@@ -7,7 +7,7 @@ var margin = {top: 20, right: 20, bottom: 200, left: 60};
 
 var sum = data.map(function(d) { return d.name; }).length;
 var base = 10;
-if (sum < 7) { var width =  base * 12 * sum - margin.left - margin.right; }
+if (sum < 7) { var width =  base * 5 * sum - margin.left - margin.right; }
 else if (sum < 25) { var width =  base * 3.5 * sum - margin.left - margin.right; }
 else if (sum < 50 ){ var width = ( base * 1.7 ) * sum - margin.left - margin.right; }
 else { var width = ( base * 1 ) * sum - margin.left - margin.right; }
@@ -44,11 +44,10 @@ if ( maxval <= 1 ){ y.domain([0, 1]); }
 else if ( (minval - ((maxval - minval) / 4)) < 0 ) { y.domain([0, maxval]); }
 else { y.domain([minval - ((maxval - minval) / 4), maxval]); }
 
-var passedLabel = "{{ include.yLabel }}"
 // label the domain with density if there is no value greater than 1
 if (maxval <= 1){ var ylabel = "Density"}
-else if ( passedLabel == "" ){var ylabel = "Frequency" }
-else { var ylabel = "{{ include.yLabel }}"}
+else {var ylabel = "Frequency" }
+  
   svg.append("g")
       	.attr("class", "x axis")
       	.attr("transform", "translate(0," + height + ")")
