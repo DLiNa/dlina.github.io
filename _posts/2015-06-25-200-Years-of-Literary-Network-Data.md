@@ -13,14 +13,14 @@ chart:
 comments: true
 featured: false
 ---
-After putting together [our corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) and [extracting the structural data](/Introducing-Our-Zwischenformat/) that are of interest to us it's time to run some statistics. But as it is with statistical data, they can evoke manifold interpretations and sometimes have the inclination to speak in riddles. We will certainly need a few more months to make sense of all the values we collected.
+After creating [our corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) and [extracting the structural data](/Introducing-Our-Zwischenformat/) that are of interest to us it's time to run some statistics. As it is with statistical data, they can evoke manifold interpretations and sometimes have the inclination to speak in riddles. We will certainly need a few more months to make sense of all the values we computed and collected.
 
-Nevertheless, we're prepared to offer at least some insights already. All of which is still very much a work in progress. Our statistical analyses are quite rudimentary for the time being, but more complex calculations will follow. Some things, though, we can already recognise in our data, or at least we can put them in front of you and open them up for discussion.
+Nevertheless, we're prepared to offer at least some observations and insights already, all of which is still very much a work in progress. Our statistical analyses are quite rudimentary for the time being, more complex calculations will follow. However, some things can already be recognised in our data, or at least we can put them in front of you and open them up for discussion.
 
-We already gave an example of how to ask our data [in our last posting](/The-Biggest-Chatterbox-in-German-Literature/). However, such rankings are only one thing; our main purpose is to compute our data by means of Social Network Analysis (SNA). Again, we will start with very rudimentary data and concentrate on the following five measures:
+We already gave an example of how to ask our data in our last posting on the [biggest chatterboxes in German literature](/The-Biggest-Chatterbox-in-German-Literature/). But these kinds of rankings are only one thing; our main purpose is to look at the network values we computed in the context of Social Network Analysis (SNA). Again, we will start with very rudimentary data and concentrate on the following five measures:
 
-* **Number of characters**, i.e., the number of actors appearing in each drama network, equates to the 'size' of any given network.
-* **Maximum degree**, i.e., the highest degree of an actor of a drama network; degree here refers to the sum of scenic co-presences of a character in a drama (that is, how many of the other characters does a character 'meet'/'speak to' throughout the whole play).
+* **Number of characters**, i.e., the number of characters appearing in each drama network; equates to the 'size' of any given network.
+* **Maximum degree**, i.e., the highest degree of an actor of a drama network; degree here refers to the sum of scenic co-presences of a character in a play (that is, how many of the other characters does a character 'meet'/'speak to' throughout the whole play).
 * **Average degree**, i.e., the average of all character degrees of a dramatic text.
 * **Density**, i.e., the ratio of the number of *actual* co-presences to the number of *potential* co-presences among all the characters of a play; the density value is always somewhere between 0 and 1: if it is 1, every character speaks to every other character at least once.
 * **Average path length**, which is ([quote Wikipedia:](https://en.wikipedia.org/wiki/Network_science#Average_path_length)) "calculated by finding the shortest path between all pairs of nodes, adding them up, and then dividing by the total number of pairs. This shows us, on average, the number of steps it takes to get from one member of the network to another."
@@ -56,17 +56,17 @@ First example, a table referring to the "Number of characters" of a play, reveal
 | 1910   | 33 | 22,85   | 18     | 17,46              |
 | 1920   | 16 | 29,25   | 24,5   | 15,7               |
 
-Let's put the data into some diagrams:
+Let's now acquaint you with some visualisations and put our data into some diagrams:
 
 ### Fig. 01: Number of Characters (Median)
 
-{% include blog-linechart.html id="1" tsv="lit-history-figs/lit-history-fig01.tsv" tension="0.95" yLabel="Number of Characters (Median)" %}
+{% include blog-linechart.html id="1" tsv="lit-history-figs/lit-history-fig01.tsv" tension="0.95" yLabel="Number of Characters (Median)" height="50" %}
 
 The standard-deviation values look like this:
 
 ### Fig. 02: Number of Characters (Standard Deviation)
 
-{% include blog-linechart.html id="2" tsv="lit-history-figs/lit-history-fig02.tsv" tension="0.95" yLabel="Number of Characters (SD)" %}
+{% include blog-linechart.html id="2" tsv="lit-history-figs/lit-history-fig02.tsv" tension="0.95" yLabel="Number of Characters (SD)" height="50" %}
 
 As you can see, there is something going on in our corpus. For example, in the second half of the 18th century, we witness a period of gradual increase in the number of characters that can be brought in connection with the renunciation of classical drama poetics and the beginning reception of Shakespeare. We also recognise a peak in the 1830s, not least due to the success of the historical drama in this period. In the late 19th century, we can observe a significant reduction in the number of characters, probably an effect owed to the naturalistic drama and its recourse to the classical poetics and their idea of the [three unities](https://en.wikipedia.org/wiki/Classical_unities).
 
@@ -78,19 +78,19 @@ Instead, let's throw a glance at some more charts dedicated the other values, i.
 
 ### Fig. 03: Max Degree (Median)
 
-{% include blog-linechart.html id="3" tsv="lit-history-figs/lit-history-fig03.tsv" tension="0.95" yLabel="Max Degree (Median)" %}
+{% include blog-linechart.html id="3" tsv="lit-history-figs/lit-history-fig03.tsv" tension="0.95" yLabel="Max Degree (Median)" height="50" %}
 
 ### Fig. 04: Average Degree (Average)
 
-{% include blog-linechart.html id="4" tsv="lit-history-figs/lit-history-fig04.tsv" tension="0.95" yLabel="Average Degree (Average)" %}
+{% include blog-linechart.html id="4" tsv="lit-history-figs/lit-history-fig04.tsv" tension="0.95" yLabel="Average Degree (Average)" height="50" %}
 
 ### Fig. 05: Density (Average)
 
-{% include blog-linechart.html id="5" tsv="lit-history-figs/lit-history-fig05.tsv" tension="0.95" yLabel="Density (Average)" %}
+{% include blog-linechart.html id="5" tsv="lit-history-figs/lit-history-fig05.tsv" tension="0.95" yLabel="Density (Average)" height="50" %}
 
 ### Fig. 06: Average Path Length (Average)
 
-{% include blog-linechart.html id="6" tsv="lit-history-figs/lit-history-fig06.tsv" tension="0.95" yLabel="Average Path Length (Average)" %}
+{% include blog-linechart.html id="6" tsv="lit-history-figs/lit-history-fig06.tsv" tension="0.95" yLabel="Average Path Length (Average)" height="50" %}
 
 As stated above, we will evaluate and discuss these results later.
 
@@ -124,37 +124,37 @@ The first four charts are dedicated to the Structuralist periodisation (since ou
 
 ### Fig. 07: Number of Characters (Median), time spans according to Structuralist approach
 
-{% include blog-linechart.html id="7" tsv="lit-history-figs/lit-history-fig07.tsv" tension="0.95" yLabel="Number of Characters (Median)" %}
+{% include blog-linechart.html id="7" tsv="lit-history-figs/lit-history-fig07.tsv" tension="0.95" yLabel="Number of Characters (Median)" height="50" %}
 
 ### Fig. 08: Number of Characters (Standard Deviation), time spans according to Structuralist approach
 
-{% include blog-linechart.html id="8" tsv="lit-history-figs/lit-history-fig08.tsv" tension="0.95" yLabel="Number of Characters (SD)" %}
+{% include blog-linechart.html id="8" tsv="lit-history-figs/lit-history-fig08.tsv" tension="0.95" yLabel="Number of Characters (SD)" height="50" %}
 
 ### Fig. 09: Density (Average), time spans according to Structuralist approach
 
-{% include blog-linechart.html id="9" tsv="lit-history-figs/lit-history-fig09.tsv" tension="0.95" yLabel="Density (Average)" %}
+{% include blog-linechart.html id="9" tsv="lit-history-figs/lit-history-fig09.tsv" tension="0.95" yLabel="Density (Average)" height="50" %}
 
 ### Fig. 10: Density (Standard Deviation), time spans according to Structuralist approach
 
-{% include blog-linechart.html id="10" tsv="lit-history-figs/lit-history-fig10.tsv" tension="0.95" yLabel="Density (SD)" %}
+{% include blog-linechart.html id="10" tsv="lit-history-figs/lit-history-fig10.tsv" tension="0.95" yLabel="Density (SD)" height="50" %}
 
 Let's now map our values onto the time spans suggested by the volumes of "Hansers Sozialgeschichte" (yet again: our Sydney corpus contains texts only from 1730 to 1930; hence, our X-axes are limited to this period of time):
 
 ### Fig. 11: Number of Characters (Median), time spans according to "Hansers Sozialgeschichte"
 
-{% include blog-linechart.html id="11" tsv="lit-history-figs/lit-history-fig11.tsv" tension="0.95" yLabel="Number of Characters (Median)" %}
+{% include blog-linechart.html id="11" tsv="lit-history-figs/lit-history-fig11.tsv" tension="0.95" yLabel="Number of Characters (Median)" height="50" %}
 
 ### Fig. 12: Number of Characters (Standard Deviation), time spans according to "Hansers Sozialgeschichte"
 
-{% include blog-linechart.html id="12" tsv="lit-history-figs/lit-history-fig12.tsv" tension="0.95" yLabel="Number of Characters (SD)" %}
+{% include blog-linechart.html id="12" tsv="lit-history-figs/lit-history-fig12.tsv" tension="0.95" yLabel="Number of Characters (SD)" height="50" %}
 
 ### Fig. 13: Density (Average), time spans according to "Hansers Sozialgeschichte"
 
-{% include blog-linechart.html id="13" tsv="lit-history-figs/lit-history-fig13.tsv" tension="0.95" yLabel="Density (Average)" %}
+{% include blog-linechart.html id="13" tsv="lit-history-figs/lit-history-fig13.tsv" tension="0.95" yLabel="Density (Average)" height="50" %}
 
 ### Fig. 14: Density (Standard Deviation), time spans according to "Hansers Sozialgeschichte"
 
-{% include blog-linechart.html id="14" tsv="lit-history-figs/lit-history-fig14.tsv" tension="0.95" yLabel="Density (SD)" %}
+{% include blog-linechart.html id="14" tsv="lit-history-figs/lit-history-fig14.tsv" tension="0.95" yLabel="Density (SD)" height="50" %}
 
 ## Disclaimer
 
