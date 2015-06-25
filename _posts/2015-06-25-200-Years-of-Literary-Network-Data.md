@@ -176,5 +176,5 @@ All results we're presenting here are initial explorations of our corpus of 465 
 
 This is just to test if the TSV/CSV engine works (to be deleted when finished):
 
-{% include blog-linechart.html id="15" tsv="blogpost-genre-fig01.tsv" tension="1" %}
+{% include blog-linepoints.html id="15" tsv="blogpost-genre-fig01.tsv" tension="1" yLabel="something strange" %}
 
