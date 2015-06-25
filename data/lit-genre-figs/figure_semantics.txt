@@ -1,0 +1,20 @@
+lit-genre-fig01.tsv
+Genre	Number of Characters (Median)
+
+lit-genre-fig02.tsv
+Genre	Chart Density (Average)
+
+lit-genre-fig03.tsv
+Genre	Number of Characters (Standard Deviation)
+
+lit-genre-fig04.tsv
+Genre	Density (Standard Deviation)
+
+lit-genre-fig05.tsv
+Genre	18th Century	19th Century	20th Century
+
+lit-genre-fig06.tsv
+Genre	18th Century	19th Century	20th Century
+
+lit-genre-fig07.tsv
+Genre	18th Century	19th Century	20th Century
