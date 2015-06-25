@@ -11,7 +11,8 @@ imagefeature:
 mathjax: 
 chart: 
 comments: true
-featured: false
+list: true
+featured: true
 ---
 After creating [our corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) and [extracting the structural data](/Introducing-Our-Zwischenformat/) that are of interest to us it's time to run some statistics. As it is with statistical data, they can evoke manifold interpretations and sometimes have the inclination to speak in riddles. We will certainly need a few more months to make sense of all the values we computed and collected.
 
