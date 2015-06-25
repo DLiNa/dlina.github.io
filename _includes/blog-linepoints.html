@@ -89,22 +89,21 @@ var line = d3.svg.line()
 		.attr("class", "line")
 		.attr("d", line(data));
 
-svg.append("g").append('circle')
-	.data(data)
-	.enter().append('circle')
-	.attr('cx', function (d) { return x(d.label); })
-	.attr('cy', function (d) { return y(d.value); })
-	.attr('r', 3);
-
 svg.selectAll(".dot")
       .data(data)
     .enter().append("circle")
       .attr("class", "dot")
-      .attr("r", 3.5)
+      .attr("r", 5)
       .attr("cx", function(d) { return x(d.label) + x.rangeBand() / 2 ;})
       .attr("cy", function(d) { return y( d.value );})
       .style("fill", "steelblue");
-
+svg.selectAll(".label")
+      .data(data)
+    .enter().append("text")
+      .attr("class", "dotlabel")
+      .attr("x", function(d) { return x (d.label) + x.rangeBand() / 2 + 3 ;})
+      .attr("y", function(d) { return y( d.value ) + 3 ;})
+      .style("fill", "black").text(  function(d) { return  d.value ;} );
  
 });
 
