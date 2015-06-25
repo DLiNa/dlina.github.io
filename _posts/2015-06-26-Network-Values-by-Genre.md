@@ -42,9 +42,13 @@ As described in [a previous post](/Introducing-Our-Zwischenformat/), our DLINA *
 
 Let's have a look at some corresponding diagrams:
 
-### Fig. 01: Chart Number of characters (Median), divided by genre
+### Fig. 01: Chart Number of characters (Median), by genre
 
 {% include blog-barchart.html id="1" tsv="lit-genre-figs/lit-genre-fig01.tsv" %}
 
 ...
+
+### Fig. 05: Number of Characters (Median), by genre and century
+
+{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05.tsv" %}
 
