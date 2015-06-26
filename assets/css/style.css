@@ -109,6 +109,10 @@ ul#netinputs:after {
   right: 30px;
 }
 
+/* background on gravatar (template red) */
+img.notepad-post-author-avatar {
+    background-color: rgb(229, 24, 67);
+}
 /* entry page specials*/
 #layout-network-content ul {
 	margin-left:21%
