@@ -44,25 +44,25 @@ Let's have a look at some corresponding diagrams:
 
 ### Fig. 1: Number of Characters (Median), by Genre
 
-{% include blog-barchart.html id="1" tsv="lit-genre-figs/lit-genre-fig01.tsv" height="50" %}
+{% include blog-barchart.html id="1" tsv="lit-genre-figs/lit-genre-fig01.tsv" height="75" %}
 
 ...
 
 ### Fig. 2: Density (Average), by Genre
 
-{% include blog-barchart.html id="2" tsv="lit-genre-figs/lit-genre-fig02.tsv" height="50" %}
+{% include blog-barchart.html id="2" tsv="lit-genre-figs/lit-genre-fig02.tsv" height="75" %}
 
 ...
 
 ### Fig. 3: Number of Characters (SD), by Genre
 
-{% include blog-barchart.html id="3" tsv="lit-genre-figs/lit-genre-fig03.tsv" height="50" %}
+{% include blog-barchart.html id="3" tsv="lit-genre-figs/lit-genre-fig03.tsv" height="75" %}
 
 ...
 
 ### Fig. 4: Chart Density (SD), by Genre
 
-{% include blog-barchart.html id="4" tsv="lit-genre-figs/lit-genre-fig04.tsv" height="50" %}
+{% include blog-barchart.html id="4" tsv="lit-genre-figs/lit-genre-fig04.tsv" height="75" %}
 
 ...
 
@@ -77,6 +77,7 @@ Let's have a look at some corresponding diagrams:
 ### Fig. 5: Number of Characters (Median), by Genre and Century
 
 {% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05-transposed.tsv" label="Genre" tension="0.3" height="75" %}
+{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05.tsv" label="Genre" tension="0.3" height="75" %}
 
 Have a look at the corresponding table plus diagram for the density values:
 
