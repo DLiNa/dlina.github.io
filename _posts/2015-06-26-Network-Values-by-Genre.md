@@ -44,25 +44,25 @@ Let's have a look at some corresponding diagrams:
 
 ### Fig. 1: Number of Characters (Median), by Genre
 
-{% include blog-barchart.html id="1" tsv="lit-genre-figs/lit-genre-fig01.tsv" %}
+{% include blog-barchart.html id="1" tsv="lit-genre-figs/lit-genre-fig01.tsv" height="50" %}
 
 ...
 
 ### Fig. 2: Density (Average), by Genre
 
-{% include blog-barchart.html id="2" tsv="lit-genre-figs/lit-genre-fig02.tsv" %}
+{% include blog-barchart.html id="2" tsv="lit-genre-figs/lit-genre-fig02.tsv" height="50" %}
 
 ...
 
 ### Fig. 3: Number of Characters (SD), by Genre
 
-{% include blog-barchart.html id="3" tsv="lit-genre-figs/lit-genre-fig03.tsv" %}
+{% include blog-barchart.html id="3" tsv="lit-genre-figs/lit-genre-fig03.tsv" height="50" %}
 
 ...
 
 ### Fig. 4: Chart Density (SD), by Genre
 
-{% include blog-barchart.html id="4" tsv="lit-genre-figs/lit-genre-fig04.tsv" %}
+{% include blog-barchart.html id="4" tsv="lit-genre-figs/lit-genre-fig04.tsv" height="50" %}
 
 ...
 
