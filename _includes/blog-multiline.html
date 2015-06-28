@@ -111,16 +111,35 @@ var line = d3.svg.line()
 
 
     var series = svg.selectAll(".series")
-            .data(seriesData)
-          .enter().append("g")
-            .attr("class", "series");
+      	.data(seriesData)
+        .enter().append("g")
+        .attr("class", "series");
 
-        series.append("path")
-          .attr("class", "line")
-          .attr("d", function (d) { return line(d.values); })
-          .style("stroke", function (d) { return color(d.name); })
-          .style("stroke-width", "4px")
-          .style("fill", "none");
+series.append("path")
+	.attr("class", "line")
+	.attr("d", function (d) { return line(d.values); })
+	.style("stroke", function (d) { return color(d.name); })
+	.style("stroke-width", "4px")
+	.style("fill", "none");
+
+// data points
+series.selectAll('circle')
+	.data(function (seriesData) { return seriesData.values; })
+	.enter().append('circle')
+	.attr('cx', function (d) { return x(d.label)  + x.rangeBand() / 2 ; })
+	.attr('cy', function (d) { return y(d.value); })
+	.attr('r', 5)
+	.style("fill", function (d) { return color(d.name); });
+
+series.selectAll(".label")
+	.data(function (seriesData) { return seriesData.values; })
+    	.enter().append("text")
+      	.attr("class", "dotlabel")
+      	.attr("x", function(d) { return x( d.label ) + x.rangeBand() / 2 + 3  ;})
+      	.attr("y", function(d) { return y( d.value ) - 5 ;})
+      	.style("fill", function (d) { return color(d.name); })
+	.text(  function(d) { return  d.value ;} );
+
 
 // draw legend
 var legend = svg.selectAll(".legend")
@@ -142,7 +161,8 @@ legend.append("text")
     .attr("y", 9)
     .attr("dy", ".35em")
     .style("text-anchor", "end")
-    .text(function(d) { return d })
+    .text(function(d) { return d });
+
 });
 
 function type(d) {
