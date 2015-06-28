@@ -48,9 +48,8 @@ div#barchart {
 
 /* charts in blog*/
 .blog-chart, .blog-chart-barline {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin: 0 auto 1em auto;
+  width: 900px;
 }
 .blog-chart path.domain, .blog-chart-barline path.domain{
   fill: none;

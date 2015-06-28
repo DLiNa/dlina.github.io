@@ -3,9 +3,19 @@
 <script>
 d3.tsv("/data/{{ include.tsv }}", type, function(error, data) {
 
-var margin = {top: 20, right: 20, bottom: 200, left: 60},
-    width = 35 * data.map(function(d) { return d.label; }).length - margin.left - margin.right,
-    height = 800 - margin.top - margin.bottom;
+var margin = {top: 20, right: 20, bottom: 200, left: 60};
+
+var sum = data.map(function(d) { return d.name; }).length;
+var base = 8; //linechart: base = 10
+if (sum < 7) { var width =  base * 12 * sum - margin.left - margin.right; }
+else if (sum < 25) { var width =  base * 3.5 * sum - margin.left - margin.right; }
+else if (sum < 50 ){ var width = ( base * 1.7 ) * sum - margin.left - margin.right; }
+else { var width = ( base * 1 ) * sum - margin.left - margin.right; }
+  
+if ( "{{ include.height }}" == "" ){var includeHeight = 100 ;}
+else { var includeHeight = parseInt("{{ include.height }}") ;}
+
+var height = (800 * includeHeight / 100) - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .1);
