@@ -14,13 +14,18 @@ if [ "$1"  == "remote" ];
 		cd /tmp
 fi
 cd dlina.github.io
-for i in `seq 0 7`;
-	do
-		rm -f networks/_posts/*$i.md;
-		for j in `seq 0 9`;
+if [ "$2"  == "posts" ];
+	then
+		rm -rf networks
+	else
+		for i in `seq 0 7`;
+		do
+			rm -f networks/_posts/*$i.md;
+			for j in `seq 0 9`;
 			do
 				rm -f networks/_posts/*$i$j.md;
 			done
-	done
+		done
+fi
 bundle exec jekyll serve --baseurl ''
 exit 0

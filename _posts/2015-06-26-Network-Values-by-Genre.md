@@ -2,14 +2,14 @@
 layout: post
 title: "Network Values by Genre"
 author: [peer, frank, mathias, dario]
-description: 
-headline: 
+description:
+headline:
 modified: 2015-06-25
 category:
 tags: []
-imagefeature: 
-mathjax: 
-chart: 
+imagefeature:
+mathjax:
+chart:
 comments: true
 list: false
 featured: false
@@ -19,7 +19,7 @@ As described in [a previous post](/Introducing-Our-Zwischenformat/), our DLINA *
 {% highlight xml %}
 <header>
  <title>Der sterbende Cato</title>
- <subtitle>Ein Trauerspiel</subtitle>  
+ <subtitle>Ein Trauerspiel</subtitle>
  <genretitle>Trauerspiel</genretitle>
  [...]
 </header>
@@ -38,7 +38,7 @@ As described in [a previous post](/Introducing-Our-Zwischenformat/), our DLINA *
 | Tragedy  | 101 | 19                            | 16                  | 9,57                     | 0,52              | 1,56                          |
 | Comedy   | 92  | 14                            | 11                  | 8,61                     | 0,67              | 1,36                          |
 | Libretto | 56  | 16                            | 13,5                | 9,09                     | 0,64              | 1,39                          |
-| Other    | 216 | 17                            | 14                  | 8,88                     | 0,59              | 1,48                          | 
+| Other    | 216 | 17                            | 14                  | 8,88                     | 0,59              | 1,48                          |
 
 Let's have a look at some corresponding diagrams:
 
@@ -50,5 +50,4 @@ Let's have a look at some corresponding diagrams:
 
 ### Fig. 05: Number of Characters (Median), by genre and century
 
-{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05.tsv" %}
-
+{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05.tsv" label="Genre" tension="0.3" height="75" %}
