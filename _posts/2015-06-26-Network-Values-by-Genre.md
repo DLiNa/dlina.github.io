@@ -97,5 +97,3 @@ Have a look at the corresponding table plus diagram for the density values:
 ### Fig. 7: Number of Characters (SD), by Genre and Century
 
 {% include blog-multiline.html id="7" tsv="lit-genre-figs/lit-genre-fig07-transposed.tsv" label="Genre" tension="0.3" height="75" %}
-
-{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05-transposed.tsv" label="Genre" tension="0.3" height="75" %}
