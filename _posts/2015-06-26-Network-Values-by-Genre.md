@@ -30,7 +30,7 @@ As described in [a previous post](/Introducing-Our-Zwischenformat/), our DLINA *
 
 ...
 
-### Table 01: Network Measures, by genre
+### Table 1: Network Measures, by Genre
 
 |          | N=  | Number of Characters (Median) | Max Degree (Median) | Average Degree (Average) | Density (Average) | Average Path Length (Average) |
 |----------|-----|-------------------------------|---------------------|--------------------------|-------------------|-------------------------------|
@@ -42,59 +42,59 @@ As described in [a previous post](/Introducing-Our-Zwischenformat/), our DLINA *
 
 Let's have a look at some corresponding diagrams:
 
-### Fig. 01: Number of Characters (Median), by genre
+### Fig. 1: Number of Characters (Median), by Genre
 
 {% include blog-barchart.html id="1" tsv="lit-genre-figs/lit-genre-fig01.tsv" %}
 
 ...
 
-### Fig. 02: Density (Average), by genre
+### Fig. 2: Density (Average), by Genre
 
 {% include blog-barchart.html id="2" tsv="lit-genre-figs/lit-genre-fig02.tsv" %}
 
 ...
 
-### Fig. 03: Number of Characters (SD), by genre
+### Fig. 3: Number of Characters (SD), by Genre
 
 {% include blog-barchart.html id="3" tsv="lit-genre-figs/lit-genre-fig03.tsv" %}
 
 ...
 
-### Fig. 04: Chart Density (SD), by genre
+### Fig. 4: Chart Density (SD), by Genre
 
 {% include blog-barchart.html id="4" tsv="lit-genre-figs/lit-genre-fig04.tsv" %}
 
 ...
 
-### Table 02: Number of Characters (Median), by genre and century
+### Table 2: Number of Characters (Median), by Genre and Century
 
-|----------| 18. Century | 19. Century | 20. Century |
-|----------|-------------|-------------|-------------|
-| Tragedy  | 11,00       | 24,50       | 20,00       |
-| Comedy   | 9,00        | 16,50       | 16,00       |
-| Libretto | 10,00       | 16,00       | 17,50       |
+| Genre    | 18th Century | 19th Century | 20th Century |
+|----------|--------------|--------------|--------------|
+| Tragedy  | 11,00        | 24,50        | 20,00        |
+| Comedy   | 9,00         | 16,50        | 16,00        |
+| Libretto | 10,00        | 16,00        | 17,50        |
 
-### Fig. 05: Number of Characters (Median), by genre and century
+### Fig. 5: Number of Characters (Median), by Genre and Century
 
 {% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05.tsv" %}
 
 Have a look at the corresponding table plus diagram for the density values:
 
-### Table 03: Density (Average), by genre and century
+### Table 3: Density (Average), by Genre and Century
 
-|----------| 18. Century | 19. Century | 20. Century |
-|----------|-------------|-------------|-------------|
-| Tragedy  | 0,56        | 0,49        | 0,58        |
-| Comedy   | 0,71        | 0,59        | 0,75        |
-| Libretto | 0,67        | 0,60        | 0,75        |
+| Genre    | 18th Century | 19th Century | 20th Century |
+|----------|--------------|--------------|--------------|
+| Tragedy  | 0,56         | 0,49         | 0,58         |
+| Comedy   | 0,71         | 0,59         | 0,75         |
+| Libretto | 0,67         | 0,60         | 0,75         |
 
-### Fig. 06: Density (Average), by genre and century
+### Fig. 6: Density (Average), by Genre and Century
 
 {% include blog-multiline.html id="6" tsv="lit-genre-figs/lit-genre-fig06.tsv" %}
 
 ...
 
-### Fig. 07: Number of Characters (SD), by genre and century
+### Fig. 7: Number of Characters (SD), by Genre and Century
 
 {% include blog-multiline.html id="7" tsv="lit-genre-figs/lit-genre-fig07.tsv" %}
 
