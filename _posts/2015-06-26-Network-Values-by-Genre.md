@@ -76,8 +76,8 @@ Let's have a look at some corresponding diagrams:
 
 ### Fig. 5: Number of Characters (Median), by Genre and Century
 
-{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05-transposed.tsv" label="Genre" tension="0.3" height="75" %}
-{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05.tsv" label="Genre" tension="0.3" height="75" %}
+{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05-transposed.tsv" label="Genre" tension="0.3" height="70" %}
+{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05.tsv" label="Genre" tension="0.3" height="65" %}
 
 Have a look at the corresponding table plus diagram for the density values:
 
@@ -91,7 +91,7 @@ Have a look at the corresponding table plus diagram for the density values:
 
 ### Fig. 6: Density (Average), by Genre and Century
 
-{% include blog-multiline.html id="6" tsv="lit-genre-figs/lit-genre-fig06-transposed.tsv" label="Genre" tension="0.3" height="60" %}
+{% include blog-multiline.html id="6" tsv="lit-genre-figs/lit-genre-fig06-transposed.tsv" label="Genre" tension="0.3" height="65" %}
 
 ...
 
