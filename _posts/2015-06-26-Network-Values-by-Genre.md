@@ -91,10 +91,10 @@ Have a look at the corresponding table plus diagram for the density values:
 
 ### Fig. 6: Density (Average), by Genre and Century
 
-{% include blog-multiline.html id="6" tsv="lit-genre-figs/lit-genre-fig06-transposed.tsv" yLabel="Density (Average)" tension="0.3" height="60" %}
+{% include blog-multiline.html id="6" tsv="lit-genre-figs/lit-genre-fig06-transposed.tsv" label="Genre" tension="0.3" height="60" %}
 
 ...
 
 ### Fig. 7: Number of Characters (SD), by Genre and Century
 
-{% include blog-multiline.html id="7" tsv="lit-genre-figs/lit-genre-fig07-transposed.tsv" yLabel="Number of Characters (SD)" tension="0.3" height="60" %}
+{% include blog-multiline.html id="7" tsv="lit-genre-figs/lit-genre-fig07-transposed.tsv" label="Genre" tension="0.3" height="60" %}
