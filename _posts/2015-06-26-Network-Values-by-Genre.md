@@ -4,7 +4,7 @@ title: "Network Values by Genre"
 author: [peer, frank, mathias, dario]
 description: 
 headline: 
-modified: 2015-07-07
+modified: 2015-07-29
 category:
 tags: []
 imagefeature: 
@@ -14,7 +14,7 @@ comments: true
 list: false
 featured: false
 ---
-As described in [a previous post](/Introducing-Our-Zwischenformat/), our DLINA *zwischenformat* stores structural data extracted from the full-text TEI files of the TextGrid Repository as well as various metadata, including the author's name and date of origin of a play (and its publication and/or premiere date). In addition, the DLINA format also stores specific title information, three in total: the main title of a play, its subtitle (if available) and a genre title (only if a genre can be derived from the official subtitle of a play). To give an example, the first piece of our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/), Gottsched's "Der sterbende Cato", looks something like this:
+As described in [a previous post](/Introducing-Our-Zwischenformat/), our DLINA intermediary format stores structural data extracted from the full-text TEI files of the TextGrid Repository as well as various metadata, including the author's name and date of origin of a play (and its publication and/or premiere date). In addition, the DLINA format also stores specific title information, three in total: the main title of a play, its subtitle (if available) and a genre title (only if a genre can be derived from the official subtitle of a play). To give an example, the first piece of our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/), Gottsched's "Der sterbende Cato" from 1731, looks something like this:
 
 {% highlight xml %}
 <header>
@@ -25,10 +25,18 @@ As described in [a previous post](/Introducing-Our-Zwischenformat/), our DLINA *
 </header>
 {% endhighlight %}
 
+As said before, we only inserted a `<genretitle>` if the subtitle of a play contained a definite and largely conventional genre indication. Terms like "dramatische Skizze" (dramatic sketch) or an unspecified indication like "Drama" we did not regard as conventional genres, in the same way as we neglected unconventionally specified genres like "Ein Ammenmärchen in vier Akten" (An Old Wives' Tale in Four Acts) or "Arabische Fantasia in zwei Akten" (Arabian Fantasy in Two Acts).
 
+The resulting set of genre titles included the classic genres "Tragödie" and "Komödie", or, "Trauerspiel" und "Lustspiel", but also the general "Schauspiel", "Posse" or "Oper". These genre titles help us to better describe our corpus. If just talking about the two classical genres, we see that of 465 dramas in our Sydney corpus,
 
+- 101 are marked as tragedy ("Tragödie" or "Trauerspiel") and
+- 92 are marked as comedy ("Komödie" or "Lustspiel").
 
-...
+En plus, we were interested in how many of the texts were combined with music of any sort (i.e., "Opern", "Operetten", "Singspiele", "Musikdramen", etc.). For reasons of simplicity, we marked these texts as "Libretti". Not all of these texts bear a corresponding genre indication in their subtitle. Wagner's "Master-Singers of Nuremberg", for example, don't feature a subtitle we could directly use as `<genretitlte>`. In these cases we did a little research to identify all libretti. The results is that
+
+- 56 texts from our Sydney corpus are marked as "Libretti".
+
+With this kind of metadata, we could now easily build generic subcorpora and have a differentiated look at the network data by genre. The corresponding median values or averages look like this:
 
 ### Table 1: Network Measures, by Genre
 
@@ -42,7 +50,7 @@ As described in [a previous post](/Introducing-Our-Zwischenformat/), our DLINA *
 
 Let's have a look at some corresponding diagrams:
 
-### Fig. 1: Number of Characters (Median), by Genre
+### Fig. 1: Network Size (Median), by Genre
 
 {% include blog-barchart.html id="1" tsv="lit-genre-figs/lit-genre-fig01.tsv" height="75" %}
 
