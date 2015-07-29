@@ -4,8 +4,11 @@ Genre	Number of Characters (Median)
 lit-genre-fig02.tsv
 Genre	Chart Density (Average)
 
-lit-genre-fig03.tsv
+lit-genre-fig03_old.tsv
 Genre	Number of Characters (Standard Deviation)
+
+lit-genre-fig03.tsv
+Genre	Number of Characters (Mean)
 
 lit-genre-fig04.tsv
 Genre	Density (Standard Deviation)
