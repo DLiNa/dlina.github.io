@@ -80,8 +80,8 @@ The structural similarity of comedy and libretto and their coinciding distance t
 
 ### Fig. 4: Network Size (Median), by Genre and Century
 
-<!-- {% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05-transposed.tsv" label="Genre" tension="0.3" height="70" %} -->
-{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05.tsv" label="Genre" tension="0.3" height="65" %}
+{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05-transposed.tsv" label="Genre" tension="0.3" height="70" %}
+<!-- {% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05.tsv" label="Genre" tension="0.3" height="65" %} -->
 
 Have a look at the corresponding table plus diagram for the density values:
 
@@ -104,6 +104,11 @@ First, it is interesting that the distances regarding the network densities rema
 Second, we can observe how the tragedy of the 19th century stands out. In other words: when looking at our network data, the 19th century proves to be a time of strong generic differences, at least in regard to the structural data we elevated.
 
 All in all, what we presented in this post are so far mere indications. We will have to look further into our data in order to better understand the evolution of subgenres over time as well as the impact of genre conventions on network measures. We also want to build larger generic subcorpora in the future. For example, it is very tempting to analyse the structure of the corpus of bourgeois tragedies discussed in Cornelia Mönch's dissertation ["Abschrecken oder Mitleiden. Das deutsche bürgerliche Trauerspiel im 18. Jahrhundert. Versuch einer Typologie"](https://books.google.com/books?id=mVXbspJS54kC&printsec=frontcover) (1993). But, as they say, a lot of water will certainly flow down the river Rhine before we get there. We will continue to report in this blog. Stay tuned.
+
+<figure>
+  <img src="{{ site.url }}/images/rheinschleife.jpg" alt="Great bow in the Rhine at Boppard. Source: Wikimedia Commons." style="width:56.25rem">
+</figure>
+<center><small>Great bow in the Rhine at Boppard. Source: <a href="https://commons.wikimedia.org/wiki/File:Boppard_Rheinschleife.jpg">Wikimedia Commons</a>.</small></center>
 
 <!-- ### Fig. 7: Number of Characters (SD), by Genre and Century -->
 
