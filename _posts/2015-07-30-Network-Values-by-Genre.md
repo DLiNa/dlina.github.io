@@ -4,7 +4,7 @@ title: "Network Values by Genre"
 author: [peer, frank, mathias, dario]
 description: 
 headline: 
-modified: 2015-07-29
+modified: 2015-07-30
 category: 
 tags: []
 imagefeature: 
