@@ -1,18 +1,17 @@
 ---
 layout: post
-title: "Network Values by Genre"
+title: "Comedy vs. Tragedy: Network Values by Genre"
 author: [peer, frank, mathias, dario]
 description: 
 headline: 
-modified: 2015-07-30
-category: 
+modified: 2015-07-31
+category: Updates
 tags: []
 imagefeature: 
 mathjax: 
 chart: 
 comments: true
-list: false
-featured: false
+featured: true
 ---
 As described in [a previous post](/Introducing-Our-Zwischenformat/), our DLINA intermediary format stores structural data extracted from the full-text TEI files of the TextGrid Repository as well as various metadata, including the author's name and date of origin of a play (and its publication and/or premiere date). In addition, the DLINA format also stores specific title information, three in total: the main title of a play, its subtitle (if available) and a genre title (only if a genre can be derived from the official subtitle of a play). To give an example, the first piece of our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/), Gottsched's "Der sterbende Cato" from 1731, looks something like this:
 
