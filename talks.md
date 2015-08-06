@@ -1,6 +1,6 @@
 ---
 layout: page
-author: [dario, frank, mathias, peer]
+author: []
 permalink: /talks/index.html
 title: Network Analysis of Dramatic Texts
 tags: []
