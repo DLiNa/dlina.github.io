@@ -51,13 +51,13 @@ Let's feed this data into some diagrams:
 
 ### Fig. 1: Network Size (Median), by Genre
 
-{% include blog-barchart.html id="1" tsv="lit-genre-figs/lit-genre-fig01.tsv" height="75" %}
+{% include blog-barchart.html id="1" tsv="lit-genre-figs/lit-genre-fig01.tsv" yLabel="N. Size" height="80" %}
 
 We can see that tragedy peaks, while comedy troughs. This trend is also confirmed when looking at other values like the network density, only this time comedy values are peaking and tragedy values troughing:
 
 ### Fig. 2: Density (Mean), by Genre
 
-{% include blog-barchart.html id="2" tsv="lit-genre-figs/lit-genre-fig02.tsv" height="75" %}
+{% include blog-barchart.html id="2" tsv="lit-genre-figs/lit-genre-fig02.tsv" yLabel="Density" height="80" %}
 
 Results for the other values ​​are similar, suggesting that there is an evident connection between the size of a network and the other values. But we still need to further examine this connection, it isn't as simple as it looks. It can be assumed that typical genre conventions also have a strong influence on the values: Like, in tragedies, we often have two (or more) opposing groups of people who don't share the stage too often, and if they do, it is mainly in shape of single representatives. Comedies, on the other hand, have a tendency to make as many characters as possible once more appear on stage, together, at the end, typically for the purpose of a wedding (or even mutliple weddings). These genre conventions have a crucial influence on, e.g., the density values (many characters on stage at the same time would make for higher density values, whereas density decreases if characters from two antagonising parties hardly ever meet).
 
@@ -65,7 +65,7 @@ Regarding the density values, Figure 2 suggests a proximity between comedy and l
 
 ### Fig. 3: Network Size (Mean), by Genre
 
-{% include blog-barchart.html id="3" tsv="lit-genre-figs/lit-genre-fig03.tsv" height="75" %}
+{% include blog-barchart.html id="3" tsv="lit-genre-figs/lit-genre-fig03.tsv" yLabel="N. Size" height="80" %}
 
 The structural similarity of comedy and libretto and their coinciding distance to the tragedy is showing up even if we look at the temporal evolution over two centuries, another simple subdivision of our corpus. These are the values we calculated:
 
@@ -81,7 +81,7 @@ Let's put them into a diagram:
 
 ### Fig. 4: Network Size (Median), by Genre and Century
 
-{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05-transposed.tsv" label="Genre" tension="0.3" height="70" %}
+{% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05-transposed.tsv" label="Genre" yLabel="Network Size (Median)" tension="0.3" height="70" %}
 <!-- {% include blog-multiline.html id="5" tsv="lit-genre-figs/lit-genre-fig05.tsv" label="Genre" tension="0.3" height="65" %} -->
 
 And now have a look at the table with the density values and the corresponding diagram:
@@ -96,7 +96,7 @@ And now have a look at the table with the density values and the corresponding d
 
 ### Fig. 5: Density (Mean), by Genre and Century
 
-{% include blog-multiline.html id="6" tsv="lit-genre-figs/lit-genre-fig06-transposed.tsv" label="Genre" tension="0.3" height="65" %}
+{% include blog-multiline.html id="6" tsv="lit-genre-figs/lit-genre-fig06-transposed.tsv" label="Genre" yLabel="Density" tension="0.3" height="65" %}
 
 So a closer look at the evolution over two centuries shows even more clearly the proximity of comedy and libretto and the persistent distance from the tragedy. Let's keep in mind that our corpus only contains texts from 1731 to 1929, therefore, the 18th and the 20th century are only partially covered. Nevertheless, we can recognise some particularities at second glance.
 
