@@ -18,11 +18,11 @@ Why not toy around with some metadata today?
 
 Our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) – which was derived from the ["Digitale Bibliothek" corpus](https://textgrid.de/digitale-bibliothek) within the TextGrid Repository – holds 465 dramatic pieces from 1731 to 1929, written by xxx authors altogether. If we would plot the places of birth and death of all the authors on a map, we would probably get an interesting result. And that is what we did. As spatio-temporal visualisation engine we used the GeoBrowser:
 
-http://geobrowser.de.dariah.eu/beta6/?csv1=http://geobrowser.de.dariah.eu/storage/249551&csv2=http://geobrowser.de.dariah.eu/storage/249502&currentStatus=mapChanged=Historical+Map+of+1880
+<iframe src="http://geobrowser.de.dariah.eu/embed/?csv1=http://geobrowser.de.dariah.eu/storage/249551&csv2=http://geobrowser.de.dariah.eu/storage/249502&currentStatus=mapChanged=Historical+Map+of+1880"></iframe>
 
 As with most visualisations in the Humanities, this one needs a bit of explanation. First off, orange circles indicate places of birth, purple circles indicate places of death. As background map we chose the 1880 one. Bearing in mind that our corpus covers texts from 1730 to 1930, you can also choose map layouts from 1783, 1815, 1914 and 1920 in the GeoBrowser interface.
 
-Now what is it we can see there? One first impression is that our corpus is pretty well-balanced since there is no over-representation of authors from specific regions (like, no emphasis on Hessian, or Swabian, or Saxon, or East Prussian writers, etc.). The biggest bubbles surround Berlin (11 births, 15 deaths) and Vienna (13 births, 20 deaths), the two metropolises of the Holy Roman Empire (and later the German and Austro-Hungarian Empires). But again, the two do not dominate the whole picture. So the well-balancedness is something we can state, even if we know that birth and death places are just basic metadata not saying *anything* about where the authors spent the most part of their lifes.
+Now what is it we can see there? One first impression is that our corpus is pretty well-balanced since there is no regional bias, i.e., no over-representation of authors from specific regions (like, no emphasis on Hessian, or Swabian, or Saxon, or East Prussian writers, etc., and a fair handful of Swiss and Austrian writers). The biggest bubbles surround Berlin (11 births, 15 deaths) and Vienna (13 births, 20 deaths), the two metropolises of the Holy Roman Empire (and later the German and Austro-Hungarian Empires). But again, the two do not dominate the whole picture. So the well-balancedness is something we can state, even if we know that birth and death places are just basic metadata not saying *anything* about where the authors spent the most part of their lifes.
 
 ## Geospatial Peculiarities
 
@@ -63,7 +63,22 @@ With all the PND data assembled, ...
 
 (to be continued)
 
+Notes:
 
+Next to the regional well-balancedness of the corpus, there is also a temporal one, if we might say so. Have a look at the time-bar diagram right underneath the map. The first author appearing on the time bar, born in 1697, is Caroline Neuber. She is also the first one to die, in 1760. Our youngest author is Hugo Ball, born in 1886. The author who lived the longest is Johannes Schlaf who died in 1941. The reason for him being the most recent author are copyright issues (German copyright expires 70 years after the author's death).
 
+Conclusion: By automatically visualising the birth and death places of the playwrights that build our corpus of dramatic texts, we added a useful layer of description. (...)
 
+Automatically retreived birth places (when GND data was available):
+* http://geobrowser.de.dariah.eu/storage/249551
 
+Automatically retreived death places (when GND data was available):
+* http://geobrowser.de.dariah.eu/storage/249502
+
+what we could add:
+* backlinks to sources
+
+to check:
+* wilhelm schäfer probably wrong, died in 1952 which would exclude his works due to copyright reasons – author of "Faustine" could be this one (lived from 1835 to 1908): http://d-nb.info/gnd/117099309
+* so far we got 116 birth dates and 109 death dates, who's missing?
+* elegant way to find out how many authors we've got, probably via eXist
