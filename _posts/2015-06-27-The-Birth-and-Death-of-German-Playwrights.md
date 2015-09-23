@@ -16,7 +16,23 @@ featured: false
 ---
 Why not toy around with some metadata today?
 
-Our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) – which was derived from the ["Digitale Bibliothek" corpus](https://textgrid.de/digitale-bibliothek) within the TextGrid Repository – holds 465 dramatic pieces from 1731 to 1929, written by xxx authors altogether. If we would plot the places of birth and death of all the authors on a map, we would probably get an interesting result. And that is what we did. As spatio-temporal visualisation engine we used the GeoBrowser:
+Our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) – which was derived from the ["Digitale Bibliothek" corpus](https://textgrid.de/digitale-bibliothek) within the TextGrid Repository – holds 465 dramatic pieces from 1731 to 1929, written by xxx authors altogether. If we would plot the places of birth and death of all the authors on a map, we would probably get an interesting result. And that is what we did.
+
+All the documents in our repository contain informations about the authors and additional to the names we find so called pnd identificators. These are stored in an xml attribute value called key like the following.
+{% highlight xml %}
+<author key="pnd:118540238">Goethe, Johann Wolfgang von</author>
+{% endhighlight %}
+During the last weeks we updateted our schema to insert this attribute in our [Zwischenformat](/Introducing-Our-Zwischenformat/), see  the corresponding [commit](https://github.com/dlina/project/commit/4811e0cd6bb81b0230a7afbd0ecfc34bc7f4b83e) and irrespective of an internet connection that is all we need to start collection our data - so called [Linked Open Data (LOD)](http://www.univerlag.uni-goettingen.de/bitstream/handle/3/Neuroth_TextGrid/TextGrid_book.pdf) (S. 91ff).
+This number is related to an entry in the authority file "Gemeinsame Normdatei" (GND) at the German National Library and you can view html represantations as well as RDF versions of the data by adding the number to the URL [http://d-nb.info/gnd/](http://d-nb.info/gnd/118540238). There are many informations about the person: alias names, the lifespan, professions as well as geographic relations that contians place of birth and place of death in the most cases. These geographic relations presented as place names in the html versions but the RDF data set contains a GND id per place name as well. So we have to go deeper in this database to retreive coordinates. For example we follow the link to the place of birth from our example, we get
+{% highlight xml %}
+<geo:hasGeometry rdf:parseType="Resource">
+<rdf:type rdf:resource="http://www.opengis.net/ont/sf#Point" />
+<geo:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">Point ( +008.684166 +050.115277 )</geo:asWKT>
+</geo:hasGeometry>
+{% endhighlight %}
+and we just have to trim the string here to `+008.684166 +050.115277` and pass this over to a new KML file. The Keyhole Markup Language is a very common format based on XML.
+
+As spatio-temporal visualisation playground we used the GeoBrowser which supports KML as welll as CSV files. There is also a pretty nice datasheet editor (with autofill of coordinates) for those who want to copy/paste lists of place names. You can also prepare the KML file with some HTML elements and link back to your edition or whereever you like.
 
 http://geobrowser.de.dariah.eu/beta6/?csv1=http://geobrowser.de.dariah.eu/storage/249551&csv2=http://geobrowser.de.dariah.eu/storage/249502&currentStatus=mapChanged=Historical+Map+of+1880
 
