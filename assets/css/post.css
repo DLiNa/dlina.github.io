@@ -559,13 +559,13 @@ code {
 iframe {
   border: 0; }
 /* Geo-Browser stuff */
-iframe #geobrowser {
+iframe#geobrowser {
   border: 0;
   width: 920px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  height: 920px;
+  height: 760px;
 }
 .flex-video {
   margin-left: auto;
