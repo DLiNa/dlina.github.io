@@ -6,7 +6,6 @@ title: Network Analysis of Dramatic Texts
 tags: []
 chart: true
 ---
-
 ## Talks and Workshops
 
 - July 2, 2015 · DH2015 in Sydney · [abstract](http://dh2015.org/abstracts/xml/FISCHER_Frank_Digital_Network_Analysis_of_Dramati/FISCHER_Frank_Digital_Network_Analysis_of_Dramatic_Text.html) · [blog post](http://dlina.github.io/Our-Talk-at-DH2015/) · [slides](https://dlina.github.io/presentations/2015-sydney/sydney.html#/)
