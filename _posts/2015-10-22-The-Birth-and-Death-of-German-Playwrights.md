@@ -18,7 +18,7 @@ featured: false
 
 You surely have seen the piece in "Science", ["A Network Framework of Cultural History"](http://www.sciencemag.org/content/345/6196/558), and the corresponding [lifetime-curve videos](https://www.youtube.com/watch?v=4gIhRkCcD4U). Max Schich et al. set out to visualise "intellectual mobility" based on "spatiotemporal birth and death information (…) of more than 150,000 notable individuals". That's a lot of people, and we wouldn't even dare to compare this little blog post to what they did. But anyway, we dabelled in telling the story of **the life and death of German playwrights** by using a similiar method with a much (like, much!) smaller set of people.
 
-The **tl;dr version** of how we did that: Wrote an XQuery script that uses the [GND identifier](http://www.dnb.de/gnd) for each author in our XML files to find our way to corresponding Wikidata objects where we extracted dates and places of life and death of all the authors contained in our corpus. Generated two KML files and put them into the GeoBrowser – mission accomplished.
+The **tl;dr version** of how we did that: Wrote an XQuery script that uses the [GND identifier](http://www.dnb.de/gnd) for each author in our XML files to find our way to corresponding Wikidata objects where we extracted dates and places of life and death of all the authors contained in our corpus. Generated two KML files and put them into the GeoBrowser – mission accomplished:
 
 <iframe id="geobrowser" src="https://geobrowser.de.dariah.eu/embed/?kml1=https://dlina.github.io/data/geobrowser/lina-birth.kml&kml2=https://dlina.github.io/data/geobrowser/lina-death.kml&currentStatus=mapChanged=Historical+Map+of+1880"></iframe>
 
@@ -53,12 +53,13 @@ Eventually, the Frankfurt am Main record gives away the geographical coordinates
 </geo:hasGeometry>
 {% endhighlight %}
 
-If we want to view these coordinates in a geographic vaisualization tool, we should prepare a KML file - which is interpreted by most of these tools. We just had to trim the string to `+008.684166 +050.115277` and hand this over to a file like the following.
+We just had to trim the string to `+008.684166 +050.115277` and hand it over to a KML file (which can be interpreted by the majority of geo-visualisation tools) like this:
+
 {% highlight xml %}
 <kml>
   <Placemark>
     <address>Frankfurt am Main</address>
-    <description>Place of Birth;  28 August 1749</description>
+    <description>Place of Birth; 28 August 1749</description>
     <name>Gūta, Yūhān Wulfgāng fun</name>
     <Point>
       <coordinates>+008.684166 +050.115277</coordinates>
@@ -69,7 +70,8 @@ If we want to view these coordinates in a geographic vaisualization tool, we sho
   </Placemark>
 <kml>
 {% endhighlight %}
-Easy enough, we just just had to repeat this for the other authors and we would be all set, we thought.
+
+Easy enough, we just had to repeat this for the other authors to fill up our KML file and we would be all set, we thought.
 
 ## Wikidata Comes Into Play
 
@@ -84,7 +86,7 @@ Once we could directly examine the XML/RDF representation it was dead easy to ge
 
 ## Pushing Our Data Into the GeoBrowser
 
-Now we could finally feed the files into the GeoBrowser, our spatio-temporal visualisation playground of choice (after years in beta, [it finally went 1.0 just this month](http://dhd-blog.org/?p=5705)). GeoBrowser supports both CSV and KML files. There is a pretty nice datasheet editor with autofill of coordinates based on the [Getty Thesaurus of Geographic Names](https://en.wikipedia.org/wiki/Getty_Thesaurus_of_Geographic_Names) for those who want to copy/paste lists of place names. You can also spice up your KML files with HTML elements and link back to your edition or to wherever you like. You can [ask the developers](https://wiki.de.dariah.eu/display/publicde/Geo-Browser+FAQ#Geo-BrowserFAQ-WarumkannichunterLoadDatakeineKML,KMZundCSV-Dateien%C3%BCberKML/KMZ/CSVFileURLeinbinden?) to add your domain to a whitelist to input data directly from your server.
+Now we could finally feed the files into the GeoBrowser, our spatio-temporal visualisation playground of choice (after years in beta, [it finally went 1.0 just this month](http://dhd-blog.org/?p=5705)). GeoBrowser supports both CSV and KML files. There is a pretty nice datasheet editor with autofill of coordinates based on the [Getty Thesaurus of Geographic Names](https://en.wikipedia.org/wiki/Getty_Thesaurus_of_Geographic_Names) for those who want to copy/paste lists of place names. You can also spice up your KML files with HTML elements and link back to your edition or to wherever you like. And btw, if you want to feed the GeoBrowser directly from your own server, just [ask the developers](https://wiki.de.dariah.eu/display/publicde/Geo-Browser+FAQ#Geo-BrowserFAQ-WarumkannichunterLoadDatakeineKML,KMZundCSV-Dateien%C3%BCberKML/KMZ/CSVFileURLeinbinden?) to add your domain to a whitelist.
 
 You can view the result and thus the story of the life and death of (some) German playwrights in the 18th, 19th and 20th century above.
 
@@ -95,7 +97,6 @@ As with most visualisations in the Humanities, this one needs a bit of explanati
 Now what is it we can see there? Feel free to zoom in and out as you please. One first impression is that our corpus is pretty well-balanced since there is no regional bias, i.e., no over-representation of authors from specific regions (like, no emphasis on Hessian, or Swabian, or Saxon, or East Prussian writers, etc., plus we've got a fair handful of Swiss and Austrian writers, too).
 
 The biggest bubbles surround Berlin (11 births, 15 deaths) and Vienna (13 births, 20 deaths), the two metropolises of the Holy Roman Empire (and later the German and Austro-Hungarian Empires). But again, the two do not dominate the whole picture. So the well-balancedness is something we can state, even if we know that birth and death places are just basic metadata not saying anything about where the authors spent the most part of their lifes.
-
 
 ## Some Geospatial Peculiarities
 
@@ -125,15 +126,21 @@ Another thing you can see in the visualisation is that some German-language auth
 In addition to the regional well-balancedness of the corpus, there is also a temporal one, if we might say so. Have a look at the time-bar diagram right underneath the map (you can use the pull-down menus to change the scale). The first author appearing on the time bar, born in 1697, is Caroline Neuber. The first one to die is Johann Elias Schlegel, in 1749. Our youngest author is Hans Kaltneker, born in 1895. The author who lived the longest is Johannes Schlaf who died in 1941. The reason for him being the most recent author are copyright issues, of course (German copyright expires 70 years after the author's death).
 
 # Obstacles
-Again we had to deal with some strange values in our data as well as missing Wikipedia entries for some authors and missing properties at Wikidata.
-When we started to find a way from the GND to wikipedia, we found a relation in the RDF file – very good. But not every RDF file contains something like 
+
+Some of the minor issues we encountered on our way where the usual amounts of strange (unrelatable) values and nonexistent data, like missing Wikipedia entries or missing properties on Wikidata (they were not many and we fixed them while we went along, i.e., two playwrights finally got their Wikipedia aticle, and Wikidata was filled with some new properties).
+
+While building our bridge from the GND entries to the corresponding Wikipedia articles, we found an accordant relation in the RDF file – good. Yet it turned out not every RDF file contains something like
+
 {% highlight xml %}
 <foaf:page rdf:resource="http://de.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe"/>
 {% endhighlight %}
-Instead the html presentation of the data contains a link to wikipedia, propably generated with the help of a beacon file. We had to parse the website. In case of XHTML it can be done with the help of a `doc()` function, but the German National Library uses redirects (not supported by the `doc()` function) rather than URL rewriting (supported by the `doc()` function) and so the EXPath HTTP client had to grab the site. 
-It is getting more complicated in the case of Karl Haffner. In the RDF file we find a link to wikipedia - but the target is replaced by disambiguation page meanwhile. So we had to add an exception.
-In our first data set we found an author died in 1952. A very early adaptor in terms of open source publishing we thought. But the Wilhelm Schäfer [(pnd:118794868)](http://d-nb.info/gnd/118794868) referenced in our source is not the one we are looking for. We had to [adjust the data](https://github.com/dlina/project/commit/da414793101e9187d53cb4b04feb57062adb7121) here and point to Wilhelm Schaefer [(pnd:117099309)](http://d-nb.info/gnd/117099309). The same happens to	Friedrich Fouqué, the musician. But that is exactly why we are using those identifiers.
+
+Instead, the HTML presentation of the data contains a link to Wikipedia, automatically generated by help of a [BEACON file](https://de.wikipedia.org/wiki/Wikipedia:BEACON). So we had to parse the entire webpage. If we had encountered an XHTML page we could have made use of the `doc()` function. Alas, the German National Library uses redirects (not supported by the `doc()` function) rather than URL rewriting (supported by the `doc()` function), so we had to let the EXPath HTTP client grab the page.
+
+The case of [Karl Haffner](https://de.wikipedia.org/wiki/Karl_Haffner_(Dramatiker)) was more complicated. The [RDF file](http://d-nb.info/gnd/120430231/about/lds) did contain a link to Wikipedia, but it nowadays leads to a disambiguation page where we obviously couldn't find the correspondign Wikidata object. So we had to add an exception to our crawler (just this one).
+
+One last thing, in our initial data set we found an author who died in 1952, undercutting the 70-year copyright rule. A very early adaptor in terms of open-source publishing, we thought. 😇 But the Wilhelm Schäfer [(pnd:118794868)](http://d-nb.info/gnd/118794868) referenced in our source was not the author who should be referenced for writing ["Faustine, der weibliche Faust"](https://www.textgridrep.de/browse.html?id=textgrid:trwv.0). So we [corrected the data](https://github.com/dlina/project/commit/da414793101e9187d53cb4b04feb57062adb7121) and pointed to the real Wilhelm Schaefer [(pnd:117099309)](http://d-nb.info/gnd/117099309) instead. Same happened with one of Arno Schmidt's favourite authors, Friedrich de la Motte Fouqué, who was mistaken with his grandson ([correcting commit here](https://github.com/dlina/project/commit/304c26aa30cdbad0aa0f71def6a11be814ea079e)). We took over the wrong PNDs from the TextGrid Repository, and things can go wrong any time, sure, especially when you (have to) apply automated tagging. In this case, we only found two wrong identifiers, but just imagine a slightly bigger project where you cannot hand-check everything anymore, a wee bit of a nightmare for LOD.
 
 # Conclusion
 
-So what did we achieve here? Well, nothing much. This is just one possible response to the imperative: "Know your data!" By automatically visualising the birth and death places of the playwrights that build our corpus of dramatic texts, we added a useful layer of description. And this will help us to classify any new results that our research on the corpus might yield in the future.
+So what did we achieve here? Nothing much, really. This is just one possible response to the imperative: "Know your data!" By automatically visualising the birth and death places of the playwrights that build our corpus of dramatic texts, we added a useful layer of description. And this will help us to classify any new results that our research on the corpus might yield in the future.
