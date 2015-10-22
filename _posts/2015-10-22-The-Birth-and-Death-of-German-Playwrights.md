@@ -22,6 +22,12 @@ The **tl;dr version** of how we did that: Wrote an XQuery script that uses the [
 
 <iframe id="geobrowser" src="https://geobrowser.de.dariah.eu/embed/?kml1=https://dlina.github.io/data/geobrowser/lina-birth.kml&kml2=https://dlina.github.io/data/geobrowser/lina-death.kml&currentStatus=mapChanged=Historical+Map+of+1880"></iframe>
 
+As with most visualisations in the Humanities, this one needs a bit of explanation. First off, orange circles indicate places of birth, purple circles indicate places of death. As background map we chose the 1880 one. Bearing in mind that our corpus covers texts from ca. 1730 to 1930, you can also change map the layout to 1783, 1815, 1914 or 1920 up in the GeoBrowser interface.
+
+Now what is it we can see there? Feel free to zoom in and out as you please. One first impression is that our corpus is pretty well-balanced since there is no regional bias, i.e., no over-representation of authors from specific regions (like, no emphasis on Hessian, or Swabian, or Saxon, or East Prussian writers, etc., plus we've got a fair handful of Swiss and Austrian writers, too).
+
+The biggest bubbles surround Berlin (11 births, 15 deaths) and Vienna (13 births, 20 deaths), the two metropolises of the Holy Roman Empire (and later the German and Austro-Hungarian Empires). But again, the two do not dominate the whole picture. So the well-balancedness is something we can state, even if we know that birth and death places are just basic metadata not saying anything about where the authors spent the most part of their lifes.
+
 ## Workflow, Bit More Detailed
 
 Our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) – which was derived from the ["Digitale Bibliothek" corpus](https://textgrid.de/digitale-bibliothek) within the TextGrid Repository – holds **465 dramatic pieces from 1731 to 1929**, written by **178 authors** altogether. By plotting the places of birth and death of all of them onto a map we would probably find out if our corpus was balanced or if there were any (regional) biases we weren't aware of.
@@ -86,15 +92,7 @@ Once we could directly examine the XML/RDF representation it was dead easy to ge
 
 Now we could finally feed the files into the GeoBrowser, our spatio-temporal visualisation playground of choice (after years in beta, [it finally went 1.0 just this month](http://dhd-blog.org/?p=5705)). GeoBrowser supports both CSV and KML files. There is a pretty nice datasheet editor with autofill of coordinates based on the [Getty Thesaurus of Geographic Names](https://en.wikipedia.org/wiki/Getty_Thesaurus_of_Geographic_Names) for those who want to copy/paste lists of place names. You can also spice up your KML files with HTML elements and link back to your edition or to wherever you like. You can [ask the developers](https://wiki.de.dariah.eu/display/publicde/Geo-Browser+FAQ#Geo-BrowserFAQ-WarumkannichunterLoadDatakeineKML,KMZundCSV-Dateien%C3%BCberKML/KMZ/CSVFileURLeinbinden?) to add your domain to a whitelist to input data directly from your server.
 
-Bla bla blub, to finally cut to the chase, this is the story of the life and death of (some) German playwrights in the 18th, 19th and 20th century:
-
-<iframe id="geobrowser" src="https://geobrowser.de.dariah.eu/embed/?kml1=https://dlina.github.io/data/geobrowser/lina-birth.kml&kml2=https://dlina.github.io/data/geobrowser/lina-death.kml&currentStatus=mapChanged=Historical+Map+of+1880"></iframe>
-
-As with most visualisations in the Humanities, this one needs a bit of explanation. First off, orange circles indicate places of birth, purple circles indicate places of death. As background map we chose the 1880 one. Bearing in mind that our corpus covers texts from ca. 1730 to 1930, you can also change map the layout to 1783, 1815, 1914 or 1920 up in the GeoBrowser interface.
-
-Now what is it we can see there? Feel free to zoom in and out as you please. One first impression is that our corpus is pretty well-balanced since there is no regional bias, i.e., no over-representation of authors from specific regions (like, no emphasis on Hessian, or Swabian, or Saxon, or East Prussian writers, etc., plus we've got a fair handful of Swiss and Austrian writers, too).
-
-The biggest bubbles surround Berlin (11 births, 15 deaths) and Vienna (13 births, 20 deaths), the two metropolises of the Holy Roman Empire (and later the German and Austro-Hungarian Empires). But again, the two do not dominate the whole picture. So the well-balancedness is something we can state, even if we know that birth and death places are just basic metadata not saying *anything* about where the authors spent the most part of their lifes.
+You can view the result and thus the story of the life and death of (some) German playwrights in the 18th, 19th and 20th century above.
 
 ## Some Geospatial Peculiarities
 
