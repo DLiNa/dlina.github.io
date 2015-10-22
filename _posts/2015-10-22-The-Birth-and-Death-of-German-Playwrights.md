@@ -21,6 +21,7 @@ You surely have seen the piece in *Science*, ["A Network Framework of Cultural H
 The **tl;dr version** of how we did that: Wrote an XQuery script that uses the [GND identifier](http://www.dnb.de/gnd) for each author in our XML files to find our way to corresponding Wikidata objects where we extracted dates and places of birth and death of all the authors contained in our corpus. Generated two KML files and put them into the GeoBrowser – mission accomplished (feel free to zoom in a bit):
 
 <iframe id="geobrowser" src="https://geobrowser.de.dariah.eu/embed/?kml1=https://dlina.github.io/data/geobrowser/lina-birth.kml&kml2=https://dlina.github.io/data/geobrowser/lina-death.kml&currentStatus=mapChanged=Historical+Map+of+1880"></iframe>
+<a href="https://geobrowser.de.dariah.eu/embed/?kml1=https://dlina.github.io/data/geobrowser/lina-birth.kml&kml2=https://dlina.github.io/data/geobrowser/lina-death.kml&currentStatus=mapChanged=Historical+Map+of+1880" traget="_blank">view full screen</a>
 
 ## Workflow, Bit More Detailed
 
