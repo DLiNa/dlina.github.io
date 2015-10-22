@@ -14,7 +14,7 @@ comments: true
 list: false
 featured: false
 ---
-Why not toy around with some metadata today?
+Probably you already know that we celebrate every single bit of code we get out of the TextGrid Repository. So why not toy around with some metadata today?
 
 Our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) – which was derived from the ["Digitale Bibliothek" corpus](https://textgrid.de/digitale-bibliothek) within the TextGrid Repository – holds 465 dramatic pieces from 1731 to 1929, written by xxx authors altogether. If we would plot the places of birth and death of all the authors on a map, we would probably get an interesting result. And that is what we did.
 
