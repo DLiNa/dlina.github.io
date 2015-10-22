@@ -110,7 +110,7 @@
         </TimeStamp>
     </Placemark>
     <Placemark>
-        <address>No label defined</address>
+        <address>Rammelburg</address>
         <description>Pfeil, Johann Gottlob Benjamin; 28 September 1800</description>
         <name>Pfeil, Johann Gottlob Benjamin</name>
         <Point>
@@ -198,7 +198,7 @@
         </TimeStamp>
     </Placemark>
     <Placemark>
-        <address>No label defined</address>
+        <address>StÃ¶tteritz</address>
         <description>Weiße, Christian Felix; 16 December 1804</description>
         <name>Weiße, Christian Felix</name>
         <Point>
@@ -693,7 +693,7 @@
         </TimeStamp>
     </Placemark>
     <Placemark>
-        <address>No label defined</address>
+        <address>Rosenow</address>
         <description>Körner, Theodor; 26 August 1813</description>
         <name>Körner, Theodor</name>
         <Point>
@@ -1320,14 +1320,14 @@
         </TimeStamp>
     </Placemark>
     <Placemark>
-        <address></address>
-        <description>Roeber, Friedrich; </description>
+        <address>DÃ¼sseldorf</address>
+        <description>Roeber, Friedrich; 12 October 1901</description>
         <name>Roeber, Friedrich</name>
         <Point>
-            <coordinates>0, 0</coordinates>
+            <coordinates>6.816666666666666, 51.21666666666667</coordinates>
         </Point>
         <TimeStamp>
-            <when></when>
+            <when>1901</when>
         </TimeStamp>
     </Placemark>
     <Placemark>
@@ -1353,14 +1353,14 @@
         </TimeStamp>
     </Placemark>
     <Placemark>
-        <address></address>
-        <description>Haffner, Carl; </description>
+        <address>Vienna</address>
+        <description>Haffner, Carl; 29 February 1876</description>
         <name>Haffner, Carl</name>
         <Point>
-            <coordinates>0, 0</coordinates>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
         </Point>
         <TimeStamp>
-            <when></when>
+            <when>1876</when>
         </TimeStamp>
     </Placemark>
     <Placemark>
@@ -1584,7 +1584,7 @@
         </TimeStamp>
     </Placemark>
     <Placemark>
-        <address>No label defined</address>
+        <address>Rudolfsheim</address>
         <description>Kupelwieser, Josef; 2 February 1866</description>
         <name>Kupelwieser, Josef</name>
         <Point>

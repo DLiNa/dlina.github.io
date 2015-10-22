@@ -946,7 +946,7 @@
         </TimeStamp>
     </Placemark>
     <Placemark>
-        <address>No label defined</address>
+        <address>Castle Lubowitz</address>
         <description>Eichendorff, Joseph von; 10 March 1788</description>
         <name>Eichendorff, Joseph von</name>
         <Point>
@@ -1320,14 +1320,14 @@
         </TimeStamp>
     </Placemark>
     <Placemark>
-        <address></address>
-        <description>Roeber, Friedrich; </description>
+        <address>Elberfeld</address>
+        <description>Roeber, Friedrich; 19 June 1819</description>
         <name>Roeber, Friedrich</name>
         <Point>
-            <coordinates>0, 0</coordinates>
+            <coordinates>7.1491694444444445, 51.257219444444445</coordinates>
         </Point>
         <TimeStamp>
-            <when></when>
+            <when>1819</when>
         </TimeStamp>
     </Placemark>
     <Placemark>
@@ -1353,14 +1353,14 @@
         </TimeStamp>
     </Placemark>
     <Placemark>
-        <address></address>
-        <description>Haffner, Carl; </description>
+        <address>KÃ¶nigsberg</address>
+        <description>Haffner, Carl; 8 November 1804</description>
         <name>Haffner, Carl</name>
         <Point>
-            <coordinates>0, 0</coordinates>
+            <coordinates>20.516666666666666, 54.71666666666667</coordinates>
         </Point>
         <TimeStamp>
-            <when></when>
+            <when>1804</when>
         </TimeStamp>
     </Placemark>
     <Placemark>
@@ -1804,7 +1804,7 @@
         </TimeStamp>
     </Placemark>
     <Placemark>
-        <address>No label defined</address>
+        <address>Truchtelfingen</address>
         <description>Essig, Hermann; 28 August 1878</description>
         <name>Essig, Hermann</name>
         <Point>
