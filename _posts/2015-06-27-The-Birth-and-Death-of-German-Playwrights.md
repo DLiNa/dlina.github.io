@@ -42,7 +42,7 @@ and we just have to trim the string here to `+008.684166 +050.115277` and pass t
 
 As spatio-temporal visualisation playground we used the GeoBrowser which supports KML as welll as CSV files. There is also a pretty nice datasheet editor (with autofill of coordinates) for those who want to copy/paste lists of place names. You can also prepare the KML file with some HTML elements and link back to your edition or whereever you like.
 
-<iframe id="geobrowser" src="http://geobrowser.de.dariah.eu/embed/?csv1=http://geobrowser.de.dariah.eu/storage/249551&csv2=http://geobrowser.de.dariah.eu/storage/249502&currentStatus=mapChanged=Historical+Map+of+1880"></iframe>
+<iframe id="geobrowser" src="https://geobrowser.de.dariah.eu/embed/?kml1=https://dlina.github.io/data/geobrowser/lina-birth.kml&kml2=https://dlina.github.io/data/geobrowser/lina-death.kml&currentStatus=mapChanged=Contemporary+Map+%282010%29"></iframe>
 
 As with most visualisations in the Humanities, this one needs a bit of explanation. First off, orange circles indicate places of birth, purple circles indicate places of death. As background map we chose the 1880 one. Bearing in mind that our corpus covers texts from 1730 to 1930, you can also choose map layouts from 1783, 1815, 1914 and 1920 in the GeoBrowser interface.
 
