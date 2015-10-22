@@ -123,6 +123,15 @@ Another thing you can see in the visualisation is that some German-language auth
 
 In addition to the regional well-balancedness of the corpus, there is also a temporal one, if we might say so. Have a look at the time-bar diagram right underneath the map (you can use the pull-down menus to change the scale). The first author appearing on the time bar, born in 1697, is Caroline Neuber. The first one to die is Johann Elias Schlegel, in 1749. Our youngest author is Hans Kaltneker, born in 1895. The author who lived the longest is Johannes Schlaf who died in 1941. The reason for him being the most recent author are copyright issues, of course (German copyright expires 70 years after the author's death).
 
+# Obstacles
+Again we had to deal with some strange values in our data as well as missing Wikipedia entries for some authors and missing properties at Wikidata.
+When we started to find a way from the GND to wikipedia, we found a relation in the RDF file – very good. But not every RDF file contains something like 
+{% highlight xml %}
+<foaf:page rdf:resource="http://de.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe"/>
+{% endhighlight %}
+But instead the html presentation of the data contains a link to wikipedia, propably generated with the help of a beacon file. In this cases we had to parse the website. In case of XHTML it can be done with the help of a `doc()` function, but the German National Library uses redirects instead of URL rewriting and so the EXPath HTTP client have to grab the site. It is getting more complicated in the case of Carl Haffner. In the RDF file we find a link to wikipedia - but the target is replaced by disambiguation page meanwhile. So we had to add an exception.
+Another PND was wrong...
+
 # Conclusion
 
 So what did we achieve here? Well, nothing much. This is just one possible response to the imperative: "Know your data!" By automatically visualising the birth and death places of the playwrights that build our corpus of dramatic texts, we added a useful layer of description. And this will help us to classify any new results that our research on the corpus might yield in the future.
