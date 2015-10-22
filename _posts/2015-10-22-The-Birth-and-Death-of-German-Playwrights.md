@@ -16,9 +16,9 @@ featured: true
 ---
 "If your metadata is good, it can help you in many ways," mumbled Captain Obvious when we last met, and we couldn't agree more. So let's toy around with some metadata today to get a better impression of what our corpus of roughly half a thousand German-language theatre plays actually contains.
 
-You surely have seen the piece in *Science*, ["A Network Framework of Cultural History"](http://www.sciencemag.org/content/345/6196/558), and the corresponding [lifetime-curve videos](https://www.youtube.com/watch?v=4gIhRkCcD4U). Max Schich et al. set out to visualise "intellectual mobility" based on "spatiotemporal birth and death information (…) of more than 150,000 notable individuals". That's a lot of people, and we wouldn't even dare to compare this little blog post to what they did. But anyway, we dabbled in telling the story of **the life and death of German playwrights** by using a similiar method with a much (like, *much*) smaller set of people – 178 authors altogether who wrote 465 plays published between 1731 and 1929.
+You surely have seen the piece in *Science*, ["A Network Framework of Cultural History"](http://www.sciencemag.org/content/345/6196/558), and the corresponding [lifetime-curve videos](https://www.youtube.com/watch?v=4gIhRkCcD4U). Max Schich et al. set out to visualise "intellectual mobility" based on "spatiotemporal birth and death information (…) of more than 150,000 notable individuals". That's a lot of people, and we wouldn't even dare to compare this little blog post to what they did. But anyway, we dabbled in telling the story of **the birth and death of German playwrights** by using a similar method with a much (like, *much*) smaller set of people – 178 authors altogether who wrote 465 plays published between 1731 and 1929.
 
-The **tl;dr version** of how we did that: Wrote an XQuery script that uses the [GND identifier](http://www.dnb.de/gnd) for each author in our XML files to find our way to corresponding Wikidata objects where we extracted dates and places of life and death of all the authors contained in our corpus. Generated two KML files and put them into the GeoBrowser – mission accomplished (feel free to zoom in a bit):
+The **tl;dr version** of how we did that: Wrote an XQuery script that uses the [GND identifier](http://www.dnb.de/gnd) for each author in our XML files to find our way to corresponding Wikidata objects where we extracted dates and places of birth and death of all the authors contained in our corpus. Generated two KML files and put them into the GeoBrowser – mission accomplished (feel free to zoom in a bit):
 
 <iframe id="geobrowser" src="https://geobrowser.de.dariah.eu/embed/?kml1=https://dlina.github.io/data/geobrowser/lina-birth.kml&kml2=https://dlina.github.io/data/geobrowser/lina-death.kml&currentStatus=mapChanged=Historical+Map+of+1880"></iframe>
 
@@ -88,7 +88,7 @@ Once we could directly examine the XML/RDF representation it was dead easy to ge
 
 Now we could finally feed the files into the GeoBrowser, our spatio-temporal visualisation playground of choice (after years in beta, [it finally went 1.0 just this month](http://dhd-blog.org/?p=5705)). GeoBrowser supports both CSV and KML files. There is a pretty nice datasheet editor with autofill of coordinates based on the [Getty Thesaurus of Geographic Names](https://en.wikipedia.org/wiki/Getty_Thesaurus_of_Geographic_Names) for those who want to copy/paste lists of place names. You can also spice up your KML files with HTML elements and link back to your edition or to wherever you like. And btw, if you want to feed the GeoBrowser directly from your own server, just [ask the developers](https://wiki.de.dariah.eu/display/publicde/Geo-Browser+FAQ#Geo-BrowserFAQ-WarumkannichunterLoadDatakeineKML,KMZundCSV-Dateien%C3%BCberKML/KMZ/CSVFileURLeinbinden?) to add your domain to the whitelist.
 
-You already viewed the result and thus the story of the life and death of (some) German playwrights in the 18th, 19th and 20th century in the iframe above.
+You already viewed the result and thus the story of the birth and death of (some) German playwrights in the 18th, 19th and 20th century in the iframe above.
 
 # Analysis
 
@@ -96,7 +96,7 @@ As with most visualisations in the Humanities, this one needs a bit of explanati
 
 Now what is it we can see there? Feel free to zoom in and out as you please. One first impression is that our corpus is pretty well-balanced since there is no regional bias, i.e., no over-representation of authors from specific regions (like, no emphasis on Hessian, or Swabian, or Saxon, or East Prussian writers, etc., plus we've got a fair handful of Swiss and Austrian writers, too).
 
-The biggest bubbles surround Berlin (11 births, 15 deaths) and Vienna (13 births, 20 deaths), the two metropolises of the Holy Roman Empire (and later the German and Austro-Hungarian Empires). But again, the two do not dominate the whole picture. So the well-balancedness is something we can state, even if we know that birth and death places are just basic metadata not saying anything about where the authors spent the most part of their lifes.
+The biggest bubbles surround Berlin (11 births, 15 deaths) and Vienna (13 births, 20 deaths), the two metropolises of the Holy Roman Empire (and later the German and Austro-Hungarian Empires). But again, the two do not dominate the whole picture. So the well-balancedness is something we can state, even if we know that birth and death places are just basic metadata not saying anything about where the authors spent the most part of their lives.
 
 ## Some Geospatial Peculiarities
 
