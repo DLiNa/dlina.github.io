@@ -12,7 +12,7 @@ mathjax:
 chart: 
 comments: true
 list: false
-featured: false
+featured: true
 ---
 "If your metadata is good, it can help you in many ways," mumbled Captain Obvious when we last met, and we couldn't agree more. So let's toy around with some metadata today to get a better impression of what our corpus of roughly half a thousand German-language theatre plays actually contains.
 
