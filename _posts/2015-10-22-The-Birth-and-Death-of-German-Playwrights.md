@@ -129,8 +129,9 @@ When we started to find a way from the GND to wikipedia, we found a relation in 
 {% highlight xml %}
 <foaf:page rdf:resource="http://de.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe"/>
 {% endhighlight %}
-But instead the html presentation of the data contains a link to wikipedia, propably generated with the help of a beacon file. In this cases we had to parse the website. In case of XHTML it can be done with the help of a `doc()` function, but the German National Library uses redirects instead of URL rewriting and so the EXPath HTTP client have to grab the site. It is getting more complicated in the case of Carl Haffner. In the RDF file we find a link to wikipedia - but the target is replaced by disambiguation page meanwhile. So we had to add an exception.
-Another PND was wrong...
+Instead the html presentation of the data contains a link to wikipedia, propably generated with the help of a beacon file. We had to parse the website. In case of XHTML it can be done with the help of a `doc()` function, but the German National Library uses redirects (not supported by the `doc()` function) rather than URL rewriting (supported by the `doc()` function) and so the EXPath HTTP client had to grab the site. 
+It is getting more complicated in the case of Karl Haffner. In the RDF file we find a link to wikipedia - but the target is replaced by disambiguation page meanwhile. So we had to add an exception.
+In our first data set we found an author died in 1952. A very early adaptor in terms of open source publishing we thought. But the Wilhelm Schäfer [(pnd:118794868)](http://d-nb.info/gnd/118794868) referenced in our source is not the one we are looking for. We had to [adjust the data](https://github.com/dlina/project/commit/da414793101e9187d53cb4b04feb57062adb7121) here and point to Wilhelm Schaefer [(pnd:117099309)](http://d-nb.info/gnd/117099309). Hey but that is exactly why we are using thos identifiers!
 
 # Conclusion
 
