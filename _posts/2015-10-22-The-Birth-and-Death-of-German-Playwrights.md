@@ -20,6 +20,8 @@ You surely have seen the piece in "Science", ["A Network Framework of Cultural H
 
 The **tl;dr version** of how we did that: Wrote an XQuery script that uses the [GND identifier](http://www.dnb.de/gnd) for each author in our XML files to find our way to corresponding Wikidata objects where we extracted dates and places of life and death of all the authors contained in our corpus. Generated two KML files and put them into the GeoBrowser – mission accomplished.
 
+<iframe id="geobrowser" src="https://geobrowser.de.dariah.eu/embed/?kml1=https://dlina.github.io/data/geobrowser/lina-birth.kml&kml2=https://dlina.github.io/data/geobrowser/lina-death.kml&currentStatus=mapChanged=Historical+Map+of+1880"></iframe>
+
 ## Workflow, Bit More Detailed
 
 Our [Sydney corpus](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) – which was derived from the ["Digitale Bibliothek" corpus](https://textgrid.de/digitale-bibliothek) within the TextGrid Repository – holds **465 dramatic pieces from 1731 to 1929**, written by **178 authors** altogether. By plotting the places of birth and death of all of them onto a map we would probably find out if our corpus was balanced or if there were any (regional) biases we weren't aware of.
