@@ -70,7 +70,7 @@ Now we could finally feed the files into the GeoBrowser, our spatio-temporal vis
 
 Bla bla blub, to finally cut to the chase, this is the story of the life and death of (some) German playwrights in the 18th, 19th and 20th century:
 
-<iframe id="geobrowser" src="https://geobrowser.de.dariah.eu/?kml1=https://dlina.github.io/data/geobrowser/lina-birth.kml&kml2=https://dlina.github.io/data/geobrowser/lina-death.kml&currentStatus=mapChanged=Historical+Map+of+1880"></iframe>
+<iframe id="geobrowser" src="https://geobrowser.de.dariah.eu/embed/?kml1=https://dlina.github.io/data/geobrowser/lina-birth.kml&kml2=https://dlina.github.io/data/geobrowser/lina-death.kml&currentStatus=mapChanged=Historical+Map+of+1880"></iframe>
 
 As with most visualisations in the Humanities, this one needs a bit of explanation. First off, orange circles indicate places of birth, purple circles indicate places of death. As background map we chose the 1880 one. Bearing in mind that our corpus covers texts from ca. 1730 to 1930, you can also change map the layout to 1783, 1815, 1914 or 1920 up in the GeoBrowser interface.
 
