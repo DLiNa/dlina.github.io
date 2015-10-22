@@ -84,7 +84,7 @@ Once we could directly examine the XML/RDF representation it was dead easy to ge
 
 ## Pushing Our Data Into the GeoBrowser
 
-Now we could finally feed the files into the GeoBrowser, our spatio-temporal visualisation playground of choice (after years in beta, [it finally went 1.0 just this month](http://dhd-blog.org/?p=5705)). GeoBrowser supports both CSV and KML files. There is a pretty nice datasheet editor with autofill of coordinates based on the [Getty Thesaurus of Geographic Names](https://en.wikipedia.org/wiki/Getty_Thesaurus_of_Geographic_Names) for those who want to copy/paste lists of place names. You can also spice up your KML files with HTML elements and link back to your edition or to wherever you like.
+Now we could finally feed the files into the GeoBrowser, our spatio-temporal visualisation playground of choice (after years in beta, [it finally went 1.0 just this month](http://dhd-blog.org/?p=5705)). GeoBrowser supports both CSV and KML files. There is a pretty nice datasheet editor with autofill of coordinates based on the [Getty Thesaurus of Geographic Names](https://en.wikipedia.org/wiki/Getty_Thesaurus_of_Geographic_Names) for those who want to copy/paste lists of place names. You can also spice up your KML files with HTML elements and link back to your edition or to wherever you like. You can [ask the developers](https://wiki.de.dariah.eu/display/publicde/Geo-Browser+FAQ#Geo-BrowserFAQ-WarumkannichunterLoadDatakeineKML,KMZundCSV-Dateien%C3%BCberKML/KMZ/CSVFileURLeinbinden?) to add your domain to a whitelist to input data directly from your server.
 
 Bla bla blub, to finally cut to the chase, this is the story of the life and death of (some) German playwrights in the 18th, 19th and 20th century:
 
