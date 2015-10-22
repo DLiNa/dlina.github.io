@@ -51,7 +51,23 @@ Eventually, the Frankfurt am Main record gives away the geographical coordinates
 </geo:hasGeometry>
 {% endhighlight %}
 
-We just had to trim the string to `+008.684166 +050.115277` and hand this over to a new KML file. Easy enough, we just just had to repeat this for the other authors and we would be all set, we thought.
+If we want to view these coordinates in a geographic vaisualization tool, we should prepare a KML file - which is interpreted by most of these tools. We just had to trim the string to `+008.684166 +050.115277` and hand this over to a file like the following.
+{% highlight xml %}
+<kml>
+  <Placemark>
+    <address>Frankfurt am Main</address>
+    <description>Place of Birth;  28 August 1749</description>
+    <name>Gūta, Yūhān Wulfgāng fun</name>
+    <Point>
+      <coordinates>+008.684166 +050.115277</coordinates>
+    </Point>
+    <TimeStamp>
+        <when>1749</when>
+    </TimeStamp>
+  </Placemark>
+<kml>
+{% endhighlight %}
+Easy enough, we just just had to repeat this for the other authors and we would be all set, we thought.
 
 ## Wikidata Comes Into Play
 
