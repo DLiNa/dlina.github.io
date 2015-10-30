@@ -105,7 +105,7 @@ Let's take a look at **geospatial extremities** here. Of course, we cannot say a
 
 | Direction | Playwright            | Place                       |
 |-----------|-----------------------|-----------------------------|
-| N         | Henry von Heiseler    | born 1751 in St. Petersburg |
+| N         | Henry von Heiseler    | born 1875 in St. Petersburg |
 | E         | J.M.R. Lenz           | died 1792 in Moscow         |
 | S         | Ernst von Wildenbruch | born 1845 in Beirut         |
 | W         | Christlob Mylius      | died 1752 in London         |
