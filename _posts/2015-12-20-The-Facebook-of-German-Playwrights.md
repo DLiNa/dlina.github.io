@@ -19,14 +19,14 @@ This short article is an addition to the our last blogpost, ["The Birth & Death 
 
 <div>
  <ul style="list-style-type:none;">
-  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.9em;"><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (geb. 1697)" style="height:150px;align:top;">Neuber, Friederike Caroline (geb. 1697)</li>
-  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.9em;"><img src="{{ site.url }}/images/authorpics/1698_bodmer.jpg" alt="Bodmer, Johann Jacob (geb. 1698)" style="height:150px;align:top;">Bodmer, Johann Jacob (geb. 1698)</li>
-  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.9em;"><img src="{{ site.url }}/images/authorpics/1700_gottsched.jpg" alt="Gottsched, Johann Christoph (geb. 1700)" style="height:150px;align:top;">Gottsched, Johann Christoph (geb. 1700)</li>
-  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.9em;"><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Borkenstein, Hinrich (geb. 1705)" style="height:150px;align:top;">Borkenstein, Hinrich (geb. 1705)</li>
-  <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1713_gottsched.jpg" alt="Gottsched, Luise Adelgunde Victorie (geb. 1713)" style="height:150px">Gottsched, Luise Adelgunde Victorie (geb. 1713)</li>
-  <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1715_gellert.jpg" alt="Gellert, Christian Fürchtegott (geb. 1715)" style="height:150px">Gellert, Christian Fürchtegott (geb. 1715)</li>
-  <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1717_kurz.jpg" alt="Kurz, Joseph von (geb. 1717)" style="height:150px">Kurz, Joseph von (geb. 1717)</li>
-  <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Schlegel, Johann Elias (geb. 1719)" style="height:150px">Schlegel, Johann Elias (geb. 1719)</li>
+  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.7em;"><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (geb. 1697)" style="height:150px;align:top;"><br clear="all" />Neuber, Friederike Caroline (geb. 1697)</li>
+  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.7em;"><img src="{{ site.url }}/images/authorpics/1698_bodmer.jpg" alt="Bodmer, Johann Jacob (geb. 1698)" style="height:150px;align:top;"><br clear="all" />Bodmer, Johann Jacob (geb. 1698)</li>
+  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.7em;"><img src="{{ site.url }}/images/authorpics/1700_gottsched.jpg" alt="Gottsched, Johann Christoph (geb. 1700)" style="height:150px;align:top;"><br clear="all" />Gottsched, Johann Christoph (geb. 1700)</li>
+  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.7em;"><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Borkenstein, Hinrich (geb. 1705)" style="height:150px;align:top;"><br clear="all" />Borkenstein, Hinrich (geb. 1705)</li>
+  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.7em;"><img src="{{ site.url }}/images/authorpics/1713_gottsched.jpg" alt="Gottsched, Luise Adelgunde Victorie (geb. 1713)" style="height:150px"><br clear="all" />Gottsched, Luise Adelgunde Victorie (geb. 1713)</li>
+  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.7em;"><img src="{{ site.url }}/images/authorpics/1715_gellert.jpg" alt="Gellert, Christian Fürchtegott (geb. 1715)" style="height:150px"><br clear="all" />Gellert, Christian Fürchtegott (geb. 1715)</li>
+  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.7em;"><img src="{{ site.url }}/images/authorpics/1717_kurz.jpg" alt="Kurz, Joseph von (geb. 1717)" style="height:150px"><br clear="all" />Kurz, Joseph von (geb. 1717)</li>
+  <li style="float:left;width:25%;border:0px;text-align:center;;margin-bottom:20px;font-size:0.7em;"><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Schlegel, Johann Elias (geb. 1719)" style="height:150px"><br clear="all" />Schlegel, Johann Elias (geb. 1719)</li>
   <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1722_auenbrugger.jpg" alt="Auenbrugger, Johann Leopold von (geb. 1722)" style="height:150px"></li>
   <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Mylius, Christlob (geb. 1722)" style="height:150px"></li>
   <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Quistorp, Theodor Johann (geb. 1722)" style="height:150px"></li>
@@ -198,7 +198,7 @@ This short article is an addition to the our last blogpost, ["The Birth & Death 
   <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1892_sorge.jpg" alt="Sorge, Reinhard (geb. 1892)" style="height:150px"></li>
   <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Kaltneker, Hans (geb. 1895)" style="height:150px"></li>
  </ul>
-</div>
+</div><br clear="all" />
 
 ## Gender Data and Placeholder Images
 
