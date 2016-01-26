@@ -19,10 +19,10 @@ This short article is an addition to the our last blogpost, ["The Birth & Death 
 
 <div>
  <ul style="list-style-type:none;">
-  <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (geb. 1697)" style="height:200px"></li>
-  <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1698_bodmer.jpg" alt="Bodmer, Johann Jacob (geb. 1798)" style="height:200px"></li>
-  <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1700_gottsched.jpg" alt="Gottsched, Johann Christoph (geb. 1700)" style="height:200px"></li>
-  <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Borkenstein, Hinrich (geb. 1705)" style="height:200px"></li>
+  <li style="float:left;width:25%;border:0px;align:center;margin-bottom:20px;"><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (geb. 1697)" style="height:200px">Neuber, Friederike Caroline (geb. 1697)</li>
+  <li style="float:left;width:25%;border:0px;align:center;margin-bottom:20px;"><img src="{{ site.url }}/images/authorpics/1698_bodmer.jpg" alt="Bodmer, Johann Jacob (geb. 1798)" style="height:200px">Bodmer, Johann Jacob (geb. 1798)</li>
+  <li style="float:left;width:25%;border:0px;align:center;margin-bottom:20px;"><img src="{{ site.url }}/images/authorpics/1700_gottsched.jpg" alt="Gottsched, Johann Christoph (geb. 1700)" style="height:200px">Gottsched, Johann Christoph (geb. 1700)</li>
+  <li style="float:left;width:25%;border:0px;align:center;margin-bottom:20px;"><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Borkenstein, Hinrich (geb. 1705)" style="height:200px">Borkenstein, Hinrich (geb. 1705)</li>
   <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1713_gottsched.jpg" alt="Gottsched, Luise Adelgunde Victorie (geb. 1713)" style="height:200px"></li>
   <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1715_gellert.jpg" alt="Gellert, Christian Fürchtegott (geb. 1715)" style="height:200px"></li>
   <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/1717_kurz.jpg" alt="Kurz, Joseph von (geb. 1717)" style="height:200px"></li>
