@@ -4,7 +4,7 @@ title: "The Facebook of German Playwrights"
 author: [martin, frank]
 description: 
 headline: 
-modified: 2016-01-26
+modified: 2016-01-27
 category: Updates
 tags: []
 imagefeature: 
@@ -20,7 +20,7 @@ This short article is an addition to the our last blogpost, ["The Birth & Death 
 <div>
  <ul style="list-style-type:none;">
   <li style="float:left;width:25%;border:0px;text-align:center;margin-top:20px;margin-bottom:20px;"><figure><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (1697–1760)" height="150"><figcaption style="font-size:0.6em;">Neuber, Friederike Caroline <br />(1697–1760)</figcaption></figure></li>
-  <li style="float:left;width:25%;border:0px;text-align:center;margin-top:20px;margin-bottom:20px;"><figure><img src="{{ site.url }}/images/authorpics/1698_bodmer.jpg" alt="Bodmer, Johann Jacob (1698–1783)" height="150"><figcaption style="font-size:0.6em;">Bodmer, Johann Jacob <br />(1698–1784)</figcaption></figure></li>
+  <li style="float:left;width:25%;border:0px;text-align:center;margin-top:20px;margin-bottom:20px;"><figure><img src="{{ site.url }}/images/authorpics/1698_bodmer.jpg" alt="Bodmer, Johann Jacob (1698–1783)" height="150"><figcaption style="font-size:0.6em;">Bodmer, Johann Jacob <br />(1698–1783)</figcaption></figure></li>
   <li style="float:left;width:25%;border:0px;text-align:center;margin-top:20px;margin-bottom:20px;"><figure><img src="{{ site.url }}/images/authorpics/1700_gottsched.jpg" alt="Gottsched, Johann Christoph (1700–1766)" height="150"><figcaption style="font-size:0.6em;">Gottsched, Johann Christoph <br />(1700–1766)</figcaption></figure></li>
   <li style="float:left;width:25%;border:0px;text-align:center;margin-top:20px;margin-bottom:20px;"><figure><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Borkenstein, Hinrich (1705–1777)" height="150"><figcaption style="font-size:0.6em;">Borkenstein, Hinrich <br />(1705–1777)</figcaption></figure></li>
   <li style="float:left;width:25%;border:0px;text-align:center;margin-top:20px;margin-bottom:20px;"><figure><img src="{{ site.url }}/images/authorpics/1713_gottsched.jpg" alt="Gottsched, Luise Adelgunde Victorie (1713–1762)" height="150"><figcaption style="font-size:0.6em;">Gottsched, Luise Adelgunde Victorie <br />(1713–1762)</figcaption></figure></li>
