@@ -1,3 +1,15 @@
+/* face book stuff*/
+#portraitgallery ul {list-style-type:none;}
+#portraitgallery ul li {
+	float:left;
+	width:25%;
+	border:0px;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+
 /* Geo-Browser stuff */
 iframe #geobrowser {
   border: 0;
