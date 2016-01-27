@@ -8,7 +8,10 @@
 	margin-top:20px;
 	margin-bottom:20px;
 }
-
+#portraitgallery figcaption {
+	font-size:0.6em;
+}
+#portraitgallery img {height: 150px;}
 
 /* Geo-Browser stuff */
 iframe #geobrowser {
