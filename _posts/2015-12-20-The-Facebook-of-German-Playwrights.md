@@ -19,7 +19,7 @@ This short article is an addition to the our last blogpost, ["The Birth & Death 
 
 <div>
  <ul style="list-style-type:none;">
-  <li style="float:left;width:25%;border:0px;text-align:center;margin-bottom:20px;font-size:0.65em;"><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (1697–1760)" height="150">Neuber, Friederike Caroline (1697–1760)</li>
+  <li style="float:left;width:25%;border:0px;text-align:center;margin-bottom:20px;font-size:0.65em;"><figure><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (1697–1760)" height="150"><figcaption>Neuber, Friederike Caroline (1697–1760)</figcaption></figure></li>
   <li style="float:left;width:25%;border:0px;text-align:center;margin-bottom:20px;font-size:0.65em;"><img src="{{ site.url }}/images/authorpics/1698_bodmer.jpg" alt="Bodmer, Johann Jacob (1698–1783)" height="150">Bodmer, Johann Jacob (1698–1784)</li>
   <li style="float:left;width:25%;border:0px;text-align:center;margin-bottom:20px;font-size:0.65em;"><img src="{{ site.url }}/images/authorpics/1700_gottsched.jpg" alt="Gottsched, Johann Christoph (1700–1766)" height="150">Gottsched, Johann Christoph (1700–1766)</li>
   <li style="float:left;width:25%;border:0px;text-align:center;margin-bottom:20px;font-size:0.65em;"><img src="{{ site.url }}/images/authorpics/1715_gellert.jpg" alt="Gellert, Christian Fürchtegott (1715–1769)" height="150">Gellert, Christian Fürchtegott (1715–1769)</li>
@@ -199,7 +199,7 @@ This short article is an addition to the our last blogpost, ["The Birth & Death 
   <li style="float:left;width:25%;border:0px;"><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Kaltneker, Hans (1895–)" height="150"></li>
  </ul>
 </div>
-<br clear="all" />
+<div style="clear:left;" />
 
 ## Gender Data and Placeholder Images
 
