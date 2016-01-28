@@ -15,7 +15,9 @@ list: false
 featured: false
 ---
 
-This short article is a follow-up to our last posting, ["The Birth & Death of German Playwrights"](/The-Birth-and-Death-of-German-Playwrights/). Plotting the birth and death places of our 178 authors onto a map was bringing us closer to understanding the character of our corpus which – [codenamed "Sydney"](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) – contains 465 German-language plays. But it didn't bring us close enough to understanding who the authors are. So let's build a gallery with their portraits, a [facebook](https://en.wikipedia.org/wiki/Face_book) of German playwrights, and let's do that automatically. We're relying on Wikidata again and, for each author, extract a link to their principal image which leads to their actual portrait file on Wikimedia Commons. We do this with nothing more than an XSLT transformation. Some simple BASH scripting was added to build the actual gallery for this post. The male and female silhouettes for authors who still lack an image on Commons [were designed by Ruth Reiche](http://blog.ruthreiche.de/profilbilder/) (thanks!). For some more details on how we did all this scroll down to the end of the gallery. And now without further ado, this is the gallery (click on an image to get to the source file on Commons):
+This short article is a follow-up to our last posting, ["The Birth & Death of German Playwrights"](/The-Birth-and-Death-of-German-Playwrights/). Plotting the birth and death places of our 178 authors onto a map was bringing us closer to understanding the character of our corpus which – [codenamed "Sydney"](/Introducing-DLINA-Corpus-15-07-Codename-Sydney/) – contains 465 German-language plays. But it didn't bring us close enough to understanding who the authors are. So let's build a gallery with their portraits, **a [facebook](https://en.wikipedia.org/wiki/Face_book) of German playwrights**, so to speak, and let's do that automatically.
+
+We're relying on **Wikidata** again and, for each author, extract a link to their principal image which leads to the actual portrait file on Wikimedia Commons. We do this with nothing more than an **XSLT** transformation. Some simple BASH scripting was added to build the actual gallery for this post. The male and female silhouettes for authors who still lack an image on Commons [were designed by our accomplice Ruth Reiche](http://blog.ruthreiche.de/profilbilder/) (thanks!). For some more details on how we did all this scroll down to the end of the gallery. And now without further ado, this is the gallery (click on an image to get to the source file on Commons):
 
 <div id="portraitgallery">
  <ul>
@@ -201,7 +203,7 @@ This short article is a follow-up to our last posting, ["The Birth & Death of Ge
 </div>
 <div style="clear:left;" />
 
-## How It Was Done (Short Version)
+## Some Details on How It Was Done
 
 The XSLT file for the automatic generation of the gallery out of the TEI files that comprise our corpus can be found **[here](https://github.com/dlina/project/blob/master/apps/scripts/tei-author-portrait.xsl)**.
 
@@ -216,4 +218,4 @@ done
 
 ## Gender Data and Placeholder Images
 
-Our XSLT file also extracts gender information from Wikidata showing that there are only 10 female writers among the 178 authors. As stated above, the placeholder images were done by Ruth Reiche, we chose one for female and one for male authors out of [a whole bunch of silhouettes](http://blog.ruthreiche.de/profilbilder/) she designed for her network visualisation of characters in Daniel Kehlmann's novel "Ruhm".
+Our XSLT file also extracts gender information from Wikidata showing that there are only 10 female writers among the 178 authors. – As stated above, the placeholder images were done by Ruth Reiche, we chose one for female and one for male authors out of [a whole bunch of silhouettes](http://blog.ruthreiche.de/profilbilder/) she designed for her network visualisations of characters in Daniel Kehlmann's novel "Ruhm".
