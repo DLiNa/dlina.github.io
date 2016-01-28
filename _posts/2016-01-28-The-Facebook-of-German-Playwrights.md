@@ -15,12 +15,13 @@ list: false
 featured: false
 ---
 
-This short article is an addition to the our last blogpost, ["The Birth & Death of German Playwrights"](/The-Birth-and-Death-of-German-Playwrights/), where we used authority-file metadata to plot birth and death places on a GeoBrowser map to get an impression of who the authors are that build our corpus of 465 German-language theatre plays. Those 465 plays were written by 178 authors altogether (some of the plays/libretti have co-authorship). Now let's have a look at the faces our playwrights and generate a gallery with portraits of all of them (if available in Wikimedia Commons). We're making use of Wikidata again, but this time with nothing more than an XSLT transformation. Some simple BASH scripting was added to build the actual gallery for this blogpost. Now without further ado, this is the gallery:
+This short article is a follow-up to the our last post, ["The Birth & Death of German Playwrights"](/The-Birth-and-Death-of-German-Playwrights/). To 
+We had used authority-file metadata to plot birth and death places on a map to get an insight into who the 178 authors are that our corpus of 465 German-language theatre plays. Those 465 plays were written by 178 authors altogether (some of the plays/libretti have co-authorship). Now let's have a look at the faces our playwrights and generate a gallery with portraits of all of them (if available in Wikimedia Commons). We're making use of Wikidata again, but this time with nothing more than an XSLT transformation. Some simple BASH scripting was added to build the actual gallery for this blogpost. Now without further ado, this is the gallery:
 
 <div id="portraitgallery">
  <ul>
-  <li><figure><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (1697–1760)"><figcaption>Neuber, Friederike Caroline <br />(1697–1760)</figcaption></figure></li>
-  <li><figure><img src="{{ site.url }}/images/authorpics/1698_bodmer.jpg" alt="Bodmer, Johann Jacob (1698–1783)"><figcaption>Bodmer, Johann Jacob <br />(1698–1783)</figcaption></figure></li>
+  <li><figure><a href="https://commons.wikimedia.org/wiki/File:Friederike_Caroline_Neuber_1898_Neuer_Theater-Almanch.png"><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (1697–1760)"></figure></a><figcaption>Neuber, Friederike Caroline <br />(1697–1760)</figcaption></figure></li>
+  <li><figure><a href="https://commons.wikimedia.org/wiki/File:Bodmer.jpg"><img src="{{ site.url }}/images/authorpics/1698_bodmer.jpg" alt="Bodmer, Johann Jacob (1698–1783)"></a><figcaption>Bodmer, Johann Jacob <br />(1698–1783)</figcaption></figure></li>
   <li><figure><img src="{{ site.url }}/images/authorpics/1700_gottsched.jpg" alt="Gottsched, Johann Christoph (1700–1766)"><figcaption>Gottsched, Johann Christoph <br />(1700–1766)</figcaption></figure></li>
   <li><figure><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Borkenstein, Hinrich (1705–1777)"><figcaption>Borkenstein, Hinrich <br />(1705–1777)</figcaption></figure></li>
   <li><figure><img src="{{ site.url }}/images/authorpics/1713_gottsched.jpg" alt="Gottsched, Luise Adelgunde Victorie (1713–1762)"><figcaption>Gottsched, Luise Adelgunde Victorie <br />(1713–1762)</figcaption></figure></li>
@@ -200,6 +201,20 @@ This short article is an addition to the our last blogpost, ["The Birth & Death 
  </ul>
 </div>
 <div style="clear:left;" />
+
+## How It Was Done
+
+The XSLT file for the automatic generation of the gallery out of the TEI files that comprise our corpus is *[here](https://github.com/dlina/project/blob/master/apps/scripts/tei-author-portrait.xsl)*.
+
+The renaming of the image files was done with some regexps on BASH, the conversion and crunching of the images to 150px height were done with the ImageMagick command-line tool ``convert`` like this:
+
+{% highlight bash %}
+for file in $SOURCE_DIR/*
+do
+  echo $file "->" $TARGET_DIR/`basename $(echo $file | sed 's/png/jpg/g')`
+  convert $file -strip -resize x150 -quality 60 $TARGET_DIR/`basename $(echo $file | sed 's/\(gif\|png\)/jpg/g')`
+done
+{% endhighlight %}
 
 ## Gender Data and Placeholder Images
 
