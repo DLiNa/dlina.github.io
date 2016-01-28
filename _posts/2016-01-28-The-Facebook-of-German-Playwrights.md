@@ -1,4 +1,4 @@
-s---
+---
 layout: post
 title: "The Facebook of German Playwrights"
 author: [martin, frank]
@@ -39,14 +39,14 @@ We had used authority-file metadata to plot birth and death places on a map to g
   <li><figure><a href="https://commons.wikimedia.org/wiki/File:Johann_Friedrich_Freiherr_von_Cronegk.jpg"><img src="{{ site.url }}/images/authorpics/1731_cronegk.jpg" alt="Cronegk, Johann Friedrich von (1731–1758)"></a><figcaption>Cronegk, Johann Friedrich von <br />(1731–1758)</figcaption></figure></li>
   <li><figure><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Hafner, Philipp (1731–1764)"><figcaption>Hafner, Philipp <br />(1731–1764)</figcaption></figure></li>
   <li><figure><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Pfeil, Johann Gottlob Benjamin (1732–1800)"><figcaption>Pfeil, Johann Gottlob Benjamin <br />(1732–1800)</figcaption></figure></li>
-  <li><figure><a href=""><img src="{{ site.url }}/images/authorpics/1733_ayrenhoff.jpg" alt="Ayrenhoff, Cornelius Hermann von (1733–1819)"></a><figcaption>Ayrenhoff, Cornelius Hermann von <br />(1733–1819)</figcaption></figure></li>
-  <li><figure><a href=""><img src="{{ site.url }}/images/authorpics/1733_wieland.jpg" alt="Wieland, Christoph Martin (1733–1813)"></a><figcaption>Wieland, Christoph Martin <br />(1733–1813)</figcaption></figure></li>
-  <li><figure><a href=""><img src="{{ site.url }}/images/authorpics/1735_brandes.jpg" alt="Brandes, Johann Christian (1735–1799)"></a><figcaption>Brandes, Johann Christian <br />(1735–1799)</figcaption></figure></li>
+  <li><figure><a href="https://commons.wikimedia.org/wiki/File:Ayrenhoff,_Cornelius_von1.jpg"><img src="{{ site.url }}/images/authorpics/1733_ayrenhoff.jpg" alt="Ayrenhoff, Cornelius Hermann von (1733–1819)"></a><figcaption>Ayrenhoff, Cornelius Hermann von <br />(1733–1819)</figcaption></figure></li>
+  <li><figure><a href="https://commons.wikimedia.org/wiki/File:Christoph_Martin_Wieland_by_Jagemann_1805.jpg"><img src="{{ site.url }}/images/authorpics/1733_wieland.jpg" alt="Wieland, Christoph Martin (1733–1813)"></a><figcaption>Wieland, Christoph Martin <br />(1733–1813)</figcaption></figure></li>
+  <li><figure><a href="https://commons.wikimedia.org/wiki/File:Johann_Christian_Brandes.jpg"><img src="{{ site.url }}/images/authorpics/1735_brandes.jpg" alt="Brandes, Johann Christian (1735–1799)"></a><figcaption>Brandes, Johann Christian <br />(1735–1799)</figcaption></figure></li>
   <li><figure><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Klemm, Christian Gottlob (1736–1802)"><figcaption>Klemm, Christian Gottlob <br />(1736–1802)</figcaption></figure></li>
-  <li><figure><a href=""><img src="{{ site.url }}/images/authorpics/1736_sturz.jpg" alt="Sturz, Helfrich Peter (1736–1779)"></a><figcaption>Sturz, Helfrich Peter <br />(1736–1779)</figcaption></figure></li>
-  <li><figure><a href=""><img src="{{ site.url }}/images/authorpics/1737_gerstenberg.jpg" alt="Gerstenberg, Heinrich Wilhelm von (1737–1823)"></a><figcaption>Gerstenberg, Heinrich Wilhelm von <br />(1737–1823)</figcaption></figure></li>
+  <li><figure><a href="https://commons.wikimedia.org/wiki/File:Helfrich_Peter_Sturz_1.jpg"><img src="{{ site.url }}/images/authorpics/1736_sturz.jpg" alt="Sturz, Helfrich Peter (1736–1779)"></a><figcaption>Sturz, Helfrich Peter <br />(1736–1779)</figcaption></figure></li>
+  <li><figure><a href="https://commons.wikimedia.org/wiki/File:Heinrich_W._von_Gerstenberg.jpg"><img src="{{ site.url }}/images/authorpics/1737_gerstenberg.jpg" alt="Gerstenberg, Heinrich Wilhelm von (1737–1823)"></a><figcaption>Gerstenberg, Heinrich Wilhelm von <br />(1737–1823)</figcaption></figure></li>
   <li><figure><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Brawe, Joachim Wilhelm von (1738–1758)"><figcaption>Brawe, Joachim Wilhelm von <br />(1738–1758)</figcaption></figure></li>
-  <li><figure><a href=""><img src="{{ site.url }}/images/authorpics/1741_engel.jpg" alt="Engel, Johann Jakob (1741–1802)"></a><figcaption>Engel, Johann Jakob <br />(1741–1802)</figcaption></figure></li>
+  <li><figure><a href="https://commons.wikimedia.org/wiki/File:Johann_Jacob_Engel.jpg"><img src="{{ site.url }}/images/authorpics/1741_engel.jpg" alt="Engel, Johann Jakob (1741–1802)"></a><figcaption>Engel, Johann Jakob <br />(1741–1802)</figcaption></figure></li>
   <li><figure><a href=""><img src="{{ site.url }}/images/authorpics/1741_hippel.jpg" alt="Hippel, Theodor Gottlieb von (1741–1796)"></a><figcaption>Hippel, Theodor Gottlieb von <br />(1741–1796)</figcaption></figure></li>
   <li><figure><a href=""><img src="{{ site.url }}/images/authorpics/1741_stephanie.jpg" alt="Stephanie, Johann Gottlieb (der Jüngere) (1741–1800)"></a><figcaption>Stephanie, Johann Gottlieb (d. J.) <br />(1741–1800)</figcaption></figure></li>
   <li><figure><a href=""><img src="{{ site.url }}/images/authorpics/1744_schroeder.jpg" alt="Schröder, Friedrich Ludwig (1744–1816)"></a><figcaption>Schröder, Friedrich Ludwig <br />(1744–1816)</figcaption></figure></li>
