@@ -20,7 +20,7 @@ We're relying on **Wikidata** again and, for each author, extract a link to thei
 
 <div id="portraitgallery">
  <ul>
-  <li><figure><a href="https://commons.wikimedia.org/wiki/File:Friederike_Caroline_Neuber_1898_Neuer_Theater-Almanch.png"><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (1697–1760)"></figure></a><figcaption>Neuber, Friederike Caroline <br />(1697–1760)</figcaption></figure></li>
+  <li><figure><a href="https://commons.wikimedia.org/wiki/File:Friederike_Caroline_Neuber_1898_Neuer_Theater-Almanch.png" target="_blank"><img src="{{ site.url }}/images/authorpics/1697_neuber.jpg" alt="Neuber, Friederike Caroline (1697–1760)"></figure></a><figcaption>Neuber, Friederike Caroline <br />(1697–1760)</figcaption></figure></li>
   <li><figure><a href="https://commons.wikimedia.org/wiki/File:Bodmer.jpg"><img src="{{ site.url }}/images/authorpics/1698_bodmer.jpg" alt="Bodmer, Johann Jacob (1698–1783)"></a><figcaption>Bodmer, Johann Jacob <br />(1698–1783)</figcaption></figure></li>
   <li><figure><a href="https://commons.wikimedia.org/wiki/File:Johann_Christoph_Gottsched.jpg"><img src="{{ site.url }}/images/authorpics/1700_gottsched.jpg" alt="Gottsched, Johann Christoph (1700–1766)"></a><figcaption>Gottsched, Johann Christoph <br />(1700–1766)</figcaption></figure></li>
   <li><figure><img src="{{ site.url }}/images/authorpics/noimage_male.jpg" alt="Borkenstein, Hinrich (1705–1777)"><figcaption>Borkenstein, Hinrich <br />(1705–1777)</figcaption></figure></li>
