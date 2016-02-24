@@ -13,7 +13,7 @@ url:        	  https://dlina.github.io
 owner:
   name:           Frank Fischer, Mathias Göbel, Dario Kampkaspar, Peer Trilcke
   github:         dlina
-  twitterhash: DLINA
+  twitterhash:    DLINA
 authors:
   mathias:
     name: Mathias Göbel
@@ -53,6 +53,12 @@ authors:
     twitter: delaiglesia
     github: Martin-de-la-Iglesia
     gravatar: 910501447bef880e1352522362cb2852
+  christopher:
+    name: Christopher Kittel
+    display_name: Chris
+    email: contact@christopherkittel.eu
+    twitter: chris_kittel
+    github: chreman
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   UA-39365944-7
 #google_verify:      
