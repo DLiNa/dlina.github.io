@@ -7,6 +7,8 @@ tags: []
 chart: true
 ---
 ## Talks and Workshops
+- March 10, 2016: Play(s) · [DHd2016](http://dhd2016.de) in Leipzig · [abstract](http://dhd2016.de/boa.pdf) ·  [slides](http://dlina.github.io/presentations/2016-leipzig-plays/)
+- March 10, 2016: Dramen als Small Worlds · [DHd2016](http://dhd2016.de) in Leipzig · [abstract](http://dhd2016.de/boa.pdf) ·  [slides](http://dlina.github.io/presentations/2016-leipzig/)
 - February 8, 2016 · [Digitale Geschichtswissenschaft](http://clarin.bbaw.de/de/digitale-geschichtswissenschaft/) in Berlin · [abstract](http://clarin.bbaw.de/de/digitale-geschichtswissenschaft/abstracts/#dlina) ·  [slides](http://dlina.github.io/presentations/2016-berlin/)
 - July 2, 2015 · DH2015 in Sydney · [abstract](http://dh2015.org/abstracts/xml/FISCHER_Frank_Digital_Network_Analysis_of_Dramati/FISCHER_Frank_Digital_Network_Analysis_of_Dramatic_Text.html) · [blog post](http://dlina.github.io/Our-Talk-at-DH2015/) · [slides](https://dlina.github.io/presentations/2015-sydney/sydney.html#/)
 - April 23, 2015 · [DigLiGö](http://www.uni-goettingen.de/de/23042015-workshop-diglig%C3%B6---digitale-literaturwissenschaft-g%C3%B6ttingen/511115.html), University of Göttingen · slides 1 · [slides 2](http://mathias-goebel.github.io/2015-04-DigLiG%C3%B6/slides/mathias/index.html#/)
