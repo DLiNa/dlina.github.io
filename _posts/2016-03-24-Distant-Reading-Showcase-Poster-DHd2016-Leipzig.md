@@ -20,7 +20,7 @@ Roughly two weeks ago, we attended the annual Digital Humanities conference of t
   <img src="{{ site.url }}/images/distant-reading-showcase-poster-dhd2016-leipzig-900px.jpg" alt="Distant Reading Showcase, poster fore DHd2016, 900px version" style="width:900px">
 </figure>
 
-A full-res version can be fownloaded **[from Figshare](https://dx.doi.org/10.6084/m9.figshare.3101203.v1)** (PDF; 28.88 MB).
+A full-res version can be downloaded **[from Figshare](https://dx.doi.org/10.6084/m9.figshare.3101203.v1)** (PDF; 28.88 MB).
 
 What we set out to do with this poster was to produce a data-driven showcase for what can be regarded *distant reading*. We have a working definition of 'distant reading' that differs from the one that Franco Moretti is using since he first coined the term in 2000. Just recently, Peer and I gave a talk on the matter, last November in Vienna, at [a workshop dedicated to "Distant Reading and Discourse Analysis"](http://www.iwk.ac.at/events/distant-reading-und-diskursanalyse). (Said talk will appear shortly, just finished the final editing.) Just two aspects, Moretti never talks about programming or code and neither describes nor provides his working corpus so that anybody could reproduce his findings, two things we consider essential and tried to address throughout the course of the DLINA project ([see our older postings](/recent/)). 'Data-driven' means that we wanted the computer to generate the better part of the poster, a job done by our tool **[dramavis](https://github.com/lehkost/dramavis)** which was revamped and rewritten from scratch just weeks before the conference (current version is v0.2).
 
