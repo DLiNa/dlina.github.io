@@ -26,9 +26,17 @@ What we set out to do with this poster was to produce a data-driven showcase for
 
 In order to be a convincing "Distant Reading Showcase" our poster should really *show* visualised data that could actually *be read* by viewers. The 465 character networks showing German-language dramas written/published between 1730 and 1930 are sorted chronologically, and one thing people should be able to see is when German authors started to read Shakespeare. All of a sudden  in the 1770s, they start to build character networks far bigger than the ones before: Goethe's play ["Götz von Berlichingen"](https://en.wikipedia.org/wiki/G%C3%B6tz_von_Berlichingen_(Goethe)) is one of the first that, instead of only 8 or 12 or 16 characters, started to let more than 70 characters appear on stage. You can witness this explosion in the 3rd row from above, 3rd column from the right. There are other things you can actually recognise in the poster, just take the network built from Schnitzler's "Der Reigen" (["La Ronde"](https://en.wikipedia.org/wiki/La_Ronde_(play))), which describes a circle in correspondence with the symptomatic course of the play (6th line from below, 7th column from the right; see also [Gerrit Imsieke's tweet on the matter](https://twitter.com/gimsieke/status/707855735070322688)).
 
-At some point (when pottering about with Illustrator trying to open and convert a 20+ MB SVG) we had the idea that next time we should aim at generating the entire poster as script-driven SVG. But this time a little bit of extra RAM (summing up to 32 GB) helped us undertake the finishing steps using InDesign to properly fill the rest of the poster with descriptive info and some additional stuff, like, the two diagrams in the lower left of the sidebar already show further parts of our research, one of them the number of dramas with 'small world' characteristics, something [we will also talk about at the DH2016 in Krakow, in July](https://www.conftool.pro/dh2016/index.php?page=browseSessions&form_session=42).
+At some point (when pottering about with Illustrator trying to open and convert a 20+ MB SVG) we had the notion that next time we should aim at generating the entire poster directly as script-driven SVG. But okay, this time we still managed to undertake the finishing steps on an old Quad-Core Intel Xeon MAC with 6 GB RAM using InDesign to properly fill the rest of the poster with descriptive info and some additional stuff like the two diagrams in the lower left of the sidebar already show further parts of our research, one of them the number of dramas with 'small world' characteristics, something [we will also talk about at the DH2016 in Krakow, in July](https://www.conftool.pro/dh2016/index.php?page=browseSessions&form_session=42).
 
 To add a bit of suspense, we arrived in Leipzig with a still unfinished poster. A tiny little night shift at [Café Telegraph](http://www.cafe-telegraph.de/) settled things and on Wednesday, the day before the presentation, we printed the actual poster on glossy paper in [A0 format](https://en.wikipedia.org/wiki/ISO_216#A_series) at the local print shop [*sedruck*](https://www.sedruck-leipzig.de/), their store at Beethovenstraße 23. The result was amazing, one of the best A0 printing experiences we had so far.
+
+## Team Effort
+
+Making this poster was a team effort:
+
+<figure>
+  <img src="{{ site.url }}/images/distant-reading-showcase-poster-team-dhd2016.png" alt="The team responsible for the Distant Reading Showcase poster." style="width:450px;">
+</figure>
 
 ## Some Criticism
 
