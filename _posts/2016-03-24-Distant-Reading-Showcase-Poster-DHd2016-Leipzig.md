@@ -4,7 +4,7 @@ title: "\"Distant Reading Showcase\": Designing Our DHd2016 Conference Poster"
 author: frank
 description: 
 headline: 
-modified: 2016-03-24
+modified: 2016-03-29
 category: Updates
 tags: []
 imagefeature: 
@@ -17,7 +17,7 @@ featured: true
 Roughly two weeks ago, we attended the annual Digital Humanities conference of the German-speaking countries ([DHd2016](http://www.dhd2016.de/)), this time around taking place at the University of Leipzig. We delivered two papers (more on them later) and a poster. And were really excited [to be awarded the price for the best poster](http://www.dig-hum.de/gewinner-des-posterawards-2016) out of 78 poster submissions ([listed in this PDF](http://dhd2016.de/sites/default/files/dhd2016/files/PosterAward_Leipzig_2016.pdf)). Here I will try to quickly explain what we tried to do when creating our poster. First and foremost, *this* is the poster we're talking about, its full title goes as follows: "Distant-Reading-Showcase: 200 Years of German Drama History at a Glance".
 
 <figure>
-  <img src="{{ site.url }}/images/distant-reading-showcase-poster-dhd2016-leipzig-900px.jpg" alt="Distant Reading Showcase, poster fore DHd2016, 900px version" style="width:900px">
+  <img src="{{ site.url }}/images/distant-reading-showcase-poster-dhd2016-leipzig-900px.jpg" alt="Distant Reading Showcase, poster fore DHd2016, 900px version" style="width:900px; border-width:1px;">
 </figure>
 
 A full-res version can be downloaded **[from Figshare](https://dx.doi.org/10.6084/m9.figshare.3101203.v1)** (PDF; 28.88 MB).
