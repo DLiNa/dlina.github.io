@@ -7,6 +7,7 @@ tags: []
 chart: true
 ---
 ## Talks and Workshops
+- April 13, 2016: »Visuelle Dramenanalyse« · [Literaturhaus Graz](http://www.literaturhaus-graz.at/veranstaltung/workshop-visuelle-dramenanalyse/) · [slides](http://dlina.github.io/presentations/2016-graz/)
 - March 10, 2016: »Play(s)« · [DHd2016](http://dhd2016.de) in Leipzig · [abstract](http://dhd2016.de/boa.pdf) ·  [slides](http://dlina.github.io/presentations/2016-leipzig-plays/)
 - March 10, 2016: »Small Worlds« · [DHd2016](http://dhd2016.de) in Leipzig · [abstract](http://dhd2016.de/boa.pdf) ·  [slides](http://dlina.github.io/presentations/2016-leipzig/)
 - February 8, 2016 · [Digitale Geschichtswissenschaft](http://clarin.bbaw.de/de/digitale-geschichtswissenschaft/) in Berlin · [abstract](http://clarin.bbaw.de/de/digitale-geschichtswissenschaft/abstracts/#dlina) ·  [slides](http://dlina.github.io/presentations/2016-berlin/)
