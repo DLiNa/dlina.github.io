@@ -1,6 +1,6 @@
 ---
 layout: network
-title: "Goethe, Johann Wolfgang von: Götz von Berlichingen mit der eisernen Hand (1773)"
+title: "Gutzkow, Karl: Richard Savage oder Der Sohn einer Mutter (1839)"
 author:
 description:
 headline:
@@ -13,6 +13,6 @@ chart:
 comments: true
 featured: false
 list: false
-networkdata: animation123.json
+networkdata: animation6.json
 ---
 {% include animation.html %}

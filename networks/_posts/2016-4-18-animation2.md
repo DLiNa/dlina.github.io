@@ -1,6 +1,6 @@
 ---
 layout: network
-title: "Goethe, Johann Wolfgang von: Götz von Berlichingen mit der eisernen Hand (1773)"
+title: "Hafner, Philipp: Mägera, die förchterliche Hexe oder Das bezauberte Schloß des Herrn von Einhorn (1763)"
 author:
 description:
 headline:
@@ -13,6 +13,6 @@ chart:
 comments: true
 featured: false
 list: false
-networkdata: animation123.json
+networkdata: animation2.json
 ---
 {% include animation.html %}

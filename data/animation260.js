@@ -1,0 +1,2 @@
+setTimeout(function() { console.log('load1'); var  aa = {id: 'aa', name:'der_mann'},ab = {id: 'ab', name:'die_frau'} ; nodes.push( aa,ab ); links.push( {source: aa , target: ab } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'noName'; var scene = document.getElementById('scene');scene.innerHTML = 'Johann Anton Leisewitz';
+}, 0);
