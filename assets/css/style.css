@@ -232,7 +232,7 @@ ul#netinputs:after {
 #animation .node.cy {fill: rgb(0,0,74, 0.6) }
 #animation .node.cz {fill: rgb(175,200,74, 0.6)} 
 
-#animation #cast {list-style:none;}
+#animation #cast {list-style:none; min-height: 110px}
 
 
 /* background on gravatar (template red) */
