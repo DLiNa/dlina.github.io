@@ -134,6 +134,107 @@ ul#netinputs:after {
   right: 30px;
 }
 
+/* animation */
+#animation .link {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+#animation .node {
+  fill: #000;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+/* following colors based on D3.js category20c */
+
+#animation .node.aa { fill: #1f77b4; }
+#animation .node.ab { fill: #aec7e8; }
+#animation .node.ac { fill: #ff7f0e; }
+#animation .node.ad { fill: #ffbb78; }
+#animation .node.ae { fill: #2ca02c; }
+#animation .node.af { fill: #98df8a; }
+#animation .node.ag { fill: #d62728; }
+#animation .node.ah { fill: #ff9896; }
+#animation .node.ai { fill: #9467bd; }
+#animation .node.aj { fill: #c5b0d5; }
+#animation .node.ak { fill: #8c564b; }
+#animation .node.al { fill: #c49c94; }
+#animation .node.am { fill: #e377c2; }
+#animation .node.an { fill: #f7b6d2; }
+#animation .node.ao { fill: #7f7f7f; }
+#animation .node.ap { fill: #c7c7c7; }
+#animation .node.aq { fill: #bcbd22; }
+#animation .node.ar { fill: #dbdb8d; }
+#animation .node.as { fill: #17becf; }
+#animation .node.at { fill: #9edae5; }
+#animation .node.au { fill: #6b6ecf; }
+#animation .node.av { fill: #e7ba52; }
+#animation .node.aw { fill: #7b4173; }
+#animation .node.ax { fill: #000000; }
+#animation .node.ay { fill: #FFFFFF; }
+
+/* following colors from http://www.christianfaur.com/color/Site/Picking%20Colors.html */
+
+#animation .node.ba {fill: rgb(0, 0, 180)}
+#animation .node.bb {fill: rgb(175, 13, 102)} 
+#animation .node.bc {fill: rgb(146,248,70) }
+#animation .node.bd {fill: rgb(255, 200, 47)} 
+#animation .node.be {fill: rgb(255,118,0) }
+#animation .node.bf {fill: rgb(185,185,185) }
+#animation .node.bg {fill: rgb(235,235,222) }
+#animation .node.bh {fill: rgb(100,100,100)} 
+#animation .node.bi {fill: rgb(255,255,0) }
+#animation .node.bj {fill: rgb(63,25,12)}
+#animation .node.bk {fill: rgb(55,19,112) }
+#animation .node.bl {fill: rgb(255,255,150)} 
+#animation .node.bm {fill: rgb(202,62,94) }
+#animation .node.bn {fill: rgb(205,145,63)} 
+#animation .node.bo {fill: rgb(12,75,100)} 
+#animation .node.bp {fill: rgb(255,0,0) }
+#animation .node.bq {fill: rgb(175,155,50)} 
+#animation .node.br {fill: rgb(0,0,0) }
+#animation .node.bs {fill: rgb(37,70,25) }
+#animation .node.bt {fill: rgb(121,33,135) }
+#animation .node.bu {fill: rgb(83,140,208)} 
+#animation .node.bv {fill: rgb(0,154,37) }
+#animation .node.bw {fill: rgb(178,220,205) }
+#animation .node.bx {fill: rgb(255,152,213)} 
+#animation .node.by {fill: rgb(0,0,74) }
+#animation .node.bz {fill: rgb(175,200,74)} 
+
+/* and again the same values with an alpha */
+
+#animation .node.ca {fill: rgb(0, 0, 180, 0.6)}
+#animation .node.cb {fill: rgb(175, 13, 102, 0.6)} 
+#animation .node.cc {fill: rgb(146,248,70, 0.6) }
+#animation .node.cd {fill: rgb(255, 200, 47, 0.6)} 
+#animation .node.ce {fill: rgb(255,118,0, 0.6) }
+#animation .node.cf {fill: rgb(185,185,185, 0.6) }
+#animation .node.cg {fill: rgb(235,235,222, 0.6) }
+#animation .node.ch {fill: rgb(100,100,100, 0.6)} 
+#animation .node.ci {fill: rgb(255,255,0, 0.6) }
+#animation .node.cj {fill: rgb(63,25,12, 0.6)}
+#animation .node.ck {fill: rgb(55,19,112, 0.6) }
+#animation .node.cl {fill: rgb(255,255,150, 0.6)} 
+#animation .node.cm {fill: rgb(202,62,94, 0.6) }
+#animation .node.cn {fill: rgb(205,145,63, 0.6)} 
+#animation .node.co {fill: rgb(12,75,100, 0.6)} 
+#animation .node.cp {fill: rgb(255,0,0, 0.6) }
+#animation .node.cq {fill: rgb(175,155,50, 0.6)} 
+#animation .node.cr {fill: rgb(0,0,0, 0.6) }
+#animation .node.cs {fill: rgb(37,70,25, 0.6) }
+#animation .node.ct {fill: rgb(121,33,135, 0.6) }
+#animation .node.cu {fill: rgb(83,140,208, 0.6)} 
+#animation .node.cv {fill: rgb(0,154,37, 0.6) }
+#animation .node.cw {fill: rgb(178,220,205, 0.6) }
+#animation .node.cx {fill: rgb(255,152,213, 0.6)} 
+#animation .node.cy {fill: rgb(0,0,74, 0.6) }
+#animation .node.cz {fill: rgb(175,200,74, 0.6)} 
+
+#animation #cast {list-style:none;}
+
+
 /* background on gravatar (template red) */
 img.notepad-post-author-avatar {
     background-color: rgb(229, 24, 67);
