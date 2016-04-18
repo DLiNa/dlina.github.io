@@ -13,6 +13,6 @@ chart:
 comments: true
 featured: false
 list: false
-networkdata: animation5.json
+networkdata: animation5.js
 ---
 {% include animation.html %}
