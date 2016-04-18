@@ -28,5 +28,4 @@ In 2013, Peer Trilcke proposed a Digital Literary Network Analysis (dlina). Sinc
 
 We will publish all our results, code, corpora, teaching material here on our GitHub. Plus, we will keep you posted [on our blog](/recent/).
 
-Our next presentation will take place at the DH2015 conference in Sydney, on Thursday, July 2, 2015. [See the full program here (PDF)](http://www.dh2015.org/program/DH2015_Program.pdf).
 
