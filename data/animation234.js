@@ -63,7 +63,7 @@ setTimeout(function() { console.log('load13'); var  ab = {id: 'ab', name:'priest
 
 setTimeout(function() { console.log('remv13'); var rm = [  ]; rmNodes(rm); rmLinks(rm); start(); }, 63750);
 
-setTimeout(function() { console.log('load14'); var  ab = nodes[0],ab = nodes[0],ac = {id: 'ac', name:'phorbas'},ae = {id: 'ae', name:'xuthus'} ; nodes.push( ab,ac,ae ); links.push( {source: ab , target: ae },{source: ab , target: ac },{source: ab , target: ae },{source: ab , target: ac },{source: ac , target: ae } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '3. Akt'; var act = document.getElementById('act');act.innerHTML = '4. Auftritt'; var scene = document.getElementById('scene');scene.innerHTML = 'Vierter Auftritt.';
+setTimeout(function() { console.log('load14'); var  ab = nodes[0],ab = nodes[0],ac = {id: 'ac', name:'phorbas'},ae = {id: 'ae', name:'xuthus'} ; nodes.push( ac,ae ); links.push( {source: ab , target: ae },{source: ab , target: ac },{source: ab , target: ae },{source: ab , target: ac },{source: ac , target: ae } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '3. Akt'; var act = document.getElementById('act');act.innerHTML = '4. Auftritt'; var scene = document.getElementById('scene');scene.innerHTML = 'Vierter Auftritt.';
 }, 65000);
 
 setTimeout(function() { console.log('remv14'); var rm = [ 'ae','ab','ac' ]; rmNodes(rm); rmLinks(rm); start(); }, 68750);

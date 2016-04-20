@@ -93,7 +93,7 @@ setTimeout(function() { console.log('load19'); var  ae = nodes[0],af = {id: 'af'
 
 setTimeout(function() { console.log('remv19'); var rm = [ 'af','ae' ]; rmNodes(rm); rmLinks(rm); start(); }, 93750);
 
-setTimeout(function() { console.log('load20'); var  ad = {id: 'ad', name:'speckbachers_stimme'},ai = {id: 'ai', name:'haspingers_stimme'},aj = nodes[0],ao = {id: 'ao', name:'eisenstecken'} ; nodes.push( ad,ai,aj,ao ); links.push( {source: aj , target: ao },{source: ai , target: aj },{source: ai , target: ao },{source: ad , target: aj },{source: ad , target: ao },{source: ad , target: ai } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '2. Akt'; var act = document.getElementById('act');act.innerHTML = '11. Auftritt'; var scene = document.getElementById('scene');scene.innerHTML = 'Elfter Auftritt.';
+setTimeout(function() { console.log('load20'); var  ad = {id: 'ad', name:'speckbachers_stimme'},ai = {id: 'ai', name:'haspingers_stimme'},aj = nodes[0],ao = {id: 'ao', name:'eisenstecken'} ; nodes.push( ad,ai,ao ); links.push( {source: aj , target: ao },{source: ai , target: aj },{source: ai , target: ao },{source: ad , target: aj },{source: ad , target: ao },{source: ad , target: ai } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '2. Akt'; var act = document.getElementById('act');act.innerHTML = '11. Auftritt'; var scene = document.getElementById('scene');scene.innerHTML = 'Elfter Auftritt.';
 }, 95000);
 
 setTimeout(function() { console.log('remv20'); var rm = [ 'aj','ao','ai','ad' ]; rmNodes(rm); rmLinks(rm); start(); }, 98750);

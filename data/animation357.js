@@ -133,7 +133,7 @@ setTimeout(function() { console.log('load27'); var  af = nodes[0] ; /* nodes.pus
 
 setTimeout(function() { console.log('remv27'); var rm = [  ]; rmNodes(rm); rmLinks(rm); start(); }, 133750);
 
-setTimeout(function() { console.log('load28'); var  ac = {id: 'ac', name:'von_tellheim'},af = nodes[0] ; nodes.push( ac,af ); links.push( {source: ac , target: af } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '3. Akt'; var act = document.getElementById('act');act.innerHTML = '7. Auftritt'; var scene = document.getElementById('scene');scene.innerHTML = 'Siebender Auftritt';
+setTimeout(function() { console.log('load28'); var  ac = {id: 'ac', name:'von_tellheim'},af = nodes[0] ; nodes.push( ac ); links.push( {source: ac , target: af } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '3. Akt'; var act = document.getElementById('act');act.innerHTML = '7. Auftritt'; var scene = document.getElementById('scene');scene.innerHTML = 'Siebender Auftritt';
 }, 135000);
 
 setTimeout(function() { console.log('remv28'); var rm = [ 'ac','af' ]; rmNodes(rm); rmLinks(rm); start(); }, 138750);

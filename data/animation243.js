@@ -23,7 +23,7 @@ setTimeout(function() { console.log('load5'); var  ag = {id: 'ag', name:'mephist
 
 setTimeout(function() { console.log('remv5'); var rm = [  ]; rmNodes(rm); rmLinks(rm); start(); }, 23750);
 
-setTimeout(function() { console.log('load6'); var  ag = nodes[0],ai = nodes[1],ba = {id: 'ba', name:'schüler'},bi = nodes[2] ; nodes.push( ba,bi ); links.push( {source: ai , target: bi },{source: ai , target: ba },{source: ag , target: ai },{source: ag , target: bi },{source: ag , target: ba },{source: ba , target: bi } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Studierzimmer [1]'; var scene = document.getElementById('scene');scene.innerHTML = 'noName';
+setTimeout(function() { console.log('load6'); var  ag = nodes[0],ai = nodes[1],ba = {id: 'ba', name:'schüler'},bi = nodes[2] ; nodes.push( ba ); links.push( {source: ai , target: bi },{source: ai , target: ba },{source: ag , target: ai },{source: ag , target: bi },{source: ag , target: ba },{source: ba , target: bi } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Studierzimmer [1]'; var scene = document.getElementById('scene');scene.innerHTML = 'noName';
 }, 25000);
 
 setTimeout(function() { console.log('remv6'); var rm = [ 'bi','ba' ]; rmNodes(rm); rmLinks(rm); start(); }, 28750);
@@ -83,7 +83,7 @@ setTimeout(function() { console.log('load17'); var  ag = nodes[0],ai = nodes[1],
 
 setTimeout(function() { console.log('remv17'); var rm = [ 'ai','ag' ]; rmNodes(rm); rmLinks(rm); start(); }, 83750);
 
-setTimeout(function() { console.log('load18'); var  bs = nodes[0],bu = {id: 'bu', name:'lieschen'} ; nodes.push( bs,bu ); links.push( {source: bs , target: bu } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Am Brunnen'; var scene = document.getElementById('scene');scene.innerHTML = 'noName';
+setTimeout(function() { console.log('load18'); var  bs = nodes[0],bu = {id: 'bu', name:'lieschen'} ; nodes.push( bu ); links.push( {source: bs , target: bu } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Am Brunnen'; var scene = document.getElementById('scene');scene.innerHTML = 'noName';
 }, 85000);
 
 setTimeout(function() { console.log('remv18'); var rm = [ 'bu' ]; rmNodes(rm); rmLinks(rm); start(); }, 88750);

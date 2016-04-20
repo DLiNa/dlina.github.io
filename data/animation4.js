@@ -8,7 +8,7 @@ setTimeout(function() { console.log('load2'); var  ab = nodes[0],ac = {id: 'ac',
 
 setTimeout(function() { console.log('remv2'); var rm = [ 'ab' ]; rmNodes(rm); rmLinks(rm); start(); }, 8750);
 
-setTimeout(function() { console.log('load3'); var  ac = nodes[0],ad = nodes[1],ad = nodes[1],ae = {id: 'ae', name:'kirchengesang'} ; nodes.push( ad,ae ); links.push( {source: ac , target: ae },{source: ac , target: ad },{source: ac , target: ad },{source: ad , target: ae },{source: ad , target: ae } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Vorspiel'; var scene = document.getElementById('scene');scene.innerHTML = '3';
+setTimeout(function() { console.log('load3'); var  ac = nodes[0],ad = nodes[1],ad = nodes[1],ae = {id: 'ae', name:'kirchengesang'} ; nodes.push( ae ); links.push( {source: ac , target: ae },{source: ac , target: ad },{source: ac , target: ad },{source: ad , target: ae },{source: ad , target: ae } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Vorspiel'; var scene = document.getElementById('scene');scene.innerHTML = '3';
 }, 10000);
 
 setTimeout(function() { console.log('remv3'); var rm = [ 'ae','ad' ]; rmNodes(rm); rmLinks(rm); start(); }, 13750);

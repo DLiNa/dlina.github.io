@@ -73,7 +73,7 @@ setTimeout(function() { console.log('load15'); var  af = {id: 'af', name:'teuts_
 
 setTimeout(function() { console.log('remv15'); var rm = [  ]; rmNodes(rm); rmLinks(rm); start(); }, 73750);
 
-setTimeout(function() { console.log('load16'); var  af = nodes[0],af = nodes[0],ag = {id: 'ag', name:'theoda'},ap = {id: 'ap', name:'eine_stimme'} ; nodes.push( af,ag,ap ); links.push( {source: af , target: ap },{source: af , target: ag },{source: ag , target: ap },{source: af , target: ap },{source: af , target: ag } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '3. Akt'; var act = document.getElementById('act');act.innerHTML = '5. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Fünfte Szene.';
+setTimeout(function() { console.log('load16'); var  af = nodes[0],af = nodes[0],ag = {id: 'ag', name:'theoda'},ap = {id: 'ap', name:'eine_stimme'} ; nodes.push( ag,ap ); links.push( {source: af , target: ap },{source: af , target: ag },{source: ag , target: ap },{source: af , target: ap },{source: af , target: ag } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '3. Akt'; var act = document.getElementById('act');act.innerHTML = '5. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Fünfte Szene.';
 }, 75000);
 
 setTimeout(function() { console.log('remv16'); var rm = [ 'ap','ag' ]; rmNodes(rm); rmLinks(rm); start(); }, 78750);

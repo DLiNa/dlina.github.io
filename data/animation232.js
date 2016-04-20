@@ -8,7 +8,7 @@ setTimeout(function() { console.log('load2'); var  aa = nodes[0],ac = {id: 'ac',
 
 setTimeout(function() { console.log('remv2'); var rm = [ 'aa' ]; rmNodes(rm); rmLinks(rm); start(); }, 8750);
 
-setTimeout(function() { console.log('load3'); var  ac = nodes[0],ae = {id: 'ae', name:'der_junge_herr'} ; nodes.push( ac,ae ); links.push( {source: ac , target: ae } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = '3. Das Stubenmädchen und der junge Herr'; var scene = document.getElementById('scene');scene.innerHTML = 'III';
+setTimeout(function() { console.log('load3'); var  ac = nodes[0],ae = {id: 'ae', name:'der_junge_herr'} ; nodes.push( ae ); links.push( {source: ac , target: ae } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = '3. Das Stubenmädchen und der junge Herr'; var scene = document.getElementById('scene');scene.innerHTML = 'III';
 }, 10000);
 
 setTimeout(function() { console.log('remv3'); var rm = [ 'ac' ]; rmNodes(rm); rmLinks(rm); start(); }, 13750);
@@ -33,7 +33,7 @@ setTimeout(function() { console.log('load7'); var  ah = nodes[0],ai = {id: 'ai',
 
 setTimeout(function() { console.log('remv7'); var rm = [ 'ah' ]; rmNodes(rm); rmLinks(rm); start(); }, 33750);
 
-setTimeout(function() { console.log('load8'); var  ai = nodes[0],aj = {id: 'aj', name:'schauspielerin'} ; nodes.push( ai,aj ); links.push( {source: ai , target: aj } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = '8. Der Dichter und die Schauspielerin'; var scene = document.getElementById('scene');scene.innerHTML = 'VIII';
+setTimeout(function() { console.log('load8'); var  ai = nodes[0],aj = {id: 'aj', name:'schauspielerin'} ; nodes.push( aj ); links.push( {source: ai , target: aj } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = '8. Der Dichter und die Schauspielerin'; var scene = document.getElementById('scene');scene.innerHTML = 'VIII';
 }, 35000);
 
 setTimeout(function() { console.log('remv8'); var rm = [ 'ai' ]; rmNodes(rm); rmLinks(rm); start(); }, 38750);
