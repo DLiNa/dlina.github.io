@@ -33,7 +33,7 @@ setTimeout(function() { console.log('load7'); var  ae = {id: 'ae', name:'gott_va
 
 setTimeout(function() { console.log('remv7'); var rm = [ 'ae','al','ak' ]; rmNodes(rm); rmLinks(rm); start(); }, 33750);
 
-setTimeout(function() { console.log('load8'); var  bh = nodes[0] ; /* nodes.push(); */ links.push(  ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '3. Akt'; var act = document.getElementById('act');act.innerHTML = '2. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Zweite Szene';
+setTimeout(function() { console.log('load8'); var  bh = nodes[3] ; /* nodes.push(); */ links.push(  ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '3. Akt'; var act = document.getElementById('act');act.innerHTML = '2. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Zweite Szene';
 }, 35000);
 
 setTimeout(function() { console.log('remv8'); var rm = [  ]; rmNodes(rm); rmLinks(rm); start(); }, 38750);

@@ -3,17 +3,17 @@ setTimeout(function() { console.log('load1'); var  aa = {id: 'aa', name:'datteri
 
 setTimeout(function() { console.log('remv1'); var rm = [ 'ac','af' ]; rmNodes(rm); rmLinks(rm); start(); }, 3750);
 
-setTimeout(function() { console.log('load2'); var  aa = nodes[0],ab = nodes[1],ad = nodes[2],ae = nodes[3],ag = {id: 'ag', name:'erster_handlanger'},ah = {id: 'ah', name:'zweiter_handlanger'},ai = {id: 'ai', name:'dritter_handlanger'} ; nodes.push( ag,ah,ai ); links.push( {source: ag , target: ah },{source: ag , target: ai },{source: ad , target: ag },{source: ad , target: ah },{source: ad , target: ai },{source: ad , target: ae },{source: ah , target: ai },{source: ae , target: ag },{source: ae , target: ah },{source: ae , target: ai },{source: aa , target: ag },{source: aa , target: ad },{source: aa , target: ah },{source: aa , target: ai },{source: aa , target: ae },{source: aa , target: ab },{source: ab , target: ag },{source: ab , target: ad },{source: ab , target: ah },{source: ab , target: ai },{source: ab , target: ae } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '1. Bild'; var act = document.getElementById('act');act.innerHTML = '2. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Zweite Scene';
+setTimeout(function() { console.log('load2'); var  aa = nodes[0],ab = nodes[1],ad = nodes[3],ae = nodes[4],ag = {id: 'ag', name:'erster_handlanger'},ah = {id: 'ah', name:'zweiter_handlanger'},ai = {id: 'ai', name:'dritter_handlanger'} ; nodes.push( ag,ah,ai ); links.push( {source: ag , target: ah },{source: ag , target: ai },{source: ad , target: ag },{source: ad , target: ah },{source: ad , target: ai },{source: ad , target: ae },{source: ah , target: ai },{source: ae , target: ag },{source: ae , target: ah },{source: ae , target: ai },{source: aa , target: ag },{source: aa , target: ad },{source: aa , target: ah },{source: aa , target: ai },{source: aa , target: ae },{source: aa , target: ab },{source: ab , target: ag },{source: ab , target: ad },{source: ab , target: ah },{source: ab , target: ai },{source: ab , target: ae } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '1. Bild'; var act = document.getElementById('act');act.innerHTML = '2. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Zweite Scene';
 }, 5000);
 
 setTimeout(function() { console.log('remv2'); var rm = [ 'ag','ah','ai','ab' ]; rmNodes(rm); rmLinks(rm); start(); }, 8750);
 
-setTimeout(function() { console.log('load3'); var  aa = nodes[0],ac = {id: 'ac', name:'spirwes'},ad = nodes[1],ae = nodes[2] ; nodes.push( ac ); links.push( {source: aa , target: ac },{source: aa , target: ae },{source: aa , target: ad },{source: ac , target: ae },{source: ac , target: ad },{source: ad , target: ae } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '1. Bild'; var act = document.getElementById('act');act.innerHTML = '3. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Dritte Scene';
+setTimeout(function() { console.log('load3'); var  aa = nodes[0],ac = {id: 'ac', name:'spirwes'},ad = nodes[2],ae = nodes[3] ; nodes.push( ac ); links.push( {source: aa , target: ac },{source: aa , target: ae },{source: aa , target: ad },{source: ac , target: ae },{source: ac , target: ad },{source: ad , target: ae } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '1. Bild'; var act = document.getElementById('act');act.innerHTML = '3. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Dritte Scene';
 }, 10000);
 
 setTimeout(function() { console.log('remv3'); var rm = [ 'ac','ae' ]; rmNodes(rm); rmLinks(rm); start(); }, 13750);
 
-setTimeout(function() { console.log('load4'); var  aa = nodes[0],ad = nodes[1],aj = {id: 'aj', name:'schmidt'} ; nodes.push( aj ); links.push( {source: aa , target: aj },{source: aa , target: ad },{source: ad , target: aj } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '1. Bild'; var act = document.getElementById('act');act.innerHTML = '4. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Vierte Scene';
+setTimeout(function() { console.log('load4'); var  aa = nodes[0],ad = nodes[2],aj = {id: 'aj', name:'schmidt'} ; nodes.push( aj ); links.push( {source: aa , target: aj },{source: aa , target: ad },{source: ad , target: aj } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '1. Bild'; var act = document.getElementById('act');act.innerHTML = '4. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Vierte Scene';
 }, 15000);
 
 setTimeout(function() { console.log('remv4'); var rm = [ 'aa','aj','ad' ]; rmNodes(rm); rmLinks(rm); start(); }, 18750);
@@ -73,7 +73,7 @@ setTimeout(function() { console.log('load15'); var  ak = {id: 'ak', name:'dummba
 
 setTimeout(function() { console.log('remv15'); var rm = [ 'ak','am' ]; rmNodes(rm); rmLinks(rm); start(); }, 73750);
 
-setTimeout(function() { console.log('load16'); var  al = nodes[0] ; /* nodes.push(); */ links.push(  ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '3. Bild'; var act = document.getElementById('act');act.innerHTML = '9. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Neunte Scene';
+setTimeout(function() { console.log('load16'); var  al = nodes[1] ; /* nodes.push(); */ links.push(  ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '3. Bild'; var act = document.getElementById('act');act.innerHTML = '9. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Neunte Scene';
 }, 75000);
 
 setTimeout(function() { console.log('remv16'); var rm = [  ]; rmNodes(rm); rmLinks(rm); start(); }, 78750);
@@ -98,7 +98,7 @@ setTimeout(function() { console.log('load20'); var  aa = nodes[0],ad = {id: 'ad'
 
 setTimeout(function() { console.log('remv20'); var rm = [ 'aa','aj' ]; rmNodes(rm); rmLinks(rm); start(); }, 98750);
 
-setTimeout(function() { console.log('load21'); var  ad = nodes[0],aq = {id: 'aq', name:'bengler'} ; nodes.push( aq ); links.push( {source: ad , target: aq } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '4. Bild'; var act = document.getElementById('act');act.innerHTML = '3. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Dritte Scene';
+setTimeout(function() { console.log('load21'); var  ad = nodes[1],aq = {id: 'aq', name:'bengler'} ; nodes.push( aq ); links.push( {source: ad , target: aq } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '4. Bild'; var act = document.getElementById('act');act.innerHTML = '3. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Dritte Scene';
 }, 100000);
 
 setTimeout(function() { console.log('remv21'); var rm = [ 'ad','aq' ]; rmNodes(rm); rmLinks(rm); start(); }, 103750);
@@ -138,7 +138,7 @@ setTimeout(function() { console.log('load28'); var  ak = {id: 'ak', name:'dummba
 
 setTimeout(function() { console.log('remv28'); var rm = [ 'ak' ]; rmNodes(rm); rmLinks(rm); start(); }, 138750);
 
-setTimeout(function() { console.log('load29'); var  al = nodes[0] ; /* nodes.push(); */ links.push(  ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '5. Bild'; var act = document.getElementById('act');act.innerHTML = '4. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Vierte Scene';
+setTimeout(function() { console.log('load29'); var  al = nodes[1] ; /* nodes.push(); */ links.push(  ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '5. Bild'; var act = document.getElementById('act');act.innerHTML = '4. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Vierte Scene';
 }, 140000);
 
 setTimeout(function() { console.log('remv29'); var rm = [  ]; rmNodes(rm); rmLinks(rm); start(); }, 143750);
@@ -153,7 +153,7 @@ setTimeout(function() { console.log('load31'); var  ak = nodes[0],al = nodes[1],
 
 setTimeout(function() { console.log('remv31'); var rm = [ 'am','ak' ]; rmNodes(rm); rmLinks(rm); start(); }, 153750);
 
-setTimeout(function() { console.log('load32'); var  al = nodes[0] ; /* nodes.push(); */ links.push(  ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '5. Bild'; var act = document.getElementById('act');act.innerHTML = '7. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Siebente Scene';
+setTimeout(function() { console.log('load32'); var  al = nodes[1] ; /* nodes.push(); */ links.push(  ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '5. Bild'; var act = document.getElementById('act');act.innerHTML = '7. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Siebente Scene';
 }, 155000);
 
 setTimeout(function() { console.log('remv32'); var rm = [  ]; rmNodes(rm); rmLinks(rm); start(); }, 158750);
@@ -163,7 +163,7 @@ setTimeout(function() { console.log('load33'); var  aj = {id: 'aj', name:'schmid
 
 setTimeout(function() { console.log('remv33'); var rm = [ 'aj' ]; rmNodes(rm); rmLinks(rm); start(); }, 163750);
 
-setTimeout(function() { console.log('load34'); var  ak = {id: 'ak', name:'dummbach'},al = nodes[0] ; nodes.push( ak ); links.push( {source: ak , target: al } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '5. Bild'; var act = document.getElementById('act');act.innerHTML = '9. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Neunte Scene';
+setTimeout(function() { console.log('load34'); var  ak = {id: 'ak', name:'dummbach'},al = nodes[1] ; nodes.push( ak ); links.push( {source: ak , target: al } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '5. Bild'; var act = document.getElementById('act');act.innerHTML = '9. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Neunte Scene';
 }, 165000);
 
 setTimeout(function() { console.log('remv34'); var rm = [ 'al' ]; rmNodes(rm); rmLinks(rm); start(); }, 168750);
@@ -183,7 +183,7 @@ setTimeout(function() { console.log('load37'); var  aa = {id: 'aa', name:'datter
 
 setTimeout(function() { console.log('remv37'); var rm = [ 'aa','ac' ]; rmNodes(rm); rmLinks(rm); start(); }, 183750);
 
-setTimeout(function() { console.log('load38'); var  ad = nodes[0] ; /* nodes.push(); */ links.push(  ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '6. Bild'; var act = document.getElementById('act');act.innerHTML = '2. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Zweite Scene';
+setTimeout(function() { console.log('load38'); var  ad = nodes[2] ; /* nodes.push(); */ links.push(  ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '6. Bild'; var act = document.getElementById('act');act.innerHTML = '2. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Zweite Scene';
 }, 185000);
 
 setTimeout(function() { console.log('remv38'); var rm = [  ]; rmNodes(rm); rmLinks(rm); start(); }, 188750);
@@ -228,10 +228,10 @@ setTimeout(function() { console.log('load46'); var  aj = {id: 'aj', name:'schmid
 
 setTimeout(function() { console.log('remv46'); var rm = [ 'al' ]; rmNodes(rm); rmLinks(rm); start(); }, 228750);
 
-setTimeout(function() { console.log('load47'); var  aa = {id: 'aa', name:'datterich'},aj = nodes[0],ak = nodes[1],am = nodes[2],as = nodes[3] ; nodes.push( aa ); links.push( {source: aa , target: as },{source: aa , target: aj },{source: aa , target: ak },{source: aa , target: am },{source: aj , target: as },{source: aj , target: ak },{source: aj , target: am },{source: ak , target: as },{source: ak , target: am },{source: am , target: as } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '6. Bild'; var act = document.getElementById('act');act.innerHTML = '11. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Eilfte Scene';
+setTimeout(function() { console.log('load47'); var  aa = {id: 'aa', name:'datterich'},aj = nodes[0],ak = nodes[1],am = nodes[3],as = nodes[4] ; nodes.push( aa ); links.push( {source: aa , target: as },{source: aa , target: aj },{source: aa , target: ak },{source: aa , target: am },{source: aj , target: as },{source: aj , target: ak },{source: aj , target: am },{source: ak , target: as },{source: ak , target: am },{source: am , target: as } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '6. Bild'; var act = document.getElementById('act');act.innerHTML = '11. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Eilfte Scene';
 }, 230000);
 
 setTimeout(function() { console.log('remv47'); var rm = [ 'aa','aj','am' ]; rmNodes(rm); rmLinks(rm); start(); }, 233750);
 
-setTimeout(function() { console.log('load48'); var  ak = nodes[0],as = nodes[1] ; /* nodes.push(); */ links.push( {source: ak , target: as } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '12. Szene'; var act = document.getElementById('act');act.innerHTML = 'noName'; var scene = document.getElementById('scene');scene.innerHTML = 'Zwölfte Scene';
+setTimeout(function() { console.log('load48'); var  ak = nodes[2],as = nodes[4] ; /* nodes.push(); */ links.push( {source: ak , target: as } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '12. Szene'; var act = document.getElementById('act');act.innerHTML = 'noName'; var scene = document.getElementById('scene');scene.innerHTML = 'Zwölfte Scene';
 }, 235000);

@@ -18,7 +18,7 @@ setTimeout(function() { console.log('load4'); var  ac = {id: 'ac', name:'wandrer
 
 setTimeout(function() { console.log('remv4'); var rm = [ 'ad','ac' ]; rmNodes(rm); rmLinks(rm); start(); }, 18750);
 
-setTimeout(function() { console.log('load5'); var  aa = {id: 'aa', name:'mime'},ab = {id: 'ab', name:'siegfried'},ae = nodes[0],af = {id: 'af', name:'stimme_des_waldvogels'} ; nodes.push( aa,ab,af ); links.push( {source: aa , target: ab },{source: aa , target: ae },{source: aa , target: af },{source: ab , target: ae },{source: ab , target: af },{source: ae , target: af } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '2. Akt'; var act = document.getElementById('act');act.innerHTML = '2. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Zweite Szene';
+setTimeout(function() { console.log('load5'); var  aa = {id: 'aa', name:'mime'},ab = {id: 'ab', name:'siegfried'},ae = nodes[2],af = {id: 'af', name:'stimme_des_waldvogels'} ; nodes.push( aa,ab,af ); links.push( {source: aa , target: ab },{source: aa , target: ae },{source: aa , target: af },{source: ab , target: ae },{source: ab , target: af },{source: ae , target: af } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '2. Akt'; var act = document.getElementById('act');act.innerHTML = '2. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Zweite Szene';
 }, 20000);
 
 setTimeout(function() { console.log('remv5'); var rm = [ 'ae' ]; rmNodes(rm); rmLinks(rm); start(); }, 23750);

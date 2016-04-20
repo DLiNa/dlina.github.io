@@ -18,7 +18,7 @@ setTimeout(function() { console.log('load4'); var  aa = {id: 'aa', name:'soest'}
 
 setTimeout(function() { console.log('remv4'); var rm = [ 'ai','ab','aa','aj','ak','an','al','am','ao' ]; rmNodes(rm); rmLinks(rm); start(); }, 18750);
 
-setTimeout(function() { console.log('load5'); var  ap = nodes[2],aq = {id: 'aq', name:'sekretär'},ar = {id: 'ar', name:'oranien'} ; nodes.push( aq,ar ); links.push( {source: aq , target: ar },{source: ap , target: aq },{source: ap , target: ar } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Zweiter Aufzug'; var scene = document.getElementById('scene');scene.innerHTML = '2';
+setTimeout(function() { console.log('load5'); var  ap = nodes[13],aq = {id: 'aq', name:'sekretär'},ar = {id: 'ar', name:'oranien'} ; nodes.push( aq,ar ); links.push( {source: aq , target: ar },{source: ap , target: aq },{source: ap , target: ar } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Zweiter Aufzug'; var scene = document.getElementById('scene');scene.innerHTML = '2';
 }, 20000);
 
 setTimeout(function() { console.log('remv5'); var rm = [ 'aq','ap','ar' ]; rmNodes(rm); rmLinks(rm); start(); }, 23750);

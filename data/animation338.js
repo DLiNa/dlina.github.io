@@ -98,7 +98,7 @@ setTimeout(function() { console.log('load20'); var  aa = {id: 'aa', name:'läuff
 
 setTimeout(function() { console.log('remv20'); var rm = [ 'aq','aa','as' ]; rmNodes(rm); rmLinks(rm); start(); }, 98750);
 
-setTimeout(function() { console.log('load21'); var  ab = nodes[0],ac = nodes[1],ag = {id: 'ag', name:'gustchen'},at = {id: 'at', name:'graf'} ; nodes.push( ag,at ); links.push( {source: ag , target: at },{source: ab , target: ag },{source: ab , target: ac },{source: ab , target: at },{source: ac , target: ag },{source: ac , target: at } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '4. Akt'; var act = document.getElementById('act');act.innerHTML = '4. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Vierte Szene';
+setTimeout(function() { console.log('load21'); var  ab = nodes[1],ac = nodes[2],ag = {id: 'ag', name:'gustchen'},at = {id: 'at', name:'graf'} ; nodes.push( ag,at ); links.push( {source: ag , target: at },{source: ab , target: ag },{source: ab , target: ac },{source: ab , target: at },{source: ac , target: ag },{source: ac , target: at } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '4. Akt'; var act = document.getElementById('act');act.innerHTML = '4. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Vierte Szene';
 }, 100000);
 
 setTimeout(function() { console.log('remv21'); var rm = [ 'at' ]; rmNodes(rm); rmLinks(rm); start(); }, 103750);

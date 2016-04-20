@@ -8,7 +8,7 @@ setTimeout(function() { console.log('load2'); var  aa = nodes[0],ab = nodes[1],a
 
 setTimeout(function() { console.log('remv2'); var rm = [ 'ab' ]; rmNodes(rm); rmLinks(rm); start(); }, 8750);
 
-setTimeout(function() { console.log('load3'); var  aa = nodes[0],ac = nodes[1] ; /* nodes.push(); */ links.push( {source: aa , target: ac } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '1. Bild. Bei Nacht und Nebel'; var act = document.getElementById('act');act.innerHTML = '3. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Dritte Szene';
+setTimeout(function() { console.log('load3'); var  aa = nodes[0],ac = nodes[2] ; /* nodes.push(); */ links.push( {source: aa , target: ac } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '1. Bild. Bei Nacht und Nebel'; var act = document.getElementById('act');act.innerHTML = '3. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Dritte Szene';
 }, 10000);
 
 setTimeout(function() { console.log('remv3'); var rm = [ 'ac' ]; rmNodes(rm); rmLinks(rm); start(); }, 13750);
@@ -33,7 +33,7 @@ setTimeout(function() { console.log('load7'); var  aa = nodes[0],ab = {id: 'ab',
 
 setTimeout(function() { console.log('remv7'); var rm = [ 'ad' ]; rmNodes(rm); rmLinks(rm); start(); }, 33750);
 
-setTimeout(function() { console.log('load8'); var  aa = nodes[0],ab = nodes[1],ac = nodes[2],ae = nodes[3],af = {id: 'af', name:'der_gefängnisdirektor'} ; nodes.push( af ); links.push( {source: ae , target: af },{source: aa , target: af },{source: aa , target: ae },{source: aa , target: ac },{source: aa , target: ab },{source: ac , target: af },{source: ac , target: ae },{source: ab , target: af },{source: ab , target: ae },{source: ab , target: ac } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '2. Bild. Hinter schwedischen Gardinen'; var act = document.getElementById('act');act.innerHTML = '5. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Fünfte Szene';
+setTimeout(function() { console.log('load8'); var  aa = nodes[0],ab = nodes[1],ac = nodes[2],ae = nodes[4],af = {id: 'af', name:'der_gefängnisdirektor'} ; nodes.push( af ); links.push( {source: ae , target: af },{source: aa , target: af },{source: aa , target: ae },{source: aa , target: ac },{source: aa , target: ab },{source: ac , target: af },{source: ac , target: ae },{source: ab , target: af },{source: ab , target: ae },{source: ab , target: ac } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '2. Bild. Hinter schwedischen Gardinen'; var act = document.getElementById('act');act.innerHTML = '5. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Fünfte Szene';
 }, 35000);
 
 setTimeout(function() { console.log('remv8'); var rm = [ 'af','ae','ac','ab' ]; rmNodes(rm); rmLinks(rm); start(); }, 38750);
@@ -73,5 +73,5 @@ setTimeout(function() { console.log('load15'); var  aa = nodes[0],ab = nodes[1],
 
 setTimeout(function() { console.log('remv15'); var rm = [ 'ab' ]; rmNodes(rm); rmLinks(rm); start(); }, 73750);
 
-setTimeout(function() { console.log('load16'); var  aa = nodes[0],ac = nodes[1],ah = {id: 'ah', name:'lindekuh'},ai = nodes[2],aj = {id: 'aj', name:'frau_oberst'} ; nodes.push( ah,aj ); links.push( {source: aa , target: aj },{source: aa , target: ah },{source: aa , target: ai },{source: aa , target: ac },{source: ah , target: aj },{source: ah , target: ai },{source: ai , target: aj },{source: ac , target: aj },{source: ac , target: ah },{source: ac , target: ai } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '4. Bild. Der Fluch der Lächerlichkeit'; var act = document.getElementById('act');act.innerHTML = '4. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Vierte Szene';
+setTimeout(function() { console.log('load16'); var  aa = nodes[0],ac = nodes[2],ah = {id: 'ah', name:'lindekuh'},ai = nodes[3],aj = {id: 'aj', name:'frau_oberst'} ; nodes.push( ah,aj ); links.push( {source: aa , target: aj },{source: aa , target: ah },{source: aa , target: ai },{source: aa , target: ac },{source: ah , target: aj },{source: ah , target: ai },{source: ai , target: aj },{source: ac , target: aj },{source: ac , target: ah },{source: ac , target: ai } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '4. Bild. Der Fluch der Lächerlichkeit'; var act = document.getElementById('act');act.innerHTML = '4. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Vierte Szene';
 }, 75000);

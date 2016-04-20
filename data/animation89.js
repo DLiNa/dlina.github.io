@@ -3,7 +3,7 @@ setTimeout(function() { console.log('load1'); var  aa = {id: 'aa', name:'max'},a
 
 setTimeout(function() { console.log('remv1'); var rm = [ 'aa','ac' ]; rmNodes(rm); rmLinks(rm); start(); }, 3750);
 
-setTimeout(function() { console.log('load2'); var  ab = nodes[0],ad = {id: 'ad', name:'gabriele'} ; nodes.push( ad ); links.push( {source: ab , target: ad } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Weihnachtseinkäufe'; var scene = document.getElementById('scene');scene.innerHTML = 'Weihnachtseinkäufe';
+setTimeout(function() { console.log('load2'); var  ab = nodes[1],ad = {id: 'ad', name:'gabriele'} ; nodes.push( ad ); links.push( {source: ab , target: ad } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Weihnachtseinkäufe'; var scene = document.getElementById('scene');scene.innerHTML = 'Weihnachtseinkäufe';
 }, 5000);
 
 setTimeout(function() { console.log('remv2'); var rm = [ 'ad' ]; rmNodes(rm); rmLinks(rm); start(); }, 8750);
@@ -13,7 +13,7 @@ setTimeout(function() { console.log('load3'); var  aa = {id: 'aa', name:'max'},a
 
 setTimeout(function() { console.log('remv3'); var rm = [ 'aa','ae' ]; rmNodes(rm); rmLinks(rm); start(); }, 13750);
 
-setTimeout(function() { console.log('load4'); var  ab = nodes[0],af = {id: 'af', name:'emllie'},af = {id: 'af', name:'emllie'} ; nodes.push( af ); links.push( {source: ab , target: af },{source: ab , target: af } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Denksteine'; var scene = document.getElementById('scene');scene.innerHTML = 'Denksteine';
+setTimeout(function() { console.log('load4'); var  ab = nodes[1],af = {id: 'af', name:'emllie'},af = {id: 'af', name:'emllie'} ; nodes.push( af ); links.push( {source: ab , target: af },{source: ab , target: af } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Denksteine'; var scene = document.getElementById('scene');scene.innerHTML = 'Denksteine';
 }, 15000);
 
 setTimeout(function() { console.log('remv4'); var rm = [ 'af' ]; rmNodes(rm); rmLinks(rm); start(); }, 18750);
