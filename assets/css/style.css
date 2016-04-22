@@ -205,32 +205,32 @@ ul#netinputs:after {
 
 /* and again the same values with an alpha */
 
-#animation .node.ca {fill: rgb(0, 0, 180, 0.6)}
-#animation .node.cb {fill: rgb(175, 13, 102, 0.6)} 
-#animation .node.cc {fill: rgb(146,248,70, 0.6) }
-#animation .node.cd {fill: rgb(255, 200, 47, 0.6)} 
-#animation .node.ce {fill: rgb(255,118,0, 0.6) }
-#animation .node.cf {fill: rgb(185,185,185, 0.6) }
-#animation .node.cg {fill: rgb(235,235,222, 0.6) }
-#animation .node.ch {fill: rgb(100,100,100, 0.6)} 
-#animation .node.ci {fill: rgb(255,255,0, 0.6) }
-#animation .node.cj {fill: rgb(63,25,12, 0.6)}
-#animation .node.ck {fill: rgb(55,19,112, 0.6) }
-#animation .node.cl {fill: rgb(255,255,150, 0.6)} 
-#animation .node.cm {fill: rgb(202,62,94, 0.6) }
-#animation .node.cn {fill: rgb(205,145,63, 0.6)} 
-#animation .node.co {fill: rgb(12,75,100, 0.6)} 
-#animation .node.cp {fill: rgb(255,0,0, 0.6) }
-#animation .node.cq {fill: rgb(175,155,50, 0.6)} 
-#animation .node.cr {fill: rgb(0,0,0, 0.6) }
-#animation .node.cs {fill: rgb(37,70,25, 0.6) }
-#animation .node.ct {fill: rgb(121,33,135, 0.6) }
-#animation .node.cu {fill: rgb(83,140,208, 0.6)} 
-#animation .node.cv {fill: rgb(0,154,37, 0.6) }
-#animation .node.cw {fill: rgb(178,220,205, 0.6) }
-#animation .node.cx {fill: rgb(255,152,213, 0.6)} 
-#animation .node.cy {fill: rgb(0,0,74, 0.6) }
-#animation .node.cz {fill: rgb(175,200,74, 0.6)} 
+#animation .node.ca {fill: rgba(0, 0, 180, 0.6)}
+#animation .node.cb {fill: rgba(175, 13, 102, 0.6)} 
+#animation .node.cc {fill: rgba(146,248,70, 0.6) }
+#animation .node.cd {fill: rgba(255, 200, 47, 0.6)} 
+#animation .node.ce {fill: rgba(255,118,0, 0.6) }
+#animation .node.cf {fill: rgba(185,185,185, 0.6) }
+#animation .node.cg {fill: rgba(235,235,222, 0.6) }
+#animation .node.ch {fill: rgba(100,100,100, 0.6)} 
+#animation .node.ci {fill: rgba(255,255,0, 0.6) }
+#animation .node.cj {fill: rgba(63,25,12, 0.6)}
+#animation .node.ck {fill: rgba(55,19,112, 0.6) }
+#animation .node.cl {fill: rgba(255,255,150, 0.6)} 
+#animation .node.cm {fill: rgba(202,62,94, 0.6) }
+#animation .node.cn {fill: rgba(205,145,63, 0.6)} 
+#animation .node.co {fill: rgba(12,75,100, 0.6)} 
+#animation .node.cp {fill: rgba(255,0,0, 0.6) }
+#animation .node.cq {fill: rgba(175,155,50, 0.6)} 
+#animation .node.cr {fill: rgba(0,0,0, 0.6) }
+#animation .node.cs {fill: rgba(37,70,25, 0.6) }
+#animation .node.ct {fill: rgba(121,33,135, 0.6) }
+#animation .node.cu {fill: rgba(83,140,208, 0.6)} 
+#animation .node.cv {fill: rgba(0,154,37, 0.6) }
+#animation .node.cw {fill: rgba(178,220,205, 0.6) }
+#animation .node.cx {fill: rgba(255,152,213, 0.6)} 
+#animation .node.cy {fill: rgba(0,0,74, 0.6) }
+#animation .node.cz {fill: rgba(175,200,74, 0.6)} 
 
 #animation #cast {list-style:none; min-height: 110px}
 
