@@ -1,6 +1,6 @@
 setTimeout(function() { console.log('load1');nodes.sort(compare); /* ah ai */ var  ah = {id: 'ah', name:'mädchen'},ai = {id: 'ai', name:'einer'} ; nodes.push( ah,ai ); links.push( {source: ah , target: ai } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = ''; var scene = document.getElementById('scene');scene.innerHTML = 'Vorspiel';
 var progressbar = document.getElementById('progressiveBar');
-progressbar.style.width = '0%' ;
+progressbar.style.width = '50%' ;
 }, 0);
 
 setTimeout(function() { console.log('remv1'); var rm = [ 'ah','ai' ]; rmNodes(rm); rmLinks(rm); start(); }, 3750);

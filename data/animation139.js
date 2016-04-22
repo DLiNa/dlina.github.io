@@ -1,20 +1,20 @@
 setTimeout(function() { console.log('load1');nodes.sort(compare); /* aa ab ac ad ae af ag */ var  aa = {id: 'aa', name:'chor'},ab = {id: 'ab', name:'hidulfus'},ac = {id: 'ac', name:'golo'},ad = {id: 'ad', name:'siegfried'},ae = {id: 'ae', name:'genoveva'},af = {id: 'af', name:'drago'},ag = {id: 'ag', name:'margaretha'} ; nodes.push( aa,ab,ac,ad,ae,af,ag ); links.push( {source: aa , target: ab },{source: aa , target: ac },{source: aa , target: ad },{source: aa , target: ae },{source: aa , target: af },{source: aa , target: ag },{source: ab , target: ac },{source: ab , target: ad },{source: ab , target: ae },{source: ab , target: af },{source: ab , target: ag },{source: ac , target: ad },{source: ac , target: ae },{source: ac , target: af },{source: ac , target: ag },{source: ad , target: ae },{source: ad , target: af },{source: ad , target: ag },{source: ae , target: af },{source: ae , target: ag },{source: af , target: ag } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = '1. Akt'; var act = document.getElementById('act');act.innerHTML = 'noName'; var scene = document.getElementById('scene');scene.innerHTML = 'Erster Akt.';
 var progressbar = document.getElementById('progressiveBar');
-progressbar.style.width = '0%' ;
+progressbar.style.width = '25%' ;
 }, 0);
 
 setTimeout(function() { console.log('remv1'); var rm = [ 'ab','ad' ]; rmNodes(rm); rmLinks(rm); start(); }, 3750);
 
 setTimeout(function() { console.log('load2');nodes.sort(compare); /* aa ac ae af ag ah ai aj */ var  aa = nodes[0] ,ac = nodes[1] ,ae = nodes[2] ,af = nodes[3] ,ag = nodes[4] ,ah = {id: 'ah', name:'knechte'},ai = {id: 'ai', name:'mägde'},aj = {id: 'aj', name:'balthasar'} ; nodes.push( ah,ai,aj ); links.push( {source: ae , target: ah },{source: ae , target: af },{source: ae , target: ag },{source: ae , target: ai },{source: ae , target: aj },{source: ah , target: ai },{source: ah , target: aj },{source: ac , target: ae },{source: ac , target: ah },{source: ac , target: af },{source: ac , target: ag },{source: ac , target: ai },{source: ac , target: aj },{source: af , target: ah },{source: af , target: ag },{source: af , target: ai },{source: af , target: aj },{source: ag , target: ah },{source: ag , target: ai },{source: ag , target: aj },{source: ai , target: aj },{source: aa , target: ae },{source: aa , target: ah },{source: aa , target: ac },{source: aa , target: af },{source: aa , target: ag },{source: aa , target: ai },{source: aa , target: aj } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = '2. Akt'; var scene = document.getElementById('scene');scene.innerHTML = 'Zweiter Akt.';
 var progressbar = document.getElementById('progressiveBar');
-progressbar.style.width = '0%' ;
+progressbar.style.width = '50%' ;
 }, 5000);
 
 setTimeout(function() { console.log('remv2'); var rm = [ 'ae','ah','af','ai','aj','aa' ]; rmNodes(rm); rmLinks(rm); start(); }, 8750);
 
 setTimeout(function() { console.log('load3');nodes.sort(compare); /* ac ad ag ak al */ var  ac = nodes[0] ,ad = {id: 'ad', name:'siegfried'},ag = nodes[1] ,ak = {id: 'ak', name:'stimmen_hinter_der_scene'},al = {id: 'al', name:'geist'} ; nodes.push( ad,ak,al ); links.push( {source: ad , target: ag },{source: ad , target: ak },{source: ad , target: al },{source: ag , target: ak },{source: ag , target: al },{source: ac , target: ad },{source: ac , target: ag },{source: ac , target: ak },{source: ac , target: al },{source: ak , target: al } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = '3. Akt'; var scene = document.getElementById('scene');scene.innerHTML = 'Dritter Akt.';
 var progressbar = document.getElementById('progressiveBar');
-progressbar.style.width = '0%' ;
+progressbar.style.width = '75%' ;
 }, 10000);
 
 setTimeout(function() { console.log('remv3'); var rm = [ 'ak','al' ]; rmNodes(rm); rmLinks(rm); start(); }, 13750);

@@ -1,6 +1,6 @@
 setTimeout(function() { console.log('load1');nodes.sort(compare); /* aa ab ac */ var  aa = {id: 'aa', name:'stimme'},ab = {id: 'ab', name:'apollon'},ac = {id: 'ac', name:'der_tod'} ; nodes.push( aa,ab,ac ); links.push( {source: aa , target: ab },{source: aa , target: ac },{source: ab , target: ac } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = 'Prolog'; var scene = document.getElementById('scene');scene.innerHTML = 'Prolog';
 var progressbar = document.getElementById('progressiveBar');
-progressbar.style.width = '0%' ;
+progressbar.style.width = '50%' ;
 }, 0);
 
 setTimeout(function() { console.log('remv1'); var rm = [ 'aa','ab','ac' ]; rmNodes(rm); rmLinks(rm); start(); }, 3750);

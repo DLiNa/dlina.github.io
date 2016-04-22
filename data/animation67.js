@@ -1,20 +1,20 @@
 setTimeout(function() { console.log('load1');nodes.sort(compare); /* aa ab ac ad ae ah */ var  aa = {id: 'aa', name:'narraboth'},ab = {id: 'ab', name:'page'},ac = {id: 'ac', name:'erster_soldat'},ad = {id: 'ad', name:'zweiter_soldat'},ae = {id: 'ae', name:'ein_cappadocier'},ah = {id: 'ah', name:'die_stimme_des_jochanaan'} ; nodes.push( aa,ab,ac,ad,ae,ah ); links.push( {source: aa , target: ab },{source: aa , target: ac },{source: aa , target: ad },{source: aa , target: ah },{source: aa , target: ae },{source: ab , target: ac },{source: ab , target: ad },{source: ab , target: ah },{source: ab , target: ae },{source: ac , target: ad },{source: ac , target: ah },{source: ac , target: ae },{source: ad , target: ah },{source: ad , target: ae },{source: ae , target: ah } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = '1. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Erste Szene.';
 var progressbar = document.getElementById('progressiveBar');
-progressbar.style.width = '0%' ;
+progressbar.style.width = '25%' ;
 }, 0);
 
 setTimeout(function() { console.log('remv1'); var rm = [ 'ae' ]; rmNodes(rm); rmLinks(rm); start(); }, 3750);
 
 setTimeout(function() { console.log('load2');nodes.sort(compare); /* aa ab ac ad af ag ah */ var  aa = nodes[0] ,ab = nodes[1] ,ac = nodes[2] ,ad = nodes[3] ,af = {id: 'af', name:'salome'},ag = {id: 'ag', name:'sklave'},ah = nodes[4]  ; nodes.push( af,ag ); links.push( {source: af , target: ah },{source: af , target: ag },{source: ab , target: af },{source: ab , target: ah },{source: ab , target: ad },{source: ab , target: ag },{source: ab , target: ac },{source: ad , target: af },{source: ad , target: ah },{source: ad , target: ag },{source: aa , target: af },{source: aa , target: ab },{source: aa , target: ah },{source: aa , target: ad },{source: aa , target: ag },{source: aa , target: ac },{source: ag , target: ah },{source: ac , target: af },{source: ac , target: ah },{source: ac , target: ad },{source: ac , target: ag } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = '2. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Zweite Szene.';
 var progressbar = document.getElementById('progressiveBar');
-progressbar.style.width = '0%' ;
+progressbar.style.width = '50%' ;
 }, 5000);
 
 setTimeout(function() { console.log('remv2'); var rm = [ 'ab','ad','ag','ac' ]; rmNodes(rm); rmLinks(rm); start(); }, 8750);
 
 setTimeout(function() { console.log('load3');nodes.sort(compare); /* aa af ah */ var  aa = nodes[0] ,af = nodes[1] ,ah = nodes[2]  ; /* nodes.push(); */ links.push( {source: af , target: ah },{source: aa , target: ah },{source: aa , target: af } ); start(); var SomethingBeforeAnAct = document.getElementById('SomethingBeforeAnAct');SomethingBeforeAnAct.innerHTML = ''; var act = document.getElementById('act');act.innerHTML = '3. Szene'; var scene = document.getElementById('scene');scene.innerHTML = 'Dritte Szene.';
 var progressbar = document.getElementById('progressiveBar');
-progressbar.style.width = '0%' ;
+progressbar.style.width = '75%' ;
 }, 10000);
 
 setTimeout(function() { console.log('remv3'); var rm = [ 'aa' ]; rmNodes(rm); rmLinks(rm); start(); }, 13750);
