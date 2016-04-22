@@ -234,6 +234,9 @@ ul#netinputs:after {
 
 #animation #cast {list-style:none; min-height: 110px}
 
+#animation #progressiveBar {
+	transition: width 1s, height 1s, background-color 1s, transform 1s;
+}
 
 /* background on gravatar (template red) */
 img.notepad-post-author-avatar {
