@@ -10,7 +10,7 @@ chart: true
 
 - July 14, 2016 · »Theatre Plays as ›Small Worlds‹? Network Data on the History and Typology of German Drama, 1730–1930« · DH2016 in Kraków · [abstract](http://dh2016.adho.org/abstracts/360) · [slides](https://dlina.github.io/presentations/2016-krakow/)
 - July 5, 2016 · »Анализ социальных сетей в драматических текстах« · [1st Moscow-Tartu Digital Humanities Summer School](https://ling.hse.ru/digitalhum/program) in Yasnaya Polyana · [slides](https://dlina.github.io/presentations/2016-yasnaya-polyana/) (in Russian)
-- June 23, 2016 · »'Distant-Reading Showcase'. Data Narratives in the Humanities« · [DH Colloquium](http://www.cceh.uni-koeln.de/node/612) at CCeH Cologne · [slides](https://dlina.github.io/presentations/2016-koeln/)
+- June 23, 2016 · »'Distant-Reading Showcase'. Data Narratives in the Humanities« · [DH Colloquium](http://www.cceh.uni-koeln.de/node/612) at CCeH Cologne · [slides](https://dlina.github.io/presentations/2016-koeln/) · [recap](https://dhc.hypotheses.org/193)
 - April 13, 2016 · »Visuelle Dramenanalyse« · [Literaturhaus Graz](http://www.literaturhaus-graz.at/veranstaltung/workshop-visuelle-dramenanalyse/) · [slides](https://dlina.github.io/presentations/2016-graz/)
 - March 10, 2016 · »Play(s)« · [DHd2016](http://dhd2016.de) in Leipzig · [abstract](http://dhd2016.de/boa.pdf) ·  [slides](https://dlina.github.io/presentations/2016-leipzig-plays/)
 - March 10, 2016 · »Small Worlds« · [DHd2016](http://dhd2016.de) in Leipzig · [abstract](http://dhd2016.de/boa.pdf) ·  [slides](https://dlina.github.io/presentations/2016-leipzig/)
