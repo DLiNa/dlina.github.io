@@ -15,15 +15,15 @@ list: false
 featured: true
 ---
 
-I don't know if you noticed, but the field of LINA (LIterary Network Analysis) has come up with pretty good PR videos lately. Look at [this fancy Youtube clip](https://www.youtube.com/watch?v=KX7rzQMswEw) produced by the "Nation, Genre & Gender" project at the University College Dublin (their project homepage is [here](http://www.nggprojectucd.ie/)). The NG+G project applies Social Network Analysis to Irish and British Fiction (1800–1922), their corpus involves 46 novels from 29 authors (according to the video they identified 9,630 unique fictional characters). And although the automated extraction of characters from novels has made progress in recent years (see, for example, [Jannidis et al.'s paper form DH2016](http://dh2016.adho.org/abstracts/297)), it is still rough on many edges. That's why the UCD project chose manual annotation as their approach, and that's why their data is of such high quality.
+We don't know if you noticed, but the field of LINA (LIterary Network Analysis) has come up with pretty good PR videos lately. Look at [this fancy Youtube clip](https://www.youtube.com/watch?v=KX7rzQMswEw) produced by the "Nation, Genre & Gender" project at the University College Dublin (their project homepage is [here](http://www.nggprojectucd.ie/)). The NG+G project applies Social Network Analysis to Irish and British Fiction (1800–1922), their corpus involves 46 novels from 29 authors (according to the video they identified 9,630 unique fictional characters). And although the automated extraction of characters from novels has made progress in recent years (see, for example, [Jannidis et al.'s paper form DH2016](http://dh2016.adho.org/abstracts/297)), it is still rough on many edges. That's why the UCD project chose manual annotation as their approach, and that's why their data is of such high quality (but also limited in scope).
 
 If you're working with dramatic texts, automated character extraction is far less of a problem, since this kind of texts comes pre-structured, so to speak. If you work with one of the many TEI-tagged corpora it is even easier to pull out interactions and start analysing them with network metrics. Although, admittedly, sometimes it's harder than it seems, depending on the quality and depth of the mark-up (we covered that issue [in multiple postings](/recent/) last year).
 
 But what do you do if you can't rely on a fine-grained TEI corpus? That's what we're confronted with when gathering network data from Russian drama. If you assemble all the plays that you can find on [lib.ru](http://az.lib.ru/type/index_type_9-1.shtml), [rvb.ru](http://rvb.ru/) and [ru.wikisource.org](https://ru.wikisource.org/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A0%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80_(%D0%93%D0%BE%D0%B3%D0%BE%D0%BB%D1%8C)), you got yourself a pretty good working corpus. The sustainable way would be to assemble all the works and then transform them into TEI and share it with the community. But corpus building is a task of its own and needs a lot of dedication. And after all, we "just" need some kind of network data, not a polished digital edition of the works. So one idea to go forward is to exploit the HTML structure of the texts.
 
-## Mayakovsky's "The Bedbug" (1928/1929)
+## Mayakovsky's "The Bedbug"
 
-In the beginning of July we taught a Network Analysis course at the First Moscow-Tartu Digital Humanities Summer School in Yasnaya Polyana ([if you speak Russian, slides are here](https://dlina.github.io/presentations/2016-yasnaya-polyana/)). Originally, we wanted to analyse 19th-century drama, but one of the participants preferred to confront one of Mayakovsky's plays with our methods (hi G.! :-). He chose "Klop" (translated as "The Bedbug", see [en.wikipedia.org](https://en.wikipedia.org/wiki/The_Bedbug), an English adaption by Snoo Wilson is [here as PDF](http://snoowilson.co.uk/The%20Bedbug.pdf), a concise English summary can be found at [sovlit.net](http://www.sovlit.net/bedbug/)), written in 1928 and published the year after.
+In the beginning of July, we taught a Network Analysis course at the First Moscow-Tartu Digital Humanities Summer School in Yasnaya Polyana ([if you speak Russian, slides are here](https://dlina.github.io/presentations/2016-yasnaya-polyana/)). Originally, we wanted to analyse 19th-century drama, but one of the participants preferred to confront our methods with one of [Vladimir Mayakovsky](https://en.wikipedia.org/wiki/Vladimir_Mayakovsky)'s plays (hi G.! :-). He chose "Klop" (translated as "The Bedbug", see [en.wikipedia.org](https://en.wikipedia.org/wiki/The_Bedbug); an English adaption by Snoo Wilson is [here as PDF](http://snoowilson.co.uk/The%20Bedbug.pdf); a concise English summary can be found at [sovlit.net](http://www.sovlit.net/bedbug/)), written in 1928 and first published the year after.
 
 "Klop" is definitely one of the challenging plays when it comes to character extraction. And now, two months after the summer school, we tried to automatise the extraction process and used "Klop" as an example. Before we get into the details, this is the end result:
 
@@ -100,9 +100,9 @@ So what we had to account for to get a really clean character network is the fol
 
 We also eliminated all occurrences of "Все" ("All"): the idea is that characters contained in the "Все" already participate in the corresponding scene. That way, we avoid having "Все" as an additional character in the network. For the same reason we could have eliminated all occurrences of "Голоса" ("Voices"), but that's a different thing since voices can come from unmentioned characters that don't otherwise contribute to a speech act. So we let those in.
 
-In comparison, the intermediary format we introduced when starting to work with our German corpus [is much more fine-grained](/Introducing-Our-Zwischenformat/), because we're working with a TEI-encoded corpus there. One of the purposes of this article, though, is to demonstrate that you can already do stuff with the most basic of interactional data.
+(The whole TXT file can be found here: ["mayakovsky-klop-speakers-per-scene.txt"](/data/mayakovsky-klop/mayakovsky-klop-speakers-per-scene.txt).)
 
-The resulting TXT file can be found here: ["mayakovsky-klop-speakers-per-scene.txt"](/data/mayakovsky-klop/mayakovsky-klop-speakers-per-scene.txt).
+In comparison, the intermediary format we introduced when starting to work with our German corpus [is much more fine-grained](/Introducing-Our-Zwischenformat/), because we're working with a TEI-encoded corpus there. One of the purposes of this article, though, is to demonstrate that you can already do stuff with the most basic of interactional data.
 
 ## Building the CSV File
 
@@ -119,14 +119,14 @@ Source,Target,Weight
 Баян,Присыпкин (Пьер Скрипкин),3
 {% endhighlight %}
 
-Really just containing info on who is talking to whom in how many scenes. The CSV file can be obtained here: ["mayakovsky-klop-edges.csv"](/data/mayakovsky-klop/mayakovsky-klop-edges.csv).
+Really just containing info on who is talking to whom in how many scenes. (The CSV file can be obtained here: ["mayakovsky-klop-edges.csv"](/data/mayakovsky-klop/mayakovsky-klop-edges.csv).)
 
 ## Some Network Values
 
-The network graph does well in demonstrating the structural uniqueness of Mayakovsky's play. It is very unusual that almost every scene has its own cluster in the graph. The number of characters (= network size) is 94, the network density is fairly low, 0.17 (i.e., 17% of all possible connections between nodes are actually happening). The node-degree distribution shows traits of a power law, but it's hard to draw any conclusions from that, since the play is so short and the interactional mode of the play so unique.
+The network graph does well in demonstrating the structural uniqueness of Mayakovsky's play. It is rather unusual that almost every scene can be identified as an individual cluster in the graph. The number of characters (= network size) is 94, the network density is fairly low, 0.17 (i.e., 17% of all possible connections between nodes are actually happening). The node-degree distribution shows traits of a power law, but it's hard to draw any conclusions from that, since the play is so short and the interactional mode of the play so unique.
 
 If you have a look at the CSV file, almost all weights are "1", meaning that characters share exactly one scene. The play is really about showing Pierre Skripkin in different contexts, in the present and the future. His closest contacts are his former lover Zoya Beryozkina and Oleg Bayan (3 shared scenes each), Rozaliya Pavlovna (bride's mother) and the professor in the future (2 shared scenes each).
 
-## Conclusion
+## Somethink Like a Conclusion
 
 You cannot reflect enough on the practice of character extraction from literary texts. The method you use has a big impact on the numbers that you're working with later. You not only have to "know your corpus", but you also have to keep in mind the rationale on which you based the information extraction. Especially if you want to process not just one file (like we did in this post) but hundreds or thousands of them.
