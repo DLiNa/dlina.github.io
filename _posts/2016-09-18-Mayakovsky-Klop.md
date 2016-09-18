@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extracting Network Data from Mayakovsky's Play "The Bedbug" (1928/29)
-author: frank, danil
+author: [frank, danil]
 description: 
 headline: 
 modified: 2016-09-18
@@ -15,7 +15,7 @@ list: false
 featured: true
 ---
 
-I don't know if you noticed, but the field of LINA (LIterary Network Analysis) has come up with pretty good PR videos lately. Look at [this fancy Youtube clip](https://www.youtube.com/watch?v=KX7rzQMswEw) produced by the "Nation, Genre & Gender" project at the University College Dublin (their project homepage is **[here](http://www.nggprojectucd.ie/)**). The NG+G project applies Social Network Analysis to Irish and British Fiction (1800–1922), their corpus involves 46 novels from 29 authors (according to the video they identified 9,630 unique fictional characters). And although the automated extraction of characters from novels has made progress in recent years (see, for example, [Jannidis et al.'s paper form DH2016](http://dh2016.adho.org/abstracts/297)), it is still rough on many edges. That's why the UCD project chose manual annotation as their approach, and that's why their data is of such high quality.
+I don't know if you noticed, but the field of LINA (LIterary Network Analysis) has come up with pretty good PR videos lately. Look at [this fancy Youtube clip](https://www.youtube.com/watch?v=KX7rzQMswEw) produced by the "Nation, Genre & Gender" project at the University College Dublin (their project homepage is [here](http://www.nggprojectucd.ie/)). The NG+G project applies Social Network Analysis to Irish and British Fiction (1800–1922), their corpus involves 46 novels from 29 authors (according to the video they identified 9,630 unique fictional characters). And although the automated extraction of characters from novels has made progress in recent years (see, for example, [Jannidis et al.'s paper form DH2016](http://dh2016.adho.org/abstracts/297)), it is still rough on many edges. That's why the UCD project chose manual annotation as their approach, and that's why their data is of such high quality.
 
 If you're working with dramatic texts, automated character extraction is far less of a problem, since this kind of texts comes pre-structured, so to speak. If you work with one of the many TEI-tagged corpora it is even easier to pull out interactions and start analysing them with network metrics. Although, admittedly, sometimes it's harder than it seems, depending on the quality and depth of the mark-up (we covered that issue [in multiple postings](/recent/) last year).
 
@@ -33,13 +33,13 @@ In the beginning of July we taught a Network Analysis course at the First Moscow
 
 ## Network-Driven Synopsis
 
-The protagonist in "Klop", "Pierre Skripkin" (who changed his name from "Prisypkin"), abandons his socialist ideals, because after all the fighting and suffering he wants to start benefitting from what has been achieved. And because this is such an unusual play, we can actually base our synopsis on the network graph. The play consists of nine scenes:
+The protagonist in "Klop", "Pierre Skripkin" (who changed his name from "Prisypkin"), abandons his socialist ideals, because after all the fighting and suffering he wants to start benefiting from what has been achieved. And because this is such an unusual play, we can actually base our synopsis on the network graph. The play consists of nine scenes:
 
 * In scene 1, we see Skripkin with his friend Bayan and his soon-to-be mother-in-law Rosalia (orange) strolling through a warehouse where merchants praise their products (dark-green cluster).
 * In scene 2, Skripkin discusses his lifestyle with the characters in the light-brown cluster.
 * Scene 3 shows Skripkin's wedding with his bourgeois bride Elsevira (orange cluster). However, fire breaks out and everybody dies, except for Skripkin who, …
 * … in scene 4, goes unnoticed by the firefighters and is preserved in the icy water in the cellar. The firefighters and their captain are depicted in the red cluster, which is detached from the other clusters.
-* In scene 5, the play reaches the future, jumping 50 years ahead in time, it is now the end of the 1970s. A global socialist state has been created (kind of an aseptic one) when it is decided that Skripkin's recovered body shall be defrosted. The call-in discussion among several participants is led by an operator and depicted in the light-blue cluster, which also happens to be detached from the other clusters. **So the transitional scenes between present and future are detached, character-wise, from the rest of the play, which is a nice structure-related finding: Skripkin is kind of tunneling through these scenes into the 1970s.**
+* In scene 5, the play reaches the future, jumping 50 years ahead in time, it is now the end of the 1970s. A global socialist state has been created (kind of an aseptic one) when it is decided that Skripkin's recovered body shall be defrosted. The call-in discussion among several participants is led by an operator and depicted in the light-blue cluster, which also happens to be detached from the other clusters. **So the transitional scenes between present and future are detached, character-wise, from the rest of the play, which is a nice structure-related finding: Skripkin is kind of tunnelling through these scenes into the 1970s.**
 * In scene 6 we meet Skripkin's ex-girlfriend Zoya Beryozkina, who already occurred in the first two scenes and who is the only other person next to Skripkin who makes it from the present to the future in this play. She shares scene 6 with the professor (purple), some doctors (dark-green) and the resurrected protagonist.
 * In scene 7, we see a journalist reporting about the "resurrected mammal" (purple cluster). It is said that Skripkin is dangerous since he has been spreading these ancient diseases among the people (like dancing, drinking beer and falling in love). In the same scene, the evenly dangerous bedbug, which was defrosted along with Skripkin, is hunted down. The eponymous insect, which clearly serves as a symbol in the play, is not featured in the network graph, since no speech act can be attributed to it. 😉
 * Scene 8 presents a disappointed Skripkin who doesn't like this aseptic future and declares that he would have preferred to stay frozen. The scene is mainly shared between him, Zoya and the professor.
@@ -102,7 +102,7 @@ We also eliminated all occurrences of "Все" ("All"): the idea is that charact
 
 In comparison, the intermediary format we introduced when starting to work with our German corpus [is much more fine-grained](/Introducing-Our-Zwischenformat/), because we're working with a TEI-encoded corpus there. One of the purposes of this article, though, is to demonstrate that you can already do stuff with the most basic of interactional data.
 
-The resulting TXT file can be found here: ["mayakovsky-klop-speakers-per-scene.txt"](/data/mayakovsky-klop/mayakovsky-klop-edges.csv).
+The resulting TXT file can be found here: ["mayakovsky-klop-speakers-per-scene.txt"](/data/mayakovsky-klop/mayakovsky-klop-speakers-per-scene.txt).
 
 ## Building the CSV File
 
@@ -125,7 +125,7 @@ Really just containing info on who is talking to whom in how many scenes. The CS
 
 The network graph does well in demonstrating the structural uniqueness of Mayakovsky's play. It is very unusual that almost every scene has its own cluster in the graph. The number of characters (= network size) is 94, the network density is fairly low, 0.17 (i.e., 17% of all possible connections between nodes are actually happening). The node-degree distribution shows traits of a power law, but it's hard to draw any conclusions from that, since the play is so short and the interactional mode of the play so unique.
 
-If you have a look at the CSV file, almost all of the weights are "1", meaning that characters share exactly one scene. The play is really about showing Pierre Skripkin in different contexts, in the present and the future. His closest contacts are his former lover Zoya Beryozkina and Oleg Bayan (3 shared scenes each), Rozaliya Pavlovna (bride's mother) and the professor in the future (2 shared scenes each).
+If you have a look at the CSV file, almost all weights are "1", meaning that characters share exactly one scene. The play is really about showing Pierre Skripkin in different contexts, in the present and the future. His closest contacts are his former lover Zoya Beryozkina and Oleg Bayan (3 shared scenes each), Rozaliya Pavlovna (bride's mother) and the professor in the future (2 shared scenes each).
 
 ## Conclusion
 
