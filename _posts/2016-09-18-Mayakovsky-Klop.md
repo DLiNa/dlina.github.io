@@ -127,6 +127,6 @@ The network graph does well in demonstrating the structural uniqueness of Mayako
 
 If you have a look at the CSV file, almost all weights are "1", meaning that characters share exactly one scene. The play is really about showing Pierre Skripkin in different contexts, in the present and the future. His closest contacts are his former lover Zoya Beryozkina and Oleg Bayan (3 shared scenes each), Rozaliya Pavlovna (bride's mother) and the professor in the future (2 shared scenes each).
 
-## Somethink Like a Conclusion
+## Something Like a Conclusion
 
 You cannot reflect enough on the practice of character extraction from literary texts. The method you use has a big impact on the numbers that you're working with later. You not only have to "know your corpus", but you also have to keep in mind the rationale on which you based the information extraction. Especially if you want to process not just one file (like we did in this post) but hundreds or thousands of them.
