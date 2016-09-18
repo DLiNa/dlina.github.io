@@ -25,7 +25,7 @@ But what do you do if you can't rely on a fine-grained TEI corpus? That's what w
 
 In the beginning of July, we taught a Network Analysis course at the First Moscow-Tartu Digital Humanities Summer School in Yasnaya Polyana ([if you speak Russian, slides are here](https://dlina.github.io/presentations/2016-yasnaya-polyana/)). Originally, we wanted to analyse 19th-century drama, but one of the participants preferred to confront our methods with one of [Vladimir Mayakovsky](https://en.wikipedia.org/wiki/Vladimir_Mayakovsky)'s plays (hi G.! :-). He chose "Klop" (translated as "The Bedbug", see [en.wikipedia.org](https://en.wikipedia.org/wiki/The_Bedbug); an English adaption by Snoo Wilson is [here as PDF](http://snoowilson.co.uk/The%20Bedbug.pdf); a concise English summary can be found at [sovlit.net](http://www.sovlit.net/bedbug/)), written in 1928 and first published the year after.
 
-"Klop" is definitely one of the challenging plays when it comes to character extraction. And now, two months after the summer school, we tried to automatise the extraction process and used "Klop" as an example. Before we get into the details, this is the end result:
+"Klop" is definitely one of the challenging plays when it comes to character extraction. And now, two months after the summer school, we tried to automatise the extraction process and used "Klop" as an example. Before we get into the details, this is the end result (visualised in Gephi 0.9.1 and licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)):
 
 <figure>
   <img src="{{ site.url }}/data/mayakovsky-klop/mayakovsky-klop-network-graph-gephi-cc-by-40.gif" alt="Character Network of Mayakovsky's 'Klop'" style="width:900px;">
@@ -119,7 +119,7 @@ Source,Target,Weight
 Баян,Присыпкин (Пьер Скрипкин),3
 {% endhighlight %}
 
-Really just containing info on who is talking to whom in how many scenes. (The CSV file can be obtained here: ["mayakovsky-klop-edges.csv"](/data/mayakovsky-klop/mayakovsky-klop-edges.csv).)
+Really just containing info on who is talking to whom in how many scenes. (The CSV file can be obtained here: ["mayakovsky-klop-edges.csv"](/data/mayakovsky-klop/mayakovsky-klop-edges.csv). This, of course, was the data we fed into Gephi to visualise the network shown above.)
 
 ## Some Network Values
 
