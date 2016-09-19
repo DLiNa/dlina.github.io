@@ -14,7 +14,7 @@ comments: true
 list: false
 featured: true
 ---
-c
+
 We don't know if you noticed, but the LINA research field (LIterary Network Analysis) has come up with pretty good PR videos lately. Look at [this fancy Youtube clip](https://www.youtube.com/watch?v=KX7rzQMswEw) produced by the "Nation, Genre & Gender" project at the University College Dublin (their project homepage is [here](http://www.nggprojectucd.ie/)). The NG+G project applies Social Network Analysis to Irish and British Fiction (1800–1922), their corpus involves 46 novels from 29 authors (according to the video they identified 9,630 unique fictional characters). And although the automated extraction of characters from novels has made progress in recent years (see, for example, [Jannidis et al.'s paper from DH2016](http://dh2016.adho.org/abstracts/297)), it is still rough on many edges. That's why the UCD project chose manual annotation as their approach, and that's why their data is of such high quality (but also limited in scope).
 
 If you're working with dramatic texts, automated character extraction is far less of a problem, since this kind of texts comes pre-structured, so to speak. If you work with one of the many TEI-tagged corpora it is even easier to pull out interactions and start analysing them with network metrics. Although, admittedly, sometimes it's harder than it seems, depending on the quality and depth of the mark-up (we covered that issue [in multiple postings](/recent/) last year).
