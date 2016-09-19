@@ -33,7 +33,7 @@ In the beginning of July, we taught a Network Analysis course at the First Mosco
 
 ## Network-Driven Synopsis
 
-The protagonist in "Klop", "Pierre Skripkin" (who changed his name from "Prisypkin"), abandons his socialist ideals, because after all the fighting and suffering he wants to start benefiting from what has been achieved. And because this is such an unusual play, we can actually base our synopsis on the network graph. The play consists of nine scenes:
+It's the late 1920s in a mid-sized town in Soviet Russia. The protagonist in "Klop", "Pierre Skripkin" (who changed his name from "Prisypkin"), abandons his socialist ideals, because after all the fighting and suffering he wants to start benefiting from what has been achieved. And because this is such an unusual play, we can actually base our synopsis on the network graph. The play consists of nine scenes:
 
 * In scene 1, we see Skripkin with his friend Bayan and his soon-to-be mother-in-law Rosalia (orange) strolling through a warehouse where merchants praise their products (dark-green cluster).
 * In scene 2, Skripkin discusses his lifestyle with the characters in the light-brown cluster.
