@@ -92,7 +92,7 @@ Here, we move the `<alias>` of one `<character>` (usually the less frequent, or 
 ### Before editing
 
 {% highlight xml %}
-</personae>
+<personae>
   <character>
       <name>ODOARDO GALOTTI</name>
       <alias xml:id="odoardo_galotti">
@@ -150,7 +150,7 @@ The idea behind the attribute is to be later able to differentiate between a cha
 ### After editing
 
 {% highlight xml %}
-</personae>
+<personae>
   <character>
       <name>MARIANE</name>
       <alias xml:id="mariane">
