@@ -8,6 +8,7 @@ chart: true
 ---
 ## Talks and Workshops
 
+- October 10–12, 2016 · Network Analysis Workshop with [CLiGS Junior Research Group](http://cligs.hypotheses.org/) · University of Würzburg · [network cake](https://twitter.com/christof77/status/785482921465569280)
 - July 14, 2016 · »Theatre Plays as ›Small Worlds‹? Network Data on the History and Typology of German Drama, 1730–1930« · DH2016 in Kraków · [abstract](http://dh2016.adho.org/abstracts/360) · [slides](https://dlina.github.io/presentations/2016-krakow/)
 - July 5, 2016 · »Анализ социальных сетей в драматических текстах« · [1st Moscow-Tartu Digital Humanities Summer School](https://ling.hse.ru/digitalhum/program) in Yasnaya Polyana · [slides](https://dlina.github.io/presentations/2016-yasnaya-polyana/) (in Russian)
 - June 23, 2016 · »'Distant-Reading Showcase'. Data Narratives in the Humanities« · [DH Colloquium](http://www.cceh.uni-koeln.de/node/612) at CCeH Cologne · [slides](https://dlina.github.io/presentations/2016-koeln/) · [recap](https://dhc.hypotheses.org/193)
