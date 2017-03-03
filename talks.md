@@ -8,7 +8,8 @@ chart: true
 ---
 ## Talks and Workshops
 
-- February 15, 2017 · »Netzwerkdynamik, Plotanalyse« · [DHd2017](http://www.dhd2017.ch/) in Bern · [abstract](http://www.dhd2017.ch/wp-content/uploads/2017/01/Abstractband_def_24.1.17-1.pdf) ·  [slides](https://dlina.github.io/presentations/2017-bern/)
+- February 16, 2017 · Participation in panel »Aktuelle Herausforderungen der digitalen Dramenanalyse« · [DHd2017](http://www.dhd2017.ch/) in Bern · [abstract](http://www.dhd2017.ch/wp-content/uploads/2017/02/Abstractband_ergaenzt.pdf) (pp. 46–49) ·  [slides](https://christofs.github.io/dramenanalyse-dhd/)
+- February 15, 2017 · »Netzwerkdynamik, Plotanalyse« · [DHd2017](http://www.dhd2017.ch/) in Bern · [abstract](http://www.dhd2017.ch/wp-content/uploads/2017/02/Abstractband_ergaenzt.pdf) (pp. 175–180) · [slides](https://dlina.github.io/presentations/2017-bern/)
 - October 10–12, 2016 · Network Analysis Workshop with [CLiGS Junior Research Group](http://cligs.hypotheses.org/) · University of Würzburg · [network cake](https://twitter.com/christof77/status/785482921465569280)
 - July 14, 2016 · »Theatre Plays as ›Small Worlds‹? Network Data on the History and Typology of German Drama, 1730–1930« · DH2016 in Kraków · [abstract](http://dh2016.adho.org/abstracts/360) · [slides](https://dlina.github.io/presentations/2016-krakow/)
 - July 5, 2016 · »Анализ социальных сетей в драматических текстах« · [1st Moscow-Tartu Digital Humanities Summer School](https://ling.hse.ru/digitalhum/program) in Yasnaya Polyana · [slides](https://dlina.github.io/presentations/2016-yasnaya-polyana/) (in Russian)
