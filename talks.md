@@ -8,7 +8,7 @@ chart: true
 ---
 ## Talks and Workshops
 
-- March 24, 2017 · »Doing Digital Literary Studies, am Beispiel von DLINA« · Workshop [»Neue Forschungsgegenstände und Methoden? Wie Digitalität die Geisteswissenschaften verändert«](http://digitalitaet-geisteswissenschaften.de/veranstaltungen/symposienreihe/workshop) · Bayreuth · [slides](https://dlina.github.io/presentations/2017-bayreuth/)
+- March 24, 2017 · »Doing Digital Literary Studies, am Beispiel von DLINA« · Workshop »Neue Forschungsgegenstände und Methoden? Wie Digitalität die Geisteswissenschaften verändert« · [Bayreuth](http://digitalitaet-geisteswissenschaften.de/veranstaltungen/symposienreihe/workshop) · [slides](https://dlina.github.io/presentations/2017-bayreuth/)
 - February 16, 2017 · Participation in panel »Aktuelle Herausforderungen der digitalen Dramenanalyse« · [DHd2017](http://www.dhd2017.ch/) in Bern · [abstract](http://www.dhd2017.ch/wp-content/uploads/2017/02/Abstractband_ergaenzt.pdf) (pp. 46–49) · [slides](https://christofs.github.io/dramenanalyse-dhd/)
 - February 15, 2017 · »Netzwerkdynamik, Plotanalyse« · [DHd2017](http://www.dhd2017.ch/) in Bern · [abstract](http://www.dhd2017.ch/wp-content/uploads/2017/02/Abstractband_ergaenzt.pdf) (pp. 175–180) · [slides](https://dlina.github.io/presentations/2017-bern/)
 - October 10–12, 2016 · Network Analysis Workshop with [CLiGS Junior Research Group](http://cligs.hypotheses.org/) · University of Würzburg · [network cake](https://twitter.com/christof77/status/785482921465569280)
