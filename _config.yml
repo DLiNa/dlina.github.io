@@ -62,8 +62,17 @@ authors:
   danil:
     name: Danil Skorinkin
     display_name: Danil
-    email: daskorinkin@edu.hse.ru
+    email: dskorinkin@hse.ru
+    twitter: DaniilSkorinkin
     github: danilsko
+  german:
+    name: GermanPalchikov
+    display_name: German
+    github: GermanGermanovich
+  cmil:
+    name: Carsten Milling
+    display_name: Carsten
+    github: cmil
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   UA-39365944-7
 #google_verify:      
