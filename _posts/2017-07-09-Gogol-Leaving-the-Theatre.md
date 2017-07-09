@@ -15,7 +15,9 @@ list: false
 featured: true
 ---
 
-A couple of days ago, we presented a first version of our Russian Drama Corpus (RusDraCor) at the CORPORA 2017 conference in St. Petersburg ([slides](https://dlina.github.io/presentations/2017-spb/)). Our goal is to assemble hundreds of Russian plays from the 1740s (Sumarokov) up to the 1930s with authors like Gorky and Mayakovsky. Right in the middle, chronologically, our corpus features a number of plays by Gogol, one of which is "Театральный разъезд после представления новой комедии" ("Leaving the Theatre after the Presentation of a New Comedy"; [full text at ilibrary.ru](http://ilibrary.ru/text/1557/p.1/index.html)).
+A couple of days ago, we presented a first version of our TEI-encoded Russian Drama Corpus (RusDraCor) at the [CORPORA 2017 conference](https://events.spbu.ru/events/anons/corpora-2017/) in St. Petersburg ([slides](https://dlina.github.io/presentations/2017-spb/)). Our goal is to assemble hundreds of Russian plays from the 1740s (Sumarokov) up to the 1930s with authors like Gorky and Mayakovsky.
+
+Right in the middle, chronologically, our corpus features a number of plays by Gogol, one of which is "Театральный разъезд после представления новой комедии" ("Leaving the Theatre after the Presentation of a New Comedy"; [full text at ilibrary.ru](http://ilibrary.ru/text/1557/p.1/index.html)).
 
 We don't concentrate so much on individual networks in our research, we're more focusing in on the structural evolution of a bulk of literary texts over time. But some networks are just special enough to warrant a bit more attention. So here is the network graph for "Leaving the Theatre", extracted from [our TEI version of the play](https://raw.githubusercontent.com/lehkost/RusDraCor/master/tei/Gogol_-_Teatralnyi_razezd_-_ilibrary.xml) and embellished with Gephi:
 
