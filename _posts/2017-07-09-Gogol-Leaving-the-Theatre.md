@@ -36,9 +36,11 @@ Like mentioned above, we can distinguish **99 characters (or voices)** in this p
 
 The play has no acts or scenes, so we segmented it to catch what Manfred Pfister called 'configurations', subsets of the character list of a play, i.e., groups of people present on the stage at a certain point during the play. For all characters present in the same segment, we would establish a relation. That way, we'd end up with many small, unconnected subnets. And here comes our tweak: Since our "author" character eavesdrop on all conversations, we added him to all **37 'configurations'**, ending up with the star-like network you've seen above.
 
-Of course, this is an experimental extension of our approach, but it still helps to understand the structure of Gogol's metaplay. For example, we can easily tell apart single characters uttering their opinion and larger conversations involving a group of people, something that doesn't become as clear when close-reading the play.
+Of course, this is an experimental extension of our approach, but it still helps to better understand the structure of Gogol's metaplay. For example, we can easily tell apart single characters uttering their opinion and larger conversations involving a group of people, something that doesn't become as clear when close-reading the play.
 
-Although we spent a lot of time get our network data right, there's still at least one shortcoming when we look at this nice quote from the concluding speech of Gogol's alter ego in the play:
+## A Note on Laughter
+
+Although we spent a lot of time to get our network data right, there's still at least one shortcoming when we look at this nice quote from the concluding speech of Gogol's alter ego in the play:
 
 > "Странно: мне жаль, что никто не заметил честного лица, бывшего в моей пьесе. Да, было одно честное, благородное лицо, действовавшее в нем во все продолжение ее. Это честное, благородное лицо был – *смех*."
 
