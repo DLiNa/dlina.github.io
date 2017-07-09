@@ -60,8 +60,8 @@ On a different note, we also released a Shiny App for the analysis of our networ
   <img src="https://dlina.github.io/presentations/2017-spb/images/Screenshot_Shinyapp_2017-06-21.jpg" alt="RusDraCor as Shiny App (screenshot)" style="width:760px;margin-top:15px;margin-bottom:30px;">
 </figure>
 
-… and can be access at **[https://rusdracor.shinyapps.io/showcase/](https://rusdracor.shinyapps.io/showcase/)**. It features live data, so to speak, continuously generated from our TEI files as the corpus grows. "Leaving the Theatre" is among the plays, as are works by Blok, Bulgakov, Chechov, Fonvizin, Gorky, Gumilyov, Krylov, Majakovsky, Ostrovsky, Plavilschikov, Prutkov ☺, Pushkin, Sumarokov, Leo Tolstoy and Turgenev. And more is to come.
+… and can be accessed at **[https://rusdracor.shinyapps.io/showcase/](https://rusdracor.shinyapps.io/showcase/)**. It features live data, so to speak, continuously generated from our TEI files as the corpus grows. "Leaving the Theatre" is among the plays, as are works by Blok, Bulgakov, Chechov, Fonvizin, Gorky, Gumilyov, Krylov, Mayakovsky, Ostrovsky, Plavilschikov, Prutkov ☺, Pushkin, Sumarokov, Leo Tolstoy and Turgenev. And more is to come.
 
 Oh, our project will also be presented at the ["Digitizing the Stage" conference](https://digitizingthestage.wordpress.com/) starting tomorrow at the University of Oxford.
 
-Etc. ect. etc.
+Etc. etc. etc.
