@@ -38,6 +38,14 @@ The play has no acts or scenes, so we segmented it to catch what Manfred Pfister
 
 Of course, this is an experimental extension of our approach, but it still helps to understand the structure of Gogol's metaplay. For example, we can easily tell apart single characters uttering their opinion and larger conversations involving a group of people, something that doesn't become as clear when close-reading the play.
 
+Although we spent a lot of time get our network data right, there's still at least one shortcoming when we look at this nice quote from the concluding speech of Gogol's alter ego in the play:
+
+> "Странно: мне жаль, что никто не заметил честного лица, бывшего в моей пьесе. Да, было одно честное, благородное лицо, действовавшее в нем во все продолжение ее. Это честное, благородное лицо был – *смех*."
+
+>"It's strange: I regret that no one noticed the one honest person in the play. Yes, there was an honest, noble person acting in it throughout its continuance. This honest, noble person was – *laughter*." (our trans.)
+
+Our current algorithms aren't able to extract an abstract entity like "laughter" as part of a communication network, but who knows, involving more actor–network theory might bring us a whole bunch of new ideas.
+
 Btw, the underlying CSV file for "Leaving the Theatre" can be found **[here](https://raw.githubusercontent.com/lehkost/RusDraCor/master/csv/Gogol_-_Teatralnyi_razezd_-_ilibrary.csv)**.
 
 ## Russian Drama Network as Shiny App
