@@ -8,7 +8,7 @@ chart: true
 ---
 ## Talks and Workshops
 
-- August 10, 2017 · »Network Dynamics, Plot Analysis: Approaching the Progressive Structuration of Literary Texts« · [DH2017](https://dh2017.adho.org/) in Montréal · [abstract](https://www.conftool.pro/dh2017/index.php?page=browseSessions&form_session=319) · [slides](https://dlina.github.io/presentations/2017-montreal/)
+- August 10, 2017 · »Network Dynamics, Plot Analysis: Approaching the Progressive Structuration of Literary Texts« · [DH2017](https://dh2017.adho.org/) in Montréal · [abstract](https://dh2017.adho.org/abstracts/071/071.pdf) · [slides](https://dlina.github.io/presentations/2017-montreal/)
 - June 29, 2017 · »Introducing RusDraCor, a TEI-Encoded Russian Drama Corpus for the Digital Literary Studies« · [Corpora2017](https://events.spbu.ru/events/anons/corpora-2017/) in St. Petersburg · [slides](https://dlina.github.io/presentations/2017-spb/)
 - March 24, 2017 · »Doing Digital Literary Studies, am Beispiel von DLINA« · Workshop »Neue Forschungsgegenstände und Methoden? Wie Digitalität die Geisteswissenschaften verändert« · [Bayreuth](http://digitalitaet-geisteswissenschaften.de/veranstaltungen/symposienreihe/workshop) · [slides](https://dlina.github.io/presentations/2017-bayreuth/)
 - February 16, 2017 · Participation in panel »Aktuelle Herausforderungen der digitalen Dramenanalyse« · [DHd2017](http://www.dhd2017.ch/) in Bern · [abstract](http://www.dhd2017.ch/wp-content/uploads/2017/02/Abstractband_ergaenzt.pdf) (pp. 46–49) · [slides](https://christofs.github.io/dramenanalyse-dhd/)
