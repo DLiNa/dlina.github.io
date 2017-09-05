@@ -8,6 +8,7 @@ chart: true
 ---
 ## Talks and Workshops
 
+- September 2x, 2017 · Easy Linavis (Simple Network Visualisation for Literary Texts) · [DHRussia2017](http://conf2.sfu-kras.ru/en/dhrussia2017) in Krasnoyarsk · [slides](https://dlina.github.io/presentations/2017-krasnoyarsk/)
 - June 29, 2017 · Introducing RusDraCor, a TEI-Encoded Russian Drama Corpus for the Digital Literary Studies · [Corpora2017](https://events.spbu.ru/events/anons/corpora-2017/) in St. Petersburg · [slides](https://dlina.github.io/presentations/2017-spb/)
 - March 24, 2017 · »Doing Digital Literary Studies, am Beispiel von DLINA« · Workshop »Neue Forschungsgegenstände und Methoden? Wie Digitalität die Geisteswissenschaften verändert« · [Bayreuth](http://digitalitaet-geisteswissenschaften.de/veranstaltungen/symposienreihe/workshop) · [slides](https://dlina.github.io/presentations/2017-bayreuth/)
 - February 16, 2017 · Participation in panel »Aktuelle Herausforderungen der digitalen Dramenanalyse« · [DHd2017](http://www.dhd2017.ch/) in Bern · [abstract](http://www.dhd2017.ch/wp-content/uploads/2017/02/Abstractband_ergaenzt.pdf) (pp. 46–49) · [slides](https://christofs.github.io/dramenanalyse-dhd/)
