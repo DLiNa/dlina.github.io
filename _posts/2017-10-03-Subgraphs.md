@@ -94,7 +94,7 @@ above table would look like this:
 | …              | …      | …                | …                    |
 
 And … **Faust is back!** Shortest average distance! – For our upcoming paper
-on the different kinds of extracting protagonists in plays, we are using this
+on the different kinds of extracting protagonists from plays, we are using this
 method to calculate average distances. But, having said that, it cannot be
 emphasised enough that since the concept of the protagonist is such a rich
 concept, we should not try to use but one simple measure to automatically
@@ -121,9 +121,10 @@ although calculated correctly, don't make much sense:
 | …              | …      | …                | …                    |
 
 In this approach, the assumed paths when bridging the infinite distance between
-two subgraphs are much longer than with the previous algorithms. The differences
-in the average distances only become visible after the decimal point. This
-approach might make sense in some contexts, but not in our case.
+two subgraphs are much longer than with the previous algorithms, and almost equal:
+differences in the average distances really only become visible after the
+decimal point. So while this approach might make sense in some contexts,
+it is not very helpful in our case.
 
 All told, our maxim really has to be, and not only when confronted with
 subgraphs: **Know your implementation!**
