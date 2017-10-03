@@ -37,7 +37,7 @@ comprises the entire plot of the play, except for two detached single scenes:
 The two latter scenes do not feature any character from the main graph, which is
 problematic when starting to calculate network metrics. For example, if we want
 to calculate the [average path length](https://en.wikipedia.org/wiki/Average_path_length),
-which is the average distance from one node to all other nodes, how long is the distance
+which is the average of all average distances from one node to all other nodes, how long is the distance
 between, say, Faust and any of the characters in the detached Walpurgis Night's Dream?
 **It is, well, infinite.** If we still want to calculate things like the average
 distance, we can do that, we just have to find a way to deal with unconnected
