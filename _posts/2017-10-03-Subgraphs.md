@@ -19,32 +19,30 @@ The network analysis of literary texts rests on a number of algorithmic
 foundations, which are often not sufficiently reflected in the field. One of
 these concerns the existence of detached subgraphs. Here's a classic example,
 the network of Goethe's *Faust, Part One* (1808), visualised with our
-online tool [**ezlinavis**](http://dlina.github.io/ezlinavis/) (*Faust* being
+online tool [**ezlinavis**](https://dlina.github.io/ezlinavis/) (*Faust* being
 one of the examples you can select in the right upper corner):
 
 <figure>
-  <img src="{{ site.url }}/images/faust-ezlinavis.png" alt="Faust, generated
-  via Ezlinavis" style="width:900px;">
+  <img src="{{ site.url }}/images/faust-ezlinavis.png" alt="Faust, generated with Ezlinavis" style="width:900px;">
 </figure>
 
 We can visually distinguish three subgraphs:
 
 * the main graph revolving around Faust and Mephisto, which basically
 comprises the entire plot of the play, except for two detached single scenes:
-** Vorspiel auf dem Theater (Prelude in the Theater)
-** Walpurgisnachtstraum (Walpurgis Night's Dream)
+  * Vorspiel auf dem Theater (Prelude in the Theater)
+  * Walpurgisnachtstraum (Walpurgis Night's Dream)
 
 The two latter scenes do not feature any character from the main graph, which is
 problematic when starting to calculate network metrics. For example, if we want
-to calculate the [average path
-length](https://en.wikipedia.org/wiki/Average_path_length), which is the average
-distance from one node to all other nodes, how long is the distance between,
-say, Faust and any of the characters in the detached Walpurgis Night's Dream?
+to calculate the [average path length](https://en.wikipedia.org/wiki/Average_path_length),
+which is the average distance from one node to all other nodes, how long is the distance
+between, say, Faust and any of the characters in the detached Walpurgis Night's Dream?
 **It is, well, infinite.** If we still want to calculate things like the Average
 Distance, we can do that, we just have to find a way to deal with unconnected
 pairs of nodes. In any case: "Computing the average distance in disconnected
-graphs needs careful consideration." ([Zweig 2016, p. 223]
-(https://books.google.com/books?id=MpNjDQAAQBAJ&pg=PA223)
+graphs needs careful consideration."
+([Zweig 2016, p. 223](https://books.google.com/books?id=MpNjDQAAQBAJ&pg=PA223)
 
 There are different ways to implement this, and even if you're just using
 network tools out of the box, you should be aware of the kind of algorithm
@@ -74,8 +72,7 @@ sum of the distances to all other vertices" ([Alberich/Miro-Julia/Rosselló
 2002](https://arxiv.org/abs/cond-mat/0202174v1)), we have a problem, because
 **Faust stops being the protagonist of *Faust*, overrun by the 36 speakers of
 the Walpurgis Night's Dream. In other words: Goethe's Walpurgis Night's Dream,
-in regard of network theory, is a [link
-farm](https://en.wikipedia.org/wiki/Link_farm).**
+in regard of network theory, is a [link farm](https://en.wikipedia.org/wiki/Link_farm).**
 
 If we still want network metrics to be meaningful when it comes to determining
 who the central character of a play could be, we better rely on a different
@@ -105,11 +102,10 @@ tuned. 😊
 Ok, let's consider one last way to calculate distance values between unconnected
 networks. E.g., when we used **igraph** as network library (before switching to
 **networkx**), we saw results that were totally different, because we used a
-fallback that determined that ["the length of the missing paths are counted
-having length ```vcount(graph)```, one longer than the longest possible geodesic
-in the network"](http://igraph.org/r/doc/distances.html) (i.e., **vcount** being
-the number of vertices of a graph). The resulting metrics, although calculated
-correctly, don't make much sense:
+fallback that determined that
+["the length of the missing paths are counted having length ```vcount(graph)```, one longer than the longest possible geodesic in the network"](http://igraph.org/r/doc/distances.html)
+(i.e., **vcount** being the number of vertices of a graph). The resulting metrics,
+although calculated correctly, don't make much sense:
 
 | Character      | Degree | Average Distance | Closeness Centrality |
 |----------------|--------|------------------|----------------------|
