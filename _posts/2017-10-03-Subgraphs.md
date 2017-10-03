@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Know Your Implementation: Subgraphs in Literary Networks
-author: [frank, chris, peer]
+author: [frank, christopher, peer]
 description: 
 headline: 
 modified: 2017-10-03
