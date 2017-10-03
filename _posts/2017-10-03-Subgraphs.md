@@ -16,11 +16,12 @@ featured: true
 ---
 
 The network analysis of literary texts rests on a number of algorithmic
-foundations, which are often not sufficiently reflected in the field. One of
-these concerns the existence of detached subgraphs. Here's a classic example,
-the network of Goethe's *Faust, Part One* (1808), visualised with our
-online tool [**ezlinavis**](https://dlina.github.io/ezlinavis/) (*Faust* being
-one of the examples you can select in the right upper corner):
+foundations, which are often not sufficiently reflected in the field. In
+this regard, one problematic case is the existence of detached subgraphs.
+Here's a classic example, the network of Goethe's *Faust, Part One* (1808),
+visualised with our online tool [**ezlinavis**](https://dlina.github.io/ezlinavis/)
+(*Faust* being one of the examples you can select from the pull-down menu
+in the right upper corner):
 
 <figure>
   <img src="{{ site.url }}/images/faust-ezlinavis.png" alt="Faust, generated with Ezlinavis" style="width:900px;">
@@ -38,11 +39,11 @@ problematic when starting to calculate network metrics. For example, if we want
 to calculate the [average path length](https://en.wikipedia.org/wiki/Average_path_length),
 which is the average distance from one node to all other nodes, how long is the distance
 between, say, Faust and any of the characters in the detached Walpurgis Night's Dream?
-**It is, well, infinite.** If we still want to calculate things like the Average
-Distance, we can do that, we just have to find a way to deal with unconnected
+**It is, well, infinite.** If we still want to calculate things like the average
+distance, we can do that, we just have to find a way to deal with unconnected
 pairs of nodes. In any case: "Computing the average distance in disconnected
 graphs needs careful consideration."
-([Zweig 2016, p. 223](https://books.google.com/books?id=MpNjDQAAQBAJ&pg=PA223)
+([Zweig 2016, p. 223](https://books.google.com/books?id=MpNjDQAAQBAJ&pg=PA223)).
 
 There are different ways to implement this, and even if you're just using
 network tools out of the box, you should be aware of the kind of algorithm
@@ -67,19 +68,19 @@ This actually makes sense. Characters/speakers in Walpurgis Night's Dream
 (represented by Weltkind and Sternschnuppe) are not interacting directly with
 characters in other scenes and "stay among themselves", so to speak, which is
 why they all have an average distance of 1.0. – Yet if it is true that the
-cnetral character, the protagonist even, is "the character that minimize[s] the
-sum of the distances to all other vertices" ([Alberich/Miro-Julia/Rosselló
+central character, the protagonist if you will, is "the character that minimize[s]
+the sum of the distances to all other vertices" ([Alberich/Miro-Julia/Rosselló
 2002](https://arxiv.org/abs/cond-mat/0202174v1)), we have a problem, because
-**Faust stops being the protagonist of *Faust*, overrun by the 36 speakers of
-the Walpurgis Night's Dream. In other words: Goethe's Walpurgis Night's Dream,
+**Faust stops being the protagonist of *Faust***, overrun by the 36 speakers of
+the Walpurgis Night's Dream. In other words: **Goethe's Walpurgis Night's Dream,
 in regard of network theory, is a [link farm](https://en.wikipedia.org/wiki/Link_farm).**
 
 If we still want network metrics to be meaningful when it comes to determining
 who the central character of a play could be, we better rely on a different
 option. For practical reasons, the distance between two unconnected nodes is
 sometimes declared as length of the longest existing path, plus one. If we use
-this method to assume a (somewhat artificial) distance for every pair of nodes,
-the above table would look like this now:
+this method to assume an (artificial) distance for every pair of nodes, the
+above table would look like this:
 
 | Character      | Degree | Average Distance | Closeness Centrality |
 |----------------|--------|------------------|----------------------|
@@ -92,9 +93,10 @@ the above table would look like this now:
 | Sternschnuppe  | 35     | 2.88             | 0.34                 |
 | …              | …      | …                | …                    |
 
-And … **Faust is back!** For our upcoming paper on the different kinds of
-extracting protagonists in plays, we are using this method to calculate average
-distances. Either way, since the concept of the protagonist is such a rich
+And … **Faust is back!** Shortest average distance! – For our upcoming paper
+on the different kinds of extracting protagonists in plays, we are using this
+method to calculate average distances. But, having said that, it cannot be
+emphasised enough that since the concept of the protagonist is such a rich
 concept, we should not try to use but one simple measure to automatically
 determine such entities. Which is something we'll address in said paper, stay
 tuned. 😊
