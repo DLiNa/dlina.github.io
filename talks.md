@@ -8,7 +8,7 @@ chart: true
 ---
 ## Talks and Workshops
 
-- October 19, 2017 · Easy Linavis (Simple visualización en red para textos literarios) · [HDH2017](http://hdh2017.es/) in Málaga · [slides](https://dlina.github.io/presentations/2017-malaga/) (in Spanish)
+- October 19, 2017 · Easy Linavis (Visualización simple en red para textos literarios) · [HDH2017](http://hdh2017.es/) in Málaga · [slides](https://dlina.github.io/presentations/2017-malaga/) (in Spanish)
 - September 22, 2017 · Easy Linavis (Simple Network Visualisation for Literary Texts) · [DHRussia2017](http://conf2.sfu-kras.ru/en/dhrussia2017) in Krasnoyarsk · [slides](https://dlina.github.io/presentations/2017-krasnoyarsk/)
 - August 10, 2017 · »Network Dynamics, Plot Analysis: Approaching the Progressive Structuration of Literary Texts« · [DH2017](https://dh2017.adho.org/) in Montréal · [abstract](https://dh2017.adho.org/abstracts/071/071.pdf) · [slides](https://dlina.github.io/presentations/2017-montreal/)
 - June 29, 2017 · »Introducing RusDraCor, a TEI-Encoded Russian Drama Corpus for the Digital Literary Studies« · [Corpora2017](https://events.spbu.ru/events/anons/corpora-2017/) in St. Petersburg · [slides](https://dlina.github.io/presentations/2017-spb/)
