@@ -19,7 +19,7 @@ A couple of days ago, we presented a first version of our TEI-encoded Russian Dr
 
 Right in the middle, chronologically, our corpus features a number of plays by Gogol, one of which is "Театральный разъезд после представления новой комедии" ("Leaving the Theatre after the Presentation of a New Comedy"; [full text at ilibrary.ru](http://ilibrary.ru/text/1557/p.1/index.html)).
 
-We don't concentrate so much on individual networks in our research, we're more focusing in on the structural evolution of a bulk of literary texts over time. But some networks are just special enough to warrant a bit more attention. So here is the network graph for "Leaving the Theatre", extracted from [our TEI version of the play](https://raw.githubusercontent.com/lehkost/RusDraCor/master/tei/Gogol_-_Teatralnyi_razezd_-_ilibrary.xml) and embellished with Gephi:
+We don't concentrate so much on individual networks in our research, we're more focusing in on the structural evolution of a bulk of literary texts over time. But some networks are just special enough to warrant a bit more attention. So here is the network graph for "Leaving the Theatre", extracted from [our TEI version of the play](https://raw.githubusercontent.com/dracor-org/rusdracor/master/tei/gogol-teatralnyi-razezd.xml) and embellished with Gephi:
 
 <figure>
   <img src="{{ site.url }}/data/gogol-leaving-the-theatre/gogol-teatralnyi-razezd-gephi.png" alt="Character Network of Gogol's 'Leaving the Theatre'" style="width:900px;">
