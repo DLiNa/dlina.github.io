@@ -46,7 +46,7 @@ Group photo, first morning.
 Welcome to Fontane Archive!
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/hackathon-b-and-w" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/hackathon-b-and-w.jpg" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
 This is how a literary hackathon looks like in black and white.
@@ -92,3 +92,35 @@ Still hacking.
 </figure>
 
 @peertrilcke and @umblaetterer looking at things. ([context](https://twitter.com/umblaetterer/status/616232211952500736))
+
+<figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/ice-skating-selfie.jpg" alt="alternative text" style="height:400px; align:left;">
+</figure>
+
+Visit to the Christmas market …
+
+<figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/ice-skating.jpg" alt="alternative text" style="height:400px; align:left;">
+</figure>
+
+… and some ice skating.
+
+<figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/banya.jpg" alt="alternative text" style="height:400px; align:left;">
+</figure>
+
+Visiting the historic banya at Fontane Archive.
+
+<figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/night-walk.jpg" alt="alternative text" style="height:400px; align:left;">
+</figure>
+
+Night walk.
+
+<figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/sans-souci.jpg" alt="alternative text" style="height:400px; align:left;">
+</figure>
+
+Visiting [the comma of SANS, SOUCI.](https://de.wikipedia.org/wiki/Das_Komma_von_SANS,_SOUCI.)
+
+
