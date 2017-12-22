@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "December Hackathon in Potsdam"
-author: frank
+author: [frank, peer]
 description: 
 headline: 
 modified: 2017-12-22
@@ -11,8 +11,10 @@ imagefeature:
 mathjax: 
 chart: 
 comments: true
+list: false
 featured: true
 ---
+
 Thanks to the funding we received from the University of Potsdam ([KoUP 1](http://www.uni-potsdam.de/foerderung/6-international.html)) and the Higher School of Economics ([НУГ](https://www.hse.ru/science/scifund/nug/)), we were able to organise two hackathons this year, one in September in Moscow, another one earlier this month at the Fontane Archive in Potsdam. The latter concluded with a [mini conference](https://www.uni-potsdam.de/lit-19-jhd/digitale-literaturwissenschaft/potsdamer-arbeitstreffen/no2-2017.html).
 
 The network analysis of literary texts remains the main business of our German-Russian research group. In 2017, though, we rebuilt our whole infrastructure and were now able to look beyond network-analytics research questions, or combine the network approach with other (quantitative) approaches. Some of the scientific outcome of our efforts throughout this year was presented at the mini conference and on Twitter via the hashtag [#potsdam_digilit](https://twitter.com/hashtag/potsdam_digilit?f=tweets&vertical=default&src=hash), some will find its way into our upcoming research papers.
@@ -32,62 +34,61 @@ Arriving at Berlin main station, magenta style.
 Walking down Friedrichstrasse.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/xxx.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/flashmob.jpg" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
-Caption 2.
+Group photo, first morning.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/xxx.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/martinez.jpg" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
-Caption 2.
+Welcome to Fontane Archive!
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/xxx.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/hackathon-b-and-w" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
-Caption 2.
+This is how a literary hackathon looks like in black and white.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/xxx.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/discussing-shinyapp.jpg" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
-Caption 2.
+Discussing our new Shinyapp.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/xxx.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/discussing-dramavis.jpg" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
-Caption 2.
+Testing the new version of [dramavis](/dramavis/) (a.k.a. laptop-sticker competition).
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/xxx.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/discussing-api.jpg" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
-Caption 2.
+Discussing our new API.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/xxx.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/promenade.jpg" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
-Caption 2.
+Lunch break.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/xxx.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/gg-and-ff.jpg" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
-Caption 2.
+GG and FF.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/xxx.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/hackathoning.jpg" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
-Caption 2.
+Still hacking.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/xxx.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/frank-and-peer.jpg" alt="alternative text" style="height:400px; align:left;">
 </figure>
 
-Caption 2.
-
+@peertrilcke and @umblaetterer looking at things. ([context](https://twitter.com/umblaetterer/status/616232211952500736))
