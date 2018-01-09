@@ -1,0 +1,25 @@
+{
+"nodes":[
+{"name":"MUTTER","group":5,"group1":1, "weight":100},
+{"name":"SOPHIE","group":5,"group1":1, "weight":100},
+{"name":"ERNST","group":5,"group1":2, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":9},
+{"source":0,"target":1,"value":9},
+{"source":0,"target":2,"value":9},
+{"source":0,"target":2,"value":9},
+{"source":0,"target":2,"value":9},
+{"source":0,"target":1,"value":9},
+{"source":0,"target":2,"value":9},
+{"source":1,"target":2,"value":64},
+{"source":1,"target":2,"value":64},
+{"source":1,"target":2,"value":64},
+{"source":1,"target":2,"value":64},
+{"source":1,"target":2,"value":64},
+{"source":1,"target":2,"value":64},
+{"source":1,"target":2,"value":64},
+{"source":1,"target":2,"value":64},
+{"source":1,"target":2,"value":64}
+]
+}

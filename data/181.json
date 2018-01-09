@@ -1,0 +1,10 @@
+{
+"nodes":[
+{"name":"ARABELLA","group":5,"group1":1, "weight":100},
+{"name":"CHRISTINE","group":5,"group1":1, "weight":100}
+],
+"links":[
+
+{"source":0,"target":1,"value":1}
+]
+}

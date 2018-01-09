@@ -1,0 +1,43 @@
+{
+"nodes":[
+{"name":"DER PROLOG","group":5,"group1":1, "weight":100},
+{"name":"PARIS","group":5,"group1":2, "weight":100},
+{"name":"GIANINO","group":5,"group1":2, "weight":100},
+{"name":"BATISTA","group":5,"group1":2, "weight":100},
+{"name":"ANTONIO","group":5,"group1":2, "weight":100},
+{"name":"TIZIANELLO","group":5,"group1":2, "weight":100},
+{"name":"DESIDERIO","group":5,"group1":2, "weight":100},
+{"name":"PAGE","group":5,"group1":2, "weight":100},
+{"name":"LAVINIA","group":5,"group1":2, "weight":100}
+],
+"links":[
+{"source":1,"target":2,"value":1},
+{"source":1,"target":3,"value":1},
+{"source":1,"target":4,"value":1},
+{"source":1,"target":5,"value":1},
+{"source":1,"target":6,"value":1},
+{"source":1,"target":7,"value":1},
+{"source":1,"target":8,"value":1},
+{"source":2,"target":3,"value":1},
+{"source":2,"target":4,"value":1},
+{"source":2,"target":5,"value":1},
+{"source":2,"target":6,"value":1},
+{"source":2,"target":7,"value":1},
+{"source":2,"target":8,"value":1},
+{"source":3,"target":4,"value":1},
+{"source":3,"target":5,"value":1},
+{"source":3,"target":6,"value":1},
+{"source":3,"target":7,"value":1},
+{"source":3,"target":8,"value":1},
+{"source":4,"target":5,"value":1},
+{"source":4,"target":6,"value":1},
+{"source":4,"target":7,"value":1},
+{"source":4,"target":8,"value":1},
+{"source":5,"target":6,"value":1},
+{"source":5,"target":7,"value":1},
+{"source":5,"target":8,"value":1},
+{"source":6,"target":7,"value":1},
+{"source":6,"target":8,"value":1},
+{"source":7,"target":8,"value":1}
+]
+}

@@ -1,0 +1,41 @@
+lit-history-fig01.tsv
+Decade	Number of Characters (Median)
+
+lit-history-fig02.tsv
+Decade	Number of Characters (Standard Deviation)
+
+lit-history-fig03.tsv
+Decade	Max Degree (Median)
+
+lit-history-fig04.tsv
+Decade	Average Degree (Average)
+
+lit-history-fig05.tsv
+Decade	Density (Average)
+
+lit-history-fig06.tsv
+Decade	Average Path Length (Average)
+
+lit-history-fig07.tsv
+Period	Number of Characters (Median)
+
+lit-history-fig08.tsv
+Period	Number of characters  (SD)
+
+lit-history-fig09.tsv
+Period	Density (Avg.)
+
+lit-history-fig10.tsv
+Period	Density (SD)
+
+lit-history-fig11.tsv
+Period	Number of Characters (Median)
+
+lit-history-fig12.tsv
+Period	Number of Characters  (SD)
+
+lit-history-fig13.tsv
+Period	Density (Avg.)
+
+lit-history-fig14.tsv
+Period	Density (SD)

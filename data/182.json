@@ -1,0 +1,30 @@
+{
+"nodes":[
+{"name":"KNOBLAUCH","group":5,"group1":1, "weight":100},
+{"name":"LORD","group":5,"group1":1, "weight":100},
+{"name":"KNUSSEL","group":5,"group1":1, "weight":100},
+{"name":"MERRIBÛR","group":5,"group1":1, "weight":100},
+{"name":"KLATSCH","group":5,"group1":1, "weight":100},
+{"name":"EIN STRASSENKEHRER","group":5,"group1":3, "weight":100},
+{"name":"ZWEITER STRASSENKEHRER","group":5,"group1":3, "weight":100},
+{"name":"EIN DICHTER","group":5,"group1":3, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":1},
+{"source":0,"target":2,"value":1},
+{"source":0,"target":3,"value":1},
+{"source":0,"target":4,"value":1},
+{"source":0,"target":5,"value":1},
+{"source":0,"target":6,"value":1},
+{"source":0,"target":7,"value":1},
+{"source":1,"target":2,"value":1},
+{"source":1,"target":3,"value":1},
+{"source":1,"target":4,"value":1},
+{"source":2,"target":3,"value":1},
+{"source":2,"target":4,"value":1},
+{"source":3,"target":4,"value":1},
+{"source":5,"target":6,"value":1},
+{"source":5,"target":7,"value":1},
+{"source":6,"target":7,"value":1}
+]
+}

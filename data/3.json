@@ -1,0 +1,20 @@
+{
+"nodes":[
+{"name":"EIN LIFTJUNGE","group":5,"group1":1, "weight":100},
+{"name":"GERARDO","group":5,"group1":2, "weight":100},
+{"name":"MISS CŒURNE","group":5,"group1":4, "weight":100},
+{"name":"DER HOTELDIENER","group":5,"group1":1, "weight":100},
+{"name":"DÜHRING","group":5,"group1":7, "weight":100},
+{"name":"HELENE","group":5,"group1":9, "weight":100},
+{"name":"MÜLLER","group":5,"group1":10, "weight":100}
+],
+"links":[
+{"source":1,"target":2,"value":1},
+{"source":1,"target":3,"value":4},
+{"source":1,"target":4,"value":1},
+{"source":1,"target":5,"value":1},
+{"source":1,"target":3,"value":4},
+{"source":1,"target":6,"value":1},
+{"source":3,"target":5,"value":1}
+]
+}

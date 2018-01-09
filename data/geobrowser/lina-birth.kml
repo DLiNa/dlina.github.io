@@ -1,0 +1,1960 @@
+<kml>
+    <Placemark>
+        <address>KÃ¶nigsberg</address>
+        <description>Gottsched, Johann Christoph; 2 February 1700</description>
+        <name>Gottsched, Johann Christoph</name>
+        <Point>
+            <coordinates>20.516666666666666, 54.71666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1700</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Reichenbach im Vogtland</address>
+        <description>Neuber, Friederike Caroline; 9 March 1697</description>
+        <name>Neuber, Friederike Caroline</name>
+        <Point>
+            <coordinates>12.3, 50.61666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1697</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>GdaÅ„sk</address>
+        <description>Gottsched, Luise Adelgunde Victorie; 11 April 1713</description>
+        <name>Gottsched, Luise Adelgunde Victorie</name>
+        <Point>
+            <coordinates>18.633333333333333, 54.36666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1713</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hamburg</address>
+        <description>Borkenstein, Hinrich; 21 October 1705</description>
+        <name>Borkenstein, Hinrich</name>
+        <Point>
+            <coordinates>10, 53.55</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1705</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Krüger, Johann Christian; 14 November 1723</description>
+        <name>Krüger, Johann Christian</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1723</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Meissen</address>
+        <description>Schlegel, Johann Elias; 17 January 1719</description>
+        <name>Schlegel, Johann Elias</name>
+        <Point>
+            <coordinates>13.477500000000001, 51.16361111111111</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1719</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hainichen</address>
+        <description>Gellert, Christian Fürchtegott; 4 July 1715</description>
+        <name>Gellert, Christian Fürchtegott</name>
+        <Point>
+            <coordinates>13.125277777777779, 50.969722222222224</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1715</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Rostock</address>
+        <description>Quistorp, Theodor Johann; 11 April 1722</description>
+        <name>Quistorp, Theodor Johann</name>
+        <Point>
+            <coordinates>12.133333333333333, 54.083333333333336</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1722</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Kamenz</address>
+        <description>Lessing, Gotthold Ephraim; 22 January 1729</description>
+        <name>Lessing, Gotthold Ephraim</name>
+        <Point>
+            <coordinates>14.1, 51.266666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1729</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Reichenbach</address>
+        <description>Mylius, Christlob; 11 November 1722</description>
+        <name>Mylius, Christlob</name>
+        <Point>
+            <coordinates>14.8, 51.14138888888889</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1722</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Freiberg</address>
+        <description>Pfeil, Johann Gottlob Benjamin; 10 November 1732</description>
+        <name>Pfeil, Johann Gottlob Benjamin</name>
+        <Point>
+            <coordinates>13.342777777777778, 50.911944444444444</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1732</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Quedlinburg</address>
+        <description>Klopstock, Friedrich Gottlieb; 2 July 1724</description>
+        <name>Klopstock, Friedrich Gottlieb</name>
+        <Point>
+            <coordinates>11.147222222222222, 51.791666666666664</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1724</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>WeiÃŸenfels</address>
+        <description>Brawe, Joachim Wilhelm von; 4 February 1738</description>
+        <name>Brawe, Joachim Wilhelm von</name>
+        <Point>
+            <coordinates>11.966666666666667, 51.2</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1738</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Biberach an der Riss</address>
+        <description>Wieland, Christoph Martin; 5 September 1733</description>
+        <name>Wieland, Christoph Martin</name>
+        <Point>
+            <coordinates>9.788611111111111, 48.09805555555556</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1733</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Ansbach</address>
+        <description>Cronegk, Johann Friedrich von; 2 September 1731</description>
+        <name>Cronegk, Johann Friedrich von</name>
+        <Point>
+            <coordinates>10.583333333333334, 49.3</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1731</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>ZÃ¼rich</address>
+        <description>Geßner, Salomon; 1 April 1730</description>
+        <name>Geßner, Salomon</name>
+        <Point>
+            <coordinates>8.54, 47.37861111111111</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1730</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Hafner, Philipp; 1731</description>
+        <name>Hafner, Philipp</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1731</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Zheleznodorozhny, Kaliningrad Oblast</address>
+        <description>Hippel, Theodor Gottlieb von; 31 January 1741</description>
+        <name>Hippel, Theodor Gottlieb von</name>
+        <Point>
+            <coordinates>21.322222222222223, 54.358333333333334</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1741</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Annaberg-Buchholz</address>
+        <description>Weiße, Christian Felix; 28 January 1726</description>
+        <name>Weiße, Christian Felix</name>
+        <Point>
+            <coordinates>13.002222222222223, 50.580000000000005</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1726</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Schwarzenberg</address>
+        <description>Klemm, Christian Gottlob; 11 November 1736</description>
+        <name>Klemm, Christian Gottlob</name>
+        <Point>
+            <coordinates>12.779166666666667, 50.54527777777778</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1736</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Kurz, Joseph Felix von; 22 February 1717</description>
+        <name>Kurz, Joseph Felix von</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1717</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Darmstadt</address>
+        <description>Sturz, Helfrich Peter; 16 February 1736</description>
+        <name>Sturz, Helfrich Peter</name>
+        <Point>
+            <coordinates>8.65, 49.86666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1736</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>TÃ¸nder</address>
+        <description>Gerstenberg, Heinrich Wilhelm von; 3 January 1737</description>
+        <name>Gerstenberg, Heinrich Wilhelm von</name>
+        <Point>
+            <coordinates>8.863888888888889, 54.94277777777778</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1737</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Frankfurt</address>
+        <description>Goethe, Johann Wolfgang von; 28 August 1749</description>
+        <name>Goethe, Johann Wolfgang von</name>
+        <Point>
+            <coordinates>8.679722222222221, 50.11361111111111</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1749</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Ayrenhoff, Cornelius von; 28 May 1733</description>
+        <name>Ayrenhoff, Cornelius von</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1733</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hanover</address>
+        <description>Leisewitz, Johann Anton; 9 May 1752</description>
+        <name>Leisewitz, Johann Anton</name>
+        <Point>
+            <coordinates>9.73861111111111, 52.37444444444444</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1752</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Cesvaine</address>
+        <description>Lenz, Jakob Michael Reinhold; 23 January 1751</description>
+        <name>Lenz, Jakob Michael Reinhold</name>
+        <Point>
+            <coordinates>26.30666666666667, 56.968333333333334</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1751</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Szczecin</address>
+        <description>Brandes, Johann Christian; 15 November 1735</description>
+        <name>Brandes, Johann Christian</name>
+        <Point>
+            <coordinates>14.555277777777778, 53.42472222222222</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1735</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Gotha</address>
+        <description>Gotter, Friedrich Wilhelm; 3 September 1746</description>
+        <name>Gotter, Friedrich Wilhelm</name>
+        <Point>
+            <coordinates>10.718333333333334, 50.94888888888889</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1746</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Strasbourg</address>
+        <description>Wagner, Heinrich Leopold; 19 February 1747</description>
+        <name>Wagner, Heinrich Leopold</name>
+        <Point>
+            <coordinates>7.748611111111111, 48.58444444444444</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1747</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Weidmann, Paul; 1744</description>
+        <name>Weidmann, Paul</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1744</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Greifensee</address>
+        <description>Bodmer, Johann Jacob; 19 July 1698</description>
+        <name>Bodmer, Johann Jacob</name>
+        <Point>
+            <coordinates>8.67861111111111, 47.36611111111111</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1698</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Parchim</address>
+        <description>Engel, Johann Jakob; 11 September 1741</description>
+        <name>Engel, Johann Jakob</name>
+        <Point>
+            <coordinates>11.833333333333334, 53.416666666666664</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1741</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Frankfurt</address>
+        <description>Klinger, Friedrich Maximilian von; 17 February 1752</description>
+        <name>Klinger, Friedrich Maximilian von</name>
+        <Point>
+            <coordinates>8.679722222222221, 50.11361111111111</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1752</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Magdeburg</address>
+        <description>Schink, Johann Friedrich; 29 April 1755</description>
+        <name>Schink, Johann Friedrich</name>
+        <Point>
+            <coordinates>11.616666666666667, 52.13333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1755</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Heilbronn</address>
+        <description>Gemmingen, Otto H. von; 5 November 1755</description>
+        <name>Gemmingen, Otto H. von</name>
+        <Point>
+            <coordinates>9.216666666666667, 49.15</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1755</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Munich</address>
+        <description>Törring, Josef August von; 1 December 1753</description>
+        <name>Törring, Josef August von</name>
+        <Point>
+            <coordinates>11.566666666666666, 48.13333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1753</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Graz</address>
+        <description>Auenbrugger, Leopold; 19 November 1722</description>
+        <name>Auenbrugger, Leopold</name>
+        <Point>
+            <coordinates>15.433333333333334, 47.06666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1722</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Leipzig</address>
+        <description>Bretzner, Christoph Friedrich; 10 December 1748</description>
+        <name>Bretzner, Christoph Friedrich</name>
+        <Point>
+            <coordinates>12.383333333333333, 51.333333333333336</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1748</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Bad Kreuznach</address>
+        <description>Müller, Friedrich; 13 January 1749</description>
+        <name>Müller, Friedrich</name>
+        <Point>
+            <coordinates>7.866944444444445, 49.846944444444446</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1749</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Marbach am Neckar</address>
+        <description>Schiller, Friedrich; 10 November 1759</description>
+        <name>Schiller, Friedrich</name>
+        <Point>
+            <coordinates>9.2575, 48.940555555555555</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1759</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>WrocÅ‚aw</address>
+        <description>Stephanie, Gottlieb; 19 February 1741</description>
+        <name>Stephanie, Gottlieb</name>
+        <Point>
+            <coordinates>17.033333333333335, 51.11666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1741</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hanover</address>
+        <description>Iffland, August Wilhelm; 19 April 1759</description>
+        <name>Iffland, August Wilhelm</name>
+        <Point>
+            <coordinates>9.73861111111111, 52.37444444444444</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1759</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Schwerin</address>
+        <description>Schröder, Friedrich Ludwig; 3 November 1744</description>
+        <name>Schröder, Friedrich Ludwig</name>
+        <Point>
+            <coordinates>11.416666666666666, 53.63333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1744</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Weimar</address>
+        <description>Kotzebue, August von; 3 May 1761</description>
+        <name>Kotzebue, August von</name>
+        <Point>
+            <coordinates>11.316666666666666, 50.983333333333334</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1761</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Straubing</address>
+        <description>Schikaneder, Emanuel; 1 September 1751</description>
+        <name>Schikaneder, Emanuel</name>
+        <Point>
+            <coordinates>12.566666666666666, 48.88333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1751</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Magdeburg</address>
+        <description>Zschokke, Heinrich; 22 March 1771</description>
+        <name>Zschokke, Heinrich</name>
+        <Point>
+            <coordinates>11.616666666666667, 52.13333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1771</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Ansbach</address>
+        <description>Soden, Julius von; 4 December 1754</description>
+        <name>Soden, Julius von</name>
+        <Point>
+            <coordinates>10.583333333333334, 49.3</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1754</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Tieck, Ludwig; 31 May 1773</description>
+        <name>Tieck, Ludwig</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1773</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vaihingen an der Enz</address>
+        <description>Hensler, Karl Friedrich; 1 February 1759</description>
+        <name>Hensler, Karl Friedrich</name>
+        <Point>
+            <coordinates>8.956388888888888, 48.93277777777777</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1759</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Uelzen</address>
+        <description>Benkowitz, Karl Friedrich; 1764</description>
+        <name>Benkowitz, Karl Friedrich</name>
+        <Point>
+            <coordinates>10.565833333333334, 52.96472222222223</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1764</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hanover</address>
+        <description>Schlegel, August Wilhelm von; 8 September 1767</description>
+        <name>Schlegel, August Wilhelm von</name>
+        <Point>
+            <coordinates>9.73861111111111, 52.37444444444444</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1767</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hanover</address>
+        <description>Schlegel, Friedrich von; 10 March 1772</description>
+        <name>Schlegel, Friedrich von</name>
+        <Point>
+            <coordinates>9.73861111111111, 52.37444444444444</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1772</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Frankfurt (Oder)</address>
+        <description>Kleist, Heinrich von; 18 October 1777</description>
+        <name>Kleist, Heinrich von</name>
+        <Point>
+            <coordinates>14.55, 52.35</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1777</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Koblenz-Ehrenbreitstein</address>
+        <description>Brentano, Clemens; 8 September 1778</description>
+        <name>Brentano, Clemens</name>
+        <Point>
+            <coordinates>7.614999999999999, 50.360305555555556</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1778</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Karlsruhe</address>
+        <description>Günderode, Karoline von; 11 February 1780</description>
+        <name>Günderode, Karoline von</name>
+        <Point>
+            <coordinates>8.404166666666667, 49.013888888888886</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1780</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Sonnleithner, Joseph; 3 March 1766</description>
+        <name>Sonnleithner, Joseph</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1766</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Bonn</address>
+        <description>Breuning, Stephan von; 17 August 1774</description>
+        <name>Breuning, Stephan von</name>
+        <Point>
+            <coordinates>7.099722222222222, 50.73388888888889</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1774</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Leipzig</address>
+        <description>Treitschke, Georg Friedrich; 29 August 1776</description>
+        <name>Treitschke, Georg Friedrich</name>
+        <Point>
+            <coordinates>12.383333333333333, 51.333333333333336</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1776</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>KÃ¶nigsberg</address>
+        <description>Werner, Friedrich Ludwig Zacharias; 18 November 1768</description>
+        <name>Werner, Friedrich Ludwig Zacharias</name>
+        <Point>
+            <coordinates>20.516666666666666, 54.71666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1768</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Brandenburg an der Havel</address>
+        <description>Fouqué, Friedrich de La Motte-; 12 February 1777</description>
+        <name>Fouqué, Friedrich de La Motte-</name>
+        <Point>
+            <coordinates>12.556111111111111, 52.41166666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1777</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Arnim, Achim von; 26 January 1781</description>
+        <name>Arnim, Achim von</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1781</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Koblenz</address>
+        <description>Franul von Weißenthurn, Johanna; 16 February 1773</description>
+        <name>Franul von Weißenthurn, Johanna</name>
+        <Point>
+            <coordinates>7.597777777777777, 50.359722222222224</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1773</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Dresden</address>
+        <description>Körner, Theodor; 23 September 1791</description>
+        <name>Körner, Theodor</name>
+        <Point>
+            <coordinates>13.733333333333333, 51.03333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1791</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Bäuerle, Adolf; 9 April 1786</description>
+        <name>Bäuerle, Adolf</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1786</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Ljubljana</address>
+        <description>Meisl, Karl; 30 June 1775</description>
+        <name>Meisl, Karl</name>
+        <Point>
+            <coordinates>14.516666666666667, 46.05</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1775</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Langendorf</address>
+        <description>Müllner, Amandus Gottfried Adolf; 18 October 1774</description>
+        <name>Müllner, Amandus Gottfried Adolf</name>
+        <Point>
+            <coordinates>11.966666666666667, 51.183055555555555</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1774</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Braunschweig</address>
+        <description>Klingemann, Ernst August Friedrich; 31 August 1777</description>
+        <name>Klingemann, Ernst August Friedrich</name>
+        <Point>
+            <coordinates>10.521111111111113, 52.26916666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1777</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Horatitz</address>
+        <description>Bernard, Joseph Carl; 1780</description>
+        <name>Bernard, Joseph Carl</name>
+        <Point>
+            <coordinates>13.509722222222223, 50.38</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1780</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Grillparzer, Franz; 15 January 1791</description>
+        <name>Grillparzer, Franz</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1791</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>TÃ¼bingen</address>
+        <description>Uhland, Ludwig; 26 April 1787</description>
+        <name>Uhland, Ludwig</name>
+        <Point>
+            <coordinates>9.055555555555557, 48.519999999999996</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1787</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Frankfurt</address>
+        <description>Malss, Karl; 5 December 1792</description>
+        <name>Malss, Karl</name>
+        <Point>
+            <coordinates>8.679722222222221, 50.11361111111111</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1792</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Gleich, Joseph Alois; 14 September 1772</description>
+        <name>Gleich, Joseph Alois</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1772</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>DÃ¼sseldorf</address>
+        <description>Heine, Heinrich; 13 December 1797</description>
+        <name>Heine, Heinrich</name>
+        <Point>
+            <coordinates>6.816666666666666, 51.21666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1797</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Leipzig</address>
+        <description>Kind, Friedrich; 4 March 1768</description>
+        <name>Kind, Friedrich</name>
+        <Point>
+            <coordinates>12.383333333333333, 51.333333333333336</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1768</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Beer, Michael; 19 August 1800</description>
+        <name>Beer, Michael</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1800</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Chézy, Helmina von; 26 January 1783</description>
+        <name>Chézy, Helmina von</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1783</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Raimund, Ferdinand; 1 June 1790</description>
+        <name>Raimund, Ferdinand</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1790</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Brandenburg an der Havel</address>
+        <description>Voß, Julius von; 24 August 1768</description>
+        <name>Voß, Julius von</name>
+        <Point>
+            <coordinates>12.556111111111111, 52.41166666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1768</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>WrocÅ‚aw</address>
+        <description>Holtei, Karl von; 24 January 1798</description>
+        <name>Holtei, Karl von</name>
+        <Point>
+            <coordinates>17.033333333333335, 51.11666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1798</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Legnica</address>
+        <description>Raupach, Ernst Benjamin Salomo; 21 May 1784</description>
+        <name>Raupach, Ernst Benjamin Salomo</name>
+        <Point>
+            <coordinates>16.166666666666668, 51.21666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1784</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Ansbach</address>
+        <description>Platen, August von; 24 October 1796</description>
+        <name>Platen, August von</name>
+        <Point>
+            <coordinates>10.583333333333334, 49.3</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1796</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Detmold</address>
+        <description>Grabbe, Christian Dietrich; 11 December 1801</description>
+        <name>Grabbe, Christian Dietrich</name>
+        <Point>
+            <coordinates>8.883333333333333, 51.93333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1801</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Dresden</address>
+        <description>Gehe, Eduard Heinrich; 1 February 1795</description>
+        <name>Gehe, Eduard Heinrich</name>
+        <Point>
+            <coordinates>13.733333333333333, 51.03333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1795</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hanover</address>
+        <description>Wohlbrück, Wilhelm August; 1795</description>
+        <name>Wohlbrück, Wilhelm August</name>
+        <Point>
+            <coordinates>9.73861111111111, 52.37444444444444</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1795</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Stuttgart</address>
+        <description>Birch-Pfeiffer, Charlotte; 23 June 1800</description>
+        <name>Birch-Pfeiffer, Charlotte</name>
+        <Point>
+            <coordinates>9.1775, 48.77611111111111</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1800</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Castle Lubowitz</address>
+        <description>Eichendorff, Joseph von; 10 March 1788</description>
+        <name>Eichendorff, Joseph von</name>
+        <Point>
+            <coordinates>18.234097222222225, 50.160044444444445</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1788</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Magdeburg</address>
+        <description>Immermann, Karl Leberecht; 24 April 1796</description>
+        <name>Immermann, Karl Leberecht</name>
+        <Point>
+            <coordinates>11.616666666666667, 52.13333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1796</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Devrient, Eduard; 11 August 1801</description>
+        <name>Devrient, Eduard</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1801</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Nestroy, Johann; 7 December 1801</description>
+        <name>Nestroy, Johann</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1801</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Cheb</address>
+        <description>Braun von Braunthal, Karl Johann; 6 June 1802</description>
+        <name>Braun von Braunthal, Karl Johann</name>
+        <Point>
+            <coordinates>12.373055555555556, 50.07972222222222</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1802</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Bauernfeld, Eduard von; 13 January 1802</description>
+        <name>Bauernfeld, Eduard von</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1802</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Riedstadt</address>
+        <description>Büchner, Georg; 17 October 1813</description>
+        <name>Büchner, Georg</name>
+        <Point>
+            <coordinates>8.497499999999999, 49.83583333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1813</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Lortzing, Albert; 23 October 1801</description>
+        <name>Lortzing, Albert</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1801</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Gutzkow, Karl; 17 March 1811</description>
+        <name>Gutzkow, Karl</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1811</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Burg HÃ¼lshoff</address>
+        <description>Droste-Hülshoff, Annette von; 12 January 1797</description>
+        <name>Droste-Hülshoff, Annette von</name>
+        <Point>
+            <coordinates>7.5045, 51.97138888888889</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1797</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Wesselburen</address>
+        <description>Hebbel, Friedrich; 18 March 1813</description>
+        <name>Hebbel, Friedrich</name>
+        <Point>
+            <coordinates>8.916666666666666, 54.21666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1813</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Szprotawa</address>
+        <description>Laube, Heinrich; 18 September 1806</description>
+        <name>Laube, Heinrich</name>
+        <Point>
+            <coordinates>15.5, 51.56666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1806</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Darmstadt</address>
+        <description>Niebergall, Ernst Elias; 1 January 1815</description>
+        <name>Niebergall, Ernst Elias</name>
+        <Point>
+            <coordinates>8.65, 49.86666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1815</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>KrakÃ³w</address>
+        <description>Halm, Friedrich; 2 April 1806</description>
+        <name>Halm, Friedrich</name>
+        <Point>
+            <coordinates>19.95, 50.06666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1806</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Leipzig</address>
+        <description>Wagner, Richard; 22 May 1813</description>
+        <name>Wagner, Richard</name>
+        <Point>
+            <coordinates>12.383333333333333, 51.333333333333336</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1813</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Biberach an der Riss</address>
+        <description>Kaiser, Friedrich; 3 April 1814</description>
+        <name>Kaiser, Friedrich</name>
+        <Point>
+            <coordinates>9.788611111111111, 48.09805555555556</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1814</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Szczecin</address>
+        <description>Prutz, Robert Eduard; 30 May 1816</description>
+        <name>Prutz, Robert Eduard</name>
+        <Point>
+            <coordinates>14.555277777777778, 53.42472222222222</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1816</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Bonn</address>
+        <description>Simrock, Karl; 28 August 1802</description>
+        <name>Simrock, Karl</name>
+        <Point>
+            <coordinates>7.099722222222222, 50.73388888888889</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1802</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Munich</address>
+        <description>Kobell, Franz von; 19 July 1803</description>
+        <name>Kobell, Franz von</name>
+        <Point>
+            <coordinates>11.566666666666666, 48.13333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1803</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Riese, Friedrich Wilhelm; 1805</description>
+        <name>Riese, Friedrich Wilhelm</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1805</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>KÃ¶nigsberg</address>
+        <description>Dulk, Albert Friedrich Benno; 17 June 1819</description>
+        <name>Dulk, Albert Friedrich Benno</name>
+        <Point>
+            <coordinates>20.516666666666666, 54.71666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1819</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Kluczbork</address>
+        <description>Freytag, Gustav; 13 July 1816</description>
+        <name>Freytag, Gustav</name>
+        <Point>
+            <coordinates>18.216666666666665, 50.983333333333334</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1816</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Leipzig</address>
+        <description>Benedix, Roderich; 21 January 1811</description>
+        <name>Benedix, Roderich</name>
+        <Point>
+            <coordinates>12.383333333333333, 51.333333333333336</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1811</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Kassel</address>
+        <description>Mosenthal, Salomon Hermann von; 14 January 1821</description>
+        <name>Mosenthal, Salomon Hermann von</name>
+        <Point>
+            <coordinates>9.497777777777777, 51.319722222222225</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1821</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Eisfeld</address>
+        <description>Ludwig, Otto; 11 February 1813</description>
+        <name>Ludwig, Otto</name>
+        <Point>
+            <coordinates>10.916666666666666, 50.416666666666664</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1813</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Zwickau</address>
+        <description>Schumann, Robert; 8 June 1810</description>
+        <name>Schumann, Robert</name>
+        <Point>
+            <coordinates>12.49611111111111, 50.71888888888889</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1810</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Torup Castle</address>
+        <description>Schober, Franz von; 17 May 1796</description>
+        <name>Schober, Franz von</name>
+        <Point>
+            <coordinates>13.20861111111111, 55.56527777777777</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1796</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Ebersberg, Ottokar Franz; 10 October 1833</description>
+        <name>Ebersberg, Ottokar Franz</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1833</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>WrocÅ‚aw</address>
+        <description>Kalisch, David; 23 February 1820</description>
+        <name>Kalisch, David</name>
+        <Point>
+            <coordinates>17.033333333333335, 51.11666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1820</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Mainz</address>
+        <description>Cornelius, Peter; 24 December 1824</description>
+        <name>Cornelius, Peter</name>
+        <Point>
+            <coordinates>8.266666666666667, 50</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1824</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>WrocÅ‚aw</address>
+        <description>Lassalle, Ferdinand; 11 April 1825</description>
+        <name>Lassalle, Ferdinand</name>
+        <Point>
+            <coordinates>17.033333333333335, 51.11666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1825</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Spandau</address>
+        <description>Moser, Gustav von; 11 May 1825</description>
+        <name>Moser, Gustav von</name>
+        <Point>
+            <coordinates>13.2, 52.55</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1825</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Ludwigsburg</address>
+        <description>Vischer, Friedrich Theodor von; 30 June 1807</description>
+        <name>Vischer, Friedrich Theodor von</name>
+        <Point>
+            <coordinates>9.191944444444445, 48.8975</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1807</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Heyse, Paul; 15 March 1830</description>
+        <name>Heyse, Paul</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1830</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Elberfeld</address>
+        <description>Roeber, Friedrich; 19 June 1819</description>
+        <name>Roeber, Friedrich</name>
+        <Point>
+            <coordinates>7.1491694444444445, 51.257219444444445</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1819</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Anzengruber, Ludwig; 29 November 1839</description>
+        <name>Anzengruber, Ludwig</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1839</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Rostock</address>
+        <description>Wilbrandt, Adolf von; 24 August 1837</description>
+        <name>Wilbrandt, Adolf von</name>
+        <Point>
+            <coordinates>12.133333333333333, 54.083333333333336</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1837</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>KÃ¶nigsberg</address>
+        <description>Haffner, Carl; 8 November 1804</description>
+        <name>Haffner, Carl</name>
+        <Point>
+            <coordinates>20.516666666666666, 54.71666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1804</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>GdaÅ„sk</address>
+        <description>Genée, Richard; 7 February 1823</description>
+        <name>Genée, Richard</name>
+        <Point>
+            <coordinates>18.633333333333333, 54.36666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1823</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>KÃ¶nigsberg</address>
+        <description>Goetz, Hermann; 7 December 1840</description>
+        <name>Goetz, Hermann</name>
+        <Point>
+            <coordinates>20.516666666666666, 54.71666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1840</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hamburg</address>
+        <description>L'Arronge, Adolph; 8 March 1838</description>
+        <name>L'Arronge, Adolph</name>
+        <Point>
+            <coordinates>10, 53.55</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1838</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Kaufbeuren</address>
+        <description>Ganghofer, Ludwig; 7 July 1855</description>
+        <name>Ganghofer, Ludwig</name>
+        <Point>
+            <coordinates>10.6225, 47.88</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1855</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Beirut</address>
+        <description>Wildenbruch, Ernst von; 3 February 1845</description>
+        <name>Wildenbruch, Ernst von</name>
+        <Point>
+            <coordinates>35.51305555555555, 33.886944444444445</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1845</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>KÃ¶then</address>
+        <description>Bunge, Rudolf; 27 March 1836</description>
+        <name>Bunge, Rudolf</name>
+        <Point>
+            <coordinates>11.916666666666666, 51.75</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1836</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Budapest</address>
+        <description>Schnitzer, Ignaz; 5 December 1839</description>
+        <name>Schnitzer, Ignaz</name>
+        <Point>
+            <coordinates>19.040833333333335, 47.498333333333335</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1839</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Schönthan, Franz von; 20 June 1849</description>
+        <name>Schönthan, Franz von</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1849</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>WrocÅ‚aw</address>
+        <description>Alberti, Konrad; 9 July 1862</description>
+        <name>Alberti, Konrad</name>
+        <Point>
+            <coordinates>17.033333333333335, 51.11666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1862</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Bleibtreu, Carl; 13 January 1859</description>
+        <name>Bleibtreu, Carl</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1859</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>MaÅ¾eikiai</address>
+        <description>Sudermann, Hermann; 30 September 1857</description>
+        <name>Sudermann, Hermann</name>
+        <Point>
+            <coordinates>22.33611111111111, 56.31111111111111</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1857</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>KÄ™trzyn</address>
+        <description>Holz, Arno; 26 April 1863</description>
+        <name>Holz, Arno</name>
+        <Point>
+            <coordinates>21.383333333333333, 54.083333333333336</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1863</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Querfurt</address>
+        <description>Schlaf, Johannes; 21 June 1862</description>
+        <name>Schlaf, Johannes</name>
+        <Point>
+            <coordinates>11.6, 51.38333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1862</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Schnitzler, Arthur; 15 May 1862</description>
+        <name>Schnitzler, Arthur</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1862</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hanover</address>
+        <description>Wedekind, Frank; 24 July 1864</description>
+        <name>Wedekind, Frank</name>
+        <Point>
+            <coordinates>9.73861111111111, 52.37444444444444</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1864</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Clausthal-Zellerfeld</address>
+        <description>Hartleben, Otto Erich; 3 June 1864</description>
+        <name>Hartleben, Otto Erich</name>
+        <Point>
+            <coordinates>10.335555555555556, 51.805</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1864</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Siegburg</address>
+        <description>Wette, Adelheid; 4 September 1858</description>
+        <name>Wette, Adelheid</name>
+        <Point>
+            <coordinates>7.204444444444444, 50.80138888888889</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1858</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Hofmannsthal, Hugo von; 1 February 1874</description>
+        <name>Hofmannsthal, Hugo von</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1874</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Bad Kissingen</address>
+        <description>Panizza, Oskar; 12 November 1853</description>
+        <name>Panizza, Oskar</name>
+        <Point>
+            <coordinates>10.066666666666666, 50.2</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1853</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Munich</address>
+        <description>Ruederer, Josef; 15 October 1861</description>
+        <name>Ruederer, Josef</name>
+        <Point>
+            <coordinates>11.566666666666666, 48.13333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1861</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Kupelwieser, Josef; 14 January 1791</description>
+        <name>Kupelwieser, Josef</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1791</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>GdaÅ„sk</address>
+        <description>Scheerbart, Paul; 8 January 1863</description>
+        <name>Scheerbart, Paul</name>
+        <Point>
+            <coordinates>18.633333333333333, 54.36666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1863</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Brno</address>
+        <description>Widmann, Joseph Viktor; 20 February 1842</description>
+        <name>Widmann, Joseph Viktor</name>
+        <Point>
+            <coordinates>16.608333333333334, 49.195277777777775</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1842</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Blumenthal, Oscar; 13 March 1852</description>
+        <name>Blumenthal, Oscar</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1852</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Pest</address>
+        <description>Kadelburg, Gustav; 26 July 1851</description>
+        <name>Kadelburg, Gustav</name>
+        <Point>
+            <coordinates>19.1, 47.5</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1851</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Mainz</address>
+        <description>Laufs, Carl; 20 December 1858</description>
+        <name>Laufs, Carl</name>
+        <Point>
+            <coordinates>8.266666666666667, 50</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1858</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Mainz</address>
+        <description>Jacoby, Wilhelm; 8 March 1855</description>
+        <name>Jacoby, Wilhelm</name>
+        <Point>
+            <coordinates>8.266666666666667, 50</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1855</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Prague</address>
+        <description>Rilke, Rainer Maria; 4 December 1875</description>
+        <name>Rilke, Rainer Maria</name>
+        <Point>
+            <coordinates>14.421388888888888, 50.08861111111111</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1875</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Frankfurt</address>
+        <description>Schaefer, Wilhelm; 4 March 1835</description>
+        <name>Schaefer, Wilhelm</name>
+        <Point>
+            <coordinates>8.679722222222221, 50.11361111111111</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1835</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Cologne</address>
+        <description>Rosenow, Emil; 9 March 1871</description>
+        <name>Rosenow, Emil</name>
+        <Point>
+            <coordinates>6.957777777777778, 50.94222222222222</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1871</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Szczawno-ZdrÃ³j</address>
+        <description>Hauptmann, Carl; 11 May 1858</description>
+        <name>Hauptmann, Carl</name>
+        <Point>
+            <coordinates>16.255, 50.79944444444444</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1858</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Oberammergau</address>
+        <description>Thoma, Ludwig; 21 January 1867</description>
+        <name>Thoma, Ludwig</name>
+        <Point>
+            <coordinates>11.064444444444446, 47.59666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1867</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>WleÅ„</address>
+        <description>Jerschke, Oskar; 17 July 1861</description>
+        <name>Jerschke, Oskar</name>
+        <Point>
+            <coordinates>15.670555555555556, 51.016666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1861</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vilshofen an der Donau</address>
+        <description>Lautensack, Heinrich; 15 July 1881</description>
+        <name>Lautensack, Heinrich</name>
+        <Point>
+            <coordinates>13.188333333333334, 48.63305555555556</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1881</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hamburg</address>
+        <description>Stavenhagen, Fritz; 18 September 1876</description>
+        <name>Stavenhagen, Fritz</name>
+        <Point>
+            <coordinates>10, 53.55</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1876</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>SÅ‚upsk</address>
+        <description>Lachmann, Hedwig; 29 August 1865</description>
+        <name>Lachmann, Hedwig</name>
+        <Point>
+            <coordinates>17.033333333333335, 54.46666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1865</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Krumbach</address>
+        <description>Gerhäuser, Emil; 29 April 1868</description>
+        <name>Gerhäuser, Emil</name>
+        <Point>
+            <coordinates>10.363333333333333, 48.24305555555556</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1868</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Hohenstein-Ernstthal</address>
+        <description>May, Karl; 25 February 1842</description>
+        <name>May, Karl</name>
+        <Point>
+            <coordinates>12.716666666666667, 50.8</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1842</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Pirmasens</address>
+        <description>Ball, Hugo; 22 February 1886</description>
+        <name>Ball, Hugo</name>
+        <Point>
+            <coordinates>7.6, 49.2</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1886</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>MÃ¤rkisch Buchholz</address>
+        <description>Dehmel, Richard; 18 November 1863</description>
+        <name>Dehmel, Richard</name>
+        <Point>
+            <coordinates>13.75, 52.1</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1863</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Truchtelfingen</address>
+        <description>Essig, Hermann; 28 August 1878</description>
+        <name>Essig, Hermann</name>
+        <Point>
+            <coordinates>9.027777777777779, 48.23916666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1878</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Saint Petersburg</address>
+        <description>Heiseler, Henry von; 23 December 1875</description>
+        <name>Heiseler, Henry von</name>
+        <Point>
+            <coordinates>30.316666666666666, 59.95</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1875</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>NeukÃ¶lln</address>
+        <description>Sorge, Reinhard Johannes; 1892</description>
+        <name>Sorge, Reinhard Johannes</name>
+        <Point>
+            <coordinates>13.435277777777777, 52.481388888888894</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1892</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Wildgans, Anton; 17 April 1881</description>
+        <name>Wildgans, Anton</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1881</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Finkenwerder</address>
+        <description>Fock, Gorch; 22 August 1880</description>
+        <name>Fock, Gorch</name>
+        <Point>
+            <coordinates>9.83, 53.54</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1880</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Vienna</address>
+        <description>Dovsky, Beatrice; 14 July 1866</description>
+        <name>Dovsky, Beatrice</name>
+        <Point>
+            <coordinates>16.37306388888889, 48.208330000000004</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1866</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Empoli</address>
+        <description>Busoni, Ferruccio; 1 April 1866</description>
+        <name>Busoni, Ferruccio</name>
+        <Point>
+            <coordinates>10.95, 43.71666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1866</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Avenarius, Ferdinand; 20 December 1856</description>
+        <name>Avenarius, Ferdinand</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1856</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Wiesenburg</address>
+        <description>Boßdorf, Hermann; 29 October 1877</description>
+        <name>Boßdorf, Hermann</name>
+        <Point>
+            <coordinates>12.449722222222222, 52.11666666666667</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1877</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Rubiner, Ludwig; 12 July 1881</description>
+        <name>Rubiner, Ludwig</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1881</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Pernitz</address>
+        <description>Ertler, Bruno; 29 January 1889</description>
+        <name>Ertler, Bruno</name>
+        <Point>
+            <coordinates>15.966666666666667, 47.9</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1889</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>TimiÈ™oara</address>
+        <description>Kaltneker, Hans; 2 February 1895</description>
+        <name>Kaltneker, Hans</name>
+        <Point>
+            <coordinates>21.229999999999997, 45.75972222222222</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1895</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Berlin</address>
+        <description>Mühsam, Erich; 6 April 1878</description>
+        <name>Mühsam, Erich</name>
+        <Point>
+            <coordinates>13.383333333333333, 52.516666666666666</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1878</when>
+        </TimeStamp>
+    </Placemark>
+    <Placemark>
+        <address>Krosno OdrzaÅ„skie</address>
+        <description>Klabund; 4 November 1890</description>
+        <name>Klabund</name>
+        <Point>
+            <coordinates>15.1, 52.03333333333333</coordinates>
+        </Point>
+        <TimeStamp>
+            <when>1890</when>
+        </TimeStamp>
+    </Placemark>
+</kml>

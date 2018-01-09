@@ -1,0 +1,43 @@
+{
+"nodes":[
+{"name":"WILHELMINE","group":5,"group1":2, "weight":100},
+{"name":"LISETTE","group":5,"group1":4, "weight":100},
+{"name":"JOHANN","group":5,"group1":5, "weight":100},
+{"name":"VALER","group":5,"group1":6, "weight":100},
+{"name":"HERR ORBIL","group":5,"group1":1, "weight":100},
+{"name":"DER MAGISTER","group":5,"group1":11, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":9},
+{"source":0,"target":3,"value":4},
+{"source":0,"target":1,"value":9},
+{"source":0,"target":2,"value":4},
+{"source":0,"target":5,"value":1},
+{"source":0,"target":1,"value":9},
+{"source":0,"target":3,"value":4},
+{"source":0,"target":3,"value":4},
+{"source":0,"target":2,"value":4},
+{"source":1,"target":2,"value":16},
+{"source":1,"target":3,"value":9},
+{"source":1,"target":2,"value":16},
+{"source":1,"target":3,"value":9},
+{"source":1,"target":2,"value":16},
+{"source":1,"target":4,"value":1},
+{"source":1,"target":5,"value":4},
+{"source":1,"target":5,"value":4},
+{"source":1,"target":3,"value":9},
+{"source":1,"target":2,"value":16},
+{"source":2,"target":3,"value":49},
+{"source":2,"target":3,"value":49},
+{"source":2,"target":3,"value":49},
+{"source":2,"target":3,"value":49},
+{"source":2,"target":3,"value":49},
+{"source":2,"target":3,"value":49},
+{"source":2,"target":3,"value":49},
+{"source":2,"target":5,"value":1},
+{"source":2,"target":3,"value":49},
+{"source":2,"target":5,"value":1},
+{"source":3,"target":5,"value":1},
+{"source":3,"target":5,"value":1}
+]
+}

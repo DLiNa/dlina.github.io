@@ -1,0 +1,13 @@
+{
+"nodes":[
+{"name":"DER DICHTER (PROLOG)","group":5,"group1":1, "weight":100},
+{"name":"MADONNA DIANORA","group":5,"group1":2, "weight":100},
+{"name":"AMME","group":5,"group1":2, "weight":100},
+{"name":"BRACCIO","group":5,"group1":2, "weight":100}
+],
+"links":[
+{"source":1,"target":2,"value":1},
+{"source":1,"target":3,"value":1},
+{"source":2,"target":3,"value":1}
+]
+}

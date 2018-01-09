@@ -1,0 +1,16 @@
+{
+"nodes":[
+{"name":"EINE SCHWESTER","group":5,"group1":1, "weight":100},
+{"name":"FRAU GENERALIN","group":5,"group1":1, "weight":100},
+{"name":"NADJA BIELEW","group":5,"group1":1, "weight":100},
+{"name":"DOKTOR LENOIR","group":5,"group1":1, "weight":100}
+],
+"links":[
+{"source":0,"target":1,"value":1},
+{"source":0,"target":2,"value":1},
+{"source":0,"target":3,"value":1},
+{"source":1,"target":2,"value":1},
+{"source":1,"target":3,"value":1},
+{"source":2,"target":3,"value":1}
+]
+}

@@ -1,0 +1,6600 @@
+<!DOCTYPE html>
+<html>
+<!--
+====================================================
+    __  ____  ______________  _______ ___    __ 
+   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
+  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
+ / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
+/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
+                                                     
+====================================================
+Owner Name: Hossain Mohammad Faysal
+Profile: https://www.facebook.com/hmfaysal
+Version: 1.1
+Description: Awesome dude, awesome life
+====================================================
+-->
+<head>
+<meta charset="utf-8">
+<title>DLINA - DIGITALLY-DRIVEN LITERARY NETWORK ANALYIS (OF DRAMATIC TEXTS)</title>
+<meta name="description" content="Corpus exploration and network analysis.">
+<meta name="keywords" content="network analysis, digital humanities, drama, textgrid">
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="dlina - Digitally-Driven Literary Network Analyis (of Dramatic Texts)">
+<meta property="og:description" content="Corpus exploration and network analysis.">
+<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:site_name" content="Network Analysis of Dramatic Texts">
+<meta property="og:image" content="http://localhost:4000/images/">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Network Analysis of Dramatic Texts Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href='http://localhost:4000/assets/css/vendor/webfonts.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/normalize.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/nprogress.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/post.css">
+
+
+
+<script>
+	// redirect to https!
+	if (window.location.protocol != 'https:') 
+	window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+<script src="/assets/js/d3.v3.min.js"></script>
+
+</head>
+<body class="home-template" itemscope itemtype="http://schema.org/WebPage">
+<header class="notepad-site-head">
+    <div class="notepad-site-head-menu">
+        <a class="notepad-blog-logo" href="http://localhost:4000"><img src="http://localhost:4000/images/logo.png" alt="Blog Logo" /></a>
+        
+        
+        <div class="notepad-blog-menu">      
+    <div class="notepad-mobile-menu show-for-small">
+        <a href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <ul class="notepad-menu">
+        <li class="notepad-mobile-close-btn show-for-small text-right">
+            <a href="#"><i class="fa fa-times"></i></a>
+        </li>
+
+            <li>
+            <a href="http://localhost:4000/">Home</a>
+             </li>
+
+            <li>
+            <a href="http://localhost:4000/recent">Recent Posts</a>
+             </li>
+
+            <li>
+            <a href="http://localhost:4000/categories">Categories</a>
+             </li>
+
+            <li>
+            <a href="http://localhost:4000/linas">Linas</a>
+             </li>
+
+            <li>
+            <a href="http://localhost:4000/talks">Talks</a>
+             </li>
+
+            <li>
+            <a href="http://localhost:4000/about">About</a>
+             </li>
+            
+           <li><a href="http://localhost:4000/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
+    </ul>
+</div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="notepad-site-head-content" >
+        <div class="notepad-site-head-bg"></div>
+        <h1 class="notepad-blog-title">
+            <span class="notepad-site-head-title-bg">
+                Digital Humanities and Literary Studies
+            </span>
+        </h1>
+        <h2 class="notepad-blog-description">Network Analysis of Dramatic Texts</h2>
+    </div>
+</header>
+
+
+<main class="notepad-content" role="main">
+<article class="notepad-index-post post row fadeInDown">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://dlina.github.io/about">
+                        About the Project
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>The purpose of this project is to develop a workflow for a <b>Digital Literary Network Analysis</b> (<b>dlina</b>). Working group members are Frank Fischer, Mathias Göbel, Dario Kampkaspar, Christopher Kittel, Hanna-Lena Meiners, Danil Skorinkin, and Peer Trilcke. We're looking into hundreds of dramatic texts ranging from Greek tragedies to 20th-century plays and work on larger German, French, English, and Russian corpora. Click on the headline to know more.</p>
+            </section>
+        </div>
+    </article>
+            
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2017-12-22T00:00:00+01:00">
+                    <span class="day">
+                        22
+                    </span>
+                    <span class="month-year">
+                        December 2017
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Potsdam-Hackathon/">
+                        December Hackathon in Potsdam
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>Thanks to the funding we received from the University of Potsdam (KoUP 1) and the Higher School of Economics (НУГ), we were able to organise two hackathons this year, one in September in Moscow, another one earlier this month at the Fontane Archive in Potsdam. The latter concluded with a mini conference. The network analysis of literary texts remains the main business of our German-Russian research group. In 2017, though, we rebuilt our whole infrastructure and were now able to look beyond network-analytics research questions, or combine the network approach with other (quantitative) approaches. Some of the scientific outcome of...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Potsdam-Hackathon/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2017-10-03T00:00:00+02:00">
+                    <span class="day">
+                        03
+                    </span>
+                    <span class="month-year">
+                        October 2017
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Subgraphs/">
+                        Know Your Implementation: Subgraphs in Literary Networks
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>The network analysis of literary texts rests on a number of algorithmic foundations, which are often not sufficiently reflected in the field. In this regard, one problematic case is the existence of detached subgraphs. Here’s a classic example, the network of Goethe’s Faust, Part One (1808), visualised with our online tool ezlinavis (Faust being one of the examples you can select from the pull-down menu in the right upper corner): We can visually distinguish three subgraphs: the main graph revolving around Faust and Mephisto, which basically comprises the entire plot of the play, except for two detached single scenes: Vorspiel...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Subgraphs/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2017-07-09T00:00:00+02:00">
+                    <span class="day">
+                        09
+                    </span>
+                    <span class="month-year">
+                        July 2017
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Gogol-Leaving-the-Theatre/">
+                        Network Analysis of Gogol's Metaplay "Leaving the Theatre …" (1842)
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>A couple of days ago, we presented a first version of our TEI-encoded Russian Drama Corpus (RusDraCor) at the CORPORA 2017 conference in St. Petersburg (slides). Our goal is to assemble hundreds of Russian plays from the 1740s (Sumarokov) up to the 1930s with authors like Gorky and Mayakovsky. Right in the middle, chronologically, our corpus features a number of plays by Gogol, one of which is “Театральный разъезд после представления новой комедии” (“Leaving the Theatre after the Presentation of a New Comedy”; full text at ilibrary.ru). We don’t concentrate so much on individual networks in our research, we’re more focusing...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Gogol-Leaving-the-Theatre/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2016-09-18T00:00:00+02:00">
+                    <span class="day">
+                        18
+                    </span>
+                    <span class="month-year">
+                        September 2016
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Mayakovsky-Klop/">
+                        Extracting Network Data from Mayakovsky's Play "The Bedbug" (1928/29)
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>We don’t know if you noticed, but the LINA research field (LIterary Network Analysis) has come up with pretty good PR videos lately. Look at this fancy Youtube clip produced by the “Nation, Genre &amp; Gender” project at the University College Dublin (their project homepage is here). The NG+G project applies Social Network Analysis to Irish and British Fiction (1800–1922), their corpus involves 46 novels from 29 authors (according to the video they identified 9,630 unique fictional characters). And although the automated extraction of characters from novels has made progress in recent years (see, for example, Jannidis et al.’s paper...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Mayakovsky-Klop/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2016-03-30T00:00:00+02:00">
+                    <span class="day">
+                        30
+                    </span>
+                    <span class="month-year">
+                        March 2016
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Distant-Reading-Showcase-Poster-DHd2016-Leipzig/">
+                        “Distant-Reading Showcase”: Designing Our DHd2016 Conference Poster
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>Three weeks ago, we attended the annual Digital Humanities conference of the German-speaking countries (DHd2016), this time taking place at the University of Leipzig. We delivered two papers (more on them later) and a poster. And were really excited to be awarded the price for the best poster out of 78 poster submissions (listed in this PDF). I will try to quickly explain what we tried to do when creating our poster. But first and foremost, this is the poster we’re talking about, its full title goes as follows: “Distant-Reading Showcase: 200 Years of German Drama History at a Glance”....</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Distant-Reading-Showcase-Poster-DHd2016-Leipzig/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2016-01-28T00:00:00+01:00">
+                    <span class="day">
+                        28
+                    </span>
+                    <span class="month-year">
+                        January 2016
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/The-Facebook-of-German-Playwrights/">
+                        The Facebook of German Playwrights
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>This short article is a follow-up to our last posting, “The Birth &amp; Death of German Playwrights”. Plotting the birth and death places of our 178 authors onto a map was bringing us closer to understanding the character of our corpus which – codenamed “Sydney” – contains 465 German-language plays. But it didn’t bring us close enough to understanding who the authors are. So let’s build a gallery with their portraits, a facebook of German playwrights, so to speak, and let’s do that automatically. We’re relying on Wikidata again and, for each author, extract a link to their principal image...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/The-Facebook-of-German-Playwrights/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-10-22T00:00:00+02:00">
+                    <span class="day">
+                        22
+                    </span>
+                    <span class="month-year">
+                        October 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/The-Birth-and-Death-of-German-Playwrights/">
+                        The Birth and Death of German Playwrights
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>“If your metadata is good, it can help you in many ways,” mumbled Captain Obvious when we last met, and we couldn’t agree more. So let’s toy around with some metadata today to get a better impression of what our corpus of roughly half a thousand German-language theatre plays actually contains. You surely have seen the piece in Science, “A Network Framework of Cultural History”, and the corresponding lifetime-curve videos. Max Schich et al. set out to visualise “intellectual mobility” based on “spatiotemporal birth and death information (…) of more than 150,000 notable individuals”. That’s a lot of people, and...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/The-Birth-and-Death-of-German-Playwrights/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-08-06T00:00:00+02:00">
+                    <span class="day">
+                        06
+                    </span>
+                    <span class="month-year">
+                        August 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/dramavis/">
+                        dramavis: A Tool for Visualising and Calculating Literary Network Data
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>Some of you will have seen our distant-reading showcase poster, this one (hi-res version on figshare): These are the character networks of 465 German-language dramas from 1731 (left upper corner) to 1929 (bottom right) at one glance. You can see how networks are changing over time, the first network explosions occurring with Klopstock’s “Hermanns Schlacht” (1769) and Goethe’s “Götz von Berlichingen” (1773): second row, fifth and second from the right. The network of Klopstock’s piece can be studied in detail here, the Goethe one here. All 465 network graphs can be accessed in a folder on GitHub. Character-Centric Data Visualisations...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/dramavis/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-07-31T00:00:00+02:00">
+                    <span class="day">
+                        31
+                    </span>
+                    <span class="month-year">
+                        July 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Network-Values-by-Genre/">
+                        Comedy vs. Tragedy: Network Values by Genre
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>As described in a previous post, our DLINA intermediary format stores structural data extracted from the full-text TEI files of the TextGrid Repository as well as various metadata, including the author’s name and date of origin of a play (and its publication and/or premiere date). In addition, the DLINA format also stores specific title information, three in total: the main title of a play, its subtitle (if available) and a genre title (only if a genre can be derived from the official subtitle of a play). To give an example, the first piece of our Sydney corpus, Gottsched’s “Der sterbende...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Network-Values-by-Genre/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-07-13T00:00:00+02:00">
+                    <span class="day">
+                        13
+                    </span>
+                    <span class="month-year">
+                        July 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Our-Talk-at-DH2015/">
+                        Our Talk at DH2015 in Sydney (Full Text and Slides)
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>That’s right, we transcribed the talk we gave at the DH2015 in Sydney, on 2 July 2015, entitled “Digital Network Analysis of Dramatic Texts”. Please note that our grammar might appear a bit jetlagged here and there. ;) We were the last group to speak in a very interesting network-analysis centric session chaired by Glenn Roe. If you take a veeery close look (hehe) at this panorama pic, you will recognise us setting up the room together with the other speakers, Elisa Beshero-Bondar and Ryan Heuser (big hello there!): Since we used reveal.js as presentation framework, we can easily reference...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Our-Talk-at-DH2015/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-06-25T00:00:00+02:00">
+                    <span class="day">
+                        25
+                    </span>
+                    <span class="month-year">
+                        June 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/200-Years-of-Literary-Network-Data/">
+                        200 Years of Literary Network Data
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>After creating our corpus and extracting the structural data that are of interest to us it’s time to run some statistics. As it is with statistical data, they can evoke manifold interpretations and sometimes have the inclination to speak in riddles. We will certainly need a few more months to make sense of all the values we computed and collected. Nevertheless, we’re prepared to offer at least some observations and insights already, all of which is still very much a work in progress. Our statistical analyses are quite rudimentary for the time being, more complex calculations will follow. However, some...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/200-Years-of-Literary-Network-Data/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-06-23T00:00:00+02:00">
+                    <span class="day">
+                        23
+                    </span>
+                    <span class="month-year">
+                        June 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/The-Biggest-Chatterbox-in-German-Literature/">
+                        The Biggest Chatterbox in German Literature
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>The DLINA zwischenformat we recently introduced also stores amounts of speech acts, words, lines, chars. Truth be told, we will always have to cope with some erroneous and inaccurate markup contained in the TextGrid Repository TEI files here and there, but now we can roughly specify how many speech acts are executed by each character, how many words are uttered by each of them, and the amount of letters used by everybody. These values were elevated from all dramas of our Sydney corpus, i.e., 465 dramas written or published inbetween 1731 and 1929. A complete list of all 9,913 characters...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/The-Biggest-Chatterbox-in-German-Literature/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-06-22T00:00:00+02:00">
+                    <span class="day">
+                        22
+                    </span>
+                    <span class="month-year">
+                        June 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Editing-Rules/">
+                        Editing Rules
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>Introduction After the structural data have been extracted and put into the DLINA zwischenformat, manual intervention is often necessary to improve the data quality and correct errors in the source data. Especially the TextGrid data proved to be quite problematic due to OCR errors and false tagging. Some of the “external” problems we encountered are (that is, problems not inherent to the text per se but introduced through automated or manual conversion to a computer-readable format and creating the markup): no or insufficient structural data encoded, OCR errors in a &lt;speaker&gt; names (strings), stage directions interpreted as part of a...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Editing-Rules/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-06-21T00:00:00+02:00">
+                    <span class="day">
+                        21
+                    </span>
+                    <span class="month-year">
+                        June 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Introducing-Our-Zwischenformat/">
+                        Introducing Our 'Zwischenformat'
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>Our research interest focuses primarily on structural aspects of dramatic texts. The structural data is extracted from the 465 dramatic texts that constitute our Sydney corpus and then screened and edited before it can be evaluated statistically with regard to literary history. The structural abstraction is provided by a PHP script that processes the TEI files, collects all the data needed for our purpose and puts it in our own zwischenformat (roughly translates as ‘intermediary format’, the DLINA data format we developed for this project and announced in our previous post). The script and what it produces, our zwischenformat, represent...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Introducing-Our-Zwischenformat/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-06-20T00:00:00+02:00">
+                    <span class="day">
+                        20
+                    </span>
+                    <span class="month-year">
+                        June 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Introducing-DLINA-Corpus-15-07-Codename-Sydney/">
+                        Introducing DLINA Corpus 15.07 (Codename: Sydney)
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>Our working corpus is based on the 666 dramas extracted from the TextGrid Repository (the not-so simple extraction process was described by Frank and Mathias in an earlier post). This blog post will describe the criteria for selecting 465 dramas from said repository to represent our working corpus. The version number 15.07 is referring to ‘July 2015’ as we’re going to present our results at the DH2015 conference on July 2, 2015. Further versions of the DLINA Corpus will receive according versioning numbers. As the imminent reason for needing a reliable corpus with clean data is the upcoming conference in Sydney,...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Introducing-DLINA-Corpus-15-07-Codename-Sydney/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-06-19T00:00:00+02:00">
+                    <span class="day">
+                        19
+                    </span>
+                    <span class="month-year">
+                        June 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Working-With-Inconsistent-Metadata/">
+                        Working With Inconsistent Metadata
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>As we underlined before, we can’t stop celebrating the fact that there are so many literary corpora on the web today. Just a fortnight ago, Martin Müller released the Shakespeare His Contemporares (SHC) collection, a corpus of early English modern drama, encoded in TEI Simple. We will definitely look into this corpus at a later point, but today we will again be bothering you with the depths of the TextGrid Repository. No worries, today’s blog entry won’t be as excessive as the one we published yesterday. ;) If you’re trying to work with corpora you didn’t create yourself, you will...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Working-With-Inconsistent-Metadata/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-06-18T00:00:00+02:00">
+                    <span class="day">
+                        18
+                    </span>
+                    <span class="month-year">
+                        June 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/A-Not-So-Simple-Question/">
+                        A (Not So) Simple Question and a Somewhat Diabolic Answer
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>How Many Dramatic Pieces Are Contained in the TextGrid Repository? Simple question, seemingly. Before we try to answer it, a little heads-up: This blog post is ridiculously long. It can be regarded a proof-of-concept of what Mareike König recently said at the “Wissensspeicher” conference in Düsseldorf in the beginning of March: “Blogs have no space constraints.” (In this video, 17:45 mins. in.) True that! So here we go: Corpus building is a crucial task of many Digital Humanities projects and it is great to see a number of new corpora appear on a fairly regular basis. Many of these text...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/A-Not-So-Simple-Question/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-06-08T00:00:00+02:00">
+                    <span class="day">
+                        08
+                    </span>
+                    <span class="month-year">
+                        June 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Longest-German-Language-Theatre-Plays/">
+                        Longest German-Language Theatre Plays
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>Ok, time for some Digital Humanities fun facts! We had another meeting today and, as always, were working our way through the vast TextGrid Repository. Since we’re only interested in the dramatic texts contained in the corpus, we had to find a way to automatically extract these kinds of texts which isn’t as easy as it sounds. Anyway, we finally managed to do so and also wrote a small (well …) 30.000-character piece on the subject which is to appear later. For the time being, the extracted dramas can be found as single XML files here on our GitHub. When we...</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Longest-German-Language-Theatre-Plays/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-05-08T00:00:00+02:00">
+                    <span class="day">
+                        08
+                    </span>
+                    <span class="month-year">
+                        May 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Road-to-Sydney/">
+                        Road to Sydney
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>Met today to work on our stuff for Sydney. Office panorama:
+
+
+  
+
+
+Wanted to include a Sydney screenshot from International Karate (spirit of 1986!), but a link to the screenshot will do.
+</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Road-to-Sydney/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-03-10T00:00:00+01:00">
+                    <span class="day">
+                        10
+                    </span>
+                    <span class="month-year">
+                        March 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Conference_in_Munich/">
+                        Conference in Munich
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>In a few days, March 12/13, we’re taking part at a conference at Bayerische Akademie der Wissenschaften, Computer-based analysis of drama and its uses for literary criticism and historiography:
+
+
+  The CfP is here. The program can be found here (PDF).
+  Our presentation will be held on Thursday, 12 March 2015, 17:15, in German: Digitale Netzwerkanalyse dramatischer Texte.
+
+
+Update:
+
+
+  The conference can be relived on Twitter: #CompDrama15.
+
+</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Conference_in_Munich/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-02-23T00:00:00+01:00">
+                    <span class="day">
+                        23
+                    </span>
+                    <span class="month-year">
+                        February 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/DHd-2015-Conference-in-Graz/">
+                        DHD 2015 Conference in Graz
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>We’re going to present our first set of results at the annual DHd conference, this year held in Graz, Austria:
+
+
+  See the conference website and program.
+  Our presentation slot is Wednesday, 25 Feb 2015, 9:00–10:30.
+  The slides for our presentation are here (PDF; 1.41 MB).
+  Conference hashtag (beware, tweets in abundance!): #dhd2015.
+
+</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/DHd-2015-Conference-in-Graz/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	
+	
+    <article class="notepad-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="notepad-post-meta">
+                <time datetime="2015-02-01T00:00:00+01:00">
+                    <span class="day">
+                        01
+                    </span>
+                    <span class="month-year">
+                        February 2015
+                    </span>
+                </time>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="notepad-post-header">
+                <h3 class="notepad-post-title">
+                    <a href="http://localhost:4000/Network-Analysis-of-Dramatic-Texts/">
+                        Network Analysis of Dramatic Texts
+                    </a>
+                </h3>
+            </header>
+            <section class="notepad-post-excerpt">
+                <p>In the last couple of weeks, Frank Fischer (GCDH), Mathias Göbel (SUB), Dario Kampkaspar (HAB Wolfenbüttel) and me sat down to reshape the whole project, “Network Analysis of Dramatic Texts”. We reworked and corrected a bunch of theatre pieces from the TextGrid Repository and added them to our corpus, compiled some new statistics and generated new visualisations:
+
+
+  
+
+
+Our first round of results will be presented at two upcoming conferences, in Graz and Munich. See you there!
+</p>
+            </section>
+            	 <div class="notepad-index-post-tags">
+                	<a href="http://localhost:4000/Network-Analysis-of-Dramatic-Texts/">
+                        READ ON
+                    </a>
+                </div>            
+        </div>
+    </article>
+    
+	  
+
+
+</main>
+    <footer class="notepad-site-footer">
+    <div class="copyright">
+         <section><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width: 0; margin: 10px; height: 30px; margin-left: 0;" src="/images/cc-by.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. <br/>
+<a href="http://localhost:4000/about">Frank Fischer, Mathias Göbel, Dario Kampkaspar, Peer Trilcke</a> (2018)
+</section>
+<br/>
+<section>Generated by Jekyll on 2018-01-09T13:30:14+01:00<br/>
+Revision build version </section>
+    </div>
+    <div class="social-icons">
+        
+        
+        <a href="http://twitter.com/#DLINA">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+        
+        
+        <a href="http://github.com/dlina">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+        
+        
+    </div>
+    
+    <div class="cf"></div>
+</footer>
+
+
+    <script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://localhost:4000/assets/js/vendor/modernizr.js"></script>
+    <script src="http://localhost:4000/assets/js/foundation.min.js"></script>
+    
+    <script src="http://localhost:4000/assets/js/notepad.js"></script>
+    <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+    <script src="http://localhost:4000/assets/js/vendor/nprogress.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <script type='text/javascript'>console.log("HMFaysal Notepad Theme Version 2.0");</script>
+    <script type='text/javascript'>console.log("https://alum.mit.edu/www/hmfaysal");</script>
+
+
+<script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>
+  
+</body>
+</html>
