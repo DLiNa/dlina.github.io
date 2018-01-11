@@ -10,3 +10,4 @@ Since the pages grows up and contains more than 2,300 static pages the rendering
 --------------
 All credits for the theme go to @hmfaysal (see the [description](https://github.com/hmfaysal/Notepad))!
 @mathias-goebel added support for multiple auhtors.
+ 
