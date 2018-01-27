@@ -22,103 +22,103 @@ The network analysis of literary texts remains the main business of our German-R
 Just to capture the hackathon spirit, this end-of-the-year blog post will just roll out some pics from our December meeting, so here goes:
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/berlin-hbf-magenta.jpg" alt="Arriving at Berlin main station, magenta style." style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/berlin-hbf-magenta.jpg" alt="Arriving at Berlin main station, magenta style." style="height:400px;">
 </figure>
 
-Arriving at Berlin main station, magenta style.
+<center><small>Arriving at Berlin main station, magenta style.</small></center>
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/walking-down-friedrichstrasse.jpg" alt="Walking down Friedrichstrasse." style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/walking-down-friedrichstrasse.jpg" alt="Walking down Friedrichstrasse." style="height:400px;">
 </figure>
 
 Walking down Friedrichstrasse.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/flashmob.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/flashmob.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Group photo, first morning.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/martinez.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/martinez.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Welcome to Fontane Archive!
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/hackathon-b-and-w.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/hackathon-b-and-w.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 This is how a literary hackathon looks like in black and white.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/discussing-shinyapp.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/discussing-shinyapp.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Discussing our new Shinyapp.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/discussing-dramavis.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/discussing-dramavis.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Testing the new version of [dramavis](/dramavis/) (a.k.a. laptop-sticker competition).
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/discussing-api.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/discussing-api.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Discussing our new API.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/promenade.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/promenade.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Lunch break.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/gg-and-ff.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/gg-and-ff.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 GG and FF.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/hackathoning.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/hackathoning.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Still hacking.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/frank-and-peer.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/frank-and-peer.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 @peertrilcke and @umblaetterer looking at things. ([context](https://twitter.com/umblaetterer/status/616232211952500736))
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/ice-skating-selfie.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/ice-skating-selfie.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Visit to the Christmas market …
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/ice-skating.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/ice-skating.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 … and some ice skating.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/banya.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/banya.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Visiting the historic banya at Fontane Archive.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/night-walk.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/night-walk.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Night walk.
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/sans-souci.jpg" alt="alternative text" style="height:400px; align:left;">
+  <img src="{{ site.url }}/images/photos/potsdam-2017/sans-souci.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 Visiting [the comma of SANS, SOUCI.](https://de.wikipedia.org/wiki/Das_Komma_von_SANS,_SOUCI.)
