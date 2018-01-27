@@ -17,9 +17,9 @@ featured: true
 
 Thanks to the funding we received from the University of Potsdam ([KoUP 1](http://www.uni-potsdam.de/foerderung/6-international.html)) and the Higher School of Economics ([НУГ](https://www.hse.ru/science/scifund/nug/)), we were able to organise two hackathons this year, one in September in Moscow, another one earlier this month at [Fontane Archive](http://www.fontanearchiv.de/startseite.html) in Potsdam. The latter concluded with a [mini conference](https://www.uni-potsdam.de/lit-19-jhd/digitale-literaturwissenschaft/potsdamer-arbeitstreffen/no2-2017.html).
 
-The network analysis of literary texts remains the main business of our German-Russian research group. In 2017, though, we rebuilt our whole infrastructure and were now able to look beyond network-analytics research questions, or combine the network approach with other (quantitative) approaches. Some of the scientific outcome of our efforts throughout this year was presented at the mini conference and on Twitter via the hashtag [#potsdam_digilit](https://twitter.com/hashtag/potsdam_digilit?f=tweets&vertical=default&src=hash), some will find its way into our upcoming research papers.
+The network analysis of literary texts remains the main business of our German-Russian research group. In 2017, though, we rebuilt our whole infrastructure and we're now able to look beyond network-analytical research questions, or combine the network approach with other (quantitative) methods. Some of the scientific outcome of our efforts throughout this year was presented at the mini conference and on Twitter via the hashtag [#potsdam_digilit](https://twitter.com/hashtag/potsdam_digilit?f=tweets&vertical=default&src=hash), some will find its way into our upcoming research papers.
 
-Just to capture the hackathon spirit, this end-of-the-year blog post will just roll out some pics from our December meeting, so here goes:
+To capture a bit of the hackathon spirit, this end-of-the-year blog post will just roll out some pics from our December meeting, so here goes:
 
 <figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/berlin-hbf-magenta.jpg" alt="Arriving at Berlin main station, magenta style." style="height:400px;">
@@ -122,3 +122,5 @@ Just to capture the hackathon spirit, this end-of-the-year blog post will just r
 </figure>
 
 <p style="text-align:center;">And a quick visit to <a href="https://de.wikipedia.org/wiki/Das_Komma_von_SANS,_SOUCI.">the comma of SANS, SOUCI.</a></p>
+
+<p style="text-align:center;">Best wishes and see you next year!</a></p>
