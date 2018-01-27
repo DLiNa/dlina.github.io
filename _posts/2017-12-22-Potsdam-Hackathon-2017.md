@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "December Hackathon in Potsdam"
+title: "December Hackathon in Potsdam"
 author: [frank, peer]
 description: 
 headline: 
@@ -123,4 +123,4 @@ To capture a bit of the hackathon spirit, this end-of-the-year blog post will ju
 
 <p style="text-align:center;">And a quick visit to <a href="https://de.wikipedia.org/wiki/Das_Komma_von_SANS,_SOUCI.">the comma of SANS, SOUCI.</a></p>
 
-<p style="text-align:center;">Best wishes and see you next year!</a></p>
+<p style="text-align:center;">Best wishes and see you next year!</p>
