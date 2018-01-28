@@ -94,16 +94,16 @@ To capture a bit of the hackathon spirit, this end-of-the-year blog post will ju
 <p style="text-align:center;">And a meta perspective.</p>
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/walking-in-park.jpg" alt="alternative text" style="height:400px;">
-</figure>
-
-<p style="text-align:center;">On our way back.</p>
-
-<figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/ducks-and-swans.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
 <p style="text-align:center;">Let's study ducks and swans.</p>
+
+<figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/walking-in-park.jpg" alt="alternative text" style="height:400px;">
+</figure>
+
+<p style="text-align:center;">On our way back.</p>
 
 <figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/sans-souci.jpg" alt="alternative text" style="height:400px;">
@@ -142,6 +142,12 @@ To capture a bit of the hackathon spirit, this end-of-the-year blog post will ju
 <p style="text-align:center;">Still hacking.</p>
 
 <figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/banya.jpg" alt="alternative text" style="height:400px;">
+</figure>
+
+<p style="text-align:center;">Not sweating it in the historic banya at Fontane Archive.</p>
+
+<figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/ice-skating-selfie.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
@@ -154,22 +160,16 @@ To capture a bit of the hackathon spirit, this end-of-the-year blog post will ju
 <p style="text-align:center;">… and some ice-skating.</p>
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/banya.jpg" alt="alternative text" style="height:400px;">
-</figure>
-
-<p style="text-align:center;">Not sweating it in the historic banya at Fontane Archive.</p>
-
-<figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/en-garde.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
-<p style="text-align:center;">Restaging a swashbuckler movie …</p>
+<p style="text-align:center;">Restaging a random swashbuckler movie …</p>
 
 <figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/emilia-galotti.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
-<p style="text-align:center;">… and a jump cut to the final scene of <i>Emilia Galotti</i>, the "crazy Odoardo" edition.</p>
+<p style="text-align:center;">… and a jump cut to the final scene of <a href="https://en.wikipedia.org/wiki/Emilia_Galotti"><i>Emilia Galotti</i></a>, "crazy Odoardo" edition.</p>
 
 <figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/danya-on-tolstoy.jpg" alt="alternative text" style="height:400px;">
