@@ -726,6 +726,7 @@ figure a img:hover {
     figure.half img {
         float: left;
         width: 49%;
+        height: 49%;
         margin-right: 0.5%;
         margin-left: 0.5%;
     }
@@ -739,6 +740,7 @@ figure a img:hover {
     figure.third img {
         float: left;
         width: 32.3%;
+        height: 32.3%;
         margin-right: 0.5%;
         margin-left: 0.5%;
     }
