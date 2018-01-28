@@ -70,6 +70,12 @@ To capture a bit of the hackathon spirit, this end-of-the-year blog post will ju
 <p style="text-align:center;">Testing the new version of <a href="https://dlina.github.io/dramavis/">dramavis</a> on Russian plays (a.k.a. "laptop-sticker competition").</p>
 
 <figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/chris-and-peer.jpg" alt="alternative text" style="height:400px;">
+</figure>
+
+<p style="text-align:center;">Discussing next steps.</p>
+
+<figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/discussing-api.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
@@ -100,34 +106,28 @@ To capture a bit of the hackathon spirit, this end-of-the-year blog post will ju
 <p style="text-align:center;">Let's study ducks and swans.</p>
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/walking-in-park.jpg" alt="alternative text" style="height:400px;">
-</figure>
-
-<p style="text-align:center;">On our way back.</p>
-
-<figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/sans-souci.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
-<p style="text-align:center;">And a quick visit to <a href="https://de.wikipedia.org/wiki/Das_Komma_von_SANS,_SOUCI.">the comma of SANS, SOUCI.</a></p>
+<p style="text-align:center;">A quick visit to <a href="https://de.wikipedia.org/wiki/Das_Komma_von_SANS,_SOUCI.">the comma of SANS, SOUCI.</a></p>
+
+<figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/walking-in-park.jpg" alt="alternative text" style="height:400px;">
+</figure>
+
+<p style="text-align:center;">Let's go back.</p>
 
 <figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/studying-flaischlen.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
-<p style="text-align:center;">Studying a real-life copy of Cäsar Flaischlen's <a href="http://weltliteratur.net/A-Giant-1890-Flowchart-of-Foreign-Influences-on-German-Literature/">"Graphische Litteratur-Tafel"</a>.</p>
-
-<figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/chris-and-peer.jpg" alt="alternative text" style="height:400px;">
-</figure>
-
-<p style="text-align:center;">Talking the talk.</p>
+<p style="text-align:center;">Studying a real-life copy of Cäsar Flaischlen's <a href="http://weltliteratur.net/A-Giant-1890-Flowchart-of-Foreign-Influences-on-German-Literature/">"Graphische Litteratur-Tafel"</a> (1890).</p>
 
 <figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/hackathoning.jpg" alt="alternative text" style="height:400px;">
 </figure>
 
-<p style="text-align:center;">Walking the walk.</p>
+<p style="text-align:center;">Still hacking.</p>
 
 <figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/frank-and-peer.jpg" alt="alternative text" style="height:400px;">
@@ -146,6 +146,24 @@ To capture a bit of the hackathon spirit, this end-of-the-year blog post will ju
 </figure>
 
 <p style="text-align:center;">Not sweating it in the historic banya at Fontane Archive.</p>
+
+<figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/danya-on-tolstoy.jpg" alt="alternative text" style="height:400px;">
+</figure>
+
+<p style="text-align:center;">Danya on Tolstoy.</p>
+
+<figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/conference-break.jpg" alt="alternative text" style="height:400px;">
+</figure>
+
+<p style="text-align:center;">Conference break.</p>
+
+<figure>
+  <img src="{{ site.url }}/images/photos/potsdam-2017/night-walk.jpg" alt="alternative text" style="height:400px;">
+</figure>
+
+<p style="text-align:center;">The inevitable night walk.</p>
 
 <figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/ice-skating-selfie.jpg" alt="alternative text" style="height:400px;">
@@ -170,23 +188,5 @@ To capture a bit of the hackathon spirit, this end-of-the-year blog post will ju
 </figure>
 
 <p style="text-align:center;">… and a jump cut to the final scene of <a href="https://en.wikipedia.org/wiki/Emilia_Galotti"><i>Emilia Galotti</i></a>, "crazy Odoardo" edition.</p>
-
-<figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/danya-on-tolstoy.jpg" alt="alternative text" style="height:400px;">
-</figure>
-
-<p style="text-align:center;">Danya on Tolstoy.</p>
-
-<figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/conference-break.jpg" alt="alternative text" style="height:400px;">
-</figure>
-
-<p style="text-align:center;">Conference break.</p>
-
-<figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/night-walk.jpg" alt="alternative text" style="height:400px;">
-</figure>
-
-<p style="text-align:center;">And the inevitable night walk.</p>
 
 <p style="text-align:center;">Best wishes and see all you next year.</p>
