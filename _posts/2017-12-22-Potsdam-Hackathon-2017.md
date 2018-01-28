@@ -142,12 +142,6 @@ To capture a bit of the hackathon spirit, this end-of-the-year blog post will ju
 <p style="text-align:center;">Still hacking.</p>
 
 <figure>
-  <img src="{{ site.url }}/images/photos/potsdam-2017/banya.jpg" alt="alternative text" style="height:400px; width:533px;">
-</figure>
-
-<p style="text-align:center;">Not sweating it in the historic banya at Fontane Archive.</p>
-
-<figure>
   <img src="{{ site.url }}/images/photos/potsdam-2017/danya-on-tolstoy.jpg" alt="alternative text" style="height:400px; width:700px;">
 </figure>
 
