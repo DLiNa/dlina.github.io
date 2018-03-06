@@ -8,6 +8,7 @@ chart: true
 ---
 ## Talks and Workshops
 
+- March 7, 2018 · Network Analysis of Literary Texts (Workshop) · [DHN2018](https://www.helsinki.fi/en/helsinki-centre-for-digital-humanities/dhn-2018) in Helsinki · [slides](https://lehkost.github.io/slides/2018-helsinki/)
 - November 14, 2017 · Life(!) on Stage – Building an Interface for the Network Analysis of TEI-Encoded Drama Corpora · [TEI2017](http://hcmc.uvic.ca/tei2017/) in Victoria · [slides](https://dlina.github.io/presentations/2017-victoria/)
 - October 19, 2017 · Easy Linavis (Visualización simple en red para textos literarios) · [HDH2017](http://hdh2017.es/) in Málaga · [slides](https://dlina.github.io/presentations/2017-malaga/) (in Spanish)
 - September 22, 2017 · Easy Linavis (Simple Network Visualisation for Literary Texts) · [DHRussia2017](http://conf2.sfu-kras.ru/en/dhrussia2017) in Krasnoyarsk · [slides](https://dlina.github.io/presentations/2017-krasnoyarsk/)
