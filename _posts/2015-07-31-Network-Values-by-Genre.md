@@ -61,6 +61,8 @@ We can see that tragedy peaks, while comedy troughs. This trend is also confirme
 
 Results for the other values ​​are similar, suggesting that there is an evident connection between the size of a network and the other values. But we still need to further examine this connection, it isn't as simple as it looks. It can be assumed that typical genre conventions also have a strong influence on the values: Like, in tragedies, we often have two (or more) opposing groups of people who don't share the stage too often, and if they do, it is mainly in shape of single representatives. Comedies, on the other hand, have a tendency to make as many characters as possible once more appear on stage, together, at the end, typically for the purpose of a wedding (or even multiple weddings). Just take George Bernard Shaw who argued that comedies were ["plays in which everyone was married in the last act"](http://www.gutenberg.org/ebooks/13084). These genre conventions have a crucial influence on, e.g., the density values (many characters on stage at the same time would make for higher density values, whereas density decreases if characters from two antagonising parties hardly ever meet).
 
+[Edit, 3 June 2018 – Nils and Marcus pointed us to this nice quote: "Somebody always has to die onstage, die or marry; that's the only difference between a comedy and a tragedy as far as the world knows." – from [Mary di Michele, *Tenor of Love*, 2005, p. 20](https://books.google.com/books?id=csL78WNZbA0C&pg=PA20)]
+
 Regarding the density values, Figure 2 suggests a proximity between comedy and libretto. This is confirmed if we don't consider the median, but the mean values:
 
 ### Fig. 3: Network Size (Mean), by Genre
