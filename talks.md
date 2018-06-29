@@ -8,6 +8,8 @@ chart: true
 ---
 ## Talks and Workshops
 
+- June 28, 2018 · »To Catch a Protagonist: Quantitative Dominance Relations in German-Language Drama (1730–1930)« · [DH2018](https://dh2018.adho.org/) in Ciudad de México · [abstract](https://dh2018.adho.org/?p=9362) · [slides](https://sharedocs.huma-num.fr/wl/?id=uQBsJyJJJOkdVSorbh7Vo1UY4fcIYhj2)
+- June 27, 2018 · »Brecht Beats Shakespeare! A Card-Game Introduction to the Network Analysis of European Drama« · [DH2018](https://dh2018.adho.org/) in Ciudad de México · [abstract](https://dh2018.adho.org/?p=9465) · [poster](https://doi.org/10.6084/m9.figshare.6667424.v1)
 - March 7, 2018 · Network Analysis of Literary Texts (Workshop) · [DHN2018](https://www.helsinki.fi/en/helsinki-centre-for-digital-humanities/dhn-2018) in Helsinki · [slides](https://lehkost.github.io/slides/2018-helsinki/)
 - November 14, 2017 · Life(!) on Stage – Building an Interface for the Network Analysis of TEI-Encoded Drama Corpora · [TEI2017](http://hcmc.uvic.ca/tei2017/) in Victoria · [slides](https://dlina.github.io/presentations/2017-victoria/)
 - October 19, 2017 · Easy Linavis (Visualización simple en red para textos literarios) · [HDH2017](http://hdh2017.es/) in Málaga · [slides](https://dlina.github.io/presentations/2017-malaga/) (in Spanish)
