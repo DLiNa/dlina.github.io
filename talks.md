@@ -8,6 +8,9 @@ chart: true
 ---
 ## Talks and Workshops
 
+- December 8, 2018 · »Topic Modelling 200 Years of Russian Drama« · [EADH2018](https://eadh2018eadh.wordpress.com/) in Galway/Ireland · [slides](https://sharedocs.huma-num.fr/wl/?id=H8ATTrsuf2X6R4O8qNx1IqFs0Jen9d7Z)
+- October 30, 2018 · »Masks 🎭 and Interfaces 🔌 – Digital Perspectives for the Study of European Drama« · [Digital Humanities Day](https://lnu.se/en/meet-linnaeus-university/current/events/2018/Digital-Humanities-Day/) at Linnéuniversitetet, Växjö · [slides](https://lehkost.github.io/slides/2018-vaxjo-drama-studies/index.html)
+- October 18, 2018 · »Die Digital Humanities zwischen Forschung und Infrastruktur« · [DH Network Symposium](https://www.uni-potsdam.de/de/digital-humanities/aktivitaeten/veranstaltungen/symposium-zur-eroeffnung-des-netzwerks.html) at University of Potsdam · [slides](https://lehkost.github.io/slides/2018-potsdam/index.html)
 - June 28, 2018 · »To Catch a Protagonist: Quantitative Dominance Relations in German-Language Drama (1730–1930)« · [DH2018](https://dh2018.adho.org/) in Ciudad de México · [abstract](https://dh2018.adho.org/?p=9362) · [slides](https://sharedocs.huma-num.fr/wl/?id=uQBsJyJJJOkdVSorbh7Vo1UY4fcIYhj2)
 - June 27, 2018 · »Brecht Beats Shakespeare! A Card-Game Introduction to the Network Analysis of European Drama« · [DH2018](https://dh2018.adho.org/) in Ciudad de México · [abstract](https://dh2018.adho.org/?p=9465) · [poster](https://doi.org/10.6084/m9.figshare.6667424.v1)
 - March 7, 2018 · Network Analysis of Literary Texts (Workshop) · [DHN2018](https://www.helsinki.fi/en/helsinki-centre-for-digital-humanities/dhn-2018) in Helsinki · [slides](https://lehkost.github.io/slides/2018-helsinki/)
