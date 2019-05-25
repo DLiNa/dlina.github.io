@@ -34,7 +34,7 @@ chart: true
 - April 23, 2015 · [DigLiGö](http://www.uni-goettingen.de/de/23042015-workshop-diglig%C3%B6---digitale-literaturwissenschaft-g%C3%B6ttingen/511115.html), University of Göttingen · slides 1 · [slides 2](https://mathias-goebel.github.io/2015-04-DigLiG%C3%B6/slides/mathias/index.html)
 - April 14, 2015 · Workshop at the University of Vienna · [schedule](https://mathias-goebel.github.io/2015-04-vienna/) · slides 1 · [slides 2](https://mathias-goebel.github.io/2015-04-vienna/slides/mathias/)
 - March 12/13, 2015 · Conference in Munich: »Computer-Based Analysis of Drama and Its Uses for Literary Criticism and Historiography« · [schedule](http://www.badw.de/de/veranstaltungen/_ergaenzungen/2015/402/2015_03_12_workshop-dennerlein_final.pdf) · [blog post](/Conference_in_Munich/)
-- February 25, 2015 · DHd2015 in Graz · [slides](http://www.gcdh.de/dhd2015-fischer-kampkaspar-trilcke-netzwerkanalyse-slides.pdf) · [blog post](/DHd-2015-Conference-in-Graz/)
+- February 25, 2015 · DHd2015 in Graz · [slides](http://gams.uni-graz.at/o:dhd2015.v.040) · [blog post](/DHd-2015-Conference-in-Graz/)
 - February 11, 2015 · RDD Colloquium, Göttingen State and University Library: »A Gamification Approach To Correcting and Enriching TEI-encoded Literary Texts« · [prototype](https://personae.gcdh.de/index.html)
 - September 29, 2014 · Workshop »Computational Literary Genre Stylistics«, University of Würzburg · [schedule](http://www.germanistik.uni-wuerzburg.de/lehrstuehle/computerphilologie/aktuelles/veranstaltungen/auftaktworkshop_gattungsstilistik/)
 
